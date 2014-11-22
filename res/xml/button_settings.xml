@@ -115,6 +115,35 @@
             android:persistent="false" />
 		
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="back_key"
+        android:title="@string/hardware_keys_back_key_title" >
+
+        <cyanogenmod.preference.CMSystemSettingSwitchPreference
+            android:key="back_wake_screen"
+            android:icon="@drawable/wake_icon"
+            android:title="@string/button_wake_title"
+            android:defaultValue="false" />
+
+        <cyanogenmod.preference.CMSecureSettingSwitchPreference
+            android:key="kill_app_longpress_back"
+            android:icon="@drawable/close_icon"
+            android:title="@string/kill_app_longpress_back"
+            android:summary="@string/kill_app_longpress_back_summary"/>
+
+        <com.viper.venom.preference.CustomSeekBarPreference
+            android:key="long_press_kill_delay"
+            android:title="@string/kill_app_longpress_back_delay"
+            android:icon="@drawable/close_icon"
+            android:max="3000"
+            settings:min="250"
+            settings:interval="250"
+            settings:units="ms"
+            android:persistent="false"
+            android:dependency="kill_app_longpress_back" />
+
+    </PreferenceCategory>
 		
     <PreferenceCategory
         android:key="power_key"
@@ -164,23 +193,6 @@
             android:entryValues="@array/hardware_keys_action_values"
             android:persistent="false" />
 
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="back_key"
-        android:title="@string/hardware_keys_back_key_title" >
-
-        <cyanogenmod.preference.CMSystemSettingSwitchPreference
-            android:key="back_wake_screen"
-			android:icon="@drawable/wake_icon"
-            android:title="@string/button_wake_title"
-            android:defaultValue="false" />
-
-        <cyanogenmod.preference.CMSecureSettingSwitchPreference
-            android:key="kill_app_longpress_back"
-			android:icon="@drawable/close_icon"
-            android:title="@string/kill_app_longpress_back"
-            android:summary="@string/kill_app_longpress_back_summary"/>
     </PreferenceCategory>
 
     <PreferenceCategory

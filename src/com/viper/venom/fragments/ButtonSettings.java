@@ -44,6 +44,8 @@ import java.util.List;
 
 import org.cyanogenmod.internal.util.ScreenType;
 
+import com.viper.venom.preference.CustomSeekBarPreference;
+
 public class ButtonSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
@@ -70,6 +72,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private static final String KEY_VOLUME_CONTROL_RING_STREAM = "volume_keys_control_ring_stream";
     private static final String KEY_NAVIGATION_BAR_ENABLED = "navigation_bar_enabled";
     private static final String KEY_ENABLE_HW_KEYS = "enable_hw_keys";
+    private static final String LONG_PRESS_KILL_DELAY = "long_press_kill_delay";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -149,7 +152,9 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private ButtonBacklightBrightness backlight;
     private SystemSettingSwitchPreference mHwKeyLight;
 
-   private PreferenceCategory mNavigationPreferencesCat;
+    private PreferenceCategory mNavigationPreferencesCat;
+
+    private CustomSeekBarPreference mLongpressKillDelay;
     
     private Handler mHandler;
 
@@ -408,6 +413,12 @@ public class ButtonSettings extends SettingsPreferenceFragment
             backlight.setEnabled(false);
             backlight.updateSummary();
         }
+
+        mLongpressKillDelay = (CustomSeekBarPreference) findPreference(LONG_PRESS_KILL_DELAY);
+        int killconf = Settings.System.getInt(resolver,
+                Settings.System.LONG_PRESS_KILL_DELAY, 1000);
+        mLongpressKillDelay.setValue(killconf);
+        mLongpressKillDelay.setOnPreferenceChangeListener(this);
     }
 
     private void writeDisableHwKeysOption(boolean enabled) {
@@ -629,6 +640,10 @@ public class ButtonSettings extends SettingsPreferenceFragment
         } else if (preference == mHWKeysEnabled) {
             boolean isEnabled = ((Boolean)newValue);
             writeDisableHwKeysOption(isEnabled);
+            return true;
+        } else if (preference == mLongpressKillDelay) {
+            int killconf = (Integer) newValue;
+            Settings.System.putInt(getContentResolver(), Settings.System.LONG_PRESS_KILL_DELAY, killconf);
             return true;
         }
         return false;
