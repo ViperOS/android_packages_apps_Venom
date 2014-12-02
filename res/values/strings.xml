@@ -547,4 +547,8 @@
     <string name="heads_up_snooze_15min">15 minutes</string>
     <string name="heads_up_snooze_20min">20 minutes</string>
 
+    <!-- Quick settings on secure lockscreen -->
+    <string name="lockscreen_enable_qs_title">Quick settings</string>
+    <string name="lockscreen_enable_qs_summary">Allow accessing quick settings and swipe shortcuts on secure lock screen</string>
+
 </resources>
