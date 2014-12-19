@@ -21,6 +21,12 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+     <PreferenceScreen
+        android:key="traffic"
+        android:fragment="com.viper.venom.fragments.Traffic"
+        android:layout="@layout/preference_traffic"
+        android:title="@string/traffic_category" />
+
         <PreferenceScreen
             android:key="status_bar_icons"
             android:title="@string/statusbar_items_title"
