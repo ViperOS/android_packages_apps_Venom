@@ -29,7 +29,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
-import com.viper.venom.support.R;
+import com.android.settings.R;
 
 public class ColorPickerDialog
         extends
