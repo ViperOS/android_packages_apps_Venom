@@ -17,6 +17,17 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/powermenu_category" >
 
+    <PreferenceCategory
+        android:key="lockscreen"
+        android:title="@string/lockscreen_category" >
+
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_enable_power_menu"
+            android:title="@string/lockscreen_enable_power_menu_title"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
     <CheckBoxPreference
         android:key="restart"
 	    android:icon="@drawable/restart_icon"
