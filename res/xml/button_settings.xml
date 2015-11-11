@@ -44,6 +44,13 @@
             android:defaultValue="false"
             android:dependency="navigation_bar_enabled" />
 
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_navbar"
+            android:title="@string/double_tap_sleep_nav_bar_title"
+            android:summary="@string/double_tap_sleep_nav_bar_summary"
+            android:dependency="navigation_bar_enabled"
+            android:defaultValue="false" />
+
         <cyanogenmod.preference.CMSystemSettingSwitchPreference
                 android:key="navigation_bar_menu_arrow_keys"
                 android:icon="@drawable/arrow_keys"
