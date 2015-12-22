@@ -602,4 +602,8 @@
     <string name="fp_unlock_keystore_title">Fingerprint unlock</string>
     <string name="fp_unlock_keystore_summary">Unlock device with fingerprint after reboot without pin/password/pattern</string>
 
+    <!-- Double tap power button vibration -->
+    <string name="camera_dbl_tap_vib_title">Double tap power for camera vibration</string>
+    <string name="camera_dbl_tap_vib_summary">Vibrate on double tap of power button when enabled</string>
+
 </resources>

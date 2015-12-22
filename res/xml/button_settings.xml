@@ -116,6 +116,13 @@
             android:summary="@string/camera_double_tap_power_gesture_desc"
             android:persistent="false" />
 
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="double_tap_vibrate"
+            android:title="@string/camera_dbl_tap_vib_title"
+            android:summary="@string/camera_dbl_tap_vib_summary"
+            android:defaultValue="true"
+            android:dependency="camera_double_tap_power_gesture" />
+
         <cyanogenmod.preference.CMSystemSettingSwitchPreference
             android:key="torch_long_press_power_gesture"
             android:icon="@drawable/lock_screen_flashlight_icon"
