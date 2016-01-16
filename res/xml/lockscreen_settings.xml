@@ -125,6 +125,12 @@
             android:title="@string/lockscreen_blur_enabled_title"
             cm:requiresConfig="@*android:bool/config_uiBlurEnabled" />
 		
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="fingerprint_success_vib"
+            android:title="@string/fprint_sucess_vib_title"
+            android:summary="@string/fprint_sucess_vib_summary"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 	
 </PreferenceScreen>
