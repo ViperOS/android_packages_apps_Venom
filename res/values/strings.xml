@@ -404,5 +404,8 @@
    <!-- Quick Settings brightness icon -->
    <string name="brightness_icon_title">Brightness icon</string>
    <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
-	
+
+   <!-- SU indicator -->
+   <string name="show_su_indicator_title">Enable SU icon</string>
+   <string name="show_su_indicator_summary">Option to enable or disable native superuser icon</string>	
 </resources>

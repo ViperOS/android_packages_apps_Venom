@@ -404,5 +404,9 @@
    <!-- Quick settings brightness icon -->
    <string name="brightness_icon_title">Ícone de Brilho </string>
    <string name="brightness_icon_summary">Ativar desativar o ícone de brilho existente ao lado do controle deslizante de brilho</string>
+
+   <!-- SU indicator -->
+   <string name="show_su_indicator_title">Indicador de superusuário</string>
+   <string name="show_su_indicator_summary">Mostrar indicador de superusuário quando uma sessão está ativa</string>
 	
 </resources>
