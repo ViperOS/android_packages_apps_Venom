@@ -9,7 +9,7 @@
 
        <ListPreference
             android:key="recents_use_grid"
-	    android:icon="@drawable/recents_type"
+	        android:icon="@drawable/recents_type"
             android:title="@string/recents_type_title"
             android:dialogTitle="@string/recents_type_title"
             android:entries="@array/recents_type_title_entries"
@@ -17,19 +17,28 @@
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="show_clear_all_recents"
-	    android:icon="@drawable/recents_clear_all_icon"
+	        android:icon="@drawable/recents_clear_all_icon"
             android:title="@string/show_clear_all_recents_button_title"
             android:summary="@string/show_clear_all_recents_button_summary"
             android:defaultValue="true" />
 
          <ListPreference
             android:key="recents_clear_all_location"
-	    android:icon="@drawable/clear_all_icon_location"
+	        android:icon="@drawable/clear_all_icon_location"
             android:title="@string/recents_clear_all_location_title"
             android:entries="@array/recents_clear_all_location_entries"
             android:entryValues="@array/recents_clear_all_location_values"
             android:defaultValue="3"
             android:dependency="show_clear_all_recents" />
+
+        <ListPreference
+            android:key="immersive_recents"
+            android:title="@string/immersive_recents_title"
+            android:summary="@string/immersive_recents_summary"
+            android:dialogTitle="@string/immersive_recents_dialog_title"
+            android:entries="@array/immersive_recents_entries"
+            android:entryValues="@array/immersive_recents_values"
+            android:persistent="false" />
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="recents_lock_icon"

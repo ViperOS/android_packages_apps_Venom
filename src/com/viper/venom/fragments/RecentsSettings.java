@@ -33,7 +33,7 @@ public class RecentsSettings extends SettingsPreferenceFragment
     private static final String MEMBAR_COLOR = "systemui_recents_mem_barcolor";
     private static final String MEM_TEXT_COLOR = "systemui_recents_mem_textcolor";
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
-
+    private static final String IMMERSIVE_RECENTS = "immersive_recents";
     private ColorPickerPreference mMemBarColor;
     private ColorPickerPreference mMemTextColor;
 
@@ -42,6 +42,7 @@ public class RecentsSettings extends SettingsPreferenceFragment
     private SwitchPreference mRecentsClearAll;
     private ListPreference mRecentsClearAllLocation;
     private ListPreference mRecentsType;
+    private ListPreference mImmersiveRecents;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -95,13 +96,19 @@ public class RecentsSettings extends SettingsPreferenceFragment
         }
         mMemTextColor.setNewPreviewColor(intColorText);
         mMemTextColor.setOnPreferenceChangeListener(this);
+
+        mImmersiveRecents = (ListPreference) findPreference(IMMERSIVE_RECENTS);
+        mImmersiveRecents.setValue(String.valueOf(Settings.System.getInt(
+                resolver, Settings.System.IMMERSIVE_RECENTS, 0)));
+        mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
+        mImmersiveRecents.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mRecentsType) {
-            Settings.System.putInt(getContentResolver(), Settings.System.RECENTS_USE_GRID,
+            Settings.System.putInt(resolver, Settings.System.RECENTS_USE_GRID,
                     Integer.valueOf((String) newValue));
             int val = Integer.parseInt((String) newValue);
             if (val== 0 || val == 1) {
@@ -141,6 +148,12 @@ public class RecentsSettings extends SettingsPreferenceFragment
             Settings.System.putInt(resolver,
                     Settings.System.SYSTEMUI_RECENTS_MEM_TEXTCOLOR,
                     intHex);
+            return true;
+        }else if (preference == mImmersiveRecents) {
+            Settings.System.putInt(resolver, Settings.System.IMMERSIVE_RECENTS,
+                    Integer.valueOf((String) newValue));
+            mImmersiveRecents.setValue(String.valueOf(newValue));
+            mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
             return true;
         }
     return false;
