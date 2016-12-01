@@ -117,6 +117,12 @@
 	
     <PreferenceCategory 
          android:title="@string/qs_misc_category">
+
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="qs_date_time_center"
+            android:title="@string/qs_date_time_center_title"
+            android:summary="@string/qs_date_time_center_summary"
+            android:defaultValue="false" />
 		
         <com.viper.venom.preference.SecureSettingSwitchPreference
             android:key="qs_show_brightness"
