@@ -529,4 +529,20 @@
         <item>2</item>
     </string-array>
 
+    <string-array name="torch_long_press_power_timeout_entries">
+        <item>@string/torch_long_press_power_timeout_never</item>
+        <item>@string/torch_long_press_power_timeout_1_minute</item>
+        <item>@string/torch_long_press_power_timeout_2_minutes</item>
+        <item>@string/torch_long_press_power_timeout_5_minutes</item>
+        <item>@string/torch_long_press_power_timeout_10_minutes</item>
+    </string-array>
+
+    <string-array name="torch_long_press_power_timeout_values" translatable="false">
+        <item>0</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+        <item>600</item>
+    </string-array>
+
 </resources>

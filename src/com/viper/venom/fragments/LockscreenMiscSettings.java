@@ -60,15 +60,19 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 import android.hardware.fingerprint.FingerprintManager;
+import cyanogenmod.providers.CMSettings;
 
 public class LockscreenMiscSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib";
     private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
+    private static final String KEY_TORCH_LONG_PRESS_POWER_TIMEOUT =
+            "torch_long_press_power_timeout";
 
     private FingerprintManager mFingerprintManager;
     private SwitchPreference mFingerprintVib;
     private SwitchPreference mFpKeystore;
+    private ListPreference mTorchLongPressPowerTimeout;
 
     private ContentResolver mResolver;
 
@@ -99,11 +103,32 @@ public class LockscreenMiscSettings extends SettingsPreferenceFragment implement
             removePreference(FP_UNLOCK_KEYSTORE);
         }
 
+        final int torchLongPressPowerTimeout = CMSettings.System.getInt(resolver,
+                CMSettings.System.TORCH_LONG_PRESS_POWER_TIMEOUT, 0);
+        mTorchLongPressPowerTimeout = initList(KEY_TORCH_LONG_PRESS_POWER_TIMEOUT,
+                torchLongPressPowerTimeout);
+
+    }
+
+    private ListPreference initList(String key, int value) {
+        ListPreference list = (ListPreference) getPreferenceScreen().findPreference(key);
+        if (list == null) return null;
+        list.setValue(Integer.toString(value));
+        list.setSummary(list.getEntry());
+        list.setOnPreferenceChangeListener(this);
+        return list;
     }
 
     @Override
     protected int getMetricsCategory() {
         return MetricsEvent.VENOM;
+    }
+
+    private void handleListChange(ListPreference pref, Object newValue, String setting) {
+        String value = (String) newValue;
+        int index = pref.findIndexOfValue(value);
+        pref.setSummary(pref.getEntries()[index]);
+        CMSettings.System.putInt(getContentResolver(), setting, Integer.valueOf(value));
     }
 
     @Override
@@ -118,6 +143,10 @@ public class LockscreenMiscSettings extends SettingsPreferenceFragment implement
             boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver,
                     Settings.System.FP_UNLOCK_KEYSTORE, value ? 1: 0);
+            return true;
+        } else if (preference == mTorchLongPressPowerTimeout) {
+            handleListChange(mTorchLongPressPowerTimeout, newValue,
+                    CMSettings.System.TORCH_LONG_PRESS_POWER_TIMEOUT);
             return true;
         }
         return false;
