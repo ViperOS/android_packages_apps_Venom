@@ -27,6 +27,7 @@ import android.widget.EditText;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.viper.venom.utils.TelephonyUtils;
 
 import java.util.Date;
 
@@ -34,6 +35,7 @@ public class MiscSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
     private static final String WIRED_RINGTONE_FOCUS_MODE = "wired_ringtone_focus_mode";
+    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
 
     private ListPreference mWiredHeadsetRingtoneFocus;
 
@@ -50,6 +52,11 @@ public class MiscSettings extends SettingsPreferenceFragment
         mWiredHeadsetRingtoneFocus.setValue(Integer.toString(mWiredHeadsetRingtoneFocusValue));
         mWiredHeadsetRingtoneFocus.setSummary(mWiredHeadsetRingtoneFocus.getEntry());
         mWiredHeadsetRingtoneFocus.setOnPreferenceChangeListener(this);
+
+        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+        if (!TelephonyUtils.isVoiceCapable(getActivity())) {
+            prefScreen.removePreference(incallVibCategory);
+        }
     }
 
     @Override
