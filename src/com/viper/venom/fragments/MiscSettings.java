@@ -33,17 +33,37 @@ import java.util.Date;
 public class MiscSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
+    private static final String WIRED_RINGTONE_FOCUS_MODE = "wired_ringtone_focus_mode";
+
+    private ListPreference mWiredHeadsetRingtoneFocus;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.misc_settings);
-        final ContentResolver resolver = getActivity().getContentResolver();
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        mWiredHeadsetRingtoneFocus = (ListPreference) findPreference(WIRED_RINGTONE_FOCUS_MODE);
+        int mWiredHeadsetRingtoneFocusValue = Settings.Global.getInt(resolver,
+                Settings.Global.WIRED_RINGTONE_FOCUS_MODE, 1);
+        mWiredHeadsetRingtoneFocus.setValue(Integer.toString(mWiredHeadsetRingtoneFocusValue));
+        mWiredHeadsetRingtoneFocus.setSummary(mWiredHeadsetRingtoneFocus.getEntry());
+        mWiredHeadsetRingtoneFocus.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mWiredHeadsetRingtoneFocus) {
+            int mWiredHeadsetRingtoneFocusValue = Integer.valueOf((String) newValue);
+            int index = mWiredHeadsetRingtoneFocus.findIndexOfValue((String) newValue);
+            mWiredHeadsetRingtoneFocus.setSummary(
+                    mWiredHeadsetRingtoneFocus.getEntries()[index]);
+            Settings.Global.putInt(resolver, Settings.Global.WIRED_RINGTONE_FOCUS_MODE,
+                    mWiredHeadsetRingtoneFocusValue);
+            return true;
+        }
         return false;
     }
 
