@@ -551,4 +551,8 @@
     <string name="lockscreen_enable_qs_title">Quick settings</string>
     <string name="lockscreen_enable_qs_summary">Allow accessing quick settings and swipe shortcuts on secure lock screen</string>
 
+    <!-- Hide Statusbar on Lockscreen -->
+    <string name="lockscreen_hide_status_bar_title">Status bar</string>
+    <string name="lockscreen_hide_status_bar_summary">Display status bar on lock screen</string>
+
 </resources>

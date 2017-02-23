@@ -131,6 +131,12 @@
             android:summary="@string/lockscreen_enable_qs_summary"
             android:defaultValue="true" />
 
+        <com.viper.venom.preference.SecureSettingSwitchPreference
+            android:key="lockscreen_hide_status_bar"
+            android:title="@string/lockscreen_hide_status_bar_title"
+            android:summary="@string/lockscreen_hide_status_bar_summary"
+            android:defaultValue="true" />
+
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="fingerprint_success_vib"
             android:title="@string/fprint_sucess_vib_title"
