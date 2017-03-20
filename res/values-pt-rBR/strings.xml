@@ -47,4 +47,10 @@
     <string name="advanced_reboot_hide_on_keyguard">Ocultar na tela de bloqueio</string>
     <string name="advanced_reboot_show_always">Mostrar sempre</string>
 
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Selecionador de cores</string>
+    <string name="press_color_to_apply">Pressione a cor abaixo para aplicar</string>
+    <string name="set">Set</string>
+    <string name="color_default">Padrão</string>
+	
 </resources>
