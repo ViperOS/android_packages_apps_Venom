@@ -21,6 +21,12 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+         <PreferenceScreen
+            android:key="buttons"
+            android:fragment="com.viper.venom.fragments.Buttons"
+            android:layout="@layout/preference_buttons_settings"
+            android:title="@string/buttons_title" />
+	
          <Preference
             android:key="powermenu"
             android:fragment="com.viper.venom.fragments.PowerMenu"
