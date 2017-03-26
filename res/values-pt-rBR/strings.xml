@@ -29,6 +29,7 @@
     <string name="statusbar_clock_title">Relógio &amp; Data</string>
     <string name="statusbar_items_title">Itens da barra de estado</string>
     <string name="statusbar_misc_title">Barra de estado diversos</string>
+    <string name="navbar_title">barra de navegação</string>
 	
     <!-- Dialog -->
     <string name="venom_dialog_title">Ajude-nos a ajudá-lo!</string>
@@ -208,5 +209,9 @@
     <string name="camera_double_tap_power_gesture_desc">Abrir a câmera rapidamente sem desbloquear a tela</string>
     <string name="torch_long_press_power_gesture_title">Lanterna na tela de Bloqueio</string>
     <string name="torch_long_press_power_gesture_desc">Toque longo no botão power equanto a tela estiver desligada para ligar a lanterna</string>
+	
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Animação barra de navegação</string>
+    <string name="pixel_navbar_anim_summary">Ativar Animação barra de navegação pixel</string>
 	
 </resources>

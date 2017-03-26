@@ -29,6 +29,7 @@
     <string name="statusbar_clock_title">Clock &amp; Date</string>
     <string name="statusbar_items_title">Statusbar items</string>
     <string name="statusbar_misc_title">Statusbar Misc</string>
+    <string name="navbar_title">NavBar</string>
 	
     <!-- Dialog -->
     <string name="venom_dialog_title">Help us help you!</string>
@@ -206,5 +207,9 @@
 
     <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
+	
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Pixel navbar animation</string>
+    <string name="pixel_navbar_anim_summary">Enables the pixel navbar animation</string>
 	
 </resources>
