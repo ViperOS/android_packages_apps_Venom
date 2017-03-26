@@ -75,6 +75,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private static final String CATEGORY_CAMERA = "camera_key";
     private static final String CATEGORY_VOLUME = "volume_keys";
     private static final String CATEGORY_BACKLIGHT = "key_backlight";
+    private static final String CATEGORY_NAVBAR = "navigation_bar_category";
 
     // Available custom actions to perform on a key press.
     // Must match values for KEY_HOME_LONG_PRESS_ACTION in:
@@ -89,7 +90,9 @@ public class ButtonSettings extends SettingsPreferenceFragment
         LAUNCH_CAMERA,
         SLEEP,
         LAST_APP,
-        SPLIT_SCREEN;
+        SPLIT_SCREEN,
+        SINGLE_HAND_LEFT,
+        SINGLE_HAND_RIGHT;
 
         public static Action fromIntSafe(int id) {
             if (id < NOTHING.ordinal() || id > Action.values().length) {
@@ -134,6 +137,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private SwitchPreference mHomeAnswerCall;
     private SwitchPreference mCameraDoubleTapPowerGesture;
 
+   private PreferenceCategory mNavigationPreferencesCat;
+	
     private Handler mHandler;
 
     @Override
@@ -198,6 +203,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
 
         mHandler = new Handler();
 
+        mNavigationPreferencesCat = (PreferenceCategory) findPreference(CATEGORY_NAVBAR);
+		
         Action defaultHomeLongPressAction = Action.fromIntSafe(res.getInteger(
                 com.android.internal.R.integer.config_longPressOnHomeBehavior));
         Action defaultHomeDoubleTapAction = Action.fromIntSafe(res.getInteger(
