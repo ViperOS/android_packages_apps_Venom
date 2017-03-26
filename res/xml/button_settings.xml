@@ -4,7 +4,7 @@
     android:title="@string/buttons_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.crdroid.settings.fragments.ButtonBacklightBrightness
+    <com.viper.venom.fragments.ButtonBacklightBrightness
         android:key="button_backlight"
         android:title="@string/button_backlight_title"
         android:dialogTitle="@string/button_backlight_title"

@@ -21,15 +21,17 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-         <PreferenceScreen
-            android:key="systemui_tuner_statusbar"
+        <PreferenceScreen
+            android:key="status_bar_icons"
             android:title="@string/statusbar_items_title"
             android:layout="@layout/preference_systemui_tuner_statusbaritems" >
             <intent
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.TunerActivity" />
-         </PreferenceScreen>
+                android:targetClass="com.android.systemui.tuner.TunerActivity">
+                <extra android:name="tuner" android:value="status_bar" />
+            </intent>
+        </PreferenceScreen>
 
           <PreferenceScreen
             android:key="statusbarclock"

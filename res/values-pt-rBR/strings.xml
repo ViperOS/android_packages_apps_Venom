@@ -183,6 +183,7 @@
     <string name="backlight_summary_disabled">Desligado</string>
     <string name="backlight_summary_enabled_with_timeout">Ativado por <xliff:g xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Habilitado</string>
+    <string name="reset">reset</string>
 	
     <!-- Navigation Bar -->
     <string name="navigation_bar_category">Barra de navegação</string>

@@ -47,11 +47,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.viper.venom.tabs.System;
-import com.viper.venom.tabs.Lockscreen;
 import com.viper.venom.tabs.StatusBar;
+import com.viper.venom.tabs.Lockscreen;
 import com.viper.venom.tabs.Navigation;
 import com.viper.venom.tabs.MultiTasking;
+import com.viper.venom.tabs.System;
 import com.viper.venom.PagerSlidingTabStrip;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -173,11 +173,11 @@ public class Venom extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new System();
+            frags[0] = new StatusBar();
             frags[1] = new Lockscreen();
-            frags[2] = new StatusBar();
-            frags[3] = new Navigation();
-            frags[4] = new MultiTasking();
+            frags[2] = new Navigation();
+            frags[3] = new MultiTasking();
+            frags[4] = new System();
         }
 
         @Override
@@ -199,11 +199,11 @@ public class Venom extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.system_category),
-                    getString(R.string.lockscreen_category),
                     getString(R.string.statusbar_category),
+                    getString(R.string.lockscreen_category),
                     getString(R.string.navigation_category),
                     getString(R.string.multitasking_category)};
+                    getString(R.string.system_category),
         return titleString;
     }
 }

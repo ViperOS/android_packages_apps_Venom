@@ -35,7 +35,7 @@ import java.util.Date;
 public class StatusBarClockSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
-    private static final String STATUS_BAR_CLOCK_POSITION = "status_bar_clock";
+    private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
     private static final String STATUS_BAR_DATE = "status_bar_date";
     private static final String STATUS_BAR_DATE_STYLE = "status_bar_date_style";
@@ -58,8 +58,7 @@ public class StatusBarClockSettings extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.statusbar_clock_settings);
         final ContentResolver resolver = getActivity().getContentResolver();
 
-        mStatusBarClock = (CMSystemSettingListPreference) findPreference(STATUS_BAR_CLOCK_POSITION);
-        mStatusBarClock.setOnPreferenceChangeListener(this);
+        mStatusBarClock = (CMSystemSettingListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
         mStatusBarAmPm = (CMSystemSettingListPreference) findPreference(STATUS_BAR_AM_PM);
         mStatusBarDate = (CMSystemSettingListPreference) findPreference(STATUS_BAR_DATE);
         mStatusBarDateStyle = (CMSystemSettingListPreference) findPreference(STATUS_BAR_DATE_STYLE);
@@ -186,7 +185,6 @@ public class StatusBarClockSettings extends SettingsPreferenceFragment
                         .getContentResolver(), Settings.System.STATUS_BAR_DATE, 0);
                 mStatusBarDateStyle.setEnabled(showDate != 0);
                 mStatusBarDateFormat.setEnabled(showDate != 0);
-                mClockDatePosition.setEnabled(showDate != 0);
             }
         });
     }

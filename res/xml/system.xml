@@ -23,7 +23,7 @@
 
          <PreferenceScreen
             android:key="buttons"
-            android:fragment="com.viper.venom.fragments.Buttons"
+            android:fragment="com.viper.venom.fragments.ButtonSettings"
             android:layout="@layout/preference_buttons_settings"
             android:title="@string/buttons_title" />
 	
