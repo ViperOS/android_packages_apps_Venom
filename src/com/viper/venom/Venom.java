@@ -202,8 +202,8 @@ public class Venom extends SettingsPreferenceFragment {
                     getString(R.string.statusbar_category),
                     getString(R.string.lockscreen_category),
                     getString(R.string.navigation_category),
-                    getString(R.string.multitasking_category)};
-                    getString(R.string.system_category),
+                    getString(R.string.multitasking_category),
+                    getString(R.string.system_category)};
         return titleString;
     }
 }

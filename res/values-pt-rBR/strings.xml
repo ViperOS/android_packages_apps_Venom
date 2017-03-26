@@ -183,13 +183,15 @@
     <string name="backlight_summary_disabled">Desligado</string>
     <string name="backlight_summary_enabled_with_timeout">Ativado por <xliff:g xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Habilitado</string>
-    <string name="reset">reset</string>
+    <string name="reset">resetar</string>
 	
     <!-- Navigation Bar -->
     <string name="navigation_bar_category">Barra de navegação</string>
     <string name="navigation_bar_title">Botões e layout</string>
     <string name="navigation_bar_arrow_keys_title">Mostrar teclas de seta enquanto digita</string>
     <string name="navigation_bar_arrow_keys_summary">Exibir botões esquerda e direita do cursor durante a digitação. Substitui o seletor de Teclado.</string>
+    <string name="navigation_bar_home_long_press_title">Ação de toque longo no botão início</string>
+    <string name="navigation_bar_home_double_tap_title">Ação de toque duplo no botão de Página Inicial</string>
 	
     <!-- Power menu -->
     <string name="power_menu_title">Menu do botão Liga/Desliga</string>
