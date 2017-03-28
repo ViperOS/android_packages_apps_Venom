@@ -30,6 +30,7 @@
     <string name="statusbar_items_title">Itens da barra de estado</string>
     <string name="statusbar_misc_title">Barra de estado diversos</string>
     <string name="navbar_title">barra de navegação</string>
+    <string name="sound_title">Som</string>
 	
     <!-- Dialog -->
     <string name="venom_dialog_title">Ajude-nos a ajudá-lo!</string>
@@ -218,5 +219,14 @@
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Animação barra de navegação</string>
     <string name="pixel_navbar_anim_summary">Ativar Animação barra de navegação pixel</string>
+	
+    <!-- Sounds: Charging sounds -->
+    <string name="charging_sounds_settings_title">Sons ao conectar o carregador</string>
+    <string name="charging_sounds_settings_summary">Personalizar o som tocado ao conectar ou desconectar uma fonte de energia</string>
+    <string name="charging_sounds_enabled_title">Habilitar</string>
+    <string name="charging_sounds_enabled_summary">Tocar um som quando conectar ou desconectar uma fonte de energia</string>
+    <string name="power_notifications_vibrate_title">Vibrar</string>
+    <string name="charging_sounds_ringtone_title">Som de notificação</string>
+    <string name="charging_sounds_ringtone_silent">Silencioso</string>
 	
 </resources>

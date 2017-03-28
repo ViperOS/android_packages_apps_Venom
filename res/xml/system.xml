@@ -33,4 +33,10 @@
             android:layout="@layout/preference_powermenu"
             android:title="@string/powermenu_category" />
 
+         <Preference
+            android:key="sound"
+            android:fragment="com.viper.venom.fragments.SoundSettings"
+            android:layout="@layout/preference_sound"
+            android:title="@string/sound_title" />
+			
 </PreferenceScreen>
