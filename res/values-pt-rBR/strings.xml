@@ -107,7 +107,9 @@
     <string name="status_bar_battery_style_icon_portrait">Ícone em modo retrato</string>
     <string name="status_bar_battery_style_icon_landscape">Ícone em paisagem</string>
     <string name="status_bar_battery_style_circle">Círculo</string>
+    <string name="status_bar_battery_style_bigcircle">Círculo Grande</string>
     <string name="status_bar_battery_style_solid">Sólido</string>
+    <string name="status_bar_battery_style_gauge">Velocimetro</string>
     <string name="status_bar_battery_style_text">Texto</string>
     <string name="status_bar_battery_style_hidden">Escondido</string>
     <string name="status_bar_battery_style_tile_title">Estilo personalizado da bateria nas configurações rápidas</string>
