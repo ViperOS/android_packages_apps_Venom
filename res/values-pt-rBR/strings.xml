@@ -32,6 +32,7 @@
     <string name="navbar_title">barra de navegação</string>
     <string name="sound_title">Som</string>
     <string name="quicksettings_title">Configurações rápidas</string>
+    <string name="recents_title">tela recentes</string>
 	
     <!-- Dialog -->
     <string name="venom_dialog_title">Ajude-nos a ajudá-lo!</string>
@@ -260,5 +261,16 @@
     <string name="weather_config_summary"></string>
     <string name="weather_icon_pack_title">Pacote de ícones climáticos</string>
     <string name="weather_icon_pack_note">Nota\u003a Você pode instalar novos pacotes de ícones da play store procurando por \"Chronus icons\"</string>
+	
+    <!-- Recents panel settings -->
+    <string name="show_clear_all_recents_button_title">Botão de limpar todos</string>
+    <string name="show_clear_all_recents_button_summary">Mostrar limpar todos</string>
+    <string name="recents_clear_all_location_title">Localização do Botão \"Limpar Tudo\"</string>
+    <string name="recents_clear_all_location_top_right">Superior Direito</string>
+    <string name="recents_clear_all_location_top_left">Superior esquerdo</string>
+    <string name="recents_clear_all_location_top_center">Superior central</string>
+    <string name="recents_clear_all_location_bottom_right">Canto inferior direito</string>
+    <string name="recents_clear_all_location_bottom_left">Inferior Esquerdo</string>
+    <string name="recents_clear_all_location_bottom_center">Inferior central</string>
 	
 </resources>
