@@ -31,6 +31,7 @@
     <string name="statusbar_misc_title">Statusbar Misc</string>
     <string name="navbar_title">NavBar</string>
     <string name="sound_title">Sound</string>
+    <string name="quicksettings_title">Quick Settings</string>
 	
     <!-- Dialog -->
     <string name="venom_dialog_title">Help us help you!</string>
@@ -228,5 +229,8 @@
     <string name="power_notifications_vibrate_title">Vibrate</string>
     <string name="charging_sounds_ringtone_title">Notification sound</string>
     <string name="charging_sounds_ringtone_silent">Silent</string>
+	
+    <!-- Quick settings tiles -->
+    <string name="sysui_qqs_count_title">Small QS tiles</string>
 	
 </resources>

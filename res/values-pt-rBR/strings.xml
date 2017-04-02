@@ -31,6 +31,7 @@
     <string name="statusbar_misc_title">Barra de estado diversos</string>
     <string name="navbar_title">barra de navegação</string>
     <string name="sound_title">Som</string>
+    <string name="quicksettings_title">Configurações rápidas</string>
 	
     <!-- Dialog -->
     <string name="venom_dialog_title">Ajude-nos a ajudá-lo!</string>
@@ -230,5 +231,8 @@
     <string name="power_notifications_vibrate_title">Vibrar</string>
     <string name="charging_sounds_ringtone_title">Som de notificação</string>
     <string name="charging_sounds_ringtone_silent">Silencioso</string>
+	
+    <!-- Quick settings tiles -->
+    <string name="sysui_qqs_count_title">Pequenas telhas QS</string>
 	
 </resources>
