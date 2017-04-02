@@ -238,4 +238,18 @@
     <string name="qs_rows_landscape_title">Fileiras (paisagem)</string>
     <string name="qs_columns_title">Colunas</string>
 	
+    <!-- Headers -->
+    <string name="status_bar_header_title">Cabeçalhos</string>
+    <string name="status_bar_custom_header_title">Imagem de cabeçalho personalizado</string>
+    <string name="status_bar_custom_header_summary">Ativar imagem no cabeçalho do painel de notificação</string>
+    <string name="daylight_header_pack_title">Pacote de imagens do cabeçalho</string>
+    <string name="status_bar_custom_header_shadow_title">Sombra de imagem de cabeçalho</string>
+    <string name="status_bar_custom_header_shadow_summary">Para melhor visibilidade nas imagens claras</string>
+    <string name="unit_percent">\u0025</string>
+    <string name="static_header_provider_title">Estático</string>
+    <string name="daylight_header_provider_title">Dinâmico</string>
+    <string name="custom_header_provider_title">Provedor de cabeçalho</string>
+    <string name="custom_header_browse_title">Procurar cabeçalhos instalados</string>
+    <string name="custom_header_browse_summary">Toque longo em qualquer imagem para usar para o modo estático</string>
+	
 </resources>
