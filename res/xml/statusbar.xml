@@ -52,6 +52,12 @@
             android:title="@string/statusbar_misc_title" />
 			
           <PreferenceScreen
+            android:key="carrier_label"
+            android:fragment="com.viper.venom.fragments.CarrierLabel"
+            android:layout="@layout/preference_carrierlabel"
+            android:title="@string/carrierlabel_title"/>
+	
+          <PreferenceScreen
             android:key="quicksettings"
             android:fragment="com.viper.venom.fragments.QuickSettings"
             android:layout="@layout/preference_quicksettings_settings"

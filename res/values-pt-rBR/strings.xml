@@ -33,6 +33,7 @@
     <string name="sound_title">Som</string>
     <string name="quicksettings_title">Configurações rápidas</string>
     <string name="recents_title">tela recentes</string>
+    <string name="carrierlabel_title">Rótulo da operadora</string>
 	
     <!-- Dialog -->
     <string name="venom_dialog_title">Ajude-nos a ajudá-lo!</string>
@@ -272,5 +273,22 @@
     <string name="recents_clear_all_location_bottom_right">Canto inferior direito</string>
     <string name="recents_clear_all_location_bottom_left">Inferior Esquerdo</string>
     <string name="recents_clear_all_location_bottom_center">Inferior central</string>
+	
+    <!-- Custom carrier label and position -->
+    <string name="carrier_label_settings_title">Rótulo da operadora</string>
+    <string name="carrier_label_settings_summary">Personalizar o rótulo da operadora</string>
+    <string name="custom_carrier_label_title">Personalizar rótulo da operadora</string>
+    <string name="custom_carrier_label_explain">Por favor, insira um novo rótulo. Deixe em branco para reverter para o original.</string>
+    <string name="custom_carrier_label_notset">Rótulo personalizado não definido</string>
+    <string name="show_carrier_title">Rótulo da operadora</string>
+    <string name="show_carrier_disabled">Desativado</string>
+    <string name="show_carrier_keyguard">Tela de bloqueio</string>
+    <string name="show_carrier_statusbar">Rótulo da operadora na barra de status</string>
+    <string name="show_carrier_enabled">Ativado</string>
+    <string name="status_bar_carrier_color">Cor</string>
+    <string name="status_bar_carrier_size">Tamanho do texto</string>
+    <string name="status_bar_carrier_color">Cor do rótulo da operadora</string>
+    <string name="status_bar_carrier_size">Tamanho do rótulo da operadora</string>
+    <string name="cancel">Cancelar</string>
 	
 </resources>
