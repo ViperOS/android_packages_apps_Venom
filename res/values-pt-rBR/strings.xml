@@ -234,5 +234,8 @@
 	
     <!-- Quick settings tiles -->
     <string name="sysui_qqs_count_title">Pequenas telhas QS</string>
+    <string name="qs_rows_portrait_title">Fileiras (retrato)</string>
+    <string name="qs_rows_landscape_title">Fileiras (paisagem)</string>
+    <string name="qs_columns_title">Colunas</string>
 	
 </resources>
