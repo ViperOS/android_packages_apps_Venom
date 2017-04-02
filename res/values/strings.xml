@@ -231,6 +231,7 @@
     <string name="charging_sounds_ringtone_silent">Silent</string>
 	
     <!-- Quick settings tiles -->
+    <string name="qs_tiles_category">Tiles</string>
     <string name="sysui_qqs_count_title">Small QS tiles</string>
     <string name="qs_rows_portrait_title">Rows (portrait)</string>
     <string name="qs_rows_landscape_title">Rows (landscape)</string>
@@ -251,5 +252,13 @@
     <string name="custom_header_provider_title">Header provider</string>
     <string name="custom_header_browse_title">Browse installed headers</string>
     <string name="custom_header_browse_summary">Long press on any image to use for static mode</string>
+	
+    <!-- OmniJaws -->
+    <string name="omnijaws_settings_title">OmniJaws</string>
+    <string name="omnijaws_settings_summary">Customize weather tile</string>
+    <string name="weather_config_title">Service settings</string>
+    <string name="weather_config_summary"></string>
+    <string name="weather_icon_pack_title">Condition icon pack</string>
+    <string name="weather_icon_pack_note">Note\u003a you can install new icon packs from play store by searching for \"Chronus icons\"</string>
 	
 </resources>

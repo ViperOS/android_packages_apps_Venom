@@ -233,6 +233,7 @@
     <string name="charging_sounds_ringtone_silent">Silencioso</string>
 	
     <!-- Quick settings tiles -->
+    <string name="qs_tiles_category">telhas</string>
     <string name="sysui_qqs_count_title">Pequenas telhas QS</string>
     <string name="qs_rows_portrait_title">Fileiras (retrato)</string>
     <string name="qs_rows_landscape_title">Fileiras (paisagem)</string>
@@ -251,5 +252,13 @@
     <string name="custom_header_provider_title">Provedor de cabeçalho</string>
     <string name="custom_header_browse_title">Procurar cabeçalhos instalados</string>
     <string name="custom_header_browse_summary">Toque longo em qualquer imagem para usar para o modo estático</string>
+	
+    <!-- OmniJaws -->
+    <string name="omnijaws_settings_title">OmniJaws</string>
+    <string name="omnijaws_settings_summary">Personalizar telha de tempo</string>
+    <string name="weather_config_title">Previsão do Tempo</string>
+    <string name="weather_config_summary"></string>
+    <string name="weather_icon_pack_title">Pacote de ícones climáticos</string>
+    <string name="weather_icon_pack_note">Nota\u003a Você pode instalar novos pacotes de ícones da play store procurando por \"Chronus icons\"</string>
 	
 </resources>
