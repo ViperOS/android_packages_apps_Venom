@@ -34,6 +34,7 @@
     <string name="quicksettings_title">Configurações rápidas</string>
     <string name="recents_title">tela recentes</string>
     <string name="carrierlabel_title">Rótulo da operadora</string>
+    <string name="lockscreen_ui_title">Tela de bloqueio</string>
 	
     <!-- Dialog -->
     <string name="venom_dialog_title">Ajude-nos a ajudá-lo!</string>
@@ -290,5 +291,45 @@
     <string name="status_bar_carrier_color">Cor do rótulo da operadora</string>
     <string name="status_bar_carrier_size">Tamanho do rótulo da operadora</string>
     <string name="cancel">Cancelar</string>
+	
+    <!-- Lockscreen weather -->
+    <string name="weather_category">Configurações de Clima</string>
+    <string name="display_category_weather_title">Clima na tela de bloqueio</string>
+    <string name="lock_screen_weather_settings_title">Opções de clima</string>
+    <string name="weather_cat_notifications_title">Notificações</string>
+    <string name="weather_show_weather_title">Mostrar clima</string>
+    <string name="weather_show_weather_summary">Habilitar para mostrar informações sobre o clima</string>
+    <string name="weather_show_location_title">Mostrar localização</string>
+    <string name="weather_show_location_summary">Habilitar para mostrar a localização</string>
+    <string name="weather_show_timestamp_title">Mostrar as Marcas de Clima</string>
+    <string name="weather_show_timestamp_summary">Habilitar para mostrar as marcas do clima</string>
+    <string name="weather_condition_icon_title">Ícone de condição</string>
+    <string name="weather_condition_icon_dlg_title">Escolha um ícone para exibir a condição meteorológica</string>
+    <string name="weather_condition_icon_monochrome_title">Monocromático</string>
+    <string name="weather_condition_icon_colored_title">Colorido</string>
+    <string name="weather_condition_icon_vclouds_title">VClouds</string>
+    <string name="icons_title">Ícones do clima</string>
+    <string name="position_right_title">Direita</string>
+    <string name="position_centered_title">Centralizado</string>
+    <string name="hidden_title">Escondido</string>
+    <string name="weather_hide_panel_title">Ocultar Painel de clima</string>
+    <string name="weather_hide_panel_dlg_title">Escolha quando o painel de clima deve ser ocultado</string>
+    <string name="weather_hide_panel_auto_title">Automático</string>
+    <string name="weather_hide_panel_custom_title">Customizado</string>
+    <string name="weather_hide_panel_never_title">Nunca</string>
+    <string name="weather_hide_panel_auto_summary">O painel de clima será ocultado, quando as notificações visíveis atingir o máximo permitido de notificações na tela de bloqueio</string>
+    <string name="weather_hide_panel_custom_summary">O painel de clima será ocultado, quando as notificações visíveis atingir o número escolhido de notificações (%s)</string>
+    <string name="weather_hide_panel_never_summary">O painel do clima não pode ser oculto</string>
+    <string name="weather_number_of_notifications_title">Número de notificações</string>
+	
+    <!-- Lock clock -->
+    <string name="lock_clock_title">Widget de relógio</string>
+    <string name="lock_clock_summary">Exibir ou alterar como o widget cLock será exibido na tela de bloqueio</string>
+    <string name="lock_clock_clock_section_title">Relógio e Alarme</string>
+    <string name="lock_clock_clock_section_summary">Configurar o relógio do widget cLock</string>
+    <string name="lock_clock_weather_section_title">Painel do tempo</string>
+    <string name="lock_clock_weather_section_summary">Configurar o tempo do widget cLock</string>
+    <string name="lock_clock_calendar_section_title">Eventos do calendário</string>
+    <string name="lock_clock_calendar_section_summary">Configurar os eventos do calendário do widget cLock</string>
 	
 </resources>

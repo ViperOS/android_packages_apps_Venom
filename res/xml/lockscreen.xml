@@ -21,5 +21,11 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
   
+          <PreferenceScreen
+            android:key="lockscreen"
+            android:fragment="com.viper.venom.fragments.LockscreenSettings"
+            android:layout="@layout/preference_lockscreen_settings"
+            android:title="@string/lockscreen_ui_title" />
+	
 </PreferenceScreen>
 
