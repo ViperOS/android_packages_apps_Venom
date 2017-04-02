@@ -38,7 +38,7 @@
                     android:targetClass="org.omnirom.omnistyle.BrowseHeaderActivity" />
         </PreferenceScreen>
 
-        <com.viper.venom.preference.CustomCustomSeekBarPreference
+        <com.viper.venom.preference.CustomSeekBarPreference
             android:key="status_bar_custom_header_shadow"
             android:title="@string/status_bar_custom_header_shadow_title"
             android:summary="@string/status_bar_custom_header_shadow_summary"

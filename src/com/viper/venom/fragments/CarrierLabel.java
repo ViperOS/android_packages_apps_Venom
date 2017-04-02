@@ -86,7 +86,7 @@ public class CarrierLabel extends SettingsPreferenceFragment
 
         mStatusBarCarrierSize = (CustomSeekBarPreference) findPreference(STATUS_BAR_CARRIER_FONT_SIZE);
         int StatusBarCarrierSize = Settings.System.getInt(resolver,
-                Settings.System.STATUS_BAR_CARRIER_FONT_SIZE, 10);
+                Settings.System.STATUS_BAR_CARRIER_FONT_SIZE, 14);
         mStatusBarCarrierSize.setValue(StatusBarCarrierSize / 1);
         mStatusBarCarrierSize.setOnPreferenceChangeListener(this);
 
