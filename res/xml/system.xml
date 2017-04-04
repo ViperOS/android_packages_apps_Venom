@@ -22,6 +22,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
          <PreferenceScreen
+            android:key="daynight"
+            android:fragment="com.viper.venom.fragments.DayNightSettings"
+            android:layout="@layout/preference_daynight"
+            android:title="@string/daynight_title" />
+	
+         <PreferenceScreen
             android:key="buttons"
             android:fragment="com.viper.venom.fragments.ButtonSettings"
             android:layout="@layout/preference_buttons_settings"

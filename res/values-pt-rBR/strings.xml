@@ -331,5 +331,31 @@
     <string name="lock_clock_weather_section_summary">Configurar o tempo do widget cLock</string>
     <string name="lock_clock_calendar_section_title">Eventos do calendário</string>
     <string name="lock_clock_calendar_section_summary">Configurar os eventos do calendário do widget cLock</string>
-	
+
+    <!-- Day/Night -->
+    <string name="daynight_title">Recursos do tema</string>
+    <string name="daynight_header_title">Recursos do tema</string>
+
+    <!-- Sound & display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
+    <string name="night_mode_title">Recursos do tema</string>
+    <!-- Sound & display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
+    <string name="night_mode_summary">%s</string>
+    <!-- Sound & display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
+    <string name="night_mode_no">Claro</string>
+    <!-- Sound & display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
+    <string name="night_mode_yes">Viper escuro</string>
+    <!-- Sound & display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
+    <string name="night_mode_auto">Automático</string>
+    <string name="keywords_display_night_mode">tema escuro modo noite escurecimento da tela inverter brilho</string>
+
+    <!-- Doze invert -->
+    <string name="doze_notification_color_invert_title">Inversão de notificação de ambiente</string>
+    <string name="doze_notification_color_invert_summary_off">As notificações de ambiente não serão invertidas</string>
+    <string name="doze_notification_color_invert_summary_on">As notificações de ambiente serão invertidas</string>
+
+   <!-- Dynamic notification tint -->
+   <string name="notification_tint_title">Cor do título da notificação dinâmica</string>
+   <string name="notification_tint_summary_off">A cor do título na notificação será tratada pelo tema</string>
+   <string name="notification_tint_summary_on">A cor do título na notificação será tirada da cor do ícone do aplicativo</string>
+  
 </resources>
