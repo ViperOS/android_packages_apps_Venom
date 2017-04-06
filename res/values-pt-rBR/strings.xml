@@ -358,4 +358,8 @@
    <string name="notification_tint_summary_off">A cor do título na notificação será tratada pelo tema</string>
    <string name="notification_tint_summary_on">A cor do título na notificação será tirada da cor do ícone do aplicativo</string>
   
+   <!-- Battery Tile -->
+   <string name="status_bar_battery_style_tile_title">Estilo personalizado do tile da bateria</string>
+   <string name="status_bar_battery_style_tile_summary">Permite definir o mesmo estilo de ícone escolhido para a bateria de barra de status</string>
+  
 </resources>

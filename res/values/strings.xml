@@ -357,5 +357,9 @@
    <string name="notification_tint_title">Dynamic notification title color</string>
    <string name="notification_tint_summary_off">Title color on notification will be handled by the theme</string>
    <string name="notification_tint_summary_on">Title color on notification will be taken from app icon color</string> 
-	
+
+   <!-- Battery Tile -->
+   <string name="status_bar_battery_style_tile_title">Custom battery tile style</string>
+   <string name="status_bar_battery_style_tile_summary">Allow to set the same icon style chosen for the statusbar battery</string>
+   
 </resources>
