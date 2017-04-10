@@ -600,5 +600,8 @@
     <string name="text_title">Text</string>
     <string name="icon_title">Icon</string>
     <string name="values_restored_title">Values restored</string>
+    <string name="ticker_disabled">No ticker</string>
+    <string name="ticker_enabled">Notification ticker</string>
+    <string name="ticker_media_enabled">Notifications and music ticker</string>
 
 </resources>
