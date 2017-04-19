@@ -17,6 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Tabs -->
+    <string name="about_category">About</string>
     <string name="system_category">System</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="statusbar_category">Status Bar</string>
@@ -362,4 +363,17 @@
    <string name="status_bar_battery_style_tile_title">Custom battery tile style</string>
    <string name="status_bar_battery_style_tile_summary">Allow to set the same icon style chosen for the statusbar battery</string>
    
+    <!-- About Viper -->
+    <string name="about_viper">About Viper</string>
+	
+    <!-- Changelog -->
+    <string name="changelog_viper_title">Changelog</string>
+    <string name="changelog_viper_summary">View recent changes in ROM</string>
+    <string name="changelog_viper_error">Unable to load changelog</string>
+
+    <!-- Maintainers -->
+    <string name="maintainers_viper_title">Devices and maintainers</string>
+    <string name="maintainers_viper_summary">List of supported devices and their official maintainers</string>
+    <string name="maintainers_viper_error">Unable to load devices and maintainers list</string>
+	
 </resources>

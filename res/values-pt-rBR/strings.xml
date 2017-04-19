@@ -17,6 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Tabs -->
+    <string name="about_category">Sobre</string>
     <string name="system_category">Sistema</string>
     <string name="lockscreen_category">Tela de bloqueio</string>
     <string name="statusbar_category">Barra de estado</string>
@@ -362,4 +363,15 @@
    <string name="status_bar_battery_style_tile_title">Estilo personalizado do tile da bateria</string>
    <string name="status_bar_battery_style_tile_summary">Permite definir o mesmo estilo de ícone escolhido para a bateria de barra de status</string>
   
+   <!-- About Viper -->
+   <string name="about_viper">Sobre a Viper</string>
+   <!-- Changelog -->
+   <string name="changelog_viper_title">Log de mudanças</string>
+   <string name="changelog_viper_summary">Ver as mudanças recentes</string>
+   <string name="changelog_viper_error">Não foi possível carregar o changelog</string>
+   <!-- Maintainers -->
+   <string name="maintainers_viper_title">Mantenedores da Viper</string>
+   <string name="maintainers_viper_summary">Lista de dispositivos suportados e seus mantenedores oficiais</string>
+   <string name="maintainers_viper_error">Não é possível carregar a lista de mantenedores</string>
+	
 </resources>

@@ -52,6 +52,7 @@ import com.viper.venom.tabs.Lockscreen;
 import com.viper.venom.tabs.Navigation;
 import com.viper.venom.tabs.MultiTasking;
 import com.viper.venom.tabs.System;
+import com.viper.venom.tabs.About;
 import com.viper.venom.PagerSlidingTabStrip;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -178,6 +179,7 @@ public class Venom extends SettingsPreferenceFragment {
             frags[2] = new Navigation();
             frags[3] = new MultiTasking();
             frags[4] = new System();
+            frags[5] = new About();
         }
 
         @Override
@@ -203,7 +205,8 @@ public class Venom extends SettingsPreferenceFragment {
                     getString(R.string.lockscreen_category),
                     getString(R.string.navigation_category),
                     getString(R.string.multitasking_category),
-                    getString(R.string.system_category)};
+                    getString(R.string.system_category),
+                    getString(R.string.about_category)};
         return titleString;
     }
 }

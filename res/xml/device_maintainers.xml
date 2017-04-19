@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2017 crDroid Android Project
+     Copyright (C) 2017 ViperOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/about_viper">
+
+    <!-- ANDROİD ONE
+    <PreferenceCategory
+        android:title="@string/device_category_one_title">
+
+    </PreferenceCategory> -->
+
+    <!-- BQ
+    <PreferenceCategory
+        android:title="@string/device_category_bq_title">
+
+    </PreferenceCategory> -->
+
+    <!-- ASUS
+    <PreferenceCategory
+        android:title="@string/device_category_asus_title">
+
+    </PreferenceCategory> -->
+
+    <!-- HTC
+    <PreferenceCategory
+        android:title="@string/device_category_htc_title">
+
+    </PreferenceCategory> -->
+
+    <!-- HUAWEİ
+    <PreferenceCategory
+        android:title="@string/device_category_huawei_title">
+
+    </PreferenceCategory> -->
+
+    <!-- GOOGLE
+    <PreferenceCategory
+        android:title="@string/device_category_google_title">
+
+    </PreferenceCategory> -->
+
+    <!-- LeEco
+    <PreferenceCategory
+        android:title="@string/device_category_leeco_title">
+
+    </PreferenceCategory> -->
+
+    <!-- LENOVO
+    <PreferenceCategory
+        android:title="@string/device_category_lenovo_title">
+
+    </PreferenceCategory> -->
+
+    <!-- LG
+    <PreferenceCategory
+        android:title="@string/device_category_lg_title">
+
+    </PreferenceCategory> -->
+
+    <!-- MOTOROLA -->
+    <PreferenceCategory
+        android:title="@string/device_category_motorola_title">
+
+        <Preference
+            android:id="@+id/device_moto_osprey"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_moto_osprey"
+            android:summary="@string/device_moto_osprey_summary"
+            android:selectable="false" />
+
+        <Preference
+            android:id="@+id/device_moto_victara"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_moto_victara"
+            android:summary="@string/device_moto_victara_summary"
+            android:selectable="false" />
+    </PreferenceCategory>
+
+    <!-- NEXTBIT
+    <PreferenceCategory
+        android:title="@string/device_category_nextbit_title">
+
+    </PreferenceCategory> -->
+
+    <!-- NVİDİA
+    <PreferenceCategory
+        android:title="@string/device_category_nvidia_title">
+
+    </PreferenceCategory> -->
+
+    <!-- ONEPLUS -->
+    <PreferenceCategory
+        android:title="@string/device_category_oneplus_title">
+
+        <Preference
+            android:id="@+id/device_oneplus_oneplus3"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_oneplus_oneplus3"
+            android:summary="@string/device_oneplus_oneplus3_summary"
+            android:selectable="false" />
+    </PreferenceCategory>
+
+    <!-- OPPO
+    <PreferenceCategory
+        android:title="@string/device_category_oppo_title">
+
+    </PreferenceCategory> -->
+
+    <!-- SAMSUNG
+    <PreferenceCategory
+        android:title="@string/device_category_samsung_title">
+
+    </PreferenceCategory> -->
+
+    <!-- SONY
+    <PreferenceCategory
+        android:title="@string/device_category_sony_title">
+
+    </PreferenceCategory> -->
+
+    <!-- WİLEYFOX
+    <PreferenceCategory
+        android:title="@string/device_category_wileyfox_title">
+
+    </PreferenceCategory> -->
+
+    <!-- XIAOMI
+    <PreferenceCategory
+        android:title="@string/device_category_xiaomi_title">
+
+    </PreferenceCategory> -->
+
+    <!-- YU
+    <PreferenceCategory
+        android:title="@string/device_category_yu_title">
+
+    </PreferenceCategory> -->
+	
+</PreferenceScreen>
