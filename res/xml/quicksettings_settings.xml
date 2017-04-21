@@ -93,4 +93,23 @@
             android:persistent="false" />
     </PreferenceCategory>
 	
+    <PreferenceCategory 
+         android:title="@string/qs_misc_category">
+		
+        <com.viper.venom.preference.SecureSettingSwitchPreference
+            android:key="qs_show_brightness"
+            android:icon="@drawable/brightness_icon"
+            android:title="@string/qs_brightness_slider_title"
+            android:summary="@string/qs_brightness_slider_summary"
+            android:defaultValue="true"/>
+
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="qs_show_brightness_icon"
+            android:icon="@drawable/brightness_auto_icon"
+            android:title="@string/brightness_icon_title"
+            android:summary="@string/brightness_icon_summary"
+            android:dependency="qs_show_brightness"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+	
 </PreferenceScreen>

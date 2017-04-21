@@ -374,4 +374,12 @@
    <string name="maintainers_viper_summary">Lista de dispositivos suportados e seus mantenedores oficiais</string>
    <string name="maintainers_viper_error">Não é possível carregar a lista de mantenedores</string>
 	
+   <!-- Quick settings brightness slider -->
+   <string name="qs_misc_category">Diversos</string>
+   <string name="qs_brightness_slider_title">Controle de Brilho</string>
+   <string name="qs_brightness_slider_summary">Ativar/ Desativar o controle de brilho nas Configurações Rápidas</string>
+   <!-- Quick settings brightness icon -->
+   <string name="brightness_icon_title">Ícone de Brilho </string>
+   <string name="brightness_icon_summary">Ativar desativar o ícone de brilho existente ao lado do controle deslizante de brilho</string>
+	
 </resources>
