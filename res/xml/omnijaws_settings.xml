@@ -20,6 +20,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceScreen
+        android:icon="@drawable/weather_icon"
         android:title="@string/weather_config_title"
         android:summary="@string/weather_config_summary" >
         <intent android:action="android.intent.action.MAIN"
@@ -29,6 +30,7 @@
 
     <ListPreference
         android:key="weather_icon_pack"
+		android:icon="@drawable/icon_pack"
         android:title="@string/weather_icon_pack_title"
         android:persistent="false" />
 

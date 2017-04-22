@@ -6,6 +6,7 @@
 
     <cyanogenmod.preference.CMSystemSettingListPreference
         android:key="status_bar_clock"
+        android:icon="@drawable/clock_icon"
         android:title="@string/status_bar_clock_position_title"
         android:summary="%s"
         android:dialogTitle="@string/status_bar_clock_position_title"
@@ -15,6 +16,7 @@
 
     <cyanogenmod.preference.CMSystemSettingListPreference
         android:key="status_bar_am_pm"
+        android:icon="@drawable/night_icon"
         android:title="@string/status_bar_am_pm_title"
         android:summary="%s"
         android:dialogTitle="@string/status_bar_am_pm_title"
@@ -24,6 +26,7 @@
 
     <cyanogenmod.preference.CMSystemSettingListPreference
         android:key="status_bar_date"
+		android:icon="@drawable/calendar_icon"
         android:title="@string/status_bar_date_title"
         android:dialogTitle="@string/status_bar_date_title"
         android:entries="@array/status_bar_date_entries"
@@ -32,6 +35,7 @@
 
     <cyanogenmod.preference.CMSystemSettingListPreference
         android:key="status_bar_date_style"
+	    android:icon="@drawable/calendar_icon"
         android:title="@string/status_bar_date_style"
         android:dialogTitle="@string/status_bar_date_style"
         android:entries="@array/status_bar_date_style_entries"
@@ -40,6 +44,7 @@
 
     <cyanogenmod.preference.CMSystemSettingListPreference
         android:key="status_bar_date_format"
+		android:icon="@drawable/calendar_icon"
         android:title="@string/status_bar_date_format_title"
         android:dialogTitle="@string/status_bar_date_format_title"
         android:entries="@array/status_bar_date_format_entries_values"
