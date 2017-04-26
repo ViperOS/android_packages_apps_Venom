@@ -18,6 +18,11 @@ package com.viper.venom.fragments;
 
 import android.app.ActivityManagerNative;
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.ResolveInfo;
+import android.content.res.Configuration;
+import android.database.Cursor;
+import android.net.Uri;
 import android.content.ContentResolver;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
@@ -39,6 +44,10 @@ import android.view.IWindowManager;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
@@ -54,21 +63,22 @@ import android.hardware.fingerprint.FingerprintManager;
 
 public class LockscreenSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
-
-    private static final String PREF_CONDITION_ICON =
-            "weather_condition_icon";
     private static final String PREF_HIDE_WEATHER =
             "weather_hide_panel";
     private static final String PREF_NUMBER_OF_NOTIFICATIONS =
             "weather_number_of_notifications";
-    private static final String KEY_LOCK_CLOCK =
-            "lock_clock";
     private static final String FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib";
     private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
 
-    private static final int MONOCHROME_ICON = 0;
+    private static final String KEY_OMNIJAWS = "omnijaws";
 
-    private ListPreference mConditionIcon;
+    private static final String WEATHER_ICON_PACK = "weather_icon_pack";
+    private static final String DEFAULT_WEATHER_ICON_PACKAGE = "org.omnirom.omnijaws";
+    private static final String CHRONUS_ICON_PACK_INTENT = "com.dvtonder.chronus.ICON_PACK";
+    private static final String WEATHER_SERVICE_PACKAGE = "org.omnirom.omnijaws";
+
+
+    private ListPreference mWeatherIconPack;
     private ListPreference mHideWeather;
     private CustomSeekBarPreference mNumberOfNotifications;
     private FingerprintManager mFingerprintManager;
@@ -88,19 +98,6 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements On
         mResolver = getActivity().getContentResolver();
         PreferenceScreen prefs = getPreferenceScreen();
 
-        // Remove the lock clock preference if its not installed
-        if (!isPackageInstalled("com.cyanogenmod.lockclock")) {
-            removePreference(KEY_LOCK_CLOCK);
-        }
-		
-        mConditionIcon =
-                (ListPreference) findPreference(PREF_CONDITION_ICON);
-        int conditionIcon = Settings.System.getInt(mResolver,
-               Settings.System.LOCK_SCREEN_WEATHER_CONDITION_ICON, MONOCHROME_ICON);
-        mConditionIcon.setValue(String.valueOf(conditionIcon));
-        mConditionIcon.setSummary(mConditionIcon.getEntry());
-        mConditionIcon.setOnPreferenceChangeListener(this);
-
         mHideWeather =
                 (ListPreference) findPreference(PREF_HIDE_WEATHER);
         int hideWeather = Settings.System.getInt(mResolver,
@@ -114,8 +111,11 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements On
                 Settings.System.LOCK_SCREEN_WEATHER_NUMBER_OF_NOTIFICATIONS, 4);
         mNumberOfNotifications.setValue(numberOfNotifications);
         mNumberOfNotifications.setOnPreferenceChangeListener(this);
+        if (!isOmniJawsServiceInstalled())
+            getPreferenceScreen().removePreference(findPreference(KEY_OMNIJAWS));
 
         updatePreference();
+        initweather();
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_SUCCESS_VIB);
@@ -164,20 +164,20 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements On
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mConditionIcon) {
-            int intValue = Integer.valueOf((String) newValue);
-            int index = mConditionIcon.findIndexOfValue((String) newValue);
-            Settings.System.putInt(mResolver,
-                    Settings.System.LOCK_SCREEN_WEATHER_CONDITION_ICON, intValue);
-            mConditionIcon.setSummary(mConditionIcon.getEntries()[index]);
-            return true;
-        } else if (preference == mHideWeather) {
+        if (preference == mHideWeather) {
             int intValue = Integer.valueOf((String) newValue);
             int index = mHideWeather.findIndexOfValue((String) newValue);
             Settings.System.putInt(mResolver,
                     Settings.System.LOCK_SCREEN_WEATHER_HIDE_PANEL, intValue);
             updatePreference();
             return true;
+        } else if (preference == mWeatherIconPack) {
+                String value = (String) newValue;
+                Settings.System.putString(getContentResolver(),
+                    Settings.System.OMNIJAWS_WEATHER_ICON_PACK, value);
+                int valueIndex = mWeatherIconPack.findIndexOfValue(value);
+                mWeatherIconPack.setSummary(mWeatherIconPack.getEntries()[valueIndex]);
+               return true;
         } else if (preference == mNumberOfNotifications) {
             int numberOfNotifications = (Integer) newValue;
             Settings.System.putInt(getActivity().getContentResolver(),
@@ -197,6 +197,93 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements On
         }
         return false;
     }
+
+    private boolean isOmniJawsServiceInstalled() {
+        return isPackageInstalled(WEATHER_SERVICE_PACKAGE);
+    }
+
+    public void initweather() {
+        String settingsJaws = Settings.System.getString(getContentResolver(),
+             Settings.System.OMNIJAWS_WEATHER_ICON_PACK);
+         if (settingsJaws == null) {
+             settingsJaws = DEFAULT_WEATHER_ICON_PACKAGE;
+         }
+         mWeatherIconPack = (ListPreference) findPreference(WEATHER_ICON_PACK);
+
+         List<String> entriesJaws = new ArrayList<String>();
+         List<String> valuesJaws = new ArrayList<String>();
+         getAvailableWeatherIconPacks(entriesJaws, valuesJaws);
+         mWeatherIconPack.setEntries(entriesJaws.toArray(new String[entriesJaws.size()]));
+         mWeatherIconPack.setEntryValues(valuesJaws.toArray(new String[valuesJaws.size()]));
+
+         int valueJawsIndex = mWeatherIconPack.findIndexOfValue(settingsJaws);
+         if (valueJawsIndex == -1) {
+             // no longer found
+             settingsJaws = DEFAULT_WEATHER_ICON_PACKAGE;
+             Settings.System.putString(getContentResolver(),
+                     Settings.System.OMNIJAWS_WEATHER_ICON_PACK, settingsJaws);
+             valueJawsIndex = mWeatherIconPack.findIndexOfValue(settingsJaws);
+         }
+         mWeatherIconPack.setValueIndex(valueJawsIndex >= 0 ? valueJawsIndex : 0);
+         mWeatherIconPack.setSummary(mWeatherIconPack.getEntry());
+         mWeatherIconPack.setOnPreferenceChangeListener(this);
+    }
+
+     private void getAvailableWeatherIconPacks(List<String> entries, List<String> values) {
+         Intent i = new Intent();
+         PackageManager packageManager = getPackageManager();
+         i.setAction("org.omnirom.WeatherIconPack");
+         for (ResolveInfo r : packageManager.queryIntentActivities(i, 0)) {
+             String packageName = r.activityInfo.packageName;
+             Log.d("maxwen", packageName);
+             if (packageName.equals(DEFAULT_WEATHER_ICON_PACKAGE)) {
+                 values.add(0, r.activityInfo.name);
+             } else {
+                 values.add(r.activityInfo.name);
+             }
+             String label = r.activityInfo.loadLabel(getPackageManager()).toString();
+             if (label == null) {
+                 label = r.activityInfo.packageName;
+             }
+             if (packageName.equals(DEFAULT_WEATHER_ICON_PACKAGE)) {
+                 entries.add(0, label);
+             } else {
+                 entries.add(label);
+             }
+         }
+         i = new Intent(Intent.ACTION_MAIN);
+         i.addCategory(CHRONUS_ICON_PACK_INTENT);
+         for (ResolveInfo r : packageManager.queryIntentActivities(i, 0)) {
+             String packageName = r.activityInfo.packageName;
+             values.add(packageName + ".weather");
+             String label = r.activityInfo.loadLabel(getPackageManager()).toString();
+             if (label == null) {
+                 label = r.activityInfo.packageName;
+             }
+             entries.add(label);
+         }
+     }
+
+     private boolean isOmniJawsEnabled() {
+         final Uri SETTINGS_URI
+             = Uri.parse("content://org.omnirom.omnijaws.provider/settings");
+
+         final String[] SETTINGS_PROJECTION = new String[] {
+             "enabled"
+         };
+
+         final Cursor c = getContentResolver().query(SETTINGS_URI, SETTINGS_PROJECTION,
+                 null, null, null);
+         if (c != null) {
+             int count = c.getCount();
+             if (count == 1) {
+                 c.moveToPosition(0);
+                 boolean enabled = c.getInt(0) == 1;
+                 return enabled;
+             }
+         }
+         return true;
+     }
 	
     private boolean isPackageInstalled(String packageName) {
         PackageManager pm = getPackageManager();
