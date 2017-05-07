@@ -555,4 +555,8 @@
     <string name="lockscreen_hide_status_bar_title">Status bar</string>
     <string name="lockscreen_hide_status_bar_summary">Display status bar on lock screen</string>
 
+    <!-- Toast icon -->
+    <string name="toast_icon_title">Toast icon</string>
+    <string name="toast_icon_summary">Display icon of activity that generates toast message</string>
+
 </resources>
