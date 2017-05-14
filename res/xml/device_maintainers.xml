@@ -79,12 +79,33 @@
         android:title="@string/device_category_motorola_title">
 
         <Preference
+            android:id="@+id/device_moto_falcon"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_moto_falcon"
+            android:summary="@string/device_moto_falcon_summary"
+            android:selectable="false" />
+		
+        <Preference
+            android:id="@+id/device_moto_titan"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_moto_titan"
+            android:summary="@string/device_moto_titan_summary"
+            android:selectable="false" />
+		
+        <Preference
             android:id="@+id/device_moto_osprey"
             android:icon="@drawable/phone_tint"
             android:title="@string/device_moto_osprey"
             android:summary="@string/device_moto_osprey_summary"
             android:selectable="false" />
 
+        <Preference
+            android:id="@+id/device_moto_clark"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_moto_clark"
+            android:summary="@string/device_moto_clark_summary"
+            android:selectable="false" />
+		
         <Preference
             android:id="@+id/device_moto_victara"
             android:icon="@drawable/phone_tint"
