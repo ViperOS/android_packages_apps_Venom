@@ -63,8 +63,11 @@
     <string name="device_moto_osprey">Moto G 2015</string>
     <string name="device_moto_osprey_summary">osprey \nMaintainer - Jonathan Bruno (JBCDroid)</string>
 
+    <string name="device_moto_clark">Moto X Style</string>
+    <string name="device_moto_clark_summary">clark\nMaintainer - Gustavo Campos (BIRDMan)</string>
+
     <string name="device_moto_victara">Moto X 2014</string>
-    <string name="device_moto_victara_summary">victara\nMaintainer - Gustavo Campos (BirdmanJ)</string>
+    <string name="device_moto_victara_summary">victara\nMaintainer - Gustavo Campos (BIRDMan)</string>
 
     <!-- NEXTBIT -->
 
@@ -72,7 +75,7 @@
 
     <!-- ONEPLUS -->
     <string name="device_oneplus_oneplus3">OnePlus Three</string>
-    <string name="device_oneplus_oneplus3_summary">oneplus3\nMaintainer - Gustavo Campos (BirdmanJ)</string>
+    <string name="device_oneplus_oneplus3_summary">oneplus3\nMaintainer - Gustavo Campos (BIRDMan)</string>
 
 
     <!-- OPPO -->
