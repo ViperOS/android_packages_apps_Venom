@@ -21,6 +21,7 @@
 
     <ListPreference
         android:key="network_traffic_state"
+        android:icon="@drawable/traffic_state"
         android:title="@string/show_network_traffic_state"
         android:entries="@array/show_network_traffic_state_entries"
         android:entryValues="@array/show_network_traffic_state_values"
@@ -28,6 +29,7 @@
 
     <ListPreference
         android:key="network_traffic_unit"
+        android:icon="@drawable/traffic_unit"
         android:title="@string/show_network_traffic_unit"
         android:entries="@array/show_network_traffic_unit_entries"
         android:entryValues="@array/show_network_traffic_unit_values"
@@ -36,6 +38,7 @@
 
     <ListPreference
         android:key="network_traffic_period"
+        android:icon="@drawable/traffic_period"
         android:title="@string/show_network_traffic_frequency"
         android:entries="@array/show_network_traffic_frequency_entries"
         android:entryValues="@array/show_network_traffic_frequency_values"
@@ -44,6 +47,7 @@
 
     <com.viper.venom.preference.SystemSettingSwitchPreference
         android:key="network_traffic_autohide"
+        android:icon="@drawable/hide_panel"
         android:title="@string/network_traffic_autohide"
         android:summary="@string/network_traffic_autohide_summary"
         android:dependency="network_traffic_state"
