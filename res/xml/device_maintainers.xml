@@ -136,13 +136,6 @@
             android:title="@string/device_oneplus_oneplus3"
             android:summary="@string/device_oneplus_oneplus3_summary"
             android:selectable="false" />
-	
-        <Preference
-            android:id="@+id/device_oneplus_oneplus3t"
-            android:icon="@drawable/phone_tint"
-            android:title="@string/device_oneplus_oneplus3t"
-            android:summary="@string/device_oneplus_oneplus3t_summary"
-            android:selectable="false" />
     </PreferenceCategory>
 
     <!-- OPPO
