@@ -79,6 +79,9 @@
     <!-- ONEPLUS -->
     <string name="device_oneplus_oneplus3">OnePlus Three</string>
     <string name="device_oneplus_oneplus3_summary">oneplus3\nMaintainer - Gustavo Campos (BIRDMan)</string>
+	
+    <string name="device_oneplus_oneplus3t">OnePlus 3T</string>
+    <string name="device_oneplus_oneplus3t_summary">oneplus3t\nMaintainer - Rafael Marchetto (Marchetto96)</string>
 
 
     <!-- OPPO -->
