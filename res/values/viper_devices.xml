@@ -90,6 +90,9 @@
 
     <!-- XIAOMI -->
 
+    <string name="device_xiaomi_redmi2">Redmi 2</string>
+    <string name="device_xiaomi_redmi2_summary">redmi2\nMaintainer - Carlos Arriaga</string>
+	
     <!-- YU -->
 	
 </resources>
