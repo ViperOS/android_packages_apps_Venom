@@ -172,11 +172,17 @@
 
     </PreferenceCategory> -->
 
-    <!-- SAMSUNG
+    <!-- SAMSUNG -->
     <PreferenceCategory
         android:title="@string/device_category_samsung_title">
 
-    </PreferenceCategory> -->
+        <Preference
+            android:id="@+id/device_samsung_j5ltexx"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_samsung_j5ltexx"
+            android:summary="@string/device_samsung_j5ltexx_summary"
+            android:selectable="false" />
+    </PreferenceCategory>
 
     <!-- SONY
     <PreferenceCategory
@@ -190,11 +196,17 @@
 
     </PreferenceCategory> -->
 
-    <!-- XIAOMI
+    <!-- XIAOMI -->
     <PreferenceCategory
         android:title="@string/device_category_xiaomi_title">
 
-    </PreferenceCategory> -->
+        <Preference
+            android:id="@+id/device_xiaomi_ido"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_xiaomi_ido"
+            android:summary="@string/device_xiaomi_ido_summary"
+            android:selectable="false" />
+    </PreferenceCategory>
 
     <!-- YU
     <PreferenceCategory

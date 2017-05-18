@@ -97,12 +97,16 @@
     <!-- OPPO -->
 
     <!-- SAMSUNG -->
+    <string name="device_samsung_j5ltexx">Samsung Galaxy J5</string>
+    <string name="device_samsung_j5ltexx_summary">j5ltexx\nMaintainer - Esrom Cataneo (EsromG5)</string>
 
     <!-- SONY -->
 
     <!-- WİLEYFOX -->
 
     <!-- XIAOMI -->
+    <string name="device_xiaomi_ido">Redmi 3</string>
+    <string name="device_xiaomi_ido_summary">ido\nMaintainer - Esrom Cataneo (EsromG5)</string>
 	
     <!-- YU -->
 	
