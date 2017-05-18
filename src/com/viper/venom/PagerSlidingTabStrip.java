@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.dutweaks;
+package com.viper.venom;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -156,8 +156,8 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         TypedArray a = context.obtainStyledAttributes(attrs, ATTRS);
         tabTextSize = a.getDimensionPixelSize(TEXT_SIZE_INDEX, tabTextSize);
         ColorStateList colorStateList = a.getColorStateList(TEXT_COLOR_INDEX);
-        int textPrimaryColor = context.getResources().getColor(R.color.material_deep_teal_500);
-        int tabTextColor = context.getResources().getColor(R.color.material_deep_teal_500);
+        int textPrimaryColor = context.getResources().getColor(R.color.theme_accent);
+        int tabTextColor = context.getResources().getColor(R.color.theme_accent);
 
         underlineColor = textPrimaryColor;
         dividerColor = textPrimaryColor;

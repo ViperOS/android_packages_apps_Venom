@@ -23,7 +23,7 @@
     android:orientation="vertical"
     android:fitsSystemWindows="true">
 
-    <com.dirtyunicorns.dutweaks.PagerSlidingTabStrip
+    <com.viper.venom.PagerSlidingTabStrip
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="48dp" />
@@ -33,6 +33,6 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        tools:context=".DirtyTweaks"/>
+        tools:context=".Venom"/>
 
 </LinearLayout>

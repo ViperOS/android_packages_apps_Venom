@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.dutweaks.tabs;
+package com.viper.venom.tabs;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -49,7 +49,7 @@ public class Navigation extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.DIRTYTWEAKS;
+        return MetricsEvent.VENOM;
     }
 
     @Override
