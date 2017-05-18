@@ -162,18 +162,11 @@
 
     </PreferenceCategory> -->
 
-    <!-- XIAOMI -->
+    <!-- XIAOMI
     <PreferenceCategory
         android:title="@string/device_category_xiaomi_title">
 
-        <Preference
-            android:id="@+id/device_xiaomi_redmi2"
-            android:icon="@drawable/phone_tint"
-            android:title="@string/device_xiaomi_redmi2"
-            android:summary="@string/device_xiaomi_redmi2_summary"
-            android:selectable="false" />
-
-    </PreferenceCategory>
+    </PreferenceCategory> -->
 
     <!-- YU
     <PreferenceCategory
