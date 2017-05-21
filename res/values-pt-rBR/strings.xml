@@ -20,7 +20,7 @@
     <string name="about_category">Sobre</string>
     <string name="system_category">Sistema</string>
     <string name="lockscreen_category">Tela de bloqueio</string>
-    <string name="statusbar_category">Barra de estado</string>
+    <string name="statusbar_category">Barra de status</string>
     <string name="navigation_category">Navegação</string>
     <string name="multitasking_category">Multitarefa</string>
 
@@ -28,29 +28,30 @@
     <string name="battery_title">Bateria</string>
     <string name="buttons_title">Botões</string>
     <string name="statusbar_clock_title">Relógio &amp; Data</string>
-    <string name="statusbar_items_title">Itens da barra de estado</string>
-    <string name="statusbar_misc_title">Barra de estado diversos</string>
-    <string name="navbar_title">barra de navegação</string>
+    <string name="statusbar_items_title">Itens da barra de status</string>
+    <string name="statusbar_misc_title">Outras configurações</string>
+    <string name="navbar_title">Barra de navegação</string>
     <string name="sound_title">Som</string>
     <string name="quicksettings_title">Configurações rápidas</string>
-    <string name="recents_title">tela recentes</string>
+    <string name="traffic_category">Indicador de tráfego de rede</string>
+    <string name="recents_title">Recentes</string>
     <string name="carrierlabel_title">Rótulo da operadora</string>
     <string name="lockscreen_ui_title">Tela de bloqueio</string>
 	
     <!-- Dialog -->
     <string name="venom_dialog_title">Ajude-nos a ajudá-lo!</string>
     <string name="venom_dialog_message">Se você encontrar um bug com qualquer uma dessas configurações, poste na seção Relatórios de Bug de nossa página do Google+. Você deve incluir o seguinte quando publicar um relatório de bug:\n\n1. Um logcat ou last_kmsg\n2. Kernel e mods utilizados\n3. Informações úteis\n\nSe você não relatar algo adequadamente, NÃO espere que as coisas sejam corrigidas.</string>
-    <string name="venom_dialog_toast">LEIA A COISA TODA!</string>
+    <string name="venom_dialog_toast">LEIA TUDO!</string>
 
     <!-- Power Menu -->
     <string name="powermenu_category">Menu de Energia</string>
     <string name="powermenu_screenshot">Captura de tela</string>
-    <string name="powermenu_screenrecord">Registro da tela</string>
-    <string name="powermenu_power">Poder</string>
+    <string name="powermenu_screenrecord">Gravar tela</string>
+    <string name="powermenu_power">Desligar</string>
     <string name="powermenu_reboot">Reinicializar</string>
-    <string name="powermenu_airplane">Avião</string>
+    <string name="powermenu_airplane">Modo avião</string>
     <string name="powermenu_settings">Configurações</string>
-    <string name="powermenu_lockdown">Travar para baixo</string>
+    <string name="powermenu_lockdown">Bloquear tela</string>
     <string name="powermenu_soundpanel">Painel de Som</string>
 
     <!-- Advanced reboot options -->
@@ -64,7 +65,7 @@
     <!-- Color Picker -->
     <string name="dialog_color_picker">Selecionador de cores</string>
     <string name="press_color_to_apply">Pressione a cor abaixo para aplicar</string>
-    <string name="set">Set</string>
+    <string name="set">Definir</string>
     <string name="color_default">Padrão</string>
 	
     <!-- Status bar -->
@@ -121,7 +122,7 @@
     <string name="status_bar_battery_style_tile_summary">Permitem definir o mesmo estilo de ícone escolhido para a barra de status da bateria</string>
   
     <!-- Status bar - Battery percentage -->
-    <string name="status_bar_battery_percentage_title">Percentagem da bateria</string>
+    <string name="status_bar_battery_percentage_title">Porcentagem da bateria</string>
     <string name="status_bar_battery_percentage_default">Escondido</string>
     <string name="status_bar_battery_percentage_text_inside">Dentro do ícone</string>
     <string name="status_bar_battery_percentage_text_next">Próximo ao ícone</string>
@@ -182,7 +183,7 @@
     <string name="kill_app_longpress_back_summary">Matar o aplicativo em primeiro plano com pressão longa sobre o botão voltar</string>
 	
     <!-- Key backlight -->
-    <string name="button_backlight_title">Luz traseira</string>
+    <string name="button_backlight_title">Luz de fundo</string>
     <string name="button_backlight_summary">Personalizar as configurações de luz de fundo do botão</string>
     <string name="button_backlight_enabled">Iluminação dos botões</string>
     <string name="keyboard_backlight_enabled">Iluminação do teclado</string>
@@ -229,18 +230,18 @@
 	
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Sons ao conectar o carregador</string>
-    <string name="charging_sounds_settings_summary">Personalizar o som tocado ao conectar ou desconectar uma fonte de energia</string>
+    <string name="charging_sounds_settings_summary">Personalizar o som tocado ao conectar ou desconectar o carregador</string>
     <string name="charging_sounds_enabled_title">Habilitar</string>
-    <string name="charging_sounds_enabled_summary">Tocar um som quando conectar ou desconectar uma fonte de energia</string>
+    <string name="charging_sounds_enabled_summary">Tocar um som quando conectar ou desconectar o carregador</string>
     <string name="power_notifications_vibrate_title">Vibrar</string>
     <string name="charging_sounds_ringtone_title">Som de notificação</string>
     <string name="charging_sounds_ringtone_silent">Silencioso</string>
 	
     <!-- Quick settings tiles -->
-    <string name="qs_tiles_category">telhas</string>
-    <string name="sysui_qqs_count_title">Pequenas telhas QS</string>
-    <string name="qs_rows_portrait_title">Fileiras (retrato)</string>
-    <string name="qs_rows_landscape_title">Fileiras (paisagem)</string>
+    <string name="qs_tiles_category">Configurações rápidas</string>
+    <string name="sysui_qqs_count_title">Configurações rápidas pequenas</string>
+    <string name="qs_rows_portrait_title">Linhas (retrato)</string>
+    <string name="qs_rows_landscape_title">Linhas (paisagem)</string>
     <string name="qs_columns_title">Colunas</string>
 	
     <!-- Headers -->
@@ -259,7 +260,7 @@
 	
     <!-- OmniJaws -->
     <string name="omnijaws_settings_title">OmniJaws</string>
-    <string name="omnijaws_settings_summary">Personalizar telha de tempo</string>
+    <string name="omnijaws_settings_summary">Personalizar o widget de tempo</string>
     <string name="weather_config_title">Previsão do Tempo</string>
     <string name="weather_config_summary"></string>
     <string name="weather_icon_pack_title">Pacote de ícones climáticos</string>
@@ -334,20 +335,20 @@
     <string name="lock_clock_calendar_section_summary">Configurar os eventos do calendário do widget cLock</string>
 
     <!-- Day/Night -->
-    <string name="daynight_title">Recursos do tema</string>
-    <string name="daynight_header_title">Recursos do tema</string>
+    <string name="daynight_title">Tema padrão do dispositivo</string>
+    <string name="daynight_header_title">Tema padrão do dispositivo</string>
 
     <!-- Sound & display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-    <string name="night_mode_title">Recursos do tema</string>
+    <string name="night_mode_title">Tema padrão do dispositivo</string>
     <!-- Sound & display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
     <string name="night_mode_summary">%s</string>
     <!-- Sound & display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-    <string name="night_mode_no">Claro</string>
+    <string name="night_mode_no">Padrão</string>
     <!-- Sound & display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
     <string name="night_mode_yes">Viper escuro</string>
     <!-- Sound & display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
     <string name="night_mode_auto">Automático</string>
-    <string name="keywords_display_night_mode">tema escuro modo noite escurecimento da tela inverter brilho</string>
+    <string name="keywords_display_night_mode">tema escuro modo noturno noite escurecimento da tela inverter brilho</string>
 
     <!-- Doze invert -->
     <string name="doze_notification_color_invert_title">Inversão de notificação de ambiente</string>
