@@ -8,13 +8,13 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.ListPreference;
 import android.util.Log;
 import android.util.DisplayMetrics;
 
-import com.android.settings.util.Helpers;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -29,6 +29,8 @@ public class DayNightSettings extends SettingsPreferenceFragment implements
 				// DayNight
     private static final String KEY_NIGHT_MODE = "night_mode";
     private ListPreference mNightModePreference;
+
+    private static final String INTENT_RESTART_SYSTEMUI = "restart_systemui";
 
     @Override
     protected int getMetricsCategory() {
@@ -60,7 +62,7 @@ public class DayNightSettings extends SettingsPreferenceFragment implements
                  final UiModeManager uiManager = (UiModeManager) getSystemService(
                          Context.UI_MODE_SERVICE);
                  uiManager.setNightMode(value);
-                 Helpers.restartSystemUI();
+                 getActivity().getApplicationContext().sendBroadcastAsUser(new Intent(INTENT_RESTART_SYSTEMUI), new UserHandle(UserHandle.USER_ALL));
              } catch (NumberFormatException e) {
                  Log.e(TAG, "could not persist night mode setting", e);
              }
