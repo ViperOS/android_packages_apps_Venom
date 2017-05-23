@@ -164,7 +164,7 @@
     <string name="camera_launch_title">Iniciar câmera</string>
     <string name="camera_launch_summary">Pressione longamente e solte para iniciar a câmera</string>
     <string name="volbtn_music_controls_title">Controle de reprodução</string>
-    <string name="volbtn_music_controls_summary">Quando a tela estiver desligada, segurar os botões de volume irá passar ou voltar as músicas em reprodução</string>
+    <string name="volbtn_music_controls_summary">Quando a tela estiver desligada, segurar os botões de volume irá avançar ou voltar as músicas em reprodução</string>
     <string name="volbtn_cursor_control_title">Controle de cursor do teclado</string>
     <string name="volbtn_cursor_control_off">Desligado</string>
     <string name="volbtn_cursor_control_on">Tecla de volume para cima/baixo move o cursor para esquerda/direita</string>
@@ -173,7 +173,7 @@
     <string name="power_end_call_summary">Pressionar o botão liga/desliga encerrará a chamada em andamento</string>
     <string name="swap_volume_buttons_title">Reorientar</string>
     <string name="swap_volume_buttons_summary">Inverter botões de volume quando rotacionar a tela</string>
-    <string name="button_wake_title">Acorda o dispositivo</string>
+    <string name="button_wake_title">Acordar o dispositivo</string>
     <string name="button_wake_summary">Acordar o dispositivo pressionando o botão</string>
     <string name="volume_answer_call_title">Atender chamada</string>
     <string name="volume_answer_call_summary">Atender chamadas pressionando os botões de volume</string>
