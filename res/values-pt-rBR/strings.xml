@@ -74,7 +74,8 @@
     <string name="status_bar_notif_count_title">Mostrar a contador de notificações</string>
     <string name="status_bar_notif_count_summary">Exibir o número de notificações pendentes</string>
     <string name="status_bar_quick_qs_pulldown_title">Puxar rápido para baixo</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Canto direito da barra de status faz baixar o painel de Configurações Rápidas</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">Canto esquerdo da barra de status</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">Canto direito da barra de status</string>
     <string name="status_bar_quick_qs_pulldown_off">Desligado</string>
     <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
     <string name="status_bar_quick_qs_pulldown_right">Direita</string>
@@ -256,7 +257,7 @@
     <string name="daylight_header_provider_title">Dinâmico</string>
     <string name="custom_header_provider_title">Provedor de cabeçalho</string>
     <string name="custom_header_browse_title">Procurar cabeçalhos instalados</string>
-    <string name="custom_header_browse_summary">Toque longo em qualquer imagem para usar para o modo estático</string>
+    <string name="custom_header_browse_summary">Toque e segure em qualquer imagem para definir</string>
 	
     <!-- OmniJaws -->
     <string name="omnijaws_settings_title">OmniJaws</string>
@@ -335,11 +336,11 @@
     <string name="lock_clock_calendar_section_summary">Configurar os eventos do calendário do widget cLock</string>
 
     <!-- Day/Night -->
-    <string name="daynight_title">Tema padrão do dispositivo</string>
-    <string name="daynight_header_title">Tema padrão do dispositivo</string>
+    <string name="daynight_title">Tema do dispositivo</string>
+    <string name="daynight_header_title">Tema do dispositivo</string>
 
     <!-- Sound & display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-    <string name="night_mode_title">Tema padrão do dispositivo</string>
+    <string name="night_mode_title">Tema do dispositivo</string>
     <!-- Sound & display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
     <string name="night_mode_summary">%s</string>
     <!-- Sound & display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->

@@ -47,14 +47,18 @@ public class StatusBarMiscSettings extends SettingsPreferenceFragment
         final ContentResolver resolver = getActivity().getContentResolver();
 
         mQuickPulldown = (CMSystemSettingListPreference) findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
-		
+        mQuickPulldown.setOnPreferenceChangeListener(this);
         updatePulldownSummary(mQuickPulldown.getIntValue(0));
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-
+        if (preference == mQuickPulldown) {
+            int status = Integer.parseInt((String) newValue);
+            updatePulldownSummary(status);
+            return true;
+        }
         return false;
     }
 
@@ -69,7 +73,7 @@ public class StatusBarMiscSettings extends SettingsPreferenceFragment
             String direction = res.getString(value == 2
                     ? R.string.status_bar_quick_qs_pulldown_summary_left
                     : R.string.status_bar_quick_qs_pulldown_summary_right);
-            mQuickPulldown.setSummary(res.getString(R.string.status_bar_quick_qs_pulldown_summary, direction));
+            mQuickPulldown.setSummary(direction);
         }
     }
 
