@@ -15,7 +15,8 @@
 		android:icon="@drawable/backlight_icon"
         android:title="@string/button_backlight_title"
         android:dialogTitle="@string/button_backlight_title"
-        android:persistent="false" />
+        android:persistent="false"
+        android:dependency="enable_hw_keys" />
 
     <PreferenceCategory
         android:key="navigation_bar_category"
