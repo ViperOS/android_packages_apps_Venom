@@ -7,6 +7,8 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -18,6 +20,7 @@ import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.PreferenceManager;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.util.Log;
 import android.view.IWindowManager;
@@ -33,6 +36,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.viper.venom.utils.DeviceUtils;
 import com.viper.venom.utils.TelephonyUtils;
 
+import cyanogenmod.hardware.CMHardwareManager;
 import cyanogenmod.providers.CMSettings;
 
 import java.util.List;
@@ -66,6 +70,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private static final String KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE
             = "camera_double_tap_power_gesture";
     private static final String KEY_NAVIGATION_BAR_ENABLED = "navigation_bar_enabled";
+    private static final String KEY_ENABLE_HW_KEYS = "enable_hw_keys";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -139,9 +144,10 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private SwitchPreference mCameraDoubleTapPowerGesture;
 
     private SwitchPreference mNavigationBarEnabled;
+    private SwitchPreference mHWKeysEnabled;
 
    private PreferenceCategory mNavigationPreferencesCat;
-	
+    
     private Handler mHandler;
 
     @Override
@@ -207,7 +213,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
         mHandler = new Handler();
 
         mNavigationPreferencesCat = (PreferenceCategory) findPreference(CATEGORY_NAVBAR);
-		
+        
         Action defaultHomeLongPressAction = Action.fromIntSafe(res.getInteger(
                 com.android.internal.R.integer.config_longPressOnHomeBehavior));
         Action defaultHomeDoubleTapAction = Action.fromIntSafe(res.getInteger(
@@ -233,7 +239,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 mNavigationPreferencesCat.removePreference(mNavigationHomeLongPressAction);
                 mNavigationPreferencesCat.removePreference(mNavigationHomeDoubleTapAction);
         }
-		
+        
         if (hasPowerKey) {
             if (!TelephonyUtils.isVoiceCapable(getActivity())) {
                 powerCategory.removePreference(mPowerEndCall);
@@ -399,7 +405,37 @@ public class ButtonSettings extends SettingsPreferenceFragment
         boolean showing = Settings.System.getInt(resolver, Settings.System.NAVIGATION_BAR_ENABLED, hasNavbarByDefault() ? 1 : 0) != 0;
         mNavigationBarEnabled.setChecked(showing);
         mNavigationBarEnabled.setOnPreferenceChangeListener(this);
+
+        mHWKeysEnabled = (SwitchPreference) findPreference(KEY_ENABLE_HW_KEYS);
+        if (hasAnyBindableKey){
+            mHWKeysEnabled.setChecked(Settings.System.getInt(resolver, Settings.System.ENABLE_HW_KEYS, 1) != 0);
+            mHWKeysEnabled.setOnPreferenceChangeListener(this);
+        }else{
+            prefScreen.removePreference(mHWKeysEnabled);
+        }
     }
+
+    private void writeDisableHwKeysOption(boolean enabled) {
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        final int defaultBrightness = getResources().getInteger(
+                com.android.internal.R.integer.config_buttonBrightnessSettingDefault);
+
+        Settings.System.putInt(getContentResolver(),
+                Settings.System.ENABLE_HW_KEYS, enabled ? 1 : 0);
+
+        CMHardwareManager hardware = CMHardwareManager.getInstance(getActivity());
+        hardware.set(CMHardwareManager.FEATURE_KEY_DISABLE, !enabled);
+     /* Save/restore button timeouts to disable them in softkey mode */
+        if (!enabled) {
+            CMSettings.Secure.putInt(getContentResolver(),
+                    CMSettings.Secure.BUTTON_BRIGHTNESS, 0);
+        } else {
+            int oldBright = prefs.getInt(ButtonBacklightBrightness.KEY_BUTTON_BACKLIGHT,
+                    defaultBrightness);
+            CMSettings.Secure.putInt(getContentResolver(),
+                    CMSettings.Secure.BUTTON_BRIGHTNESS, oldBright);
+        }
+   }
 
     public boolean hasNavbarByDefault() {
         boolean needsNav = getResources().getBoolean(com.android.internal.R.bool.config_showNavigationBar);
@@ -513,6 +549,10 @@ public class ButtonSettings extends SettingsPreferenceFragment
             boolean showing = ((Boolean)newValue);
             Settings.System.putInt(getContentResolver(), Settings.System.NAVIGATION_BAR_ENABLED,
                     showing ? 1 : 0);
+            return true;
+        } else if (preference == mHWKeysEnabled) {
+            boolean isEnabled = ((Boolean)newValue);
+            writeDisableHwKeysOption(isEnabled);
             return true;
         }
         return false;

@@ -4,6 +4,12 @@
     android:title="@string/buttons_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <SwitchPreference
+        android:key="enable_hw_keys"
+        android:icon="@drawable/ic_buttons"
+        android:title="@string/hw_keys_title"
+        android:summary="@string/hw_keys_summary" />
+
     <com.viper.venom.fragments.ButtonBacklightBrightness
         android:key="button_backlight"
 		android:icon="@drawable/backlight_icon"

@@ -407,5 +407,9 @@
 
    <!-- SU indicator -->
    <string name="show_su_indicator_title">Enable SU icon</string>
-   <string name="show_su_indicator_summary">Option to enable or disable native superuser icon</string>	
+   <string name="show_su_indicator_summary">Option to enable or disable native superuser icon</string>
+    
+    <!-- HW Keys -->
+    <string name="hw_keys_title">Hardware keys</string>
+    <string name="hw_keys_summary">Enable hardware keys</string>	
 </resources>
