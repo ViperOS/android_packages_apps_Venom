@@ -409,8 +409,23 @@
    <string name="show_su_indicator_title">Indicador de superusuário</string>
    <string name="show_su_indicator_summary">Mostrar indicador de superusuário quando uma sessão está ativa</string>
     
-    <!-- HW Keys -->
-    <string name="hw_keys_title">Teclas físicas</string>
-    <string name="hw_keys_summary">Ativar ou desativar as teclas físicas</string>
+   <!-- HW Keys -->
+   <string name="hw_keys_title">Teclas físicas</string>
+   <string name="hw_keys_summary">Ativar ou desativar as teclas físicas</string>
+
+   <!-- Navbar Dimensions -->
+   <string name="navbar_dimensions_title">Dimensões da barra de navegação</string>
+   <string name="navigation_bar_height_title">Altura da barra de navegação</string>
+   <string name="navigation_bar_height_landscape_title">Altura da barra de navegação em modo paisagem</string>
+   <string name="navigation_bar_width_title">Largura da barra de navegação</string>
+   <string name="navigation_bar_size_36_dp">36 dp</string>
+   <string name="navigation_bar_size_30_dp">30 dp</string>
+   <string name="navigation_bar_size_24_dp">24 dp</string>
+   <string name="navigation_bar_size_52_dp">52 dp</string>
+   <string name="navigation_bar_size_48_dp_default">48 dp (padrão)</string>
+   <string name="navigation_bar_size_44_dp">44 dp</string>
+   <string name="navigation_bar_size_40_dp">40 dp</string>
+   <string name="navigation_bar_size_42_dp">42 dp</string>
+   <string name="navigation_bar_size_0_dp">0 dp (desativado)</string>
 	
 </resources>
