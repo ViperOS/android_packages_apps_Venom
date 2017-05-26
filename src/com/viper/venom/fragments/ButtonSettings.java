@@ -145,6 +145,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
 
     private SwitchPreference mNavigationBarEnabled;
     private SwitchPreference mHWKeysEnabled;
+    private ButtonBacklightBrightness backlight;
 
    private PreferenceCategory mNavigationPreferencesCat;
     
@@ -380,8 +381,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
             prefScreen.removePreference(volumeCategory);
         }
 
-        final ButtonBacklightBrightness backlight =
-                (ButtonBacklightBrightness) findPreference(KEY_BUTTON_BACKLIGHT);
+        backlight = (ButtonBacklightBrightness) findPreference(KEY_BUTTON_BACKLIGHT);
         if (!backlight.isButtonSupported() && !backlight.isKeyboardSupported()) {
             prefScreen.removePreference(backlight);
         }
@@ -412,6 +412,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
             mHWKeysEnabled.setOnPreferenceChangeListener(this);
         }else{
             prefScreen.removePreference(mHWKeysEnabled);
+            backlight.setEnabled(false);
+            backlight.updateSummary();
         }
     }
 
@@ -435,6 +437,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
             CMSettings.Secure.putInt(getContentResolver(),
                     CMSettings.Secure.BUTTON_BRIGHTNESS, oldBright);
         }
+        backlight.setEnabled(enabled);
+        backlight.updateSummary();
    }
 
     public boolean hasNavbarByDefault() {
