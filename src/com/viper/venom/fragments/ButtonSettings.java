@@ -65,6 +65,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private static final String KEY_VOLUME_CONTROL_RING_STREAM = "volume_keys_control_ring_stream";
     private static final String KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE
             = "camera_double_tap_power_gesture";
+    private static final String KEY_NAVIGATION_BAR_ENABLED = "navigation_bar_enabled";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -136,6 +137,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private SwitchPreference mPowerEndCall;
     private SwitchPreference mHomeAnswerCall;
     private SwitchPreference mCameraDoubleTapPowerGesture;
+
+    private SwitchPreference mNavigationBarEnabled;
 
    private PreferenceCategory mNavigationPreferencesCat;
 	
@@ -392,6 +395,21 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 mVolumeWakeScreen.setDisableDependentsState(true);
             }
         }
+        mNavigationBarEnabled = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_ENABLED);
+        boolean showing = Settings.System.getInt(resolver, Settings.System.NAVIGATION_BAR_ENABLED, hasNavbarByDefault() ? 1 : 0) != 0;
+        mNavigationBarEnabled.setChecked(showing);
+        mNavigationBarEnabled.setOnPreferenceChangeListener(this);
+    }
+
+    public boolean hasNavbarByDefault() {
+        boolean needsNav = getResources().getBoolean(com.android.internal.R.bool.config_showNavigationBar);
+        String navBarOverride = SystemProperties.get("qemu.hw.mainkeys");
+        if ("1".equals(navBarOverride)) {
+            needsNav = false;
+        } else if ("0".equals(navBarOverride)) {
+            needsNav = true;
+        }
+        return needsNav;
     }
 
     @Override
@@ -490,6 +508,11 @@ public class ButtonSettings extends SettingsPreferenceFragment
             boolean value = (Boolean) newValue;
             Settings.Secure.putInt(getContentResolver(), CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED,
                     value ? 0 : 1 /* Backwards because setting is for disabling */);
+            return true;
+        } else if (preference == mNavigationBarEnabled) {
+            boolean showing = ((Boolean)newValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.NAVIGATION_BAR_ENABLED,
+                    showing ? 1 : 0);
             return true;
         }
         return false;

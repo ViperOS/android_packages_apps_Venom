@@ -15,24 +15,33 @@
         android:key="navigation_bar_category"
         android:title="@string/navigation_bar_category" >
 
+        <SwitchPreference
+            android:key="navigation_bar_enabled"
+            android:icon="@drawable/ic_navigation"
+            android:title="@string/navigation_bar_enable_title"
+            android:summary="@string/navigation_bar_enable_summary" />
+
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="pixel_nav_animation"
             android:icon="@drawable/animation"
             android:title="@string/pixel_navbar_anim_title"
             android:summary="@string/pixel_navbar_anim_summary"
-            android:defaultValue="true" />
+            android:defaultValue="true"
+            android:dependency="navigation_bar_enabled" />
 
         <cyanogenmod.preference.CMSystemSettingSwitchPreference
                 android:key="navigation_bar_menu_arrow_keys"
                 android:icon="@drawable/arrow_keys"
                 android:title="@string/navigation_bar_arrow_keys_title"
                 android:summary="@string/navigation_bar_arrow_keys_summary"
-                android:defaultValue="false" />
+                android:defaultValue="false"
+                android:dependency="navigation_bar_enabled" />
 
         <PreferenceScreen
             android:key="navigation_bar"
             android:icon="@drawable/ic_navigation"
-            android:title="@string/navigation_bar_title">
+            android:title="@string/navigation_bar_title"
+            android:dependency="navigation_bar_enabled">
             <intent android:action="com.android.settings.action.NAV_BAR_TUNER" />
         </PreferenceScreen>
 
@@ -43,7 +52,8 @@
             android:title="@string/navigation_bar_home_long_press_title"
             android:entries="@array/hardware_keys_action_entries"
             android:entryValues="@array/hardware_keys_action_values"
-            android:persistent="false" />
+            android:persistent="false"
+            android:dependency="navigation_bar_enabled" />
 
         <ListPreference
             android:key="navigation_home_double_tap"
@@ -52,7 +62,8 @@
             android:title="@string/navigation_bar_home_double_tap_title"
             android:entries="@array/hardware_keys_action_entries"
             android:entryValues="@array/hardware_keys_action_values"
-            android:persistent="false" />
+            android:persistent="false"
+            android:dependency="navigation_bar_enabled" />
 		
     </PreferenceCategory>
 		
