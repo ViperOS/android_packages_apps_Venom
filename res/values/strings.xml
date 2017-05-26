@@ -25,7 +25,7 @@
 
     <!-- Category -->
     <string name="battery_title">Battery</string>
-    <string name="buttons_title">Buttons</string>
+    <string name="buttons_title">Navigation bar and hardware keys</string>
     <string name="statusbar_clock_title">Clock &amp; Date</string>
     <string name="statusbar_items_title">Statusbar items</string>
     <string name="statusbar_misc_title">Statusbar Misc</string>
@@ -199,6 +199,7 @@
     <string name="navigation_bar_enable_title">Enable navigation bar</string>
     <string name="navigation_bar_enable_summary">Enable on-screen navigation keys</string>
     <string name="navigation_bar_title">Buttons and layout</string>
+    <string name="navigation_bar_summary">Customize navigation bar layout</string>
     <string name="navigation_bar_arrow_keys_title">Show arrow keys while typing</string>
     <string name="navigation_bar_arrow_keys_summary">Display left and right cursor buttons while typing. Overrides IME switcher.</string>
     <string name="navigation_bar_home_long_press_title">Home long press action</string>
@@ -267,9 +268,9 @@
     <string name="weather_icon_pack_note">Note\u003a you can install new icon packs from play store by searching for \"Chronus icons\"</string>
 	
     <!-- Recents panel settings -->
-    <string name="recents_default_category">AOSP</string>
-    <string name="show_clear_all_recents_button_title">Enable clear all button</string>
-    <string name="show_clear_all_recents_button_summary">Show the clear all button when using recents</string>
+    <string name="recents_default_category">Clear all button</string>
+    <string name="show_clear_all_recents_button_title">Enable clear all round button</string>
+    <string name="show_clear_all_recents_button_summary">Show round button instead of the text "Clear all"</string>
     <string name="recents_clear_all_location_title">Clear all button location</string>
     <string name="recents_clear_all_location_top_right">Top right</string>
     <string name="recents_clear_all_location_top_left">Top left</string>
@@ -415,6 +416,7 @@
 
     <!-- Navbar Dimensions -->
     <string name="navbar_dimensions_title">Navbar Dimensions</string>
+    <string name="navbar_dimensions_summary">Customize navigation bar width and height</string>
     <string name="navigation_bar_height_title">Navigation bar height</string>
     <string name="navigation_bar_height_landscape_title">Navigation bar height landscape</string>
     <string name="navigation_bar_width_title">Navigation bar width</string>

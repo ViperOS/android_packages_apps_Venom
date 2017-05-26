@@ -48,6 +48,7 @@
             android:key="navigation_bar"
             android:icon="@drawable/ic_navigation"
             android:title="@string/navigation_bar_title"
+            android:summary="@string/navigation_bar_summary"
             android:dependency="navigation_bar_enabled">
             <intent android:action="com.android.settings.action.NAV_BAR_TUNER" />
         </PreferenceScreen>
@@ -56,6 +57,8 @@
             android:fragment="com.viper.venom.fragments.NavBarDimensSettings"
             android:key="navbar_dimens"
             android:title="@string/navbar_dimensions_title"
+            android:summary="@string/navbar_dimensions_summary"
+            android:icon="@drawable/ic_navbar_dimen"
             android:dependency="navigation_bar_enabled" />
 
         <ListPreference

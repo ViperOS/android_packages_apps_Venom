@@ -25,7 +25,7 @@
 
     <!-- Category -->
     <string name="battery_title">Bateria</string>
-    <string name="buttons_title">Botões</string>
+    <string name="buttons_title">Barra de navegação e teclas físicas</string>
     <string name="statusbar_clock_title">Relógio &amp; Data</string>
     <string name="statusbar_items_title">Itens da barra de status</string>
     <string name="statusbar_misc_title">Outras configurações</string>
@@ -200,6 +200,7 @@
     <string name="navigation_bar_enable_title">Habilitar barra de navegação</string>
     <string name="navigation_bar_enable_summary">Ativar ou desativar a barra de navegação na tela</string>
     <string name="navigation_bar_title">Botões e layout</string>
+    <string name="navigation_bar_summary">Personalizar o layout da barra de navegação</string>
     <string name="navigation_bar_arrow_keys_title">Mostrar teclas de seta enquanto digita</string>
     <string name="navigation_bar_arrow_keys_summary">Exibir botões esquerda e direita do cursor durante a digitação. Substitui o seletor de Teclado.</string>
     <string name="navigation_bar_home_long_press_title">Ação de toque longo no botão início</string>
@@ -226,8 +227,8 @@
     <string name="torch_long_press_power_gesture_desc">Toque longo no botão power equanto a tela estiver desligada para ligar a lanterna</string>
 	
     <!-- Navbar Animation -->
-    <string name="pixel_navbar_anim_title">Animação barra de navegação</string>
-    <string name="pixel_navbar_anim_summary">Ativar Animação barra de navegação pixel</string>
+    <string name="pixel_navbar_anim_title">Barra de navegação pixel</string>
+    <string name="pixel_navbar_anim_summary">Habilitar estilo pixel na barra de navegação</string>
 	
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Sons ao conectar o carregador</string>
@@ -268,14 +269,15 @@
     <string name="weather_icon_pack_note">Nota\u003a Você pode instalar novos pacotes de ícones da play store procurando por \"Chronus icons\"</string>
 	
     <!-- Recents panel settings -->
-    <string name="show_clear_all_recents_button_title">Botão de limpar todos</string>
-    <string name="show_clear_all_recents_button_summary">Mostrar limpar todos</string>
-    <string name="recents_clear_all_location_title">Localização do Botão \"Limpar Tudo\"</string>
-    <string name="recents_clear_all_location_top_right">Superior Direito</string>
+    <string name="recents_default_category">Botão limpar tudo</string>
+    <string name="show_clear_all_recents_button_title">Botão circular</string>
+    <string name="show_clear_all_recents_button_summary">Mostrar um botão circular ao invés do texto \"Limpar Tudo\"</string>
+    <string name="recents_clear_all_location_title">Localização do botão circular</string>
+    <string name="recents_clear_all_location_top_right">Superior direito</string>
     <string name="recents_clear_all_location_top_left">Superior esquerdo</string>
     <string name="recents_clear_all_location_top_center">Superior central</string>
-    <string name="recents_clear_all_location_bottom_right">Canto inferior direito</string>
-    <string name="recents_clear_all_location_bottom_left">Inferior Esquerdo</string>
+    <string name="recents_clear_all_location_bottom_right">Inferior direito</string>
+    <string name="recents_clear_all_location_bottom_left">Inferior esquerdo</string>
     <string name="recents_clear_all_location_bottom_center">Inferior central</string>
 	
     <!-- Custom carrier label and position -->
@@ -415,6 +417,7 @@
 
    <!-- Navbar Dimensions -->
    <string name="navbar_dimensions_title">Dimensões da barra de navegação</string>
+   <string name="navbar_dimensions_summary">Personalizar a largura e altura da barra de navegação</string>
    <string name="navigation_bar_height_title">Altura da barra de navegação</string>
    <string name="navigation_bar_height_landscape_title">Altura da barra de navegação em modo paisagem</string>
    <string name="navigation_bar_width_title">Largura da barra de navegação</string>
