@@ -412,7 +412,6 @@
         <item>@string/navigation_bar_size_36_dp</item>
         <item>@string/navigation_bar_size_30_dp</item>
         <item>@string/navigation_bar_size_24_dp</item>
-        <item>@string/navigation_bar_size_0_dp</item>
     </string-array>
 
     <string-array name="navigation_bar_dimension_values" translatable="false">
@@ -424,6 +423,5 @@
         <item>36</item>
         <item>30</item>
         <item>24</item>
-        <item>0</item>
     </string-array>
 </resources>
