@@ -21,7 +21,6 @@
     <string name="system_category">Sistema</string>
     <string name="lockscreen_category">Tela de bloqueio</string>
     <string name="statusbar_category">Barra de status</string>
-    <string name="navigation_category">Navegação</string>
     <string name="multitasking_category">Multitarefa</string>
 
     <!-- Category -->
@@ -30,7 +29,6 @@
     <string name="statusbar_clock_title">Relógio &amp; Data</string>
     <string name="statusbar_items_title">Itens da barra de status</string>
     <string name="statusbar_misc_title">Outras configurações</string>
-    <string name="navbar_title">Barra de navegação</string>
     <string name="sound_title">Som</string>
     <string name="quicksettings_title">Configurações rápidas</string>
     <string name="traffic_category">Indicador de tráfego de rede</string>

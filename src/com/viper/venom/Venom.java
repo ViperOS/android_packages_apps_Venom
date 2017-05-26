@@ -49,7 +49,6 @@ import android.widget.Toast;
 
 import com.viper.venom.tabs.StatusBar;
 import com.viper.venom.tabs.Lockscreen;
-import com.viper.venom.tabs.Navigation;
 import com.viper.venom.tabs.MultiTasking;
 import com.viper.venom.tabs.System;
 import com.viper.venom.tabs.About;
@@ -176,10 +175,9 @@ public class Venom extends SettingsPreferenceFragment {
             super(fm);
             frags[0] = new StatusBar();
             frags[1] = new Lockscreen();
-            frags[2] = new Navigation();
-            frags[3] = new MultiTasking();
-            frags[4] = new System();
-            frags[5] = new About();
+            frags[2] = new MultiTasking();
+            frags[3] = new System();
+            frags[4] = new About();
         }
 
         @Override
@@ -203,7 +201,6 @@ public class Venom extends SettingsPreferenceFragment {
         titleString = new String[]{
                     getString(R.string.statusbar_category),
                     getString(R.string.lockscreen_category),
-                    getString(R.string.navigation_category),
                     getString(R.string.multitasking_category),
                     getString(R.string.system_category),
                     getString(R.string.about_category)};

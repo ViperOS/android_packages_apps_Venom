@@ -15,6 +15,13 @@
         android:key="navigation_bar_category"
         android:title="@string/navigation_bar_category" >
 
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="pixel_nav_animation"
+            android:icon="@drawable/animation"
+            android:title="@string/pixel_navbar_anim_title"
+            android:summary="@string/pixel_navbar_anim_summary"
+            android:defaultValue="true" />
+
         <cyanogenmod.preference.CMSystemSettingSwitchPreference
                 android:key="navigation_bar_menu_arrow_keys"
                 android:icon="@drawable/arrow_keys"

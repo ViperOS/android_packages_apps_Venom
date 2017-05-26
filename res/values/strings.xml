@@ -21,7 +21,6 @@
     <string name="system_category">System</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="statusbar_category">Status Bar</string>
-    <string name="navigation_category">Navigation</string>
     <string name="multitasking_category">Multi-Tasking</string>
 
     <!-- Category -->
@@ -30,7 +29,6 @@
     <string name="statusbar_clock_title">Clock &amp; Date</string>
     <string name="statusbar_items_title">Statusbar items</string>
     <string name="statusbar_misc_title">Statusbar Misc</string>
-    <string name="navbar_title">NavBar</string>
     <string name="sound_title">Sound</string>
     <string name="quicksettings_title">Quick Settings</string>
     <string name="traffic_category">Traffic indicators</string>
