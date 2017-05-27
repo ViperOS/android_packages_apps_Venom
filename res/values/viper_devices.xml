@@ -55,6 +55,8 @@
     <!-- LENOVO -->
 
     <!-- LG -->
+    <string name="device_lg_g3">LG G3</string>
+    <string name="device_lg_g3_summary">d855\nRafael Marchetto (Marchetto96)</string>
 
     <!-- MOTOROLA -->
     <string name="device_moto_condor">Moto E</string>
@@ -103,6 +105,9 @@
     <!-- NVİDİA -->
 
     <!-- ONEPLUS -->
+    <string name="device_oneplus_oneplus2">OnePlus Two</string>
+    <string name="device_oneplus_oneplus2_summary">oneplus2\nRafael Marchetto (Marchetto96)</string>
+	
     <string name="device_oneplus_oneplus3">OnePlus Three</string>
     <string name="device_oneplus_oneplus3_summary">oneplus3\nRafael Marchetto (Marchetto96), Gustavo Campos (BIRDMan)</string>
 

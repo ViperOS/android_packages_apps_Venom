@@ -68,11 +68,17 @@
 
     </PreferenceCategory> -->
 
-    <!-- LG
+    <!-- LG -->
     <PreferenceCategory
         android:title="@string/device_category_lg_title">
 
-    </PreferenceCategory> -->
+        <Preference
+            android:id="@+id/device_lg_g3"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_lg_g3"
+            android:summary="@string/device_lg_g3_summary"
+            android:selectable="false" />
+    </PreferenceCategory>
 
     <!-- MOTOROLA -->
     <PreferenceCategory
@@ -186,6 +192,13 @@
     <PreferenceCategory
         android:title="@string/device_category_oneplus_title">
 
+        <Preference
+            android:id="@+id/device_oneplus_oneplus2"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_oneplus_oneplus2"
+            android:summary="@string/device_oneplus_oneplus2_summary"
+            android:selectable="false" />
+		
         <Preference
             android:id="@+id/device_oneplus_oneplus3"
             android:icon="@drawable/phone_tint"
