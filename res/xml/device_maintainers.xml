@@ -114,6 +114,13 @@
             android:selectable="false" />
 
         <Preference
+            android:id="@+id/device_moto_merlin"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_moto_merlin"
+            android:summary="@string/device_moto_merlin_summary"
+            android:selectable="false" />
+		
+        <Preference
             android:id="@+id/device_moto_athene"
             android:icon="@drawable/phone_tint"
             android:title="@string/device_moto_athene"

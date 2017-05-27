@@ -71,6 +71,9 @@
 	
     <string name="device_moto_osprey">Moto G 2015</string>
     <string name="device_moto_osprey_summary">osprey \nJonathan Bruno (JBCDroid)</string>
+	
+    <string name="device_moto_merlin">Moto G3 Turbo</string>
+    <string name="device_moto_merlin_summary">merlin \nJonathan Bruno (JBCDroid)</string>
 
     <string name="device_moto_athene">Moto G4 Plus</string>
     <string name="device_moto_athene_summary">athene\nBruno Dantas (brunobdantas)</string>
