@@ -36,6 +36,14 @@
             android:defaultValue="true"
             android:dependency="navigation_bar_enabled" />
 
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="nav_bar_dynamic"
+            android:icon="@drawable/ic_navbar_dynamic"
+            android:title="@string/nav_bar_dynamic_title"
+            android:summary="@string/nav_bar_dynamic_summary"
+            android:defaultValue="false"
+            android:dependency="navigation_bar_enabled" />
+
         <cyanogenmod.preference.CMSystemSettingSwitchPreference
                 android:key="navigation_bar_menu_arrow_keys"
                 android:icon="@drawable/arrow_keys"
