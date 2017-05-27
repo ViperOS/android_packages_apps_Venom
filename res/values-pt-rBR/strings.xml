@@ -348,7 +348,7 @@
     <!-- Sound & display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
     <string name="night_mode_no">Padrão</string>
     <!-- Sound & display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-    <string name="night_mode_yes">Viper escuro</string>
+    <string name="night_mode_yes">Escuro</string>
     <!-- Sound & display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
     <string name="night_mode_auto">Automático</string>
     <string name="keywords_display_night_mode">tema escuro modo noturno noite escurecimento da tela inverter brilho</string>
