@@ -62,11 +62,17 @@
 
     </PreferenceCategory> -->
 
-    <!-- LENOVO
+    <!-- LENOVO -->
     <PreferenceCategory
         android:title="@string/device_category_lenovo_title">
 
-    </PreferenceCategory> -->
+        <Preference
+            android:id="@+id/device_lenovo_k5"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_lenovo_k5"
+            android:summary="@string/device_lenovo_k5_summary"
+            android:selectable="false" />
+    </PreferenceCategory>
 
     <!-- LG -->
     <PreferenceCategory
@@ -253,6 +259,13 @@
             android:icon="@drawable/phone_tint"
             android:title="@string/device_xiaomi_kenzo"
             android:summary="@string/device_xiaomi_kenzo_summary"
+            android:selectable="false" />
+		
+        <Preference
+            android:id="@+id/device_xiaomi_mido"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_xiaomi_mido"
+            android:summary="@string/device_xiaomi_mido_summary"
             android:selectable="false" />
     </PreferenceCategory>
 

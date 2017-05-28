@@ -53,6 +53,8 @@
     <!-- LeEco -->
 
     <!-- LENOVO -->
+    <string name="device_lenovo_k5">Vibe K5</string>
+    <string name="device_lenovo_k5_summary">A6020\nJúlio Cezar (bluereptile)</string>
 
     <!-- LG -->
     <string name="device_lg_g3">LG G3</string>
@@ -127,6 +129,9 @@
 
     <string name="device_xiaomi_kenzo">Redmi Note 3 Pro</string>
     <string name="device_xiaomi_kenzo_summary">kenzo\nHenrique Silva (jhenrique09)</string>
+	
+    <string name="device_xiaomi_mido">Redmi Note 4/4X</string>
+    <string name="device_xiaomi_mido_summary">mido\nMatheus Fernandes (matheeusaf)</string>
 	
     <!-- YU -->
 	
