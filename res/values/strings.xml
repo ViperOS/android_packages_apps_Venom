@@ -441,4 +441,16 @@
    <!-- Lockscreen battery info indicator -->
    <string name="lockscreen_battery_info_title">Battery info</string>
    <string name="lockscreen_battery_info_summary">Display battery info when charging</string>
+
+   <!-- ViperOS Logo --> 
+   <string name="status_bar_viper_logo_title">Enable logo</string>
+   <string name="status_bar_viper_logo_summary">Enable to show Viper logo on the status bar</string>
+   <string name="status_bar_viper_logo_color">Logo color</string>
+   <string name="status_bar_logo">Viper logo</string>
+   <string name="status_bar_viper_logo_position">Logo location</string>
+   <string name="status_bar_viper_logo_position_summary">Choose which side to display the logo on, left or right</string>
+   <string name="status_bar_logo_position_right">Right</string>
+   <string name="status_bar_logo_position_left">Left</string>
+   <string name="status_bar_logo_position_center">Center</string>
+
 </resources>

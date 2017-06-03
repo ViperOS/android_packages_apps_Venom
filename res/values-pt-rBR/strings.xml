@@ -119,6 +119,8 @@
     <string name="status_bar_battery_style_hidden">Escondido</string>
     <string name="status_bar_battery_style_tile_title">Estilo personalizado da bateria nas configurações rápidas</string>
     <string name="status_bar_battery_style_tile_summary">Permitem definir o mesmo estilo de ícone escolhido para a barra de status da bateria</string>
+    <string name="lockscreen_battery_info_title">Informações da bateria</string>
+    <string name="lockscreen_battery_info_summary">Exibir informações da bateria ao carregar</string>
   
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Porcentagem da bateria</string>
@@ -438,5 +440,15 @@
    <!-- Show 4G -->
    <string name="show_4g_title">Mostrar 4G</string>
    <string name="show_4g_summary">Mostrar 4G em vez de LTE nos ícones de sinal</string>
+
+   <!-- Statusbar ViperOS logo -->
+   <string name="status_bar_viper_logo_title">Logotipo da rom</string>
+   <string name="status_bar_viper_logo_summary">Personalizar o logotipo da Viper na barra de status</string>
+   <string name="status_bar_viper_logo_color">Cor do logotipo</string>
+   <string name="status_bar_viper_logo_position">Localização do logotipo</string>
+   <string name="status_bar_viper_logo_position_summary">Escolher o lado para exibir o logotipo, à esquerda ou direita</string>
+   <string name="status_bar_logo_position_right">Direita</string>
+   <string name="status_bar_logo_position_left">Esquerda</string>
+   <string name="status_bar_logo_position_center">Centro</string>
 	
 </resources>

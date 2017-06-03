@@ -39,6 +39,12 @@
             </intent>
         </PreferenceScreen>
 
+        <PreferenceScreen
+            android:key="viper_logo"
+            android:title="@string/status_bar_viper_logo_title"
+            android:layout="@layout/preference_statusbarlogo"
+	    android:fragment="com.viper.venom.fragments.LogoSettings"  />
+
           <PreferenceScreen
             android:key="statusbarclock"
             android:fragment="com.viper.venom.fragments.StatusBarClockSettings"

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2017 ViperOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24.0dp"
+        android:height="24.0dp"
+        android:viewportWidth="24.0"
+        android:viewportHeight="24.0"
+        android:tint="?android:attr/colorAccent">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M4.26842 19.856644C3.81668 19.691274 3.41884 19.327854 3.17891 18.861414 3.00787 18.528894 3 18.224484 3 11.943614 3 5.5909008 3.006 5.3616668 3.18478 5.0114468 3.41383 4.5624618 3.9278 4.1292858 4.39896 3.9881228c0.25429 -0.07619 2.45017 -0.10701 7.623569 -0.10701 7.941271 0 7.768441 -0.01123 8.351911 0.542705 0.14726 0.139794 0.34824 0.410693 0.44665 0.601998C20.99213 5.3583378 21 5.6627458 21 11.943614c0 6.35271 -0.006 6.58195 -0.18478 6.93217 -0.22905 0.44898 -0.74302 0.88216 -1.21418 1.02332 -0.25521 0.0765 -2.4415 0.10512 -7.658791 0.1004 -6.141219 -0.006 -7.360779 -0.0283 -7.673829 -0.14286zm14.66908 -6.88178l0 -4.9687502 -6.937501 0 -6.937499 0 0 4.9687502 0 4.96875 6.937499 0 6.937501 0 0 -4.96875zM12.81394 6.7713308c0.60174 -0.565302 0.32415 -1.631215 -0.48065 -1.845635 -0.796451 -0.212196 -1.570151 0.553614 -1.351391 1.337617 0.22892 0.820461 1.209911 1.092481 1.832041 0.508018zm5.8125 0c0.60174 -0.565302 0.32415 -1.631215 -0.48065 -1.845635 -0.79645 -0.212196 -1.57015 0.553614 -1.35139 1.337617 0.22892 0.820461 1.20991 1.092481 1.83204 0.508018zM6.90769 6.6775808c0.60174 -0.565302 0.32415 -1.631215 -0.48065 -1.845635 -0.79645 -0.212196 -1.57015 0.553614 -1.35139 1.337617 0.22892 0.820461 1.20991 1.092481 1.83204 0.508018z" />
+</vector>
