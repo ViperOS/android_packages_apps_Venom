@@ -124,6 +124,9 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
     private int tabBackgroundResId = R.drawable.tab;
 
     private Locale locale;
+	
+    private int tabActiveTextColor;
+    private int tabInactiveTextColor;
 
     public PagerSlidingTabStrip(Context context) {
         this(context, null);
@@ -154,6 +157,8 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         TypedArray a = context.obtainStyledAttributes(attrs, ATTRS);
         tabTextSize = a.getDimensionPixelSize(TEXT_SIZE_INDEX, tabTextSize);
         ColorStateList colorStateList = a.getColorStateList(TEXT_COLOR_INDEX);
+        tabActiveTextColor = context.getResources().getColor(R.color.dt_tab_text_color);
+        tabInactiveTextColor = context.getResources().getColor(R.color.dt_tab_inactive_text_color);
         int PrimaryColor = context.getResources().getColor(R.color.dt_tab_color);
 
         underlineColor = PrimaryColor;
@@ -466,6 +471,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
             TextView title = (TextView) tab.findViewById(R.id.tab_title);
             if (title != null) {
                 title.setTypeface(tabTypeface, tabTypefaceStyle);
+                title.setTextColor(tabInactiveTextColor);
                 ViewCompat.setAlpha(title, tabTextAlpha);
             }
         }
@@ -476,6 +482,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
             TextView title = (TextView) tab.findViewById(R.id.tab_title);
             if (title != null) {
                 title.setTypeface(tabTypeface, tabTypefaceSelectedStyle);
+                title.setTextColor(tabActiveTextColor);
                 ViewCompat.setAlpha(title, tabTextSelectedAlpha);
             }
         }
