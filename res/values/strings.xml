@@ -457,5 +457,9 @@
    <string name="recents_type_title">Recents Style</string>
    <string name="recents_stock">Cards</string>
    <string name="recents_grid">Grid</string>
-	
+
+   <!-- Recents lock icon -->
+   <string name="recents_lock_icon_title">Lock Task</string>
+   <string name="recents_lock_icon_summary">Allow locking of tasks in recents view</string>
+
 </resources>

@@ -455,5 +455,9 @@
    <string name="recents_type_title">Estilo do Recentes</string>
    <string name="recents_stock">Cartões</string>
    <string name="recents_grid">Grade</string>
-	
+
+   <!-- Recents lock icon -->
+   <string name="recents_lock_icon_title">Bloqueio de tarefa</string>
+   <string name="recents_lock_icon_summary">Permitir bloqueio de tarefas na visualização de recentes</string>
+
 </resources>

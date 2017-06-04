@@ -32,4 +32,11 @@
             android:dependency="show_clear_all_recents" />
     </PreferenceCategory>
 
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="recents_lock_icon"
+            android:icon="@drawable/ic_lock_outline"
+            android:title="@string/recents_lock_icon_title"
+            android:summary="@string/recents_lock_icon_summary"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
