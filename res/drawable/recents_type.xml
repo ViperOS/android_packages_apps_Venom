@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2017 ViperOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24.0dp"
+        android:height="24.0dp"
+        android:viewportWidth="24.0"
+        android:viewportHeight="24.0"
+        android:tint="?android:attr/colorAccent">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M0 14.245455l0 -6.454545 10.090909 0 10.090908 0 0 6.454545 0 6.454545 -10.090908 0L0 20.7Zm18.181817 0l0 -4.454546 -8.090908 0 -8.090909 0 0 4.454546 0 4.454545 8.090909 0 8.090908 0zm-15.090908 0l0 -3.363637 7 0 7 0 0 3.363637 0 3.363636 -7 0 -7 0zm4.000001 -0.09091l0 -1.272728 -1.272728 0 -1.272728 0 0 1.272728 0 1.272727 1.272728 0 1.272728 0zm4.181818 0l0 -1.272728 -1.272728 0 -1.272727 0 0 1.272728 0 1.272727 1.272727 0 1.272728 0zm4.181818 0l0 -1.272728 -1.272728 0 -1.272727 0 0 1.272728 0 1.272727 1.272727 0 1.272728 0zm5.454545 1c0 -0.989899 -0.01387 -0.987288 -0.01387 -0.987288L22 14.154545l0 -4.454546 0 -4.4545455 -8.090909 0 -8.090909 0 0 0.909091 0 0.909091 -1 0 -1 0 0 -1.909091 0 -1.909091 10.090909 0 10.090909 0 0 6.4545455 0 6.454546 -1.545454 0 -1.545455 0z" />
+</vector>

@@ -451,4 +451,9 @@
    <string name="status_bar_logo_position_left">Esquerda</string>
    <string name="status_bar_logo_position_center">Centro</string>
 	
+   <!-- Aosp cards and grid recents -->
+   <string name="recents_type_title">Estilo do Recentes</string>
+   <string name="recents_stock">Cartões</string>
+   <string name="recents_grid">Grade</string>
+	
 </resources>

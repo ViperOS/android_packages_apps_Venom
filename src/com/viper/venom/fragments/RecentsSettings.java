@@ -24,11 +24,15 @@ import com.android.settings.SettingsPreferenceFragment;
 
 public class RecentsSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
+		
+    private static final String INTENT_RESTART_SYSTEMUI = "restart_systemui";
 
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
+    private static final String RECENTS_TYPE = "recents_use_grid";
 	
     private SwitchPreference mRecentsClearAll;
     private ListPreference mRecentsClearAllLocation;
+    private ListPreference mRecentsType;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -38,6 +42,14 @@ public class RecentsSettings extends SettingsPreferenceFragment
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+		
+        mRecentsType = (ListPreference) findPreference(RECENTS_TYPE);
+        int type = Settings.System.getIntForUser(getActivity().getContentResolver(),
+                            Settings.System.RECENTS_USE_GRID, 0,
+                            UserHandle.USER_CURRENT);
+        mRecentsType.setValue(String.valueOf(type));
+        mRecentsType.setSummary(mRecentsType.getEntry());
+        mRecentsType.setOnPreferenceChangeListener(this);
 		
         // clear all location
         mRecentsClearAllLocation = (ListPreference) prefSet.findPreference(RECENTS_CLEAR_ALL_LOCATION);
@@ -51,7 +63,16 @@ public class RecentsSettings extends SettingsPreferenceFragment
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mRecentsClearAllLocation) {
+        if (preference == mRecentsType) {
+            Settings.System.putInt(getContentResolver(), Settings.System.RECENTS_USE_GRID,
+                    Integer.valueOf((String) newValue));
+            int val = Integer.parseInt((String) newValue);
+            if (val== 0 || val == 1) {
+                getActivity().getApplicationContext().sendBroadcastAsUser(new Intent(INTENT_RESTART_SYSTEMUI), new UserHandle(UserHandle.USER_ALL));
+            }
+            mRecentsType.setValue(String.valueOf(newValue));
+            mRecentsType.setSummary(mRecentsType.getEntry());
+        } else if (preference == mRecentsClearAllLocation) {
             int location = Integer.valueOf((String) newValue);
             int index = mRecentsClearAllLocation.findIndexOfValue((String) newValue);
             Settings.System.putIntForUser(resolver,
