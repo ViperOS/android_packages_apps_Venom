@@ -453,6 +453,10 @@
    <string name="status_bar_logo_position_left">Left</string>
    <string name="status_bar_logo_position_center">Center</string>
 
+   <!-- Recents Membar -->
+   <string name="systemui_recents_mem_display_title">Show Memory Bar</string>
+   <string name="systemui_recents_mem_display_summary">Enable Disable Ram bar in recent app view</string>
+
    <!-- Aosp cards and grid recents -->
    <string name="recents_type_title">Recents Style</string>
    <string name="recents_stock">Cards</string>
