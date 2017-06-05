@@ -285,6 +285,8 @@
     <!-- Recents Membar -->
     <string name="systemui_recents_mem_display_title">Mostrar barra de memória</string>
     <string name="systemui_recents_mem_display_summary">Ativar desativar barra de memória ram no app recente </string>
+    <string name="systemui_recents_mem_display_color">Cor da barra de memória</string>
+    <string name="systemui_recents_mem_display_text_color">Cor do texto da barra de memória</string>
 
     <!-- Custom carrier label and position -->
     <string name="carrier_label_settings_title">Rótulo da operadora</string>

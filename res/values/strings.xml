@@ -456,6 +456,11 @@
    <!-- Recents Membar -->
    <string name="systemui_recents_mem_display_title">Show Memory Bar</string>
    <string name="systemui_recents_mem_display_summary">Enable Disable Ram bar in recent app view</string>
+   <string name="systemui_recents_mem_display_color">Memory bar color</string>
+   <string name="systemui_recents_mem_display_text_color">Memory bar text color</string>
+
+   <!-- General strings -->
+   <string name="default_string">Default</string>
 
    <!-- Aosp cards and grid recents -->
    <string name="recents_type_title">Recents Style</string>
