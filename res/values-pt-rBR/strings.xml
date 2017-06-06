@@ -65,6 +65,7 @@
     <string name="press_color_to_apply">Pressione a cor abaixo para aplicar</string>
     <string name="set">Definir</string>
     <string name="color_default">Padrão</string>
+   <string name="default_string">Padrão</string>
 	
     <!-- Status bar -->
     <string name="status_bar_toggle_brightness">Controle do brilho da tela</string>
@@ -271,7 +272,7 @@
     <string name="weather_icon_pack_note">Nota\u003a Você pode instalar novos pacotes de ícones da play store procurando por \"Chronus icons\"</string>
 	
     <!-- Recents panel settings -->
-    <string name="recents_default_category">Botão limpar tudo</string>
+    <string name="recents_default_category">AOSP</string>
     <string name="show_clear_all_recents_button_title">Botão circular</string>
     <string name="show_clear_all_recents_button_summary">Mostrar um botão circular ao invés do texto \"Limpar Tudo\"</string>
     <string name="recents_clear_all_location_title">Localização do botão circular</string>
@@ -466,4 +467,15 @@
    <string name="recents_lock_icon_title">Bloqueio de tarefa</string>
    <string name="recents_lock_icon_summary">Permitir bloqueio de tarefas na visualização de recentes</string>
 
+  <!-- Media art -->
+  <string name="media_art_title">Mostrar capa do album de música</string>
+  <string name="media_art_summary">Habilitar a arte da capa de mídia na tela de bloqueio</string>
+	
+  <!-- Lockscreen tap-to sleep -->
+  <string name="double_tap_sleep_anywhere_title">Toque na tela de bloqueio para dormir</string>
+  <string name="double_tap_sleep_anywhere_summary">Toque duas vezes em qualquer lugar na tela de bloqueio para colocar o dispositivo para dormir</string>
+
+  <!-- Lockscreen categories -->
+  <string name="lockscreen_misc_category">Diversos</string>
+	
 </resources>

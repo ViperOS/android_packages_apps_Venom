@@ -95,4 +95,24 @@
         </PreferenceScreen>
     </PreferenceCategory>
 	
+    <PreferenceCategory
+        android:key="lockscreen_misc_category"
+        android:title="@string/lockscreen_misc_category">
+		
+        <cyanogenmod.preference.CMSecureSettingSwitchPreference
+            android:key="lockscreen_media_metadata"
+            android:icon="@drawable/movie_icon"
+            android:title="@string/media_art_title"
+            android:summary="@string/media_art_summary"
+            android:defaultValue="true" />
+		
+        <cyanogenmod.preference.CMSecureSettingSwitchPreference
+            android:key="double_tap_sleep_anywhere"
+            android:icon="@drawable/double_tap_icon"
+            android:title="@string/double_tap_sleep_anywhere_title"
+            android:summary="@string/double_tap_sleep_anywhere_summary"
+            android:defaultValue="false" />
+		
+    </PreferenceCategory>
+	
 </PreferenceScreen>

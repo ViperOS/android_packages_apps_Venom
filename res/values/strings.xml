@@ -68,6 +68,7 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
+   <string name="default_string">Default</string>
 	
     <!-- Status bar -->
     <string name="status_bar_toggle_brightness">Brightness control</string>
@@ -268,7 +269,7 @@
     <string name="weather_icon_pack_note">Note\u003a you can install new icon packs from play store by searching for \"Chronus icons\"</string>
 	
     <!-- Recents panel settings -->
-    <string name="recents_default_category">Clear all button</string>
+    <string name="recents_default_category">AOSP</string>
     <string name="show_clear_all_recents_button_title">Enable clear all round button</string>
     <string name="show_clear_all_recents_button_summary">Show round button instead of the text "Clear all"</string>
     <string name="recents_clear_all_location_title">Clear all button location</string>
@@ -459,9 +460,6 @@
    <string name="systemui_recents_mem_display_color">Memory bar color</string>
    <string name="systemui_recents_mem_display_text_color">Memory bar text color</string>
 
-   <!-- General strings -->
-   <string name="default_string">Default</string>
-
    <!-- Aosp cards and grid recents -->
    <string name="recents_type_title">Recents Style</string>
    <string name="recents_stock">Cards</string>
@@ -471,4 +469,15 @@
    <string name="recents_lock_icon_title">Lock Task</string>
    <string name="recents_lock_icon_summary">Allow locking of tasks in recents view</string>
 
+   <!-- Media art -->
+   <string name="media_art_title">Media cover art</string>
+   <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+	
+   <!-- Lockscreen tap-to sleep -->
+   <string name="double_tap_sleep_anywhere_title">Tap to sleep</string>
+   <string name="double_tap_sleep_anywhere_summary">Double-tap anywhere on the lockscreen to put device asleep</string>
+
+   <!-- Lockscreen categories -->
+   <string name="lockscreen_misc_category">Miscellaneous</string>
+	
 </resources>
