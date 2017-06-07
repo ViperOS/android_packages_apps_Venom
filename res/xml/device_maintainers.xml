@@ -44,11 +44,17 @@
 
     </PreferenceCategory> -->
 
-    <!-- HUAWEİ
+    <!-- HUAWEİ-->
     <PreferenceCategory
         android:title="@string/device_category_huawei_title">
 
-    </PreferenceCategory> -->
+        <Preference
+            android:id="@+id/device_huawei_honor5X"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_huawei_honor5X"
+            android:summary="@string/device_huawei_honor5X_summary"
+            android:selectable="false" />
+    </PreferenceCategory> 
 
     <!-- GOOGLE
     <PreferenceCategory

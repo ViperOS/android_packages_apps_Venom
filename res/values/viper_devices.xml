@@ -47,6 +47,8 @@
     <!-- HTC -->
 
     <!-- HUAWEİ -->
+    <string name="device_huawei_honor5X">honor5X</string>
+    <string name="device_huawei_honor5X_summary">kiwi\jsbeyond (kaokao)</string>
 
     <!-- GOOGLE -->
 
