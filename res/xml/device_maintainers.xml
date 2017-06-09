@@ -78,6 +78,13 @@
             android:title="@string/device_lenovo_k5"
             android:summary="@string/device_lenovo_k5_summary"
             android:selectable="false" />
+	    
+	<Preference
+            android:id="@+id/device_lenovo_a6000"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_lenovo_a6000"
+            android:summary="@string/device_lenovo_a6000_summary"
+            android:selectable="false" />
     </PreferenceCategory>
 
     <!-- LG -->
