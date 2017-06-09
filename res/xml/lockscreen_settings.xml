@@ -112,6 +112,18 @@
             android:title="@string/double_tap_sleep_anywhere_title"
             android:summary="@string/double_tap_sleep_anywhere_summary"
             android:defaultValue="false" />
+
+        <cyanogenmod.preference.CMSecureSettingSwitchPreference
+            android:key="lockscreen_visualizer"
+            android:icon="@drawable/lock_screen_visualizer_icon"
+            android:title="@string/lockscreen_visualizer_title"
+            android:defaultValue="true"/>
+
+        <cyanogenmod.preference.CMSecureSettingSwitchPreference
+            android:key="lock_screen_blur_enabled"
+            android:icon="@drawable/lock_screen_blur_icon"
+            android:title="@string/lockscreen_blur_enabled_title"
+            cm:requiresConfig="@*android:bool/config_uiBlurEnabled" />
 		
     </PreferenceCategory>
 	
