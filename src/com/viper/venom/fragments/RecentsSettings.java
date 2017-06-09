@@ -23,12 +23,12 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.android.settings.utils.Helpers;
+
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 public class RecentsSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
-		
-    private static final String INTENT_RESTART_SYSTEMUI = "restart_systemui";
 
     private static final String MEMBAR_COLOR = "systemui_recents_mem_barcolor";
     private static final String MEM_TEXT_COLOR = "systemui_recents_mem_textcolor";
@@ -105,7 +105,7 @@ public class RecentsSettings extends SettingsPreferenceFragment
                     Integer.valueOf((String) newValue));
             int val = Integer.parseInt((String) newValue);
             if (val== 0 || val == 1) {
-                getActivity().getApplicationContext().sendBroadcastAsUser(new Intent(INTENT_RESTART_SYSTEMUI), new UserHandle(UserHandle.USER_ALL));
+                Helpers.showSystemUIrestartDialog(getActivity());
             }
             mRecentsType.setValue(String.valueOf(newValue));
             mRecentsType.setSummary(mRecentsType.getEntry());
