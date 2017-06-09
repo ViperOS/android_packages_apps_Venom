@@ -58,6 +58,9 @@
     <string name="device_lenovo_k5">Vibe K5</string>
     <string name="device_lenovo_k5_summary">A6020\nJúlio Cezar (bluereptile)</string>
 
+    <string name="device_lenovo_a6000">Lenovo A6000</string>
+    <string name="device_lenovo_a6000_summary">a6000\nHassan Sardar (Has.007)</string>
+
     <!-- LG -->
     <string name="device_lg_g3">LG G3</string>
     <string name="device_lg_g3_summary">d855\nRafael Marchetto (Marchetto96)</string>
