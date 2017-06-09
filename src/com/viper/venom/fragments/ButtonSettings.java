@@ -13,7 +13,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.RemoteException;
-import android.os.UserHandle;
 import android.os.SystemProperties;
 import android.provider.Settings;
 import android.support.v14.preference.SwitchPreference;
@@ -83,8 +82,6 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private static final String CATEGORY_VOLUME = "volume_keys";
     private static final String CATEGORY_BACKLIGHT = "key_backlight";
     private static final String CATEGORY_NAVBAR = "navigation_bar_category";
-
-    private static final String INTENT_RESTART_SYSTEMUI = "restart_systemui";
 
     // Available custom actions to perform on a key press.
     // Must match values for KEY_HOME_LONG_PRESS_ACTION in:
@@ -556,7 +553,6 @@ public class ButtonSettings extends SettingsPreferenceFragment
             boolean showing = ((Boolean)newValue);
             Settings.System.putInt(getContentResolver(), Settings.System.NAVIGATION_BAR_ENABLED,
                     showing ? 1 : 0);
-            getActivity().getApplicationContext().sendBroadcastAsUser(new Intent(INTENT_RESTART_SYSTEMUI), new UserHandle(UserHandle.USER_ALL));
             return true;
         } else if (preference == mHWKeysEnabled) {
             boolean isEnabled = ((Boolean)newValue);
