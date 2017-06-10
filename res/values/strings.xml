@@ -472,5 +472,8 @@
 
    <!-- Lockscreen categories -->
    <string name="lockscreen_misc_category">Miscellaneous</string>
+
+   <!-- Other system settings category -->
+   <string name="misc_category">Other settings</string>
 	
 </resources>
