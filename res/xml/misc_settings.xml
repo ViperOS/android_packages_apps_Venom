@@ -4,10 +4,22 @@
     android:title="@string/misc_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <ListPreference
-        android:key="wired_ringtone_focus_mode"
-        android:title="@string/wired_ringtone_focus_mode_title"
-        android:entries="@array/wired_ringtone_focus_mode_entries"
-        android:entryValues="@array/wired_ringtone_focus_mode_values" />
+    <PreferenceCategory
+        android:key="sound_category"
+        android:title="@string/sound_category" >
+
+        <ListPreference
+            android:key="wired_ringtone_focus_mode"
+            android:title="@string/wired_ringtone_focus_mode_title"
+            android:entries="@array/wired_ringtone_focus_mode_entries"
+            android:entryValues="@array/wired_ringtone_focus_mode_values" />
+
+        <!-- Volume Steps -->
+        <PreferenceScreen
+            android:key="volume_steps"
+            android:title="@string/volume_steps_title"
+            android:fragment="com.viper.venom.fragments.VolumeSteps" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
