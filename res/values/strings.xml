@@ -521,4 +521,7 @@
     <string name="three_finger_gesture">Swipe to screenshot</string>
     <string name="three_finger_gesture_summary">Swipe three fingers to take screenshot</string>
 
+    <!-- Notifications category -->
+    <string name="notifications_category">Notifications</string>
+
 </resources>

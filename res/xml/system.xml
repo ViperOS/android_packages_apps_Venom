@@ -38,6 +38,12 @@
             android:fragment="com.viper.venom.fragments.PowerMenu"
             android:layout="@layout/preference_powermenu"
             android:title="@string/powermenu_category" />
+  
+         <Preference
+            android:key="notifications"
+            android:fragment="com.viper.venom.fragments.NotificationsSettings"
+            android:layout="@layout/preference_notifications_settings"
+            android:title="@string/notifications_category" />
 	
          <Preference
             android:key="misc"

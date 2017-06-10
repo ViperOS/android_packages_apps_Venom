@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/notifications_category"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <!-- Heads up -->
+    <PreferenceCategory
+        android:key="heads_up"
+        android:title="@string/heads_up_notifications_enabled_title">
+
+        <cyanogenmod.preference.GlobalSettingSwitchPreference
+            android:key="heads_up_notifications_enabled"
+            android:title="@string/heads_up_notifications_enabled_title"
+            android:summary="@string/heads_up_notifications_enabled_summary" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
