@@ -55,6 +55,9 @@
     <!-- LeEco -->
 
     <!-- LENOVO -->
+    <string name="device_lenovo_A7010a48">Lenovo k4 Note</string>
+    <string name="device_lenovo_A7010a48_summary">A7010a48\nMaintainer - Vijay Chandra (Vijay chandra)</string>
+	
     <string name="device_lenovo_k5">Vibe K5</string>
     <string name="device_lenovo_k5_summary">A6020\nJúlio Cezar (bluereptile)</string>
 
