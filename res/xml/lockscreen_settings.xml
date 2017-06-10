@@ -137,11 +137,17 @@
             android:summary="@string/lockscreen_hide_status_bar_summary"
             android:defaultValue="true" />
 
-        <com.viper.venom.preference.SystemSettingSwitchPreference
+        <SwitchPreference
             android:key="fingerprint_success_vib"
             android:title="@string/fprint_sucess_vib_title"
             android:summary="@string/fprint_sucess_vib_summary"
             android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="fp_unlock_keystore"
+            android:title="@string/fp_unlock_keystore_title"
+            android:summary="@string/fp_unlock_keystore_summary"
+            android:persistent="false" />
 
     </PreferenceCategory>
 	

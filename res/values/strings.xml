@@ -598,4 +598,8 @@
     <string name="qs_date_time_center_title">Center time and date</string>
     <string name="qs_date_time_center_summary">Requires one or more icons to be disabled</string>
 
+    <!-- Fingerprint unlock keystore -->
+    <string name="fp_unlock_keystore_title">Fingerprint unlock</string>
+    <string name="fp_unlock_keystore_summary">Unlock device with fingerprint after reboot without pin/password/pattern</string>
+
 </resources>

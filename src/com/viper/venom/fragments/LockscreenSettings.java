@@ -50,6 +50,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
+import android.hardware.fingerprint.FingerprintManager;
 
 public class LockscreenSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -62,12 +63,17 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements On
             "weather_number_of_notifications";
     private static final String KEY_LOCK_CLOCK =
             "lock_clock";
+    private static final String FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib";
+    private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
 
     private static final int MONOCHROME_ICON = 0;
 
     private ListPreference mConditionIcon;
     private ListPreference mHideWeather;
     private CustomSeekBarPreference mNumberOfNotifications;
+    private FingerprintManager mFingerprintManager;
+    private SwitchPreference mFingerprintVib;
+    private SwitchPreference mFpKeystore;
 
     private ContentResolver mResolver;
 
@@ -110,6 +116,22 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements On
         mNumberOfNotifications.setOnPreferenceChangeListener(this);
 
         updatePreference();
+
+        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_SUCCESS_VIB);
+        mFingerprintVib.setChecked((Settings.System.getInt(resolver,
+                Settings.System.FINGERPRINT_SUCCESS_VIB, 1) == 1));
+        mFingerprintVib.setOnPreferenceChangeListener(this);
+
+        mFpKeystore = (SwitchPreference) findPreference(FP_UNLOCK_KEYSTORE);
+        mFpKeystore.setChecked((Settings.System.getInt(resolver,
+                Settings.System.FP_UNLOCK_KEYSTORE, 0) == 1));
+        mFpKeystore.setOnPreferenceChangeListener(this);
+
+        if (!mFingerprintManager.isHardwareDetected()){
+            removePreference(FINGERPRINT_SUCCESS_VIB);
+            removePreference(FP_UNLOCK_KEYSTORE);
+        }
 
     }
 
@@ -161,6 +183,16 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements On
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.LOCK_SCREEN_WEATHER_NUMBER_OF_NOTIFICATIONS,
             numberOfNotifications);
+            return true;
+        }else if (preference == mFingerprintVib) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.FINGERPRINT_SUCCESS_VIB, value ? 1: 0);
+            return true;
+        } else if (preference == mFpKeystore) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.FP_UNLOCK_KEYSTORE, value ? 1: 0);
             return true;
         }
         return false;
