@@ -29,7 +29,6 @@
     <string name="statusbar_clock_title">Relógio &amp; Data</string>
     <string name="statusbar_items_title">Itens da barra de status</string>
     <string name="statusbar_misc_title">Outras configurações</string>
-    <string name="sound_title">Som</string>
     <string name="quicksettings_title">Configurações rápidas</string>
     <string name="traffic_category">Indicador de tráfego de rede</string>
     <string name="recents_title">Recentes</string>
@@ -235,15 +234,6 @@
     <string name="pixel_navbar_anim_title">Barra de navegação pixel</string>
     <string name="pixel_navbar_anim_summary">Habilitar estilo pixel na barra de navegação</string>
 	
-    <!-- Sounds: Charging sounds -->
-    <string name="charging_sounds_settings_title">Sons ao conectar o carregador</string>
-    <string name="charging_sounds_settings_summary">Personalizar o som tocado ao conectar ou desconectar o carregador</string>
-    <string name="charging_sounds_enabled_title">Habilitar</string>
-    <string name="charging_sounds_enabled_summary">Tocar um som quando conectar ou desconectar o carregador</string>
-    <string name="power_notifications_vibrate_title">Vibrar</string>
-    <string name="charging_sounds_ringtone_title">Som de notificação</string>
-    <string name="charging_sounds_ringtone_silent">Silencioso</string>
-	
     <!-- Quick settings tiles -->
     <string name="qs_tiles_category">Configurações rápidas</string>
     <string name="sysui_qqs_count_title">Configurações rápidas pequenas</string>
@@ -352,15 +342,15 @@
     <string name="daynight_title">Tema do dispositivo</string>
     <string name="daynight_header_title">Tema do dispositivo</string>
 
-    <!-- Sound & display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
+    <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
     <string name="night_mode_title">Tema do dispositivo</string>
-    <!-- Sound & display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
+    <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
     <string name="night_mode_summary">%s</string>
-    <!-- Sound & display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
+    <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
     <string name="night_mode_no">Padrão</string>
-    <!-- Sound & display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
+    <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
     <string name="night_mode_yes">Escuro</string>
-    <!-- Sound & display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
+    <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
     <string name="night_mode_auto">Automático</string>
     <string name="keywords_display_night_mode">tema escuro modo noturno noite escurecimento da tela inverter brilho</string>
 

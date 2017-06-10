@@ -29,7 +29,6 @@
     <string name="statusbar_clock_title">Clock &amp; Date</string>
     <string name="statusbar_items_title">Statusbar items</string>
     <string name="statusbar_misc_title">Statusbar Misc</string>
-    <string name="sound_title">Sound</string>
     <string name="quicksettings_title">Quick Settings</string>
     <string name="traffic_category">Traffic indicators</string>
     <string name="recents_title">Recents Screen</string>
@@ -231,14 +230,6 @@
     <string name="pixel_navbar_anim_title">Pixel navbar animation</string>
     <string name="pixel_navbar_anim_summary">Enables the pixel navbar animation</string>
 	
-    <!-- Sounds: Charging sounds -->
-    <string name="charging_sounds_settings_title">Charging sounds</string>
-    <string name="charging_sounds_enabled_title">Enable</string>
-    <string name="charging_sounds_enabled_summary">Play a sound when connecting or disconnecting a power source</string>
-    <string name="power_notifications_vibrate_title">Vibrate</string>
-    <string name="charging_sounds_ringtone_title">Notification sound</string>
-    <string name="charging_sounds_ringtone_silent">Silent</string>
-	
     <!-- Quick settings tiles -->
     <string name="qs_tiles_category">Tiles</string>
     <string name="sysui_qqs_count_title">Small QS tiles</string>
@@ -342,15 +333,15 @@
     <string name="daynight_title">Theme resources</string>
     <string name="daynight_header_title">Theme resources</string>
 
-    <!-- Sound & display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
+    <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
     <string name="night_mode_title">Theme resources</string>
-    <!-- Sound & display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
+    <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
     <string name="night_mode_summary">%s</string>
-    <!-- Sound & display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
+    <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
     <string name="night_mode_no">Light</string>
-    <!-- Sound & display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
+    <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
     <string name="night_mode_yes">Viper dark</string>
-    <!-- Sound & display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
+    <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
     <string name="night_mode_auto">Automatic</string>
     <string name="keywords_display_night_mode">dark theme night mode dim screen invert brightness</string>
 
