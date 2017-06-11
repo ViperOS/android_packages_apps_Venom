@@ -103,12 +103,14 @@
 
         <com.viper.venom.preference.SecureSettingSwitchPreference
             android:key="qs_easy_toggle"
+            android:icon="@drawable/single_tap_icon"
             android:title="@string/qs_easy_toggle_title"
             android:summary="@string/qs_easy_toggle_summary"
             android:defaultValue="false" />
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="quick_settings_vibrate"
+            android:icon="@drawable/vibration"
             android:title="@string/quick_settings_vibrate_title"
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="false"/>
@@ -120,6 +122,7 @@
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="qs_date_time_center"
+            android:icon="@drawable/calendar_clock_icon"
             android:title="@string/qs_date_time_center_title"
             android:summary="@string/qs_date_time_center_summary"
             android:defaultValue="false" />
@@ -141,6 +144,7 @@
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="qs_settings_icon_toggle"
+            android:icon="@drawable/settings_icon"
             android:title="@string/qs_settings_icon_title"
             android:summary="@string/qs_settings_icon_summary"
             android:disableDependentsState="true"
@@ -148,6 +152,7 @@
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="qs_settings_expanded_toggle"
+            android:icon="@drawable/settings_icon"
             android:title="@string/qs_settings_expanded_title"
             android:summary="@string/qs_settings_expanded_summary"
             android:dependency="qs_settings_icon_toggle"
@@ -155,18 +160,21 @@
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="qs_edit_toggle"
+            android:icon="@drawable/pencil_icon"
             android:title="@string/qs_edit_title"
             android:summary="@string/qs_edit_summary"
             android:defaultValue="true" />
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="qs_multiuser_switch_toggle"
+            android:icon="@drawable/account_icon"
             android:title="@string/qs_multiuser_switch_title"
             android:summary="@string/qs_multiuser_switch_summary"
             android:defaultValue="true" />
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="qs_expand_indicator_toggle"
+            android:icon="@drawable/expand_indicator_icon"
             android:title="@string/qs_expand_indicator_title"
             android:summary="@string/qs_expand_indicator_summary"
             android:defaultValue="true" />

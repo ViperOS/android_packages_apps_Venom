@@ -38,6 +38,7 @@
 
     <ListPreference
        android:key="weather_icon_pack"
+       android:icon="@drawable/icon_pack"
        android:title="@string/weather_icon_pack_title"
        android:dependency="lock_screen_show_weather"
        android:persistent="false" />
@@ -73,6 +74,7 @@
 
         <PreferenceScreen
             android:key="omnijaws"
+            android:icon="@drawable/lockclock"
             android:title="@string/weather_config_title"
             android:dependency="lock_screen_show_weather"
             android:persistent="false">
@@ -116,24 +118,28 @@
 
         <com.viper.venom.preference.SecureSettingSwitchPreference
             android:key="lockscreen_enable_qs"
+            android:icon="@drawable/ic_settings_quicksettings"
             android:title="@string/lockscreen_enable_qs_title"
             android:summary="@string/lockscreen_enable_qs_summary"
             android:defaultValue="true" />
 
         <com.viper.venom.preference.SecureSettingSwitchPreference
             android:key="lockscreen_hide_status_bar"
+            android:icon="@drawable/hide_panel"
             android:title="@string/lockscreen_hide_status_bar_title"
             android:summary="@string/lockscreen_hide_status_bar_summary"
             android:defaultValue="true" />
 
         <SwitchPreference
             android:key="fingerprint_success_vib"
+            android:icon="@drawable/vibration"
             android:title="@string/fprint_sucess_vib_title"
             android:summary="@string/fprint_sucess_vib_summary"
             android:defaultValue="true" />
 
         <SwitchPreference
             android:key="fp_unlock_keystore"
+            android:icon="@drawable/ic_fp"
             android:title="@string/fp_unlock_keystore_title"
             android:summary="@string/fp_unlock_keystore_summary"
             android:persistent="false" />

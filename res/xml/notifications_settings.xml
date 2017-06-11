@@ -11,11 +11,13 @@
 
         <cyanogenmod.preference.GlobalSettingSwitchPreference
             android:key="heads_up_notifications_enabled"
+            android:icon="@drawable/headsup"
             android:title="@string/heads_up_notifications_enabled_title"
             android:summary="@string/heads_up_notifications_enabled_summary" />
 
         <ListPreference
             android:key="heads_up_time_out"
+            android:icon="@drawable/headsup_icon"
             android:title="@string/heads_up_time_out_title"
             android:entries="@array/heads_up_time_out_entries"
             android:entryValues="@array/heads_up_time_out_values"
@@ -24,6 +26,7 @@
 
         <ListPreference
             android:key="heads_up_snooze_time"
+            android:icon="@drawable/headsup_sleep_icon"
             android:title="@string/heads_up_snooze_title"
             android:entries="@array/heads_up_snooze_entries"
             android:entryValues="@array/heads_up_snooze_values"

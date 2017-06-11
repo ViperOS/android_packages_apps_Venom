@@ -10,6 +10,7 @@
 
         <ListPreference
             android:key="wired_ringtone_focus_mode"
+            android:icon="@drawable/ringtone_focus_mod"
             android:title="@string/wired_ringtone_focus_mode_title"
             android:entries="@array/wired_ringtone_focus_mode_entries"
             android:entryValues="@array/wired_ringtone_focus_mode_values" />
@@ -17,6 +18,7 @@
         <!-- Volume Steps -->
         <PreferenceScreen
             android:key="volume_steps"
+            android:icon="@drawable/volume_steps"
             android:title="@string/volume_steps_title"
             android:fragment="com.viper.venom.fragments.VolumeSteps" />
 
@@ -28,6 +30,7 @@
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
              android:key="three_finger_gesture"
+            android:icon="@drawable/three_finger_gesture_icon"
              android:title="@string/three_finger_gesture"
              android:summary="@string/three_finger_gesture_summary"
              android:defaultValue="false" />
@@ -40,16 +43,19 @@
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
+            android:icon="@drawable/vibration"
             android:title="@string/incall_vibrate_connect_title"
             android:defaultValue="false" />
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
+            android:icon="@drawable/vibration"
             android:title="@string/incall_vibrate_call_wait_title"
             android:defaultValue="false" />
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
+            android:icon="@drawable/vibration"
             android:title="@string/incall_vibrate_disconnect_title"
             android:defaultValue="false" />
 
@@ -61,12 +67,14 @@
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="toast_icon"
+            android:icon="@drawable/toast_icon"
             android:title="@string/toast_icon_title"
             android:summary="@string/toast_icon_summary"
             android:defaultValue="true" />
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="screenshot_sound"
+            android:icon="@drawable/screenshot_type_icon"
             android:title="@string/screenshot_sound_title"
             android:summary="@string/screenshot_sound_summary"
             android:defaultValue="true" />
