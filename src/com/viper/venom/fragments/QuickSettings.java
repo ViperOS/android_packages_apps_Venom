@@ -169,6 +169,10 @@ public class QuickSettings extends SettingsPreferenceFragment
             intValue = (Integer) newValue;
             Settings.System.putInt(resolver,
                     Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, intValue);
+            Settings.System.putInt(resolver,
+                    Settings.System.STATUS_BAR_CUSTOM_HEADER, 0);
+            Settings.System.putInt(resolver,
+                    Settings.System.STATUS_BAR_CUSTOM_HEADER, 1);
             return true;
         } else if (preference == mHeaderProvider) {
             String value = (String) newValue;

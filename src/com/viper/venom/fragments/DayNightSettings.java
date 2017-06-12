@@ -65,7 +65,7 @@ public class DayNightSettings extends SettingsPreferenceFragment implements
              } catch (NumberFormatException e) {
                  Log.e(TAG, "could not persist night mode setting", e);
              }
-             Helpers.showSystemUIrestartDialog(getActivity());
+             Helpers.restartSystemUI(getActivity());
          }
          return true; 
        }

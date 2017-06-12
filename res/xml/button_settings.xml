@@ -133,14 +133,6 @@
             android:defaultValue="true"
             android:dependency="camera_double_tap_power_gesture" />
 
-        <cyanogenmod.preference.CMSystemSettingSwitchPreference
-            android:key="torch_long_press_power_gesture"
-            android:icon="@drawable/lock_screen_flashlight_icon"
-            android:title="@string/torch_long_press_power_gesture_title"
-            android:summary="@string/torch_long_press_power_gesture_desc"
-            android:defaultValue="false"
-            cm:requiresConfig="@*android:bool/config_supportLongPressPowerWhenNonInteractive" />
-
     </PreferenceCategory>
 
     <PreferenceCategory

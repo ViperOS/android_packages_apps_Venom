@@ -26,6 +26,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.utils.Helpers;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
+import com.viper.venom.preference.SystemSettingSwitchPreference;
 
 public class RecentsSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -38,11 +39,13 @@ public class RecentsSettings extends SettingsPreferenceFragment
     private ColorPickerPreference mMemTextColor;
 
     private static final String RECENTS_TYPE = "recents_use_grid";
+    private static final String RECENTS_LOCK = "recents_lock_icon";
 
     private SwitchPreference mRecentsClearAll;
     private ListPreference mRecentsClearAllLocation;
     private ListPreference mRecentsType;
     private ListPreference mImmersiveRecents;
+    private SystemSettingSwitchPreference mRecentsLock;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -60,6 +63,14 @@ public class RecentsSettings extends SettingsPreferenceFragment
         mRecentsType.setValue(String.valueOf(type));
         mRecentsType.setSummary(mRecentsType.getEntry());
         mRecentsType.setOnPreferenceChangeListener(this);
+
+        mRecentsLock = (SystemSettingSwitchPreference) findPreference(RECENTS_LOCK);
+        mRecentsLock.setEnabled(type == 0 ? true : false);
+
+        if (type == 1){
+            mRecentsLock.setChecked(false);
+            Settings.System.putInt(resolver, Settings.System.RECENTS_LOCK_ICON, 0);
+        }
 		
         // clear all location
         mRecentsClearAllLocation = (ListPreference) prefSet.findPreference(RECENTS_CLEAR_ALL_LOCATION);
@@ -111,6 +122,13 @@ public class RecentsSettings extends SettingsPreferenceFragment
             Settings.System.putInt(resolver, Settings.System.RECENTS_USE_GRID,
                     Integer.valueOf((String) newValue));
             int val = Integer.parseInt((String) newValue);
+
+            mRecentsLock.setEnabled(val == 0 ? true : false);
+            if (val == 1){
+            mRecentsLock.setChecked(false);
+            Settings.System.putInt(resolver, Settings.System.RECENTS_LOCK_ICON, 0);
+            }
+
             if (val== 0 || val == 1) {
                 Helpers.showSystemUIrestartDialog(getActivity());
             }

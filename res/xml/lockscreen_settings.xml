@@ -18,36 +18,41 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/lockscreen_ui_title">
 	
-    <PreferenceCategory
-        android:key="weather_category"
-        android:title="@string/weather_category" >
+<PreferenceCategory
+    android:key="weather_category"
+    android:title="@string/weather_category" >
 
-    <com.viper.venom.preference.SystemSettingSwitchPreference
-        android:key="lock_screen_show_weather"
-		android:icon="@drawable/show_weather"
-        android:title="@string/weather_show_weather_title"
-        android:summary="@string/weather_show_weather_summary" />
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="lock_screen_show_weather"
+            android:icon="@drawable/show_weather"
+            android:title="@string/weather_show_weather_title"
+            android:summary="@string/weather_show_weather_summary" />
 
-    <com.viper.venom.preference.SystemSettingSwitchPreference
-        android:key="lock_screen_show_weather_location"
-		android:icon="@drawable/weather_location"
-        android:title="@string/weather_show_location_title"
-        android:summary="@string/weather_show_location_summary"
-        android:defaultValue="true"
-        android:dependency="lock_screen_show_weather" />
+        <PreferenceScreen
+            android:key="omnijaws"
+            android:icon="@drawable/lockclock"
+            android:title="@string/weather_config_title"
+            android:dependency="lock_screen_show_weather"
+            android:persistent="false">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="org.omnirom.omnijaws"
+                android:targetClass="org.omnirom.omnijaws.SettingsActivityService" />
+        </PreferenceScreen>
 
-    <ListPreference
-       android:key="weather_icon_pack"
-       android:icon="@drawable/icon_pack"
-       android:title="@string/weather_icon_pack_title"
-       android:dependency="lock_screen_show_weather"
-       android:persistent="false" />
+        <ListPreference
+            android:key="weather_icon_pack"
+            android:icon="@drawable/icon_pack"
+            android:title="@string/weather_icon_pack_title"
+            android:dependency="lock_screen_show_weather"
+            android:persistent="false" />
 
-    </PreferenceCategory>
-	
-    <PreferenceCategory
-        android:key="weather_cat_notifications"
-        android:title="@string/weather_cat_notifications_title">
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="lock_screen_show_weather_location"
+            android:icon="@drawable/weather_location"
+            android:title="@string/weather_show_location_title"
+            android:summary="@string/weather_show_location_summary"
+            android:defaultValue="true"
+            android:dependency="lock_screen_show_weather" />
 
         <ListPreference
             android:key="weather_hide_panel"
@@ -60,29 +65,12 @@
 
         <com.viper.venom.preference.CustomSeekBarPreference
             android:key="weather_number_of_notifications"
-			android:icon="@drawable/counter_icon"
+            android:icon="@drawable/counter_icon"
             android:title="@string/weather_number_of_notifications_title"
             android:max="6"
             settings:min="1"
             android:persistent="false"
             android:dependency="lock_screen_show_weather" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="more_cat_lock_clock"
-        android:title="@string/lock_clock_title">
-
-        <PreferenceScreen
-            android:key="omnijaws"
-            android:icon="@drawable/lockclock"
-            android:title="@string/weather_config_title"
-            android:dependency="lock_screen_show_weather"
-            android:persistent="false">
-
-            <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="org.omnirom.omnijaws"
-                android:targetClass="org.omnirom.omnijaws.SettingsActivityService" />
-        </PreferenceScreen>
 
     </PreferenceCategory>
 	
@@ -115,6 +103,21 @@
             android:icon="@drawable/lock_screen_blur_icon"
             android:title="@string/lockscreen_blur_enabled_title"
             cm:requiresConfig="@*android:bool/config_uiBlurEnabled" />
+
+        <cyanogenmod.preference.CMSystemSettingSwitchPreference
+            android:key="torch_long_press_power_gesture"
+            android:icon="@drawable/lock_screen_flashlight_icon"
+            android:title="@string/torch_long_press_power_gesture_title"
+            android:summary="@string/torch_long_press_power_gesture_desc"
+            android:defaultValue="false"
+            cm:requiresConfig="@*android:bool/config_supportLongPressPowerWhenNonInteractive" />
+
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_battery_info"
+            android:icon="@drawable/ic_battery_charging"
+            android:title="@string/lockscreen_battery_info_title"
+            android:summary="@string/lockscreen_battery_info_summary"
+            android:defaultValue="true" />
 
         <com.viper.venom.preference.SecureSettingSwitchPreference
             android:key="lockscreen_enable_qs"

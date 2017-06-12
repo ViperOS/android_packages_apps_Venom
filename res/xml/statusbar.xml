@@ -56,12 +56,6 @@
             android:fragment="com.viper.venom.fragments.BatterySettings"
             android:layout="@layout/preference_battery_settings"
             android:title="@string/battery_title" />
-
-          <PreferenceScreen
-            android:key="statusbarmisc"
-            android:fragment="com.viper.venom.fragments.StatusBarMiscSettings"
-            android:layout="@layout/preference_statusbarmisc_settings"
-            android:title="@string/statusbar_misc_title" />
 			
           <PreferenceScreen
             android:key="carrier_label"
@@ -74,5 +68,11 @@
             android:fragment="com.viper.venom.fragments.QuickSettings"
             android:layout="@layout/preference_quicksettings_settings"
             android:title="@string/quicksettings_title" />
+
+          <PreferenceScreen
+            android:key="statusbarmisc"
+            android:fragment="com.viper.venom.fragments.StatusBarMiscSettings"
+            android:layout="@layout/preference_statusbarmisc_settings"
+            android:title="@string/statusbar_misc_title" />
 	
 </PreferenceScreen>

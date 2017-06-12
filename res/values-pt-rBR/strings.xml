@@ -19,9 +19,7 @@
     <!-- Tabs -->
     <string name="about_category">Sobre</string>
     <string name="system_category">Sistema</string>
-    <string name="lockscreen_category">Tela de bloqueio</string>
     <string name="statusbar_category">Barra de status</string>
-    <string name="multitasking_category">Multitarefa</string>
 
     <!-- Category -->
     <string name="battery_title">Bateria</string>
@@ -258,7 +256,7 @@
     <!-- OmniJaws -->
     <string name="omnijaws_settings_title">OmniJaws</string>
     <string name="omnijaws_settings_summary">Personalizar o widget de tempo</string>
-    <string name="weather_config_title">Previsão do Tempo</string>
+    <string name="weather_config_title">Configurações do serviço</string>
     <string name="weather_config_summary"></string>
     <string name="weather_icon_pack_title">Pacote de ícones climáticos</string>
     <string name="weather_icon_pack_note">Nota\u003a Você pode instalar novos pacotes de ícones da play store procurando por \"Chronus icons\"</string>
@@ -417,7 +415,7 @@
 
    <!-- Show 4G -->
    <string name="show_4g_title">Mostrar 4G</string>
-   <string name="show_4g_summary">Mostrar 4G em vez de LTE nos ícones de sinal</string>
+   <string name="show_4g_summary">Mostrar 4G ao invés de LTE nos ícones de sinal</string>
 
    <!-- Statusbar ViperOS logo -->
    <string name="status_bar_viper_logo_title">Logotipo da rom</string>
@@ -425,9 +423,9 @@
    <string name="status_bar_viper_logo_color">Cor do logotipo</string>
    <string name="status_bar_viper_logo_position">Localização do logotipo</string>
    <string name="status_bar_viper_logo_position_summary">Escolher o lado para exibir o logotipo, à esquerda ou direita</string>
-   <string name="status_bar_logo_position_right">Direita</string>
+   <string name="status_bar_logo_position_right">Direita (Ao lado do último ícone)</string>
    <string name="status_bar_logo_position_left">Esquerda</string>
-   <string name="status_bar_logo_position_center">Centro</string>
+   <string name="status_bar_logo_position_center">Direita (Ao lado do primeiro ícone)</string>
 	
    <!-- Aosp cards and grid recents -->
    <string name="recents_type_title">Estilo do Recentes</string>
@@ -436,7 +434,7 @@
 
    <!-- Recents lock icon -->
    <string name="recents_lock_icon_title">Bloqueio de tarefa</string>
-   <string name="recents_lock_icon_summary">Permitir bloqueio de tarefas na visualização de recentes</string>
+   <string name="recents_lock_icon_summary">Permitir bloqueio de tarefas na visualização de recentes (não disponível no estilo Grade)</string>
 
   <!-- Media art -->
   <string name="media_art_title">Mostrar capa do album de música</string>

@@ -19,9 +19,7 @@
     <!-- Tabs -->
     <string name="about_category">About</string>
     <string name="system_category">System</string>
-    <string name="lockscreen_category">Lockscreen</string>
     <string name="statusbar_category">Status Bar</string>
-    <string name="multitasking_category">Multi-Tasking</string>
 
     <!-- Category -->
     <string name="battery_title">Battery</string>
@@ -428,9 +426,9 @@
     <string name="status_bar_logo">Viper logo</string>
     <string name="status_bar_viper_logo_position">Logo location</string>
     <string name="status_bar_viper_logo_position_summary">Choose which side to display the logo on, left or right</string>
-    <string name="status_bar_logo_position_right">Right</string>
+    <string name="status_bar_logo_position_right">Right (Next to the last icon)</string>
     <string name="status_bar_logo_position_left">Left</string>
-    <string name="status_bar_logo_position_center">Center</string>
+    <string name="status_bar_logo_position_center">Right (Next to the first icon)</string>
 
     <!-- Recents Membar -->
     <string name="systemui_recents_mem_display_title">Show Memory Bar</string>
@@ -445,7 +443,7 @@
 
     <!-- Recents lock icon -->
     <string name="recents_lock_icon_title">Lock Task</string>
-    <string name="recents_lock_icon_summary">Allow locking of tasks in recents view</string>
+    <string name="recents_lock_icon_summary">Allow locking of tasks in recents view (only in Cards style)</string>
 
     <!-- Media art -->
     <string name="media_art_title">Media cover art</string>
