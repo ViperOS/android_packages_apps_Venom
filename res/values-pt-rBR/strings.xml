@@ -58,8 +58,9 @@
     <string name="advanced_reboot_show_always">Mostrar sempre</string>
 
     <!-- Color Picker -->
-    <string name="dialog_color_picker">Selecionador de cores</string>
+    <string name="dialog_color_picker">Selecionar cor</string>
     <string name="press_color_to_apply">Pressione a cor abaixo para aplicar</string>
+    <string name="hex">Cor:</string>
     <string name="set">Definir</string>
     <string name="color_default">Padrão</string>
     <string name="default_string">Padrão</string>
@@ -100,7 +101,7 @@
     <string name="status_bar_date_style_normal">Normal</string>
     <string name="status_bar_date_style_lowercase">Minúsculas</string>
     <string name="status_bar_date_style_uppercase">Maiúsculas</string>
-    <string name="status_bar_date_format_custom">Formato personalizado de java</string>
+    <string name="status_bar_date_format_custom">Formato java personalizado</string>
     <string name="status_bar_date_string_edittext_title">Deve estar em formato de data, por exemplo: MM/dd/yy</string>
     <string name="status_bar_date_string_edittext_summary">Digite o texto</string>
 	
@@ -108,7 +109,7 @@
     <string name="menu_cancel">Descartar</string>
 	
     <!-- Status bar - Battery -->
-    <string name="status_bar_battery_style_title">Estilo do status da bateria</string>
+    <string name="status_bar_battery_style_title">Estilo do ícone</string>
     <string name="status_bar_battery_style_icon_portrait">Ícone em modo retrato</string>
     <string name="status_bar_battery_style_icon_landscape">Ícone em paisagem</string>
     <string name="status_bar_battery_style_circle">Círculo</string>
@@ -133,8 +134,8 @@
     <string name="status_bar_icons_summary">Controle quais ícones da barra de status são mostrados</string>
   
     <!-- Status bar - double tap to sleep -->
-    <string name="status_bar_double_tap_to_sleep_title">Toque duas vezes para dormir</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Toque duas vezes na barra de status para desligar o visor</string>
+    <string name="status_bar_double_tap_to_sleep_title">Toque duas vezes para desligar</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Toque duas vezes na barra de status para desligar a tela</string>
 
     <!-- Button settings -->
     <string name="hardware_keys_power_key_title">Botão de energia</string>
@@ -229,7 +230,7 @@
     <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="camera_double_tap_power_gesture_desc">Abrir a câmera rapidamente sem desbloquear a tela</string>
     <string name="torch_long_press_power_gesture_title">Lanterna na tela de Bloqueio</string>
-    <string name="torch_long_press_power_gesture_desc">Toque longo no botão power equanto a tela estiver desligada para ligar a lanterna</string>
+    <string name="torch_long_press_power_gesture_desc">Toque longo no botão power enquanto a tela estiver desligada para ligar a lanterna</string>
 	
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Barra de navegação pixel</string>
@@ -258,14 +259,14 @@
 	
     <!-- OmniJaws -->
     <string name="omnijaws_settings_title">OmniJaws</string>
-    <string name="omnijaws_settings_summary">Personalizar o widget de tempo</string>
-    <string name="weather_config_title">Configurações do serviço</string>
-    <string name="weather_config_summary"></string>
+    <string name="omnijaws_settings_summary">Personalizar o widget</string>
+    <string name="weather_config_title">Configurações</string>
+    <string name="weather_config_summary">Configurar o serviço</string>
     <string name="weather_icon_pack_title">Pacote de ícones climáticos</string>
     <string name="weather_icon_pack_note">Nota\u003a Você pode instalar novos pacotes de ícones da play store procurando por \"Chronus icons\"</string>
 	
     <!-- Recents panel settings -->
-    <string name="recents_default_category">AOSP</string>
+    <string name="recents_default_category">Recentes</string>
     <string name="show_clear_all_recents_button_title">Botão circular</string>
     <string name="show_clear_all_recents_button_summary">Mostrar um botão circular ao invés do texto \"Limpar Tudo\"</string>
     <string name="recents_clear_all_location_title">Localização do botão circular</string>
@@ -308,18 +309,15 @@
     <string name="weather_show_weather_summary">Habilitar para mostrar informações sobre o clima</string>
     <string name="weather_show_location_title">Mostrar localização</string>
     <string name="weather_show_location_summary">Habilitar para mostrar a localização</string>
-    <string name="weather_hide_panel_title">Ocultar Painel de clima</string>
-    <string name="weather_hide_panel_dlg_title">Escolha quando o painel de clima deve ser ocultado</string>
+    <string name="weather_hide_panel_title">Ocultar painel</string>
+    <string name="weather_hide_panel_dlg_title">Escolha quando o painel deve ser ocultado</string>
     <string name="weather_hide_panel_auto_title">Automático</string>
     <string name="weather_hide_panel_custom_title">Customizado</string>
     <string name="weather_hide_panel_never_title">Nunca</string>
-    <string name="weather_hide_panel_auto_summary">O painel de clima será ocultado, quando as notificações visíveis atingir o máximo permitido de notificações na tela de bloqueio</string>
-    <string name="weather_hide_panel_custom_summary">O painel de clima será ocultado, quando as notificações visíveis atingir o número escolhido de notificações (%s)</string>
-    <string name="weather_hide_panel_never_summary">O painel do clima não pode ser oculto</string>
+    <string name="weather_hide_panel_auto_summary">O painel de clima será ocultado quando as notificações visíveis atingir o máximo permitido</string>
+    <string name="weather_hide_panel_custom_summary">O painel de clima será ocultado quando as notificações visíveis atingir o número escolhido de notificações (%s)</string>
+    <string name="weather_hide_panel_never_summary">O painel do clima não será ocultado</string>
     <string name="weather_number_of_notifications_title">Número de notificações</string>
-    <string name="weather_config_title">Configurações de serviço</string>
-    <string name="weather_icon_pack_title">condições do iconpack</string>
-    <string name="lock_clock_title">Serviço meteorológico</string>
 
     <!-- Day/Night -->
     <string name="daynight_title">Tema do dispositivo</string>
@@ -327,6 +325,7 @@
 
     <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
     <string name="night_mode_title">Tema do dispositivo</string>
+    <string name="night_mode_summary">Alterar o tema padrão do dispositivo</string>
     <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
     <string name="night_mode_summary">%s</string>
     <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
@@ -466,6 +465,7 @@
 
     <!-- Volume Steps -->
     <string name="volume_steps_title">Níveis do volume</string>
+    <string name="volume_steps_summary">Customizar os níveis de volume</string>
     <string name="volume_steps_alarm_title">Níveis de volume: Alarme</string>
     <string name="volume_steps_dtmf_title">Níveis de volume: DTMF</string>
     <string name="volume_steps_music_title">Níveis de volume: Midia</string>
@@ -515,9 +515,9 @@
 
     <!-- Heads up snooze -->
     <string name="heads_up_snooze_title">Silenciar temporariamente</string>
-    <string name="heads_up_snooze_summary_one_minute">Desliza para cima sobre a notificação Heads-Up e esse aplicativo irá dormir por 1 minuto</string>
-    <string name="heads_up_snooze_summary">Desliza para cima sobre a notificação Heads-Up e esse aplicativo irá dormir por <xliff:g id="number">%d </xliff:g> minutos</string>
-    <string name="heads_up_snooze_disabled_summary">Tempo da Soneca está desativado</string>
+    <string name="heads_up_snooze_summary_one_minute">Desliza para cima sobre a notificação e esse aplicativo irá ficar silenciado por 1 minuto</string>
+    <string name="heads_up_snooze_summary">Desliza para cima sobre a notificação e esse aplicativo irá ficar silenciado por <xliff:g id="number">%d </xliff:g> minutos</string>
+    <string name="heads_up_snooze_disabled_summary">Desativado</string>
     <string name="heads_up_snooze_1min">1 minuto</string>
     <string name="heads_up_snooze_3min">3 minutos</string>
     <string name="heads_up_snooze_5min">5 minutos</string>
@@ -527,7 +527,7 @@
 
     <!-- Quick settings on secure lockscreen -->
     <string name="lockscreen_enable_qs_title">Configurações rápidas</string>
-    <string name="lockscreen_enable_qs_summary">Permitir acessar configurações rápidas na tela de bloqueio</string>
+    <string name="lockscreen_enable_qs_summary">Permitir acessar as configurações rápidas na tela de bloqueio</string>
 
     <!-- Hide Statusbar on Lockscreen -->
     <string name="lockscreen_hide_status_bar_title">Mostrar a barra de status</string>
@@ -549,11 +549,14 @@
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Opções de vibração na chamada</string>
     <string name="incall_vibrate_connect_title">Vibrar ao conectar</string>
-    <string name="incall_vibrate_call_wait_title">Vibrar na chamada em espera</string>
+    <string name="incall_vibrate_connect_summary">Ativar vibração quando a chamada for conectada</string>
     <string name="incall_vibrate_disconnect_title">Vibrar ao desconectar</string>
+    <string name="incall_vibrate_disconnect_summary">Ativar vibração quando a chamada for desconectada</string>
+    <string name="incall_vibrate_call_wait_title">Vibrar na chamada em espera</string>
+    <string name="incall_vibrate_call_wait_summary">Ativar vibração quando a chamada estiver em espera</string>
    
     <!-- QS easy toggles -->
-    <string name="qs_easy_toggle_title">Alternador fácil avançado de configurações rápidas</string>
+    <string name="qs_easy_toggle_title">Alternador fácil nas configurações rápidas</string>
     <string name="qs_easy_toggle_summary">Ativar ação de um toque para ativar/desativar dados móveis, wifi e bluetooth</string>
 
     <!-- Screenshot Sound  -->
@@ -562,17 +565,19 @@
 
     <!-- QS Header Icons -->
     <string name="qs_settings_icon_title">Atalho de configurações</string>
-    <string name="qs_settings_icon_summary">Desativar o atalho de configurações no cabeçalho</string>
+    <string name="qs_settings_icon_summary">Mostrar o atalho de configurações no cabeçalho</string>
+    <string name="qs_settings_expanded_title">Atalho de configurações quando expandido</string>
+    <string name="qs_settings_expanded_summary">Apenas mostra o ícone de configuração quando a barra de status estiver expandida</string>
     <string name="qs_edit_title">Ícone de edição</string>
-    <string name="qs_edit_summary">Desativar o ícone de edição (lápis) no cabeçalho</string>
-    <string name="qs_multiuser_switch_title">Interruptor de multi-usuário</string>
-    <string name="qs_multiuser_switch_summary">Desativar o interruptor de multi usuário no cabeçalho</string>
+    <string name="qs_edit_summary">Mostrar o ícone de edição (lápis) no cabeçalho</string>
+    <string name="qs_multiuser_switch_title">Ícone de multi usuário</string>
+    <string name="qs_multiuser_switch_summary">Mostrar o ícone de multi usuário no cabeçalho</string>
     <string name="qs_expand_indicator_title">Indicador de expansão</string>
-    <string name="qs_expand_indicator_summary">Desabilitar o indicador de expansão no cabeçalho</string>
+    <string name="qs_expand_indicator_summary">Mostrar o indicador de expansão no cabeçalho</string>
 
     <!-- Center Time + Date in header -->
     <string name="qs_date_time_center_title">Centralizar data e hora</string>
-    <string name="qs_date_time_center_summary">Requer que um ou mais ícones sejam desativados</string>
+    <string name="qs_date_time_center_summary">Requer que um ou mais ícones (listado abaixo) sejam desativados</string>
 
     <!-- Fingerprint unlock keystore -->
     <string name="fp_unlock_keystore_title">Desbloqueio por impressão digital</string>
@@ -591,12 +596,18 @@
     <string name="ticker_title">Ticker da barra de status</string>
     <string name="ticker_screen_summary">Personalizar o estilo do ticker na barra de status</string>
     <string name="ticker_summary">Ativar o ticker antigo da barra de status</string>
-    <string name="ticker_restore_defaults_title">Restaurar Padrões</string>
+    <string name="ticker_restore_defaults_title">Restaurar padrões</string>
+    <string name="ticker_restore_defaults_summary">Redefinr as configurações para o padrão</string>
     <string name="text_title">Texto</string>
     <string name="icon_title">Ícone</string>
+    <string name="values_restored_title">Valores restaurados</string>
     <string name="colors_title">Cores</string>
     <string name="ticker_disabled">Sem ticker</string>
     <string name="ticker_enabled">Notificação</string>
     <string name="ticker_media_enabled">Notificação e música</string>
+
+    <!-- Disable Battery Saver Warning Color -->
+    <string name="battery_saver_color_title">Cor de aviso no modo de economia</string>
+    <string name="battery_saver_color_summary">Habilitar a cor laranja nas barras de status/navegação quando o modo de economia de bateria estiver ativado</string>
 
 </resources>

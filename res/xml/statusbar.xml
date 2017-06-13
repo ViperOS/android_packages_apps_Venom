@@ -21,58 +21,58 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-     <PreferenceScreen
-        android:key="traffic"
-        android:fragment="com.viper.venom.fragments.Traffic"
-        android:layout="@layout/preference_traffic"
-        android:title="@string/traffic_category" />
+    <PreferenceScreen
+      android:key="quicksettings"
+      android:fragment="com.viper.venom.fragments.QuickSettings"
+      android:layout="@layout/preference_quicksettings_settings"
+      android:title="@string/quicksettings_title" />
 
-        <PreferenceScreen
-            android:key="status_bar_icons"
-            android:title="@string/statusbar_items_title"
-            android:layout="@layout/preference_systemui_tuner_statusbaritems" >
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.TunerActivity">
-                <extra android:name="tuner" android:value="status_bar" />
-            </intent>
-        </PreferenceScreen>
+    <PreferenceScreen
+      android:key="status_bar_icons"
+      android:title="@string/statusbar_items_title"
+      android:layout="@layout/preference_systemui_tuner_statusbaritems" >
+        <intent
+          android:action="android.intent.action.MAIN"
+          android:targetPackage="com.android.systemui"
+          android:targetClass="com.android.systemui.tuner.TunerActivity">
+          <extra android:name="tuner" android:value="status_bar" />
+        </intent>
+    </PreferenceScreen>
 
-        <PreferenceScreen
-            android:key="viper_logo"
-            android:title="@string/status_bar_viper_logo_title"
-            android:layout="@layout/preference_statusbarlogo"
-	    android:fragment="com.viper.venom.fragments.LogoSettings"  />
+    <PreferenceScreen
+      android:key="statusbarclock"
+      android:fragment="com.viper.venom.fragments.StatusBarClockSettings"
+      android:layout="@layout/preference_statusbarclock_settings"
+      android:title="@string/statusbar_clock_title" />
+      
+    <PreferenceScreen
+      android:key="carrier_label"
+      android:fragment="com.viper.venom.fragments.CarrierLabel"
+      android:layout="@layout/preference_carrierlabel"
+      android:title="@string/carrierlabel_title"/>
 
-          <PreferenceScreen
-            android:key="statusbarclock"
-            android:fragment="com.viper.venom.fragments.StatusBarClockSettings"
-            android:layout="@layout/preference_statusbarclock_settings"
-            android:title="@string/statusbar_clock_title" />
+    <PreferenceScreen
+      android:key="status_bar_battery_style"
+      android:fragment="com.viper.venom.fragments.BatterySettings"
+      android:layout="@layout/preference_battery_settings"
+      android:title="@string/battery_title" />
 
-         <PreferenceScreen
-            android:key="status_bar_battery_style"
-            android:fragment="com.viper.venom.fragments.BatterySettings"
-            android:layout="@layout/preference_battery_settings"
-            android:title="@string/battery_title" />
-			
-          <PreferenceScreen
-            android:key="carrier_label"
-            android:fragment="com.viper.venom.fragments.CarrierLabel"
-            android:layout="@layout/preference_carrierlabel"
-            android:title="@string/carrierlabel_title"/>
-	
-          <PreferenceScreen
-            android:key="quicksettings"
-            android:fragment="com.viper.venom.fragments.QuickSettings"
-            android:layout="@layout/preference_quicksettings_settings"
-            android:title="@string/quicksettings_title" />
+    <PreferenceScreen
+      android:key="viper_logo"
+      android:title="@string/status_bar_viper_logo_title"
+      android:layout="@layout/preference_statusbarlogo"
+      android:fragment="com.viper.venom.fragments.LogoSettings"  />
 
-          <PreferenceScreen
-            android:key="statusbarmisc"
-            android:fragment="com.viper.venom.fragments.StatusBarMiscSettings"
-            android:layout="@layout/preference_statusbarmisc_settings"
-            android:title="@string/statusbar_misc_title" />
+    <PreferenceScreen
+      android:key="traffic"
+      android:fragment="com.viper.venom.fragments.Traffic"
+      android:layout="@layout/preference_traffic"
+      android:title="@string/traffic_category" />
+
+    <PreferenceScreen
+      android:key="statusbarmisc"
+      android:fragment="com.viper.venom.fragments.StatusBarMiscSettings"
+      android:layout="@layout/preference_statusbarmisc_settings"
+      android:title="@string/statusbar_misc_title" />
 	
 </PreferenceScreen>

@@ -20,6 +20,7 @@
             android:key="volume_steps"
             android:icon="@drawable/volume_steps"
             android:title="@string/volume_steps_title"
+            android:title="@string/volume_steps_summary"
             android:fragment="com.viper.venom.fragments.VolumeSteps" />
 
     </PreferenceCategory>
@@ -43,20 +44,23 @@
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
-            android:icon="@drawable/vibration"
+            android:icon="@drawable/call_connect_icon"
             android:title="@string/incall_vibrate_connect_title"
-            android:defaultValue="false" />
-
-        <com.viper.venom.preference.SystemSettingSwitchPreference
-            android:key="vibrate_on_callwaiting"
-            android:icon="@drawable/vibration"
-            android:title="@string/incall_vibrate_call_wait_title"
+            android:summary="@string/incall_vibrate_connect_summary"
             android:defaultValue="false" />
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
-            android:icon="@drawable/vibration"
+            android:icon="@drawable/call_disconnect_icon"
             android:title="@string/incall_vibrate_disconnect_title"
+            android:summary="@string/incall_vibrate_disconnect_summary"
+            android:defaultValue="false" />
+
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="vibrate_on_callwaiting"
+            android:icon="@drawable/call_wait_icon"
+            android:title="@string/incall_vibrate_call_wait_title"
+            android:summary="@string/incall_vibrate_call_wait_summary"
             android:defaultValue="false" />
 
     </PreferenceCategory>
@@ -81,6 +85,7 @@
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="battery_save_mode_color"
+            android:icon="@drawable/ic_battery_settings"
             android:title="@string/battery_saver_color_title"
             android:summary="@string/battery_saver_color_summary"
             android:defaultValue="true" />

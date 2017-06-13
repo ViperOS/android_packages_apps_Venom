@@ -79,6 +79,7 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements On
 
 
     private ListPreference mWeatherIconPack;
+    private String mWeatherIconPackNote;
     private ListPreference mHideWeather;
     private CustomSeekBarPreference mNumberOfNotifications;
     private FingerprintManager mFingerprintManager;
@@ -97,6 +98,8 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements On
 
         mResolver = getActivity().getContentResolver();
         PreferenceScreen prefs = getPreferenceScreen();
+
+        mWeatherIconPackNote = getResources().getString(R.string.weather_icon_pack_note);
 
         mHideWeather =
                 (ListPreference) findPreference(PREF_HIDE_WEATHER);
@@ -176,7 +179,7 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements On
                 Settings.System.putString(getContentResolver(),
                     Settings.System.OMNIJAWS_WEATHER_ICON_PACK, value);
                 int valueIndex = mWeatherIconPack.findIndexOfValue(value);
-                mWeatherIconPack.setSummary(mWeatherIconPack.getEntries()[valueIndex]);
+                mWeatherIconPack.setSummary(mWeatherIconPackNote + " \n\n" + mWeatherIconPack.getEntries()[valueIndex]);
                return true;
         } else if (preference == mNumberOfNotifications) {
             int numberOfNotifications = (Integer) newValue;
@@ -225,7 +228,7 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements On
              valueJawsIndex = mWeatherIconPack.findIndexOfValue(settingsJaws);
          }
          mWeatherIconPack.setValueIndex(valueJawsIndex >= 0 ? valueJawsIndex : 0);
-         mWeatherIconPack.setSummary(mWeatherIconPack.getEntry());
+         mWeatherIconPack.setSummary(mWeatherIconPackNote + "\n\n" + mWeatherIconPack.getEntry());
          mWeatherIconPack.setOnPreferenceChangeListener(this);
     }
 

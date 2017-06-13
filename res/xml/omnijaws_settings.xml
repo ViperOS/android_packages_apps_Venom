@@ -20,7 +20,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceScreen
-        android:icon="@drawable/weather_icon"
+        android:icon="@drawable/lockclock"
         android:title="@string/weather_config_title"
         android:summary="@string/weather_config_summary" >
         <intent android:action="android.intent.action.MAIN"

@@ -63,7 +63,8 @@
         <Preference
             android:key="ticker_restore_defaults"
             android:icon="@drawable/restore_icon"
-            android:title="@string/ticker_restore_defaults_title" />
+            android:title="@string/ticker_restore_defaults_title"
+            android:summary="@string/ticker_restore_defaults_summary" />
 
     </PreferenceCategory>
 

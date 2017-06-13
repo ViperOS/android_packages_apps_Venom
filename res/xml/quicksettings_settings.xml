@@ -60,7 +60,7 @@
         <!-- OmniJaws -->
         <PreferenceScreen
             android:key="omnijaws_settings"
-            android:icon="@drawable/ic_omnijaws"
+            android:icon="@drawable/lockclock"
             android:title="@string/omnijaws_settings_title"
             android:summary="@string/omnijaws_settings_summary"
             android:fragment="com.viper.venom.fragments.OmniJawsSettings" />
@@ -119,14 +119,7 @@
 	
     <PreferenceCategory 
          android:title="@string/qs_misc_category">
-
-        <com.viper.venom.preference.SystemSettingSwitchPreference
-            android:key="qs_date_time_center"
-            android:icon="@drawable/calendar_clock_icon"
-            android:title="@string/qs_date_time_center_title"
-            android:summary="@string/qs_date_time_center_summary"
-            android:defaultValue="false" />
-		
+        
         <com.viper.venom.preference.SecureSettingSwitchPreference
             android:key="qs_show_brightness"
             android:icon="@drawable/brightness_icon"
@@ -141,6 +134,13 @@
             android:summary="@string/brightness_icon_summary"
             android:dependency="qs_show_brightness"
             android:defaultValue="true"/>
+
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="qs_date_time_center"
+            android:icon="@drawable/calendar_clock_icon"
+            android:title="@string/qs_date_time_center_title"
+            android:summary="@string/qs_date_time_center_summary"
+            android:defaultValue="false" />
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="qs_settings_icon_toggle"

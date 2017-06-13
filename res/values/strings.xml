@@ -225,6 +225,8 @@
 
     <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
+    <string name="torch_long_press_power_gesture_title">Flashlight in lock screen</string>
+    <string name="torch_long_press_power_gesture_desc">Long press power button while the screen is off to turn on the flashlight</string>
 	
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Pixel navbar animation</string>
@@ -256,13 +258,13 @@
     <!-- OmniJaws -->
     <string name="omnijaws_settings_title">OmniJaws</string>
     <string name="omnijaws_settings_summary">Customize weather tile</string>
-    <string name="weather_config_title">Service settings</string>
-    <string name="weather_config_summary"></string>
+    <string name="weather_config_title">Settings</string>
+    <string name="weather_config_summary">Configure service</string>
     <string name="weather_icon_pack_title">Condition icon pack</string>
     <string name="weather_icon_pack_note">Note\u003a you can install new icon packs from play store by searching for \"Chronus icons\"</string>
 	
     <!-- Recents panel settings -->
-    <string name="recents_default_category">AOSP</string>
+    <string name="recents_default_category">Recents</string>
     <string name="show_clear_all_recents_button_title">Enable clear all round button</string>
     <string name="show_clear_all_recents_button_summary">Show round button instead of the text "Clear all"</string>
     <string name="recents_clear_all_location_title">Clear all button location</string>
@@ -307,7 +309,6 @@
     <string name="weather_hide_panel_custom_summary">The weather panel will be hidden when the visible notifications will reach the chosen number of notifications</string>
     <string name="weather_hide_panel_never_summary">The weather panel won\`t be hidden</string>
     <string name="weather_number_of_notifications_title">Number of notifications</string>
-    <string name="weather_config_title">Service settings</string>
     <string name="weather_icon_pack_title">Condition icon pack</string>
     <string name="lock_clock_title">Weather Service</string>
 	
@@ -316,7 +317,8 @@
     <string name="daynight_header_title">Theme resources</string>
 
     <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-    <string name="night_mode_title">Theme resources</string>
+    <string name="night_mode_title">Theme device</string>
+    <string name="night_mode_summary">Change device default theme</string>
     <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
     <string name="night_mode_summary">%s</string>
     <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
@@ -470,6 +472,7 @@
 
     <!-- Volume Steps -->
     <string name="volume_steps_title">Volume steps</string>
+    <string name="volume_steps_summary">Customize volume steps</string>
     <string name="volume_steps_alarm_title">Volume steps: Alarm</string>
     <string name="volume_steps_dtmf_title">Volume steps: DTMF</string>
     <string name="volume_steps_music_title">Volume steps: Music</string>
@@ -552,9 +555,12 @@
 
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">In-call vibration options</string>
-    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
-    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
-    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <string name="incall_vibrate_connect_title">On connect</string>
+    <string name="incall_vibrate_connect_summary">Enable vibration when the call is connected</string>
+    <string name="incall_vibrate_disconnect_title">On disconnect</string>
+    <string name="incall_vibrate_disconnect_summary">Enable vibration when the call is disconnected</string>
+    <string name="incall_vibrate_call_wait_title">Call waiting</string>
+    <string name="incall_vibrate_call_wait_summary">Enable vibration when the call is waiting</string>
 
     <!-- QS easy toggles -->
     <string name="qs_easy_toggle_title">Advanced quick setting easy toggle</string>
@@ -578,7 +584,7 @@
 
     <!-- Center Time + Date in header -->
     <string name="qs_date_time_center_title">Center time and date</string>
-    <string name="qs_date_time_center_summary">Requires one or more icons to be disabled</string>
+    <string name="qs_date_time_center_summary">Requires one or more icons (listed below) to be disabled</string>
 
     <!-- Fingerprint unlock keystore -->
     <string name="fp_unlock_keystore_title">Fingerprint unlock</string>
@@ -598,11 +604,16 @@
     <string name="ticker_screen_summary">Customize the ticker style</string>
     <string name="ticker_summary">Enable the status bar ticker</string>
     <string name="ticker_restore_defaults_title">Restore defaults</string>
+    <string name="ticker_restore_defaults_summary">Restore ticker defaults settings</string>
     <string name="text_title">Text</string>
     <string name="icon_title">Icon</string>
     <string name="values_restored_title">Values restored</string>
     <string name="ticker_disabled">No ticker</string>
     <string name="ticker_enabled">Notification ticker</string>
     <string name="ticker_media_enabled">Notifications and music ticker</string>
+
+    <!-- Disable Battery Saver Warning Color -->
+    <string name="battery_saver_color_title">Warning color</string>
+    <string name="battery_saver_color_summary">Enable orange status and navigation bars when battery saver is activated</string>
 
 </resources>
