@@ -62,10 +62,10 @@ public class DayNightSettings extends SettingsPreferenceFragment implements
                  final UiModeManager uiManager = (UiModeManager) getSystemService(
                          Context.UI_MODE_SERVICE);
                  uiManager.setNightMode(value);
-                 Helpers.showSystemUIrestartDialog(getActivity());
              } catch (NumberFormatException e) {
                  Log.e(TAG, "could not persist night mode setting", e);
              }
+             Helpers.showSystemUIrestartDialog(getActivity());
          }
          return true; 
        }
