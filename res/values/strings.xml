@@ -39,6 +39,7 @@
     <string name="venom_dialog_toast">READ THE WHOLE THING!</string>
 
     <!-- Power Menu -->
+    <string name="power_category">Power menu options</string>
     <string name="powermenu_category">Power Menu</string>
     <string name="powermenu_screenshot">Screenshot</string>
     <string name="powermenu_power">Power</string>

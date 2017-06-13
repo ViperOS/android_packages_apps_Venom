@@ -44,21 +44,25 @@
             android:entries="@array/ticker_mode_entries"
             android:entryValues="@array/ticker_mode_values"
             android:key="status_bar_show_ticker"
+            android:icon="@drawable/header_icon"
             android:summary="%s"
             android:title="@string/ticker_title" />
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="status_bar_ticker_text_color"
+            android:icon="@drawable/palette_color"
             android:title="@string/text_title"
             android:defaultValue="0xffffffff" />
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="status_bar_ticker_icon_color"
+            android:icon="@drawable/palette_color"
             android:title="@string/icon_title"
             android:defaultValue="0xffffffff" />
 
         <Preference
             android:key="ticker_restore_defaults"
+            android:icon="@drawable/restore_icon"
             android:title="@string/ticker_restore_defaults_title" />
 
     </PreferenceCategory>

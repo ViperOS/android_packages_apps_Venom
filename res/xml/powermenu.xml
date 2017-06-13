@@ -23,15 +23,21 @@
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="lockscreen_enable_power_menu"
+            android:icon="@drawable/power_icon"
             android:title="@string/lockscreen_enable_power_menu_title"
             android:defaultValue="true" />
 
     <cyanogenmod.preference.CMSecureSettingSwitchPreference
             android:key="advanced_reboot"
+            android:icon="@drawable/restart_icon"
             android:title="@string/advanced_reboot_title"
             android:summary="@string/advanced_reboot_summary" />
 
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="lockscreen"
+        android:title="@string/power_category" >
 
     <CheckBoxPreference
         android:key="restart"
@@ -84,5 +90,7 @@
 		android:icon="@drawable/bell_icon"
         android:title="@string/power_menu_sound_title"
         android:defaultValue="true" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
