@@ -33,12 +33,6 @@
             android:title="@string/advanced_reboot_title"
             android:summary="@string/advanced_reboot_summary" />
 
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="lockscreen"
-        android:title="@string/power_category" >
-
     <CheckBoxPreference
         android:key="restart"
 	    android:icon="@drawable/restart_icon"
