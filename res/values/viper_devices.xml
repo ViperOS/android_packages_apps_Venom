@@ -75,6 +75,9 @@
     <string name="device_moto_falcon">Moto G</string>
     <string name="device_moto_falcon_summary">falcon\nMaintainer - Rafael Marchetto (Marchetto96)</string>
 
+    <string name="device_moto_peregrine">Moto G LTE</string>
+    <string name="device_moto_peregrine_summary">peregrine\nMaintainer - R Schunk (rkschunk)</string>
+
     <string name="device_moto_titan">Moto G 2014</string>
     <string name="device_moto_titan_summary">titan\nMaintainer - Renan Queiroz</string>
 
