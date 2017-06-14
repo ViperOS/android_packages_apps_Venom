@@ -431,10 +431,17 @@ public class ButtonSettings extends SettingsPreferenceFragment
         Settings.System.putInt(getContentResolver(),
                 Settings.System.ENABLE_HW_KEYS, enabled ? 1 : 0);
 
+        Editor editor = prefs.edit();
+
         CMHardwareManager hardware = CMHardwareManager.getInstance(getActivity());
         hardware.set(CMHardwareManager.FEATURE_KEY_DISABLE, !enabled);
      /* Save/restore button timeouts to disable them in softkey mode */
         if (!enabled) {
+            int currentBrightness = CMSettings.Secure.getInt(getContentResolver(),
+                    CMSettings.Secure.BUTTON_BRIGHTNESS, defaultBrightness);
+            if (!prefs.contains(ButtonBacklightBrightness.KEY_BUTTON_BACKLIGHT)) {
+                editor.putInt(ButtonBacklightBrightness.KEY_BUTTON_BACKLIGHT, currentBrightness);
+            }
             CMSettings.Secure.putInt(getContentResolver(),
                     CMSettings.Secure.BUTTON_BRIGHTNESS, 0);
         } else {
@@ -442,7 +449,11 @@ public class ButtonSettings extends SettingsPreferenceFragment
                     defaultBrightness);
             CMSettings.Secure.putInt(getContentResolver(),
                     CMSettings.Secure.BUTTON_BRIGHTNESS, oldBright);
+            if (prefs.contains(ButtonBacklightBrightness.KEY_BUTTON_BACKLIGHT)) {
+                editor.remove(ButtonBacklightBrightness.KEY_BUTTON_BACKLIGHT);
+            }
         }
+        editor.commit();
         backlight.setEnabled(enabled);
         backlight.updateSummary();
    }
