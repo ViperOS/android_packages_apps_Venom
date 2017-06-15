@@ -29,6 +29,20 @@
         android:dependency="enable_hw_keys" />
 
     <PreferenceCategory
+        android:key="anbi_category"
+        android:title="@string/anbi_title">
+
+    <com.viper.venom.preference.SystemSettingSwitchPreference
+        android:key="anbi"
+        android:title="@string/anbi_title"
+        android:summary="@string/anbi_summary"
+        android:icon="@drawable/single_tap_icon"
+        android:persistent="false" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
         android:key="navigation_bar_category"
         android:title="@string/navigation_bar_category" >
 
