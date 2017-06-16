@@ -95,7 +95,9 @@ public class ButtonSettings extends SettingsPreferenceFragment
         LAST_APP,
         SPLIT_SCREEN,
         SINGLE_HAND_LEFT,
-        SINGLE_HAND_RIGHT;
+        SINGLE_HAND_RIGHT,
+        SCREENSHOT_FULLSCREEN,
+        SELECTED_REGION;
 
         public static Action fromIntSafe(int id) {
             if (id < NOTHING.ordinal() || id > Action.values().length) {
