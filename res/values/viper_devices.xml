@@ -51,6 +51,8 @@
     <string name="device_huawei_honor5X_summary">kiwi\nMaintainer - jsbeyond (kaokao)</string>
 
     <!-- GOOGLE -->
+    <string name="device_lge_bullhead">Nexus 5X</string>
+    <string name="device_lge_bullhead_summary">Bullhead\nMaintainer - Gyuu August (GYUPRO5)</string>    
 
     <!-- LeEco -->
 

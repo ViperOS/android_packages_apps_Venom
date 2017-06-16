@@ -56,11 +56,17 @@
             android:selectable="false" />
     </PreferenceCategory> 
 
-    <!-- GOOGLE
+    <!-- GOOGLE -->
     <PreferenceCategory
         android:title="@string/device_category_google_title">
 
-    </PreferenceCategory> -->
+        <Preference
+            android:id="@+id/device_lge_bullhead"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_lge_bullhead"
+            android:summary="@string/device_lge_bullhead_summary"
+            android:selectable="false" />
+    </PreferenceCategory>
 
     <!-- LeEco
     <PreferenceCategory
