@@ -38,29 +38,5 @@
             android:fragment="com.viper.venom.fragments.PowerMenu"
             android:layout="@layout/preference_powermenu"
             android:title="@string/powermenu_category" />
-  
-         <Preference
-            android:key="notifications"
-            android:fragment="com.viper.venom.fragments.NotificationsSettings"
-            android:layout="@layout/preference_notifications_settings"
-            android:title="@string/notifications_category" />
-
-        <PreferenceScreen
-            android:key="lockscreen"
-            android:fragment="com.viper.venom.fragments.LockscreenSettings"
-            android:layout="@layout/preference_lockscreen_settings"
-            android:title="@string/lockscreen_ui_title" />
-
-        <PreferenceScreen
-            android:key="recents"
-            android:fragment="com.viper.venom.fragments.RecentsSettings"
-            android:layout="@layout/preference_recents"
-            android:title="@string/recents_title" />
-
-         <Preference
-            android:key="misc"
-            android:fragment="com.viper.venom.fragments.MiscSettings"
-            android:layout="@layout/preference_misc_settings"
-            android:title="@string/misc_category" />
 			
 </PreferenceScreen>

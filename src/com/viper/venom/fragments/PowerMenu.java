@@ -23,14 +23,9 @@ import java.util.List;
 import cyanogenmod.providers.CMSettings;
 
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_AIRPLANE;
-import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_ASSIST;
-import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_LOCKDOWN;
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_RESTART;
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_SCREENSHOT;
-import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_SETTINGS;
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_SILENT;
-import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_USERS;
-import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_VOICEASSIST;
 
 public class PowerMenu extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -40,12 +35,7 @@ public class PowerMenu extends SettingsPreferenceFragment
     private CheckBoxPreference mRebootPref;
     private CheckBoxPreference mScreenshotPref;
     private CheckBoxPreference mAirplanePref;
-    private CheckBoxPreference mUsersPref;
-    private CheckBoxPreference mSettingsPref;
-    private CheckBoxPreference mLockdownPref;
     private CheckBoxPreference mSilentPref;
-    private CheckBoxPreference mVoiceAssistPref;
-    private CheckBoxPreference mAssistPref;
 
     Context mContext;
     private ArrayList<String> mLocalUserConfig = new ArrayList<String>();
@@ -82,24 +72,9 @@ public class PowerMenu extends SettingsPreferenceFragment
             } else if (action.equals(GLOBAL_ACTION_KEY_AIRPLANE)) {
                 mAirplanePref = (CheckBoxPreference) prefScreen.findPreference(GLOBAL_ACTION_KEY_AIRPLANE);
                 mAirplanePref.setOnPreferenceChangeListener(this);
-            } else if (action.equals(GLOBAL_ACTION_KEY_USERS)) {
-                mUsersPref = (CheckBoxPreference) prefScreen.findPreference(GLOBAL_ACTION_KEY_USERS);
-                mUsersPref.setOnPreferenceChangeListener(this);
-            } else if (action.equals(GLOBAL_ACTION_KEY_SETTINGS)) {
-                mSettingsPref = (CheckBoxPreference) prefScreen.findPreference(GLOBAL_ACTION_KEY_SETTINGS);
-                mSettingsPref.setOnPreferenceChangeListener(this);
-            } else if (action.equals(GLOBAL_ACTION_KEY_LOCKDOWN)) {
-                mLockdownPref = (CheckBoxPreference) prefScreen.findPreference(GLOBAL_ACTION_KEY_LOCKDOWN);
-                mLockdownPref.setOnPreferenceChangeListener(this);
             } else if (action.equals(GLOBAL_ACTION_KEY_SILENT)) {
                 mSilentPref = (CheckBoxPreference) prefScreen.findPreference(GLOBAL_ACTION_KEY_SILENT);
                 mSilentPref.setOnPreferenceChangeListener(this);
-            } else if (action.equals(GLOBAL_ACTION_KEY_VOICEASSIST)) {
-                mVoiceAssistPref = (CheckBoxPreference) prefScreen.findPreference(GLOBAL_ACTION_KEY_VOICEASSIST);
-                mVoiceAssistPref.setOnPreferenceChangeListener(this);
-            } else if (action.equals(GLOBAL_ACTION_KEY_ASSIST)) {
-                mAssistPref = (CheckBoxPreference) prefScreen.findPreference(GLOBAL_ACTION_KEY_ASSIST);
-                mAssistPref.setOnPreferenceChangeListener(this);
             }
         }
 
@@ -124,39 +99,8 @@ public class PowerMenu extends SettingsPreferenceFragment
             mAirplanePref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_AIRPLANE));
         }
 
-        if (mUsersPref != null) {
-            if (!UserHandle.MU_ENABLED || !UserManager.supportsMultipleUsers()) {
-                if (prefScreen.findPreference(GLOBAL_ACTION_KEY_USERS) != null) {
-                    prefScreen.removePreference(prefScreen.findPreference(GLOBAL_ACTION_KEY_USERS));
-                }
-                mUsersPref = null;
-            } else {
-                List<UserInfo> users = ((UserManager) mContext.getSystemService(
-                        Context.USER_SERVICE)).getUsers();
-                boolean enabled = (users.size() > 1);
-                mUsersPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_USERS) && enabled);
-                mUsersPref.setEnabled(enabled);
-            }
-        }
-
-        if (mSettingsPref != null) {
-            mSettingsPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SETTINGS));
-        }
-
-        if (mLockdownPref != null) {
-            mLockdownPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_LOCKDOWN));
-        }
-
         if (mSilentPref != null) {
             mSilentPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SILENT));
-        }
-
-        if (mVoiceAssistPref != null) {
-            mVoiceAssistPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_VOICEASSIST));
-        }
-
-        if (mAssistPref != null) {
-            mAssistPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_ASSIST));
         }
 
     }
@@ -177,29 +121,9 @@ public class PowerMenu extends SettingsPreferenceFragment
             mAirplanePref.setChecked(value);
             updateUserConfig(value, GLOBAL_ACTION_KEY_AIRPLANE);
 
-        } else if (preference == mUsersPref) {
-            mUsersPref.setChecked(value);
-            updateUserConfig(value, GLOBAL_ACTION_KEY_USERS);
-
-        } else if (preference == mSettingsPref) {
-            mSettingsPref.setChecked(value);
-            updateUserConfig(value, GLOBAL_ACTION_KEY_SETTINGS);
-
-        } else if (preference == mLockdownPref) {
-            mLockdownPref.setChecked(value);
-            updateUserConfig(value, GLOBAL_ACTION_KEY_LOCKDOWN);
-
         } else if (preference == mSilentPref) {
             mSilentPref.setChecked(value);
             updateUserConfig(value, GLOBAL_ACTION_KEY_SILENT);
-
-        } else if (preference == mVoiceAssistPref) {
-            mVoiceAssistPref.setChecked(value);
-            updateUserConfig(value, GLOBAL_ACTION_KEY_VOICEASSIST);
-
-        } else if (preference == mAssistPref) {
-            mAssistPref.setChecked(value);
-            updateUserConfig(value, GLOBAL_ACTION_KEY_ASSIST);
 
         } else {
             return false;

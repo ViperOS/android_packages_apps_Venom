@@ -49,6 +49,7 @@ import android.widget.Toast;
 
 import com.viper.venom.tabs.StatusBar;
 import com.viper.venom.tabs.System;
+import com.viper.venom.tabs.Misc;
 import com.viper.venom.tabs.About;
 import com.viper.venom.PagerSlidingTabStrip;
 import com.android.settings.R;
@@ -173,7 +174,8 @@ public class Venom extends SettingsPreferenceFragment {
             super(fm);
             frags[0] = new StatusBar();
             frags[1] = new System();
-            frags[2] = new About();
+            frags[2] = new Misc();
+            frags[3] = new About();
         }
 
         @Override
@@ -197,6 +199,7 @@ public class Venom extends SettingsPreferenceFragment {
         titleString = new String[]{
                     getString(R.string.statusbar_category),
                     getString(R.string.system_category),
+                    getString(R.string.misc_category),
                     getString(R.string.about_category)};
         return titleString;
     }

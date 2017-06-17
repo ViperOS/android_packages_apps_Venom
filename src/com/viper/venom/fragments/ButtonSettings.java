@@ -43,8 +43,6 @@ import java.util.List;
 
 import org.cyanogenmod.internal.util.ScreenType;
 
-import static android.provider.Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED;
-
 public class ButtonSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
@@ -68,8 +66,6 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private static final String KEY_HOME_ANSWER_CALL = "home_answer_call";
     private static final String KEY_VOLUME_MUSIC_CONTROLS = "volbtn_music_controls";
     private static final String KEY_VOLUME_CONTROL_RING_STREAM = "volume_keys_control_ring_stream";
-    private static final String KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE
-            = "camera_double_tap_power_gesture";
     private static final String KEY_NAVIGATION_BAR_ENABLED = "navigation_bar_enabled";
     private static final String KEY_ENABLE_HW_KEYS = "enable_hw_keys";
 
@@ -143,7 +139,6 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private ListPreference mNavigationRecentsLongPressAction;
     private SwitchPreference mPowerEndCall;
     private SwitchPreference mHomeAnswerCall;
-    private SwitchPreference mCameraDoubleTapPowerGesture;
 
     private SwitchPreference mNavigationBarEnabled;
     private SwitchPreference mHWKeysEnabled;
@@ -206,10 +201,6 @@ public class ButtonSettings extends SettingsPreferenceFragment
         // Power button ends calls.
         mPowerEndCall = (SwitchPreference) findPreference(KEY_POWER_END_CALL);
 
-        // Double press power to launch camera.
-        mCameraDoubleTapPowerGesture
-                    = (SwitchPreference) findPreference(KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE);
-
         // Home button answers calls.
         mHomeAnswerCall = (SwitchPreference) findPreference(KEY_HOME_ANSWER_CALL);
 
@@ -251,17 +242,6 @@ public class ButtonSettings extends SettingsPreferenceFragment
             if (!TelephonyUtils.isVoiceCapable(getActivity())) {
                 powerCategory.removePreference(mPowerEndCall);
                 mPowerEndCall = null;
-            }
-            if (mCameraDoubleTapPowerGesture != null &&
-                    isCameraDoubleTapPowerGestureAvailable(getResources())) {
-                // Update double tap power to launch camera if available.
-                mCameraDoubleTapPowerGesture.setOnPreferenceChangeListener(this);
-                int cameraDoubleTapPowerDisabled = Settings.Secure.getInt(
-                        getContentResolver(), CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED, 0);
-                mCameraDoubleTapPowerGesture.setChecked(cameraDoubleTapPowerDisabled == 0);
-            } else {
-                powerCategory.removePreference(mCameraDoubleTapPowerGesture);
-                mCameraDoubleTapPowerGesture = null;
             }
         } else {
             prefScreen.removePreference(powerCategory);
@@ -460,12 +440,6 @@ public class ButtonSettings extends SettingsPreferenceFragment
 
     public boolean hasNavbarByDefault() {
         boolean needsNav = getResources().getBoolean(com.android.internal.R.bool.config_showNavigationBar);
-        String navBarOverride = SystemProperties.get("qemu.hw.mainkeys");
-        if ("1".equals(navBarOverride)) {
-            needsNav = false;
-        } else if ("0".equals(navBarOverride)) {
-            needsNav = true;
-        }
         return needsNav;
     }
 
@@ -640,11 +614,6 @@ public class ButtonSettings extends SettingsPreferenceFragment
             CMSettings.Secure.putString(getContentResolver(),
                     CMSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY, putString);
             return true;
-        } else if (preference == mCameraDoubleTapPowerGesture) {
-            boolean value = (Boolean) newValue;
-            Settings.Secure.putInt(getContentResolver(), CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED,
-                    value ? 0 : 1 /* Backwards because setting is for disabling */);
-            return true;
         } else if (preference == mNavigationBarEnabled) {
             boolean showing = ((Boolean)newValue);
             Settings.System.putInt(getContentResolver(), Settings.System.NAVIGATION_BAR_ENABLED,
@@ -688,11 +657,6 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 CMSettings.Secure.RING_HOME_BUTTON_BEHAVIOR, (mHomeAnswerCall.isChecked()
                         ? CMSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER
                         : CMSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_DO_NOTHING));
-    }
-
-    private static boolean isCameraDoubleTapPowerGestureAvailable(Resources res) {
-        return res.getBoolean(
-                com.android.internal.R.bool.config_cameraDoubleTapPowerGestureEnabled);
     }
 
     @Override
