@@ -32,7 +32,13 @@
             android:fragment="com.viper.venom.fragments.ButtonSettings"
             android:layout="@layout/preference_buttons_settings"
             android:title="@string/buttons_title" />
-	
+
+        <PreferenceScreen
+            android:key="recents"
+            android:fragment="com.viper.venom.fragments.RecentsSettings"
+            android:layout="@layout/preference_recents"
+            android:title="@string/recents_title" />
+
          <Preference
             android:key="powermenu"
             android:fragment="com.viper.venom.fragments.PowerMenu"

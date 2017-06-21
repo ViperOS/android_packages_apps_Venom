@@ -68,4 +68,17 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="misc_category"
+        android:title="@string/misc_category" >
+
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="toast_icon"
+            android:icon="@drawable/toast_icon"
+            android:title="@string/toast_icon_title"
+            android:summary="@string/toast_icon_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

@@ -32,6 +32,9 @@
     <string name="recents_title">Recentes</string>
     <string name="carrierlabel_title">Rótulo da operadora</string>
     <string name="lockscreen_ui_title">Tela de bloqueio</string>
+    <string name="lockscreen_weather_title">Clima</string>
+    <string name="lockscreen_misc_title">Diversos</string>
+    <string name="sound_and_notifications_category">Som e Notificações</string>
 	
     <!-- Dialog -->
     <string name="venom_dialog_title">Ajude-nos a ajudá-lo!</string>
@@ -40,6 +43,7 @@
 
     <!-- Power Menu -->
     <string name="power_category">Opções do menu de energia</string>
+    <string name="actions_category">Itens do menu de energia</string>
     <string name="powermenu_category">Menu de Energia</string>
     <string name="powermenu_screenshot">Captura de tela</string>
     <string name="powermenu_power">Desligar</string>
@@ -545,15 +549,6 @@
     <string name="immersive_recents_fullscreen">Tela cheia</string>
     <string name="immersive_recents_statusbar">Apenas Barra de status</string>
     <string name="immersive_recents_navbar">Apenas Barra de navegação</string>
-
-    <!-- Incall vibrate options -->
-    <string name="incall_vibration_category">Opções de vibração na chamada</string>
-    <string name="incall_vibrate_connect_title">Vibrar ao conectar</string>
-    <string name="incall_vibrate_connect_summary">Ativar vibração quando a chamada for conectada</string>
-    <string name="incall_vibrate_disconnect_title">Vibrar ao desconectar</string>
-    <string name="incall_vibrate_disconnect_summary">Ativar vibração quando a chamada for desconectada</string>
-    <string name="incall_vibrate_call_wait_title">Vibrar na chamada em espera</string>
-    <string name="incall_vibrate_call_wait_summary">Ativar vibração quando a chamada estiver em espera</string>
    
     <!-- QS easy toggles -->
     <string name="qs_easy_toggle_title">Alternador fácil nas configurações rápidas</string>
@@ -579,6 +574,7 @@
     <string name="qs_date_time_center_title">Centralizar data e hora</string>
     <string name="qs_date_time_center_summary">Requer que um ou mais ícones (listado abaixo) sejam desativados</string>
 
+
     <!-- Fingerprint unlock keystore -->
     <string name="fp_unlock_keystore_title">Desbloqueio por impressão digital</string>
     <string name="fp_unlock_keystore_summary">Desbloquear o dispositivo com impressão digital após a reinicialização sem pedir o pin/senha/padrão</string>
@@ -602,11 +598,11 @@
     <string name="ticker_enabled">Notificação</string>
     <string name="ticker_media_enabled">Notificação e música</string>
 
-    <!-- Disable Battery Saver Warning Color -->
-    <string name="battery_saver_color_title">Cor de aviso no modo de economia</string>
-    <string name="battery_saver_color_summary">Habilitar a cor laranja nas barras de status/navegação quando o modo de economia de bateria estiver ativado</string>
-
     <!-- Lockscreen visualizer -->
     <string name="lockscreen_visualizer_summary">Mostrar um efeito na tela de bloqueio quando uma música estiver sendo reproduzida</string>
+
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Mostrar ícone de dados desligados</string>
+    <string name="data_disabled_icon_summary">Mostrar um X junto do ícone de rede quando os dados estiverem desligados</string>
 
 </resources>

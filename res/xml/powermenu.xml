@@ -18,14 +18,20 @@
     android:title="@string/powermenu_category" >
 
     <PreferenceCategory
-        android:key="lockscreen"
-        android:title="@string/lockscreen_ui_title" >
+        android:key="power_category"
+        android:title="@string/power_category" >
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="lockscreen_enable_power_menu"
             android:icon="@drawable/power_icon"
             android:title="@string/lockscreen_enable_power_menu_title"
             android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="action_category"
+        android:title="@string/actions_category" >
 
     <cyanogenmod.preference.CMSecureSettingSwitchPreference
             android:key="advanced_reboot"

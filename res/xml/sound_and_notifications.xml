@@ -17,7 +17,7 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/misc_category"
+    android:title="@string/sound_and_notifications_category"
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
   
@@ -27,22 +27,10 @@
             android:layout="@layout/preference_notifications_settings"
             android:title="@string/notifications_category" />
 
-        <PreferenceScreen
-            android:key="lockscreen"
-            android:fragment="com.viper.venom.fragments.LockscreenSettings"
-            android:layout="@layout/preference_lockscreen_settings"
-            android:title="@string/lockscreen_ui_title" />
-
-        <PreferenceScreen
-            android:key="recents"
-            android:fragment="com.viper.venom.fragments.RecentsSettings"
-            android:layout="@layout/preference_recents"
-            android:title="@string/recents_title" />
-
          <Preference
-            android:key="misc"
-            android:fragment="com.viper.venom.fragments.MiscSettings"
-            android:layout="@layout/preference_misc_settings"
-            android:title="@string/other_settings" />
-			
+            android:key="sound"
+            android:fragment="com.viper.venom.fragments.SoundSettings"
+            android:layout="@layout/preference_sound_settings"
+            android:title="@string/sound_category" />
+
 </PreferenceScreen>

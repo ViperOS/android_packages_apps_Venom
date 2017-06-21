@@ -27,7 +27,7 @@
         android:layout_marginEnd="6dip"
         android:layout_height="wrap_content">
         <ImageView
-            android:src="@drawable/ic_statusbar_misc"
+            android:src="@drawable/ic_sound"
             android:tint="?android:attr/colorAccent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

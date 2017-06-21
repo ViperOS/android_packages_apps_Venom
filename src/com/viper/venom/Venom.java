@@ -48,8 +48,9 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.viper.venom.tabs.StatusBar;
+import com.viper.venom.tabs.LockscreenSettings;
+import com.viper.venom.tabs.SoundAndNotifications;
 import com.viper.venom.tabs.System;
-import com.viper.venom.tabs.Misc;
 import com.viper.venom.tabs.About;
 import com.viper.venom.PagerSlidingTabStrip;
 import com.android.settings.R;
@@ -173,9 +174,10 @@ public class Venom extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new StatusBar();
-            frags[1] = new System();
-            frags[2] = new Misc();
-            frags[3] = new About();
+            frags[1] = new LockscreenSettings();
+            frags[2] = new SoundAndNotifications();
+            frags[3] = new System();
+            frags[4] = new About();
         }
 
         @Override
@@ -198,8 +200,9 @@ public class Venom extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.statusbar_category),
+                    getString(R.string.lockscreen_ui_title),
+                    getString(R.string.sound_and_notifications_category),
                     getString(R.string.system_category),
-                    getString(R.string.misc_category),
                     getString(R.string.about_category)};
         return titleString;
     }

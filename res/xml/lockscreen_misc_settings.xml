@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2017 ViperOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cm="http://schemas.android.com/apk/res/cyanogenmod.platform"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/lockscreen_misc_title">
+		
+        <cyanogenmod.preference.CMSecureSettingSwitchPreference
+            android:key="lockscreen_media_metadata"
+            android:icon="@drawable/movie_icon"
+            android:title="@string/media_art_title"
+            android:summary="@string/media_art_summary"
+            android:defaultValue="true" />
+		
+        <cyanogenmod.preference.CMSecureSettingSwitchPreference
+            android:key="double_tap_sleep_anywhere"
+            android:icon="@drawable/double_tap_icon"
+            android:title="@string/double_tap_sleep_anywhere_title"
+            android:summary="@string/double_tap_sleep_anywhere_summary"
+            android:defaultValue="false" />
+
+        <cyanogenmod.preference.CMSecureSettingSwitchPreference
+            android:key="lockscreen_visualizer"
+            android:icon="@drawable/lock_screen_visualizer_icon"
+            android:title="@string/lockscreen_visualizer_title"
+            android:summary="@string/lockscreen_visualizer_summary"
+            android:defaultValue="true"/>
+
+        <cyanogenmod.preference.CMSecureSettingSwitchPreference
+            android:key="lock_screen_blur_enabled"
+            android:icon="@drawable/lock_screen_blur_icon"
+            android:title="@string/lockscreen_blur_enabled_title"
+            cm:requiresConfig="@*android:bool/config_uiBlurEnabled" />
+
+        <cyanogenmod.preference.CMSystemSettingSwitchPreference
+            android:key="torch_long_press_power_gesture"
+            android:icon="@drawable/lock_screen_flashlight_icon"
+            android:title="@string/torch_long_press_power_gesture_title"
+            android:summary="@string/torch_long_press_power_gesture_desc"
+            android:defaultValue="false"
+            cm:requiresConfig="@*android:bool/config_supportLongPressPowerWhenNonInteractive" />
+
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_battery_info"
+            android:icon="@drawable/ic_battery_charging"
+            android:title="@string/lockscreen_battery_info_title"
+            android:summary="@string/lockscreen_battery_info_summary"
+            android:defaultValue="true" />
+
+        <com.viper.venom.preference.SecureSettingSwitchPreference
+            android:key="lockscreen_enable_qs"
+            android:icon="@drawable/ic_settings_quicksettings"
+            android:title="@string/lockscreen_enable_qs_title"
+            android:summary="@string/lockscreen_enable_qs_summary"
+            android:defaultValue="true" />
+
+        <com.viper.venom.preference.SecureSettingSwitchPreference
+            android:key="lockscreen_hide_status_bar"
+            android:icon="@drawable/hide_panel"
+            android:title="@string/lockscreen_hide_status_bar_title"
+            android:summary="@string/lockscreen_hide_status_bar_summary"
+            android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="fingerprint_success_vib"
+            android:icon="@drawable/vibration"
+            android:title="@string/fprint_sucess_vib_title"
+            android:summary="@string/fprint_sucess_vib_summary"
+            android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="fp_unlock_keystore"
+            android:icon="@drawable/ic_fp"
+            android:title="@string/fp_unlock_keystore_title"
+            android:summary="@string/fp_unlock_keystore_summary"
+            android:persistent="false" />
+	
+</PreferenceScreen>

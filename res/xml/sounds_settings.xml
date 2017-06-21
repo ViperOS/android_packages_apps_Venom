@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/sound_category"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <PreferenceCategory
+        android:key="sound_category"
+        android:title="@string/sound_category" >
+
+        <ListPreference
+            android:key="wired_ringtone_focus_mode"
+            android:icon="@drawable/ringtone_focus_mod"
+            android:title="@string/wired_ringtone_focus_mode_title"
+            android:entries="@array/wired_ringtone_focus_mode_entries"
+            android:entryValues="@array/wired_ringtone_focus_mode_values" />
+
+        <!-- Volume Steps -->
+        <PreferenceScreen
+            android:key="volume_steps"
+            android:icon="@drawable/volume_steps"
+            android:title="@string/volume_steps_title"
+            android:summary="@string/volume_steps_summary"
+            android:fragment="com.viper.venom.fragments.VolumeSteps" />
+
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="screenshot_sound"
+            android:icon="@drawable/screenshot_type_icon"
+            android:title="@string/screenshot_sound_title"
+            android:summary="@string/screenshot_sound_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

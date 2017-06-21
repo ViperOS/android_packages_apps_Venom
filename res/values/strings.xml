@@ -32,6 +32,9 @@
     <string name="recents_title">Recents Screen</string>
     <string name="carrierlabel_title">Carrier Label</string>
     <string name="lockscreen_ui_title">Lockscreen</string>
+    <string name="lockscreen_weather_title">Weather</string>
+    <string name="lockscreen_misc_title">Misc</string>
+    <string name="sound_and_notifications_category">Sound And Notifications</string>
 	
     <!-- Dialog -->
     <string name="venom_dialog_title">Help us help you!</string>
@@ -40,6 +43,7 @@
 
     <!-- Power Menu -->
     <string name="power_category">Power menu options</string>
+    <string name="actions_category">Power menu items</string>
     <string name="powermenu_category">Power Menu</string>
     <string name="powermenu_screenshot">Screenshot</string>
     <string name="powermenu_power">Power</string>
@@ -555,15 +559,6 @@
     <string name="immersive_recents_statusbar">Statusbar only</string>
     <string name="immersive_recents_navbar">Navbar only</string>
 
-    <!-- Incall vibrate options -->
-    <string name="incall_vibration_category">In-call vibration options</string>
-    <string name="incall_vibrate_connect_title">On connect</string>
-    <string name="incall_vibrate_connect_summary">Enable vibration when the call is connected</string>
-    <string name="incall_vibrate_disconnect_title">On disconnect</string>
-    <string name="incall_vibrate_disconnect_summary">Enable vibration when the call is disconnected</string>
-    <string name="incall_vibrate_call_wait_title">Call waiting</string>
-    <string name="incall_vibrate_call_wait_summary">Enable vibration when the call is waiting</string>
-
     <!-- QS easy toggles -->
     <string name="qs_easy_toggle_title">Advanced quick setting easy toggle</string>
     <string name="qs_easy_toggle_summary">One tap action to toggle bluetooth, data, or wifi</string>
@@ -610,11 +605,11 @@
     <string name="ticker_enabled">Notification ticker</string>
     <string name="ticker_media_enabled">Notifications and music ticker</string>
 
-    <!-- Disable Battery Saver Warning Color -->
-    <string name="battery_saver_color_title">Warning color</string>
-    <string name="battery_saver_color_summary">Enable orange status and navigation bars when battery saver is activated</string>
-
     <!-- Lockscreen visualizer -->
     <string name="lockscreen_visualizer_summary">Show an effect on the lock screen when a music is playing</string>
+
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Show data disabled icon</string>
+    <string name="data_disabled_icon_summary">Display the cross sign next to signal bar when data is disabled</string>
 
 </resources>

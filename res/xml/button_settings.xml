@@ -87,23 +87,6 @@
             android:entryValues="@array/hardware_keys_action_values"
             android:persistent="false"
             android:dependency="navigation_bar_enabled" />
-
-        <ListPreference
-            android:key="navigation_home_double_tap"
-            android:icon="@drawable/double_tap_icon"
-            android:dialogTitle="@string/navigation_bar_home_double_tap_title"
-            android:title="@string/navigation_bar_home_double_tap_title"
-            android:entries="@array/hardware_keys_action_entries"
-            android:entryValues="@array/hardware_keys_action_values"
-            android:persistent="false"
-            android:dependency="navigation_bar_enabled" />
-
-        <ListPreference
-            android:key="navigation_recents_long_press"
-            android:icon="@drawable/single_tap_icon"
-            android:dialogTitle="@string/navigation_bar_recents_title"
-            android:title="@string/navigation_bar_recents_title"
-            android:persistent="false" />
 		
     </PreferenceCategory>
 		

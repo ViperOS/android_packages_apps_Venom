@@ -34,15 +34,15 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
-public class Misc extends SettingsPreferenceFragment implements
+public class LockscreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "Misc";
+    private static final String TAG = "LockscreenSettings";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.misc);
+        addPreferencesFromResource(R.xml.lockscreen_settings);
 
         ContentResolver resolver = getActivity().getContentResolver();
     }
