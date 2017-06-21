@@ -19,7 +19,7 @@
 
     <PreferenceCategory
         android:key="lockscreen"
-        android:title="@string/lockscreen_category" >
+        android:title="@string/lockscreen_ui_title" >
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="lockscreen_enable_power_menu"

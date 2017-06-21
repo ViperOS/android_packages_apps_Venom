@@ -42,7 +42,6 @@
     <string name="power_category">Opções do menu de energia</string>
     <string name="powermenu_category">Menu de Energia</string>
     <string name="powermenu_screenshot">Captura de tela</string>
-    <string name="powermenu_screenrecord">Gravar tela</string>
     <string name="powermenu_power">Desligar</string>
     <string name="powermenu_reboot">Reinicializar</string>
     <string name="powermenu_airplane">Modo avião</string>
@@ -63,7 +62,7 @@
     <string name="press_color_to_apply">Pressione a cor abaixo para aplicar</string>
     <string name="set">Definir</string>
     <string name="color_default">Padrão</string>
-   <string name="default_string">Padrão</string>
+    <string name="default_string">Padrão</string>
 	
     <!-- Status bar -->
     <string name="status_bar_toggle_brightness">Controle do brilho da tela</string>
@@ -71,6 +70,7 @@
     <string name="status_bar_notif_count_title">Mostrar a contador de notificações</string>
     <string name="status_bar_notif_count_summary">Exibir o número de notificações pendentes</string>
     <string name="status_bar_quick_qs_pulldown_title">Puxar rápido para baixo</string>
+    <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Canto esquerdo da barra de status</string>
     <string name="status_bar_quick_qs_pulldown_summary_right">Canto direito da barra de status</string>
     <string name="status_bar_quick_qs_pulldown_off">Desligado</string>
@@ -82,6 +82,7 @@
     <string name="status_bar_clock_position_right">Direita</string>
     <string name="status_bar_clock_position_left">Esquerda</string>
     <string name="status_bar_clock_position_center">Centralizar</string>
+ 
     <string name="status_bar_am_pm_title">Estilo AM/PM</string>
     <string name="status_bar_am_pm_info">O formato de 24 horas está ativado</string>
     <string name="status_bar_am_pm_normal">Normal</string>
@@ -206,6 +207,7 @@
     <string name="navigation_bar_summary">Personalizar o layout da barra de navegação</string>
     <string name="navigation_bar_arrow_keys_title">Mostrar teclas de seta enquanto digita</string>
     <string name="navigation_bar_arrow_keys_summary">Exibir botões esquerda e direita do cursor durante a digitação. Substitui o seletor de Teclado.</string>
+    <string name="navigation_bar_recents_title">Ação de pressionar e segurar apps recentes</string>
     <string name="navigation_bar_home_long_press_title">Ação de toque longo no botão início</string>
     <string name="navigation_bar_home_double_tap_title">Ação de toque duplo no botão de Página Inicial</string>
 	
@@ -288,9 +290,9 @@
     <string name="custom_carrier_label_notset">Rótulo personalizado não definido</string>
     <string name="show_carrier_title">Rótulo da operadora</string>
     <string name="show_carrier_disabled">Desativado</string>
-    <string name="show_carrier_keyguard">Tela de bloqueio</string>
-    <string name="show_carrier_statusbar">Rótulo da operadora na barra de status</string>
-    <string name="show_carrier_enabled">Ativado</string>
+    <string name="show_carrier_keyguard">Apenas tela de bloqueio</string>
+    <string name="show_carrier_statusbar">Apenas barra de status</string>
+    <string name="show_carrier_enabled">Tela de bloqueio e barra de status</string>
     <string name="status_bar_carrier_color">Cor</string>
     <string name="status_bar_carrier_size">Tamanho do texto</string>
     <string name="status_bar_carrier_color">Cor do rótulo da operadora</string>
@@ -315,6 +317,9 @@
     <string name="weather_hide_panel_custom_summary">O painel de clima será ocultado, quando as notificações visíveis atingir o número escolhido de notificações (%s)</string>
     <string name="weather_hide_panel_never_summary">O painel do clima não pode ser oculto</string>
     <string name="weather_number_of_notifications_title">Número de notificações</string>
+    <string name="weather_config_title">Configurações de serviço</string>
+    <string name="weather_icon_pack_title">condições do iconpack</string>
+    <string name="lock_clock_title">Serviço meteorológico</string>
 
     <!-- Day/Night -->
     <string name="daynight_title">Tema do dispositivo</string>
@@ -437,15 +442,161 @@
    <string name="recents_lock_icon_title">Bloqueio de tarefa</string>
    <string name="recents_lock_icon_summary">Permitir bloqueio de tarefas na visualização de recentes (não disponível no estilo Grade)</string>
 
-  <!-- Media art -->
-  <string name="media_art_title">Mostrar capa do album de música</string>
-  <string name="media_art_summary">Habilitar a arte da capa de mídia na tela de bloqueio</string>
+   <!-- Media art -->
+   <string name="media_art_title">Mostrar capa do album de música</string>
+   <string name="media_art_summary">Habilitar a arte da capa de mídia na tela de bloqueio</string>
 	
-  <!-- Lockscreen tap-to sleep -->
-  <string name="double_tap_sleep_anywhere_title">Toque na tela de bloqueio para dormir</string>
-  <string name="double_tap_sleep_anywhere_summary">Toque duas vezes em qualquer lugar na tela de bloqueio para colocar o dispositivo para dormir</string>
+   <!-- Lockscreen tap-to sleep -->
+   <string name="double_tap_sleep_anywhere_title">Toque na tela de bloqueio para dormir</string>
+   <string name="double_tap_sleep_anywhere_summary">Toque duas vezes em qualquer lugar na tela de bloqueio para colocar o dispositivo para dormir</string>
 
-  <!-- Lockscreen categories -->
-  <string name="lockscreen_misc_category">Diversos</string>
+    <!-- Lockscreen categories -->
+    <string name="lockscreen_misc_category">Diversos</string>
 	
+   <!-- Other system settings category -->
+    <string name="misc_category">Outras configurações</string>
+
+    <!-- Other system settings category -->
+    <string name="sound_category">Som</string>
+
+    <!-- Wired headset ringtone audio focus -->
+    <string name="wired_ringtone_focus_mode_title">Onde reproduzir os toques</string>
+    <string name="wired_ringtone_focus_mode_dynamic">Fone de ouvido com fio se estiver conectado e tocando música</string>
+    <string name="wired_ringtone_focus_mode_stock">Alto-falante e fone de ouvido (padrão)</string>
+
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Níveis do volume</string>
+    <string name="volume_steps_alarm_title">Níveis de volume: Alarme</string>
+    <string name="volume_steps_dtmf_title">Níveis de volume: DTMF</string>
+    <string name="volume_steps_music_title">Níveis de volume: Midia</string>
+    <string name="volume_steps_notification_title">Níveis de volume: Notificação</string>
+    <string name="volume_steps_ring_title">Níveis de volume: Toque</string>
+    <string name="volume_steps_system_title">Níveis de volume: Sistema</string>
+    <string name="volume_steps_voice_call_title">Níveis de volume: Chamada de voz</string>
+    <string name="volume_steps_reset">Redefinir</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Mostrar o Menu de Energia na Tela de Bloqueio</string>
+
+    <!-- Quicks settings vibrate -->
+    <string name="quick_settings_vibrate_title">Vibrar ao tocar</string>
+    <string name="quick_settings_vibrate_summary">Vibrar ao tocar as configurações rápidas</string>
+
+    <!-- fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Vibração na autenticação da impressão digital</string>
+    <string name="fprint_sucess_vib_summary">Vibrar na autenticação bem sucedida da impressão digital</string>
+
+    <!-- Gestures category -->
+    <string name="gestures_category">Gestos</string>
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Gesto de três dedos</string>
+    <string name="three_finger_gesture_summary">Deslize três dedos para a captura da tela</string>
+
+    <!-- Notifications category -->
+    <string name="notifications_category">Notificações</string>
+
+    <!-- Heads up timeout -->
+    <string name="heads_up_category">Heads-up</string>
+    <string name="heads_up_time_out_title">Tempo limite</string>
+    <string name="heads_up_time_out_summary">Mostrar notificação por <xliff:g id="number">%d</xliff:g> segundos</string>
+    <string name="heads_up_time_out_2sec">2 segundos</string>
+    <string name="heads_up_time_out_4sec">4 segundos</string>
+    <string name="heads_up_time_out_5sec">5 segundos</string>
+    <string name="heads_up_time_out_6sec">6 segundos</string>
+    <string name="heads_up_time_out_8sec">8 segundos</string>
+    <string name="heads_up_time_out_10sec">10 segundos</string>
+
+    <!-- Heads up snooze -->
+    <string name="heads_up_snooze_title">Silenciar temporariamente</string>
+    <string name="heads_up_snooze_summary_one_minute">Desliza para cima sobre a notificação Heads-Up e esse aplicativo irá dormir por 1 minuto</string>
+    <string name="heads_up_snooze_summary">Desliza para cima sobre a notificação Heads-Up e esse aplicativo irá dormir por <xliff:g id="number">%d </xliff:g> minutos</string>
+    <string name="heads_up_snooze_disabled_summary">Tempo da Soneca está desativado</string>
+    <string name="heads_up_snooze_1min">1 minuto</string>
+    <string name="heads_up_snooze_3min">3 minutos</string>
+    <string name="heads_up_snooze_5min">5 minutos</string>
+    <string name="heads_up_snooze_10min">10 minutos</string>
+    <string name="heads_up_snooze_15min">15 minutos</string>
+    <string name="heads_up_snooze_20min">20 minutos</string>
+
+    <!-- Quick settings on secure lockscreen -->
+    <string name="lockscreen_enable_qs_title">Configurações rápidas</string>
+    <string name="lockscreen_enable_qs_summary">Permitir acessar configurações rápidas na tela de bloqueio</string>
+
+    <!-- Hide Statusbar on Lockscreen -->
+    <string name="lockscreen_hide_status_bar_title">Mostrar a barra de status</string>
+    <string name="lockscreen_hide_status_bar_summary">Ativar ou desativar a exibição da barra de status na tela de bloqueio. Toque no topo da tela para exibir a barra de status</string>
+
+    <!-- Toast icon -->
+    <string name="toast_icon_title">Ícone do Toast</string>
+    <string name="toast_icon_summary">Exibir o ícone do aplicativo correspondente ao balão de mensagens</string>
+
+    <!-- Immersive Recents -->
+    <string name="immersive_recents_title">Recentes imersivo</string>
+    <string name="immersive_recents_summary">Alterar a exibição das telas recentes</string>
+    <string name="immersive_recents_dialog_title">Selecionar visualização recente</string>
+    <string name="immersive_recents_default">Padrão</string>
+    <string name="immersive_recents_fullscreen">Tela cheia</string>
+    <string name="immersive_recents_statusbar">Apenas Barra de status</string>
+    <string name="immersive_recents_navbar">Apenas Barra de navegação</string>
+
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">Opções de vibração na chamada</string>
+    <string name="incall_vibrate_connect_title">Vibrar ao conectar</string>
+    <string name="incall_vibrate_call_wait_title">Vibrar na chamada em espera</string>
+    <string name="incall_vibrate_disconnect_title">Vibrar ao desconectar</string>
+   
+    <!-- QS easy toggles -->
+    <string name="qs_easy_toggle_title">Alternador fácil avançado de configurações rápidas</string>
+    <string name="qs_easy_toggle_summary">Ativar ação de um toque para ativar/desativar dados móveis, wifi e bluetooth</string>
+
+    <!-- Screenshot Sound  -->
+    <string name="screenshot_sound_title">Som de captura de tela</string>
+    <string name="screenshot_sound_summary">Opção para habilitar ou desabilitar o som de screenshot</string>
+
+    <!-- QS Header Icons -->
+    <string name="qs_settings_icon_title">Atalho de configurações</string>
+    <string name="qs_settings_icon_summary">Desativar o atalho de configurações no cabeçalho</string>
+    <string name="qs_edit_title">Ícone de edição</string>
+    <string name="qs_edit_summary">Desativar o ícone de edição (lápis) no cabeçalho</string>
+    <string name="qs_multiuser_switch_title">Interruptor de multi-usuário</string>
+    <string name="qs_multiuser_switch_summary">Desativar o interruptor de multi usuário no cabeçalho</string>
+    <string name="qs_expand_indicator_title">Indicador de expansão</string>
+    <string name="qs_expand_indicator_summary">Desabilitar o indicador de expansão no cabeçalho</string>
+
+    <!-- Center Time + Date in header -->
+    <string name="qs_date_time_center_title">Centralizar data e hora</string>
+    <string name="qs_date_time_center_summary">Requer que um ou mais ícones sejam desativados</string>
+
+    <!-- Fingerprint unlock keystore -->
+    <string name="fp_unlock_keystore_title">Desbloqueio por impressão digital</string>
+    <string name="fp_unlock_keystore_summary">Desbloquear o dispositivo com impressão digital após a reinicialização sem pedir o pin/senha/padrão</string>
+
+    <!-- Double tap power button vibration -->
+    <string name="camera_dbl_tap_vib_title">Duplo toque</string>
+    <string name="camera_dbl_tap_vib_summary">Vibrar ao duplo toque no botão para abrir a camera</string>
+
+    <!-- Navbar double tap to sleep -->
+    <string name="double_tap_sleep_nav_bar_title">Duplo toque para dormir</string>
+    <string name="double_tap_sleep_nav_bar_summary">Toque duas vezes na barra de navegação para desligar o dispositivo</string>
+
+    <!-- Status Bar Ticker -->
+    <string name="ticker_screen_title">Ticker de notificação</string>
+    <string name="ticker_title">Ticker da barra de status</string>
+    <string name="ticker_screen_summary">Personalizar o estilo do ticker na barra de status</string>
+    <string name="ticker_summary">Ativar o ticker antigo da barra de status</string>
+    <string name="ticker_restore_defaults_title">Restaurar Padrões</string>
+    <string name="text_title">Texto</string>
+    <string name="icon_title">Ícone</string>
+    <string name="colors_title">Cores</string>
+    <string name="ticker_disabled">Sem ticker</string>
+    <string name="ticker_enabled">Notificação</string>
+    <string name="ticker_media_enabled">Notificação e música</string>
+
 </resources>

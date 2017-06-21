@@ -48,7 +48,7 @@
 
     <!-- HUAWEİ -->
     <string name="device_huawei_honor5X">honor5X</string>
-    <string name="device_huawei_honor5X_summary">kiwi\jsbeyond (kaokao)</string>
+    <string name="device_huawei_honor5X_summary">kiwi\nMaintainer - jsbeyond (kaokao)</string>
 
     <!-- GOOGLE -->
 
@@ -59,53 +59,51 @@
     <string name="device_lenovo_A7010a48_summary">A7010a48\nMaintainer - Vijay Chandra (Vijay chandra)</string>
 	
     <string name="device_lenovo_k5">Vibe K5</string>
-    <string name="device_lenovo_k5_summary">A6020\nJúlio Cezar (bluereptile)</string>
+    <string name="device_lenovo_k5_summary">A6020\nMaintainer - Júlio Cezar (bluereptile)</string>
 
     <string name="device_lenovo_a6000">Lenovo A6000</string>
-    <string name="device_lenovo_a6000_summary">a6000\nHassan Sardar (Has.007)</string>
+    <string name="device_lenovo_a6000_summary">a6000\nMaintainer - Hassan Sardar (Has.007)</string>
 
     <!-- LG -->
     <string name="device_lg_g3">LG G3</string>
-    <string name="device_lg_g3_summary">d855\nRafael Marchetto (Marchetto96)</string>
+    <string name="device_lg_g3_summary">d855\nMaintainer - Rafael Marchetto (Marchetto96)</string>
 
     <!-- MOTOROLA -->
     <string name="device_moto_condor">Moto E</string>
-    <string name="device_moto_condor_summary">condor\nAnderson Mendes (Andersonmendes2016)</string>
+    <string name="device_moto_condor_summary">condor\nMaintainer - Anderson Mendes (Andersonmendes2016)</string>
 	
     <string name="device_moto_falcon">Moto G</string>
-    <string name="device_moto_falcon_summary">falcon\nRafael Marchetto (Marchetto96)</string>
+    <string name="device_moto_falcon_summary">falcon\nMaintainer - Rafael Marchetto (Marchetto96)</string>
 
     <string name="device_moto_titan">Moto G 2014</string>
-    <string name="device_moto_titan_summary">titan\nRenan Queiroz</string>
+    <string name="device_moto_titan_summary">titan\nMaintainer - Renan Queiroz</string>
 
     <string name="device_moto_thea">Moto G 2014 LTE </string>
-    <string name="device_moto_thea_summary">thea\nR Schunk (rkschunk)</string>
+    <string name="device_moto_thea_summary">thea\nMaintainer - R Schunk (rkschunk)</string>
 	
     <string name="device_moto_osprey">Moto G 2015</string>
-    <string name="device_moto_osprey_summary">osprey \nJonathan Bruno (JBCDroid)</string>
+    <string name="device_moto_osprey_summary">osprey \nMaintainer - Jonathan Bruno (JBCDroid)</string>
 	
     <string name="device_moto_merlin">Moto G3 Turbo</string>
-    <string name="device_moto_merlin_summary">merlin \nJonathan Bruno (JBCDroid)</string>
+    <string name="device_moto_merlin_summary">merlin \nMaintainer - Jonathan Bruno (JBCDroid)</string>
 
     <string name="device_moto_athene">Moto G4 Plus</string>
-    <string name="device_moto_athene_summary">athene\nBruno Dantas (brunobdantas)</string>
+    <string name="device_moto_athene_summary">athene\nMaintainer - Bruno Dantas (brunobdantas)</string>
 	
     <string name="device_moto_potter">Moto G5 Plus</string>
-    <string name="device_moto_potter_summary">potter\nR Schunk (rkschunk)</string>
+    <string name="device_moto_potter_summary">potter\nMaintainer - R Schunk (rkschunk)</string>
 
     <string name="device_moto_victara">Moto X 2014</string>
-    <string name="device_moto_victara_summary">victara\nAnderson Mendes (Andersonmendes2016)</string>
+    <string name="device_moto_victara_summary">victara\nMaintainer - Anderson Mendes (Andersonmendes2016)</string>
 
     <string name="device_moto_griffin">Moto Z</string>
-    <string name="device_moto_griffin_summary">griffin\nR Schunk (rkschunk)</string>
+    <string name="device_moto_griffin_summary">griffin\nMaintainer - R Schunk (rkschunk)</string>
 
     <string name="device_moto_addison">Moto Z Play</string>
-    <string name="device_moto_addison_summary">addison\nR Schunk (rkschunk)</string>
+    <string name="device_moto_addison_summary">addison\nMaintainer - R Schunk (rkschunk)</string>
 
     <string name="device_moto_harpia">Moto G Play</string>
-    <string name="device_moto_harpia_summary">harpia\nHenrique Silva (jhenrique09)</string>
-
-
+    <string name="device_moto_harpia_summary">harpia\nMaintainer - Henrique Silva (jhenrique09)</string>
 
     <!-- NEXTBIT -->
 
@@ -113,16 +111,16 @@
 
     <!-- ONEPLUS -->
     <string name="device_oneplus_oneplus2">OnePlus Two</string>
-    <string name="device_oneplus_oneplus2_summary">oneplus2\nRafael Marchetto (Marchetto96)</string>
+    <string name="device_oneplus_oneplus2_summary">oneplus2\nMaintainer - Rafael Marchetto (Marchetto96)</string>
 	
     <string name="device_oneplus_oneplus3">OnePlus Three</string>
-    <string name="device_oneplus_oneplus3_summary">oneplus3\nRafael Marchetto (Marchetto96), Gustavo Campos (BIRDMan)</string>
+    <string name="device_oneplus_oneplus3_summary">oneplus3\nMaintainers - Rafael Marchetto (Marchetto96), Gustavo Campos (BIRDMan)</string>
 
     <!-- OPPO -->
 
     <!-- SAMSUNG -->
     <string name="device_samsung_j5ltexx">Samsung Galaxy J5</string>
-    <string name="device_samsung_j5ltexx_summary">j5ltexx\nEsrom Cataneo (EsromG5)</string>
+    <string name="device_samsung_j5ltexx_summary">j5ltexx\nMaintainer - Esrom Cataneo (EsromG5)</string>
 
     <!-- SONY -->
 
@@ -130,13 +128,13 @@
 
     <!-- XIAOMI -->
     <string name="device_xiaomi_ido">Redmi 3</string>
-    <string name="device_xiaomi_ido_summary">ido\nEsrom Cataneo (EsromG5)</string>
+    <string name="device_xiaomi_ido_summary">ido\nMaintainer - Esrom Cataneo (EsromG5)</string>
 
     <string name="device_xiaomi_kenzo">Redmi Note 3 Pro</string>
-    <string name="device_xiaomi_kenzo_summary">kenzo\nHenrique Silva (jhenrique09)</string>
+    <string name="device_xiaomi_kenzo_summary">kenzo\nMaintainer - Henrique Silva (jhenrique09)</string>
 	
     <string name="device_xiaomi_mido">Redmi Note 4/4X</string>
-    <string name="device_xiaomi_mido_summary">mido\nMatheus Fernandes (matheeusaf)</string>
+    <string name="device_xiaomi_mido_summary">mido\nMaintainer - Matheus Fernandes (matheeusaf)</string>
 	
     <!-- YU -->
 	

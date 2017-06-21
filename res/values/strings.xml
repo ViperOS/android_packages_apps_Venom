@@ -31,7 +31,7 @@
     <string name="traffic_category">Traffic indicators</string>
     <string name="recents_title">Recents Screen</string>
     <string name="carrierlabel_title">Carrier Label</string>
-    <string name="lockscreen_ui_title">Lockscreen UI</string>
+    <string name="lockscreen_ui_title">Lockscreen</string>
 	
     <!-- Dialog -->
     <string name="venom_dialog_title">Help us help you!</string>
