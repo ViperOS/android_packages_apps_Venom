@@ -32,11 +32,17 @@
 
     </PreferenceCategory> -->
 
-    <!-- ASUS
+    <!-- ASUS -->
     <PreferenceCategory
         android:title="@string/device_category_asus_title">
 
-    </PreferenceCategory> -->
+	<Preference
+            android:id="@+id/device_asus_Z010D"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_asus_Z010D"
+            android:summary="@string/device_asus_Z010D_summary"
+            android:selectable="false" />	    
+    </PreferenceCategory> 
 
     <!-- HTC
     <PreferenceCategory

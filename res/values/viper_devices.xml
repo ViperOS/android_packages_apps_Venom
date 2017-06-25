@@ -43,6 +43,8 @@
     <!-- BQ -->
 
     <!-- ASUS -->
+    <string name="device_asus_Z010D">Asus Zenfone Max (Z010D)</string>
+    <string name="device_asus_Z010D_summary">Z010D\nMaintainer - Ninad Patil (PainKiller3)</string>	
 
     <!-- HTC -->
 
