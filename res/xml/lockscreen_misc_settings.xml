@@ -58,7 +58,7 @@
             android:icon="@drawable/ic_battery_charging"
             android:title="@string/lockscreen_battery_info_title"
             android:summary="@string/lockscreen_battery_info_summary"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
 
         <com.viper.venom.preference.SecureSettingSwitchPreference
             android:key="lockscreen_enable_qs"
