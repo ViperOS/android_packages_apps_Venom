@@ -167,12 +167,11 @@ public class QuickSettings extends SettingsPreferenceFragment
             return true;
         } else if (preference == mHeaderShadow) {
             intValue = (Integer) newValue;
-            Settings.System.putInt(resolver,
-                    Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, intValue);
-            Settings.System.putInt(resolver,
-                    Settings.System.STATUS_BAR_CUSTOM_HEADER, 0);
-            Settings.System.putInt(resolver,
-                    Settings.System.STATUS_BAR_CUSTOM_HEADER, 1);
+            Settings.System.putInt(resolver,Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, intValue);
+            if (Settings.System.getInt(resolver,Settings.System.STATUS_BAR_CUSTOM_HEADER, 0) == 1){
+                Settings.System.putInt(resolver,Settings.System.STATUS_BAR_CUSTOM_HEADER, 0);
+                Settings.System.putInt(resolver,Settings.System.STATUS_BAR_CUSTOM_HEADER, 1);
+            }
             return true;
         } else if (preference == mHeaderProvider) {
             String value = (String) newValue;
