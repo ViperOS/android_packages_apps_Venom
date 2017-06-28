@@ -299,6 +299,12 @@
             android:title="@string/device_xiaomi_mido"
             android:summary="@string/device_xiaomi_mido_summary"
             android:selectable="false" />
+	<Preference
+            android:id="@+id/device_xiaomi_wt88047"
+            android:icon="@drawable/phone_tint"
+            android:title="@string/device_xiaomi_wt88047"
+            android:summary="@string/device_xiaomi_wt88047_summary"
+            android:selectable="false" />
     </PreferenceCategory>
 
     <!-- YU
