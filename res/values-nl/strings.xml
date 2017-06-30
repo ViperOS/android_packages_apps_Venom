@@ -374,9 +374,6 @@
   <string name="ticker_title">Notificatie ticker</string>
   <string name="ticker_screen_summary">Aanpassen ticker-stijl in statusbalk</string>
   <string name="ticker_summary">Schakel de ouderwetse scrollende statusbalk notificaties in</string>
-  <string name="ticker_restore_defaults_title">Standaardinstellingen herstellen</string>
-  <string name="text_title">Tekst</string>
-  <string name="icon_title">Pictogram</string>
   <string name="ticker_disabled">Geen ticker</string>
   <string name="ticker_enabled">Meldingen ticker</string>
   <string name="ticker_media_enabled">Meldingen en muziek ticker</string>

@@ -375,9 +375,6 @@
   <string name="ticker_title">Úprava stavového riadku</string>
   <string name="ticker_screen_summary">Upraviť štýl prerušovača v stavovom riadku</string>
   <string name="ticker_summary">Povoliť starý prerušovač v stavovom riadku</string>
-  <string name="ticker_restore_defaults_title">Obnoviť predvolené</string>
-  <string name="text_title">Text</string>
-  <string name="icon_title">Ikona</string>
   <string name="ticker_disabled">Žiadne oznámenie</string>
   <string name="ticker_enabled">Notifikačné upozornenie</string>
   <string name="ticker_media_enabled">Notifikačné a hudobné oznámenie</string>

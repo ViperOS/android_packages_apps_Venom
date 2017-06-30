@@ -373,9 +373,6 @@
   <string name="ticker_title">상태 표시줄 자막 알림</string>
   <string name="ticker_screen_summary">상태 표시줄에 자막 알림을 표시합니다</string>
   <string name="ticker_summary">이전에 사용되던 자막 알림을 활성화 합니다</string>
-  <string name="ticker_restore_defaults_title">기본 값 복원</string>
-  <string name="text_title">글자</string>
-  <string name="icon_title">아이콘</string>
   <string name="ticker_disabled">자막 알림 사용 안함</string>
   <string name="ticker_enabled">알림에만 사용</string>
   <string name="ticker_media_enabled">알림과 음악에 사용</string>

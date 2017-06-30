@@ -381,9 +381,6 @@
   <string name="ticker_title">Paramétrage de la barre d\'état</string>
   <string name="ticker_screen_summary">Personnaliser le style de ticker dans la barre d\'état</string>
   <string name="ticker_summary">Activer l\'ancien ticker dans la barre d\'état</string>
-  <string name="ticker_restore_defaults_title">Réinitialiser par défaut</string>
-  <string name="text_title">Texte</string>
-  <string name="icon_title">Icône (Uniquement pendant la charge)</string>
   <string name="ticker_disabled">Pas d\'aperçu</string>
   <string name="ticker_enabled">Aperçu activé</string>
   <string name="ticker_media_enabled">Aperçu pour les notifications et la musique</string>

@@ -375,9 +375,6 @@
   <string name="ticker_title">状态类时钟</string>
   <string name="ticker_screen_summary">自定义通知栏播放通知的样式</string>
   <string name="ticker_summary">使用旧的时钟样式</string>
-  <string name="ticker_restore_defaults_title">恢复默认值</string>
-  <string name="text_title">文本</string>
-  <string name="icon_title">图标</string>
   <string name="ticker_disabled">没有通知</string>
   <string name="ticker_enabled">通知提示</string>
   <string name="ticker_media_enabled">通知和音乐提示</string>

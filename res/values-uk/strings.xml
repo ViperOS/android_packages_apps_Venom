@@ -375,9 +375,6 @@
   <string name="ticker_title">Рухомий рядок в статус барі</string>
   <string name="ticker_screen_summary">Налаштування стилю ticker в рядку стану</string>
   <string name="ticker_summary">Ввімкнути старий рухомий рядок статус бара</string>
-  <string name="ticker_restore_defaults_title">Відновити значення за замовчуванням</string>
-  <string name="text_title">Текст</string>
-  <string name="icon_title">Значок</string>
   <string name="ticker_disabled">Без бігаючого рядка стану</string>
   <string name="ticker_enabled">Текст сповіщень</string>
   <string name="ticker_media_enabled">Текст сповіщень і музики</string>

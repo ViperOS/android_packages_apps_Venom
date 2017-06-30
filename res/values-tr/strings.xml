@@ -375,9 +375,6 @@
   <string name="ticker_title">Durum çubuğu simgesi</string>
   <string name="ticker_screen_summary">Durum çubuğundaki şerit stilini özelleştir</string>
   <string name="ticker_summary">Eski durum çubuğu şeridi etkinleştirme</string>
-  <string name="ticker_restore_defaults_title">Varsayılanları geri yükle</string>
-  <string name="text_title">Metin</string>
-  <string name="icon_title">Simge</string>
   <string name="ticker_disabled">Şerit yok</string>
   <string name="ticker_enabled">Bildirim şeridi</string>
   <string name="ticker_media_enabled">Bildirimler ve müzik şeridi</string>

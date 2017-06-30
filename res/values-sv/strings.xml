@@ -233,8 +233,6 @@
   <!-- Fingerprint unlock keystore -->
   <!-- Navbar double tap to sleep -->
   <!-- Status Bar Ticker -->
-  <string name="text_title">Text</string>
-  <string name="icon_title">Ikon</string>
   <!-- Lockscreen visualizer -->
   <!-- Data disabled icon -->
 </resources>

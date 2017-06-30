@@ -499,10 +499,6 @@
   <string name="ticker_title">Zegar paska statusu</string>
   <string name="ticker_screen_summary">Dostosuj styl zegarka na pasku statusu</string>
   <string name="ticker_summary">Włącz starą animację powiadomień na pasku</string>
-  <string name="ticker_restore_defaults_title">Przywróć domyślne ustawienia</string>
-  <string name="text_title">Tekst</string>
-  <string name="icon_title">Ikona</string>
-  <string name="values_restored_title">Przywrócono wartości</string>
   <string name="ticker_disabled">Bez zegara</string>
   <string name="ticker_enabled">Zegar powiadomień</string>
   <string name="ticker_media_enabled">Zegar powiadomień i muzyki</string>

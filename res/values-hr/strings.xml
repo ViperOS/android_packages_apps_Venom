@@ -375,9 +375,6 @@
   <string name="ticker_title">Ticker statusne trake</string>
   <string name="ticker_screen_summary">Prilagodite stil tickera u statusnoj traci</string>
   <string name="ticker_summary">Omogućite stari ticker statusne trake</string>
-  <string name="ticker_restore_defaults_title">Vrati zadano</string>
-  <string name="text_title">Tekst</string>
-  <string name="icon_title">Ikona</string>
   <string name="ticker_disabled">Nema tickera</string>
   <string name="ticker_enabled">Ticker obavijesti</string>
   <string name="ticker_media_enabled">Ticker obavijesti i glazbe</string>

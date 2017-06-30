@@ -375,9 +375,6 @@
   <string name="ticker_title">Értesítés gördítése állapotsoron</string>
   <string name="ticker_screen_summary">Állapotsori gördítés stílusának testreszabása</string>
   <string name="ticker_summary">Engedélyezze a régi ketyegőt</string>
-  <string name="ticker_restore_defaults_title">Alapértelmezések visszaállítása</string>
-  <string name="text_title">Szöveg</string>
-  <string name="icon_title">Ikon</string>
   <string name="ticker_disabled">Nincs gördítés</string>
   <string name="ticker_enabled">Értesítés gördítése állapotsoron</string>
   <string name="ticker_media_enabled">Értesítés és zene gördítése állapotsoron</string>

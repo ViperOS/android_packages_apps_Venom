@@ -22,32 +22,36 @@
   <string name="statusbar_category">Barra di stato</string>
   <!-- Category -->
   <string name="battery_title">Batteria</string>
-  <string name="buttons_title">Barra di navigazione e tasti hardware</string>
+  <string name="buttons_title">Barra di navigazione e tasti fisici</string>
   <string name="statusbar_clock_title">Orologio &amp; Data</string>
   <string name="statusbar_items_title">Elementi barra di stato</string>
-  <string name="statusbar_misc_title">Solo barra di stato</string>
+  <string name="statusbar_misc_title">Varie barra di stato</string>
   <string name="quicksettings_title">Impostazioni Rapide</string>
   <string name="traffic_category">Indicatori di traffico</string>
-  <string name="recents_title">Tipo di attività recenti</string>
+  <string name="recents_title">Schermata attività recenti</string>
   <string name="carrierlabel_title">Nome operatore</string>
-  <string name="lockscreen_ui_title">Schermata di sblocco</string>
+  <string name="lockscreen_ui_title">Schermata di blocco</string>
+  <string name="lockscreen_weather_title">Meteo</string>
+  <string name="lockscreen_misc_title">Varie</string>
+  <string name="sound_and_notifications_category">Suoni e notifiche</string>
   <!-- Dialog -->
   <string name="venom_dialog_title">Aiutaci ad aiutarti!</string>
   <string name="venom_dialog_message">Se trovate un bug con una qualsiasi di queste impostazioni, post nella sezione Bug report della nostra pagina Google +. È necessario includere il seguente quando la pubblicazione di un report di bug: \n\n1. Un logcat o last_kmsg\n2. Used\n3 del kernel e mods. Information\n\nIf utile non si riesce a segnalare qualcosa adeguatamente, non aspettatevi cose per essere risolto.</string>
   <string name="venom_dialog_toast">LEGGI TUTTO!</string>
   <!-- Power Menu -->
-  <string name="power_category">Azioni del Menù di accensione</string>
-  <string name="powermenu_category">Menù accensione</string>
+  <string name="power_category">Opzioni menù alimentazione</string>
+  <string name="actions_category">Elementi menù alimentazione</string>
+  <string name="powermenu_category">Menù alimentazione</string>
   <string name="powermenu_screenshot">Screenshot</string>
-  <string name="powermenu_power">Accensione</string>
+  <string name="powermenu_power">Alimentazione</string>
   <string name="powermenu_reboot">Riavvia</string>
   <string name="powermenu_airplane">Aeroplano</string>
   <string name="powermenu_settings">Impostazioni</string>
-  <string name="powermenu_lockdown">Blocco</string>
+  <string name="powermenu_lockdown">Blocca</string>
   <string name="powermenu_soundpanel">Pannello Suoni</string>
   <!-- Advanced reboot options -->
   <string name="advanced_reboot_title">Riavvio avanzato</string>
-  <string name="advanced_reboot_summary">Includi opzioni nel menu riavvio per riavviare in recovery e bootloader</string>
+  <string name="advanced_reboot_summary">Includi opzioni nel menù riavvio per riavviare in recovery e bootloader</string>
   <string name="advanced_reboot_dialog_title">Menù riavvio avanzato</string>
   <string name="advanced_reboot_disabled">Disattiva</string>
   <string name="advanced_reboot_hide_on_keyguard">Nascondi nella schermata di blocco</string>
@@ -207,7 +211,13 @@
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Consente di aprire rapidamente la fotocamera senza sbloccare lo schermo</string>
   <string name="torch_long_press_power_gesture_title">Torcia nella schermata di blocco</string>
-  <string name="torch_long_press_power_gesture_desc">Premi a lungo il pulsante di accensione mentre lo schermo è spento per accendere la torcia</string>
+  <string name="torch_long_press_power_gesture_desc">Premi a lungo il pulsante di alimentazione mentre lo schermo è spento per accendere la torcia</string>
+  <string name="torch_long_press_power_timeout_title">Spegni la torcia automaticamente</string>
+  <string name="torch_long_press_power_timeout_never">Mai</string>
+  <string name="torch_long_press_power_timeout_1_minute">1 minuto</string>
+  <string name="torch_long_press_power_timeout_2_minutes">2 minuti</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5 minuti</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10 minuti</string>
   <!-- Navbar Animation -->
   <string name="pixel_navbar_anim_title">Animazione pixel barra di navigazione</string>
   <string name="pixel_navbar_anim_summary">Attiva l\'animazione pixel della barra di navigazione</string>
@@ -510,11 +520,6 @@
   <string name="ticker_title">Ticker barra di stato</string>
   <string name="ticker_screen_summary">Personalizza lo stile dei ticker nella barra di stato</string>
   <string name="ticker_summary">Abilita il vecchio ticker della barra di stato</string>
-  <string name="ticker_restore_defaults_title">Ripristina predefinite</string>
-  <string name="ticker_restore_defaults_summary">Ripristina le impostazioni predefinite del ticker</string>
-  <string name="text_title">Testo</string>
-  <string name="icon_title">Icona</string>
-  <string name="values_restored_title">Valori ripristinati</string>
   <string name="ticker_disabled">Nessun ticker</string>
   <string name="ticker_enabled">Ticker di notifica</string>
   <string name="ticker_media_enabled">Ticker di notifiche e musica</string>

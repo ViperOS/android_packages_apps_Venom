@@ -365,9 +365,6 @@
   <string name="ticker_title">ステータスバーのアイコン</string>
   <string name="ticker_screen_summary">ステータスバーのティッカーをカスタマイズします</string>
   <string name="ticker_summary">古いステータス バーのティッカーを有効にします。</string>
-  <string name="ticker_restore_defaults_title">標準の設定へ戻す</string>
-  <string name="text_title">Weather Text</string>
-  <string name="icon_title">アイコン</string>
   <!-- Lockscreen visualizer -->
   <!-- Data disabled icon -->
 </resources>

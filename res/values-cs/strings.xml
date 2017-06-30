@@ -411,9 +411,6 @@
   <string name="ticker_title">Úprava stavového řádku</string>
   <string name="ticker_screen_summary">Upravit styl telegrafu ve stavové liště</string>
   <string name="ticker_summary">Povolit starý telegraf ve stavové liště</string>
-  <string name="ticker_restore_defaults_title">Obnovit výchozí nastavení</string>
-  <string name="text_title">Text</string>
-  <string name="icon_title">Ikona</string>
   <string name="ticker_disabled">Žádné oznámení</string>
   <string name="ticker_enabled">Notifikační oznámení</string>
   <string name="ticker_media_enabled">Notifikační a hudební oznámení</string>

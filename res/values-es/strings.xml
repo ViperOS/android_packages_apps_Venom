@@ -421,9 +421,6 @@
   <string name="ticker_title">Ticker de barra de estado</string>
   <string name="ticker_screen_summary">Personalizar el estilo de ticker en la barra de estado</string>
   <string name="ticker_summary">Activar el símbolo de barra de estado antiguo</string>
-  <string name="ticker_restore_defaults_title">Restablecer a valores predefinidos</string>
-  <string name="text_title">Texto</string>
-  <string name="icon_title">Icono</string>
   <string name="ticker_disabled">Sin ticker</string>
   <string name="ticker_enabled">Ticker de notificacion</string>
   <string name="ticker_media_enabled">Ticker De música y notificaciones</string>

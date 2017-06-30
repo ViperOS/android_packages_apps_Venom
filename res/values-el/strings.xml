@@ -375,9 +375,6 @@
   <string name="ticker_title">Επεξεργαστής γραμμής κατάστασης</string>
   <string name="ticker_screen_summary">Προσαρμογή του στυλ ticker στο statusbar</string>
   <string name="ticker_summary">Ενεργοποιήστε την παλιά γραμμή κατάστασης</string>
-  <string name="ticker_restore_defaults_title">Επαναφορά προεπιλογών</string>
-  <string name="text_title">Κείμενο</string>
-  <string name="icon_title">Εικονίδιο</string>
   <string name="ticker_disabled">Χωρίς επιλογέα</string>
   <string name="ticker_enabled">Επιλογέας ειδοποιήσεων</string>
   <string name="ticker_media_enabled">Επιλογέας ειδοποιήσεων και μουσικής</string>

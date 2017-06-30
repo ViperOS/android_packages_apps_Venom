@@ -19,11 +19,52 @@
   <!-- Tabs -->
   <string name="about_category">Tentang</string>
   <string name="system_category">Sistem</string>
+  <string name="statusbar_category">Bilah Status</string>
   <!-- Category -->
+  <string name="battery_title">Baterai</string>
+  <string name="buttons_title">Bilah navigasi dan tombol fisik</string>
+  <string name="statusbar_clock_title">Jam &amp; Tanggal</string>
+  <string name="statusbar_items_title">Item bilah status</string>
+  <string name="statusbar_misc_title">Macam bilah status</string>
+  <string name="quicksettings_title">Setelan Cepat</string>
+  <string name="traffic_category">Indikator jaringan</string>
+  <string name="recents_title">Layar Terbaru</string>
+  <string name="carrierlabel_title">Label Operator</string>
+  <string name="lockscreen_ui_title">Layar kunci</string>
+  <string name="lockscreen_weather_title">Cuaca</string>
+  <string name="lockscreen_misc_title">Macam</string>
+  <string name="sound_and_notifications_category">Suara dan Notifikasi</string>
   <!-- Dialog -->
+  <string name="venom_dialog_title">Bantu kami membantu kamu!</string>
+  <string name="venom_dialog_message">Jika kamu menemukan bug dengan setelan ini, laporkan di laman seksi Bug Reports Google+ kami. Kamu HARUS memasukan ini ketika melapor sebuah bug:\n\n1. Logcat atau last_kmsg\n2. Kernel dan modif lain\n3. Informasi berguna\n\nJika kamu gagal melaporkan sesuatu dengan jelas, JANGAN harap masalah dapat diperbaiki.</string>
+  <string name="venom_dialog_toast">BACA KESELURUHAN!</string>
   <!-- Power Menu -->
+  <string name="power_category">Pilihan menu power</string>
+  <string name="actions_category">Item menu power</string>
+  <string name="powermenu_category">Menu Power</string>
+  <string name="powermenu_screenshot">Tangkapan layar</string>
+  <string name="powermenu_power">Power</string>
+  <string name="powermenu_reboot">Boot ulang</string>
+  <string name="powermenu_airplane">Mode pesawat</string>
+  <string name="powermenu_settings">Setelan</string>
+  <string name="powermenu_lockdown">Kunci Rapat</string>
+  <string name="powermenu_soundpanel">Panel Suara</string>
   <!-- Advanced reboot options -->
+  <string name="advanced_reboot_title">Boot ulang lanjutan</string>
+  <string name="advanced_reboot_summary">Sertakan pilihan di menu power untuk boot ulang ke pemulihan dan bootloader</string>
+  <string name="advanced_reboot_dialog_title">Menu boot ulang lanjutan</string>
+  <string name="advanced_reboot_disabled">Nonaktifkan</string>
+  <string name="advanced_reboot_hide_on_keyguard">Sembunyikan pada layar kunci</string>
+  <string name="advanced_reboot_show_always">Selalu tampilkan</string>
   <!-- Color Picker -->
+  <string name="dialog_color_picker">Pilihan Warna</string>
+  <string name="press_color_to_apply">Tekan pada warna dibawah untuk menerapkan</string>
+  <string name="arrow_right">→</string>
+  <string name="arrow_down">↓</string>
+  <string name="hex">Hex:</string>
+  <string name="hex_hint">#ff000000</string>
+  <string name="set">Atur</string>
+  <string name="color_default">Bawaan</string>
   <string name="default_string">Standar</string>
   <!-- Status bar -->
   <string name="status_bar_toggle_brightness">Kontrol kecerahan</string>
@@ -38,6 +79,10 @@
   <string name="status_bar_quick_qs_pulldown_left">Kiri</string>
   <string name="status_bar_quick_qs_pulldown_right">Kanan</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_title">Tampilan jam</string>
+  <string name="status_bar_clock_position_right">Kanan</string>
+  <string name="status_bar_clock_position_left">Kiri</string>
+  <string name="status_bar_clock_position_center">Tengah</string>
   <string name="status_bar_am_pm_title">Gaya AM/PM</string>
   <string name="status_bar_am_pm_info">Waktu 24-jam diaktifkan</string>
   <string name="status_bar_am_pm_normal">Normal</string>
@@ -57,12 +102,16 @@
   <string name="status_bar_date_format_custom">Format kostum Java</string>
   <string name="status_bar_date_string_edittext_title">Harus dalam format tanggal misalnya. MM/dd/yy</string>
   <string name="status_bar_date_string_edittext_summary">Masukan teks</string>
+  <string name="menu_save">Simpan</string>
+  <string name="menu_cancel">Batalkan</string>
   <!-- Status bar - Battery -->
   <string name="status_bar_battery_style_title">Gaya baterai statusbar</string>
   <string name="status_bar_battery_style_icon_portrait">Ikon potret</string>
   <string name="status_bar_battery_style_icon_landscape">Ikon lanskap</string>
   <string name="status_bar_battery_style_circle">Lingkaran</string>
+  <string name="status_bar_battery_style_bigcircle">Bulatan Besar</string>
   <string name="status_bar_battery_style_solid">Padat</string>
+  <string name="status_bar_battery_style_gauge">Meter</string>
   <string name="status_bar_battery_style_text">Teks</string>
   <string name="status_bar_battery_style_hidden">Tersembunyi</string>
   <!-- Status bar - Battery percentage -->
@@ -85,6 +134,7 @@
   <string name="hardware_keys_appswitch_key_title">Tampilan tombol</string>
   <string name="hardware_keys_camera_key_title">Tombol kamera</string>
   <string name="hardware_keys_volume_keys_title">Volume Rocker</string>
+  <string name="hardware_keys_short_press_title">Aksi tekan singkat</string>
   <string name="hardware_keys_long_press_title">Tindakan tekan lama</string>
   <string name="hardware_keys_double_tap_title">Tindakan dua kali tekan</string>
   <string name="hardware_keys_action_nothing">Tidak ada tindakan</string>
@@ -96,6 +146,8 @@
   <string name="hardware_keys_action_launch_camera">Buka kamera</string>
   <string name="hardware_keys_action_sleep">Matikan layar</string>
   <string name="hardware_keys_action_last_app">Aplikasi terakhir</string>
+  <string name="hardware_keys_action_split_screen">Layar belah</string>
+  <string name="hardware_keys_action_single_handed_left">Mode satu tangan (kiri)</string>
   <string name="camera_sleep_on_release_title">Pengintip layar</string>
   <string name="camera_sleep_on_release_summary">Menahan setengah akan membuat layar tetap menyala hanya ketika tombol tertekan</string>
   <string name="camera_launch_title">Buka kamera</string>
@@ -245,7 +297,11 @@
   <!-- About Viper -->
   <!-- Changelog -->
   <!-- Maintainers -->
+  <string name="maintainers_viper_title">Perangkat dan pengelolanya</string>
+  <string name="maintainers_viper_summary">Daftar perangkat yang didukung dan pengelola resminya</string>
+  <string name="maintainers_viper_error">Tidak dapat memuat daftar perangkat dan pengelola</string>
   <!-- Quick Settings brightness slider -->
+  <string name="qs_misc_category">Macam-macam</string>
   <string name="qs_brightness_slider_title">Slider kecerahan</string>
   <string name="qs_brightness_slider_summary">Tampilkan slider kecerahan di panel pengaturan cepat</string>
   <!-- Quick Settings brightness icon -->
@@ -258,6 +314,20 @@
   <string name="hw_keys_title">Tombol fisik</string>
   <string name="hw_keys_summary">Aktifkan tombol fisik</string>
   <!-- Navbar Dimensions -->
+  <string name="navbar_dimensions_title">Dimensi bilah navigasi</string>
+  <string name="navbar_dimensions_summary">Sesuaikan lebar dan tinggi bilah navigasi</string>
+  <string name="navigation_bar_height_title">Tinggi bilah navigasi</string>
+  <string name="navigation_bar_height_landscape_title">Tinggi bilah navigasi lanskap</string>
+  <string name="navigation_bar_width_title">Lebar bilah navigasi</string>
+  <string name="navigation_bar_size_36_dp">36 dp</string>
+  <string name="navigation_bar_size_30_dp">30 dp</string>
+  <string name="navigation_bar_size_24_dp">24 dp</string>
+  <string name="navigation_bar_size_52_dp">52 dp</string>
+  <string name="navigation_bar_size_48_dp_default">48 dp (bawaan)</string>
+  <string name="navigation_bar_size_44_dp">44 dp</string>
+  <string name="navigation_bar_size_40_dp">40 dp</string>
+  <string name="navigation_bar_size_42_dp">42 dp</string>
+  <string name="navigation_bar_size_0_dp">0 dp (mati)</string>
   <!-- Navbar dynamic color -->
   <string name="nav_bar_dynamic_title">Warna navbar dinamis</string>
   <string name="nav_bar_dynamic_summary">Aktifkan menonaktifkan switch ini untuk navbar untuk beradaptasi dengan aplikasi utama warna gelap. Restart aplikasi Anda inginkan untuk melihat efek</string>
@@ -268,13 +338,20 @@
   <string name="lockscreen_battery_info_title">Info baterai pada kunci layar</string>
   <string name="lockscreen_battery_info_summary">Menampilkan maksimal arus-tegangan yang dinegosiasikan pengisi daya dan suhu baterai pada lockscreen saat pengisian</string>
   <!-- ViperOS Logo -->
+  <string name="status_bar_viper_logo_title">Aktifkan logo</string>
+  <string name="status_bar_viper_logo_summary">Aktifkn untuk menampilkan logo Viper pada bilah status</string>
+  <string name="status_bar_viper_logo_color">Warna logo</string>
   <string name="status_bar_logo">Logo ViperOS</string>
+  <string name="status_bar_viper_logo_position">Penempatan logo</string>
+  <string name="status_bar_viper_logo_position_summary">Pilih di bagian mana untuk menampilkan logo, kiri atau kanan</string>
   <string name="status_bar_logo_position_right">Kanan</string>
   <string name="status_bar_logo_position_left">Kiri</string>
   <string name="status_bar_logo_position_center">Tengah</string>
   <!-- Recents Membar -->
   <string name="systemui_recents_mem_display_title">Tampilkan bilah memori</string>
   <string name="systemui_recents_mem_display_summary">Aktifkan atau nonkatifkan bar RAM pada tampilan aplikasi terkini</string>
+  <string name="systemui_recents_mem_display_color">Warna bilah memori</string>
+  <string name="systemui_recents_mem_display_text_color">Warna teks bilah memori</string>
   <!-- Aosp cards and grid recents -->
   <string name="recents_type_title">Jenis Recents</string>
   <string name="recents_stock">Saham AOSP</string>
@@ -289,7 +366,9 @@
   <string name="double_tap_sleep_anywhere_title">Ketuk kunci laya untuk tidur</string>
   <string name="double_tap_sleep_anywhere_summary">Tekan dua kali di mana saja pada kunci layar untuk menempatkan perangkat tidur</string>
   <!-- Lockscreen categories -->
+  <string name="lockscreen_misc_category">Macam-macam</string>
   <!-- Other system settings category -->
+  <string name="misc_category">Macam-macam</string>
   <!-- Other system settings category -->
   <!-- Wired headset ringtone audio focus -->
   <string name="wired_ringtone_focus_mode_title">Mana untuk bermain nada dering</string>
@@ -377,9 +456,6 @@
   <string name="ticker_title">Bar status ticker</string>
   <string name="ticker_screen_summary">Menyesuaikan gaya ticker di statusbar</string>
   <string name="ticker_summary">Aktifkan status bar ticker lama</string>
-  <string name="ticker_restore_defaults_title">Kembalikan ke awal</string>
-  <string name="text_title">Teks</string>
-  <string name="icon_title">Ikon</string>
   <string name="ticker_disabled">Tanpa ticker</string>
   <string name="ticker_enabled">Notifikasi ticker</string>
   <string name="ticker_media_enabled">Notifikasi dan musik ticker</string>

@@ -375,9 +375,6 @@
   <string name="ticker_title">Status Bar ticker</string>
   <string name="ticker_screen_summary">Passen Sie den Ticker-Stil in der Statusbar an</string>
   <string name="ticker_summary">Aktivieren Sie den alten Statusbar-Ticker</string>
-  <string name="ticker_restore_defaults_title">Standard wiederherstellen</string>
-  <string name="text_title">Text</string>
-  <string name="icon_title">Icon</string>
   <string name="ticker_disabled">Kein Ticker</string>
   <string name="ticker_enabled">Benachrichtigungsticker</string>
   <string name="ticker_media_enabled">Benachrichtigungs- und Musikticker</string>

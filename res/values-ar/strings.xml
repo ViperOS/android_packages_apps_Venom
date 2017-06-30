@@ -375,9 +375,6 @@
   <string name="ticker_title">مؤشر شريط الحالة</string>
   <string name="ticker_screen_summary">تخصيص نمط شريط في شريط الحالة</string>
   <string name="ticker_summary">فعّل مؤشر شريط الحالة القديم</string>
-  <string name="ticker_restore_defaults_title">إستعادة الإفتراضيات</string>
-  <string name="text_title">نص</string>
-  <string name="icon_title">رمز</string>
   <string name="ticker_disabled">لا مؤشر</string>
   <string name="ticker_enabled">مؤشر التنبيهات</string>
   <string name="ticker_media_enabled">مؤشر التنبيهات والموسيقى</string>

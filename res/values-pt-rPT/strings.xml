@@ -416,9 +416,6 @@
   <string name="ticker_title">Notificações na barra de estado</string>
   <string name="ticker_screen_summary">Personalizar o estilo das notificações na barra de estado</string>
   <string name="ticker_summary">Ativa o antigo método de notificações na barra de estado, em que o conteúdo da notificação aparece brevemente na barra de estado em vez de aparecer numa pop-up</string>
-  <string name="ticker_restore_defaults_title">Restaurar predefinições</string>
-  <string name="text_title">Texto</string>
-  <string name="icon_title">Ícone</string>
   <string name="ticker_disabled">Desativadas</string>
   <string name="ticker_enabled">Ativadas</string>
   <string name="ticker_media_enabled">Notificações e música</string>
