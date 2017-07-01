@@ -95,7 +95,7 @@
     <string name="device_moto_merlin_summary">merlin \nMaintainer - Jonathan Bruno (JBCDroid)</string>
 
     <string name="device_moto_athene">Moto G4 Plus</string>
-    <string name="device_moto_athene_summary">athene\nMaintainer - Bruno Dantas (brunobdantas)</string>
+    <string name="device_moto_athene_summary">athene\nMaintainer - R Schunk (rkschunk)</string>
 	
     <string name="device_moto_potter">Moto G5 Plus</string>
     <string name="device_moto_potter_summary">potter\nMaintainer - R Schunk (rkschunk)</string>
