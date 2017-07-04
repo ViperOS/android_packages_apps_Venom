@@ -32,8 +32,7 @@
             android:key="advanced_reboot"
             android:icon="@drawable/restart_icon"
             android:title="@string/advanced_reboot_title"
-            android:summary="@string/advanced_reboot_summary"
-            android:dependency="lockscreen_enable_power_menu" />
+            android:summary="@string/advanced_reboot_summary" />
 
     </PreferenceCategory>
 
@@ -45,29 +44,25 @@
         android:key="restart"
 	android:icon="@drawable/restart_icon"
         android:title="@string/power_menu_reboot_title"
-        android:defaultValue="true"
-        android:dependency="lockscreen_enable_power_menu"  />
+        android:defaultValue="true" />
 
     <CheckBoxPreference
         android:key="screenshot"
 	android:icon="@drawable/screenshot_icon"
         android:title="@string/power_menu_screenshot_title"
-        android:defaultValue="false"
-        android:dependency="lockscreen_enable_power_menu" />
+        android:defaultValue="false" />
 
     <CheckBoxPreference
         android:key="airplane"
         android:icon="@drawable/airplane_icon"
         android:title="@string/power_menu_airplane_title"
-        android:defaultValue="true"
-        android:dependency="lockscreen_enable_power_menu" />
+        android:defaultValue="true" />
 
     <CheckBoxPreference
         android:key="silent"
         android:icon="@drawable/bell_icon"
         android:title="@string/power_menu_sound_title"
-        android:defaultValue="true"
-        android:dependency="lockscreen_enable_power_menu" />
+        android:defaultValue="true" />
 
     </PreferenceCategory>
 
