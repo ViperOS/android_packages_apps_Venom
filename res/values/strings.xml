@@ -605,4 +605,9 @@
     <string name="data_disabled_icon_title">Show data disabled icon</string>
     <string name="data_disabled_icon_summary">Display the cross sign next to signal bar when data is disabled</string>
 
+    <!-- Light buttons on touch -->
+    <string name="button_light_press_title">Light buttons on touch</string>
+    <string name="button_light_press_summary_off">Buttons will light up anytime when screen input is detected.</string>
+    <string name="button_light_press_summary_on">Buttons will light up only if hw keys are pressed.</string>
+
 </resources>

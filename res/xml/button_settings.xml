@@ -19,6 +19,15 @@
         android:persistent="false"
         android:dependency="enable_hw_keys" />
 
+    <com.viper.venom.preference.SystemSettingSwitchPreference
+        android:key="button_light_screen"
+        android:icon="@drawable/backlight_icon"
+        android:title="@string/button_light_press_title"
+        android:summaryOn="@string/button_light_press_summary_on"
+        android:summaryOff="@string/button_light_press_summary_off"
+        android:defaultValue="false"
+        android:dependency="enable_hw_keys" />
+
     <PreferenceCategory
         android:key="navigation_bar_category"
         android:title="@string/navigation_bar_category" >

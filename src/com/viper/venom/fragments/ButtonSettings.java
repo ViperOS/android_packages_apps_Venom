@@ -27,6 +27,7 @@ import android.view.IWindowManager;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.WindowManagerGlobal;
+import com.viper.venom.preference.SystemSettingSwitchPreference;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.DevelopmentSettings;
@@ -59,6 +60,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private static final String KEY_APP_SWITCH_LONG_PRESS = "hardware_keys_app_switch_long_press";
     private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
     private static final String KEY_SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
+    private static final String KEY_BUTTON_LIGHT_SCREEN = "button_light_screen";
     private static final String KEY_NAVIGATION_HOME_LONG_PRESS = "navigation_home_long_press";
     private static final String KEY_NAVIGATION_HOME_DOUBLE_TAP = "navigation_home_double_tap";
     private static final String KEY_NAVIGATION_RECENTS_LONG_PRESS = "navigation_recents_long_press";
@@ -145,6 +147,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private SwitchPreference mNavigationBarEnabled;
     private SwitchPreference mHWKeysEnabled;
     private ButtonBacklightBrightness backlight;
+    private SystemSettingSwitchPreference mHwKeyLight;
 
    private PreferenceCategory mNavigationPreferencesCat;
     
@@ -370,8 +373,10 @@ public class ButtonSettings extends SettingsPreferenceFragment
         }
 
         backlight = (ButtonBacklightBrightness) findPreference(KEY_BUTTON_BACKLIGHT);
+        mHwKeyLight = (SystemSettingSwitchPreference) findPreference(KEY_BUTTON_LIGHT_SCREEN);
         if (!backlight.isButtonSupported() && !backlight.isKeyboardSupported()) {
             prefScreen.removePreference(backlight);
+            prefScreen.removePreference(mHwKeyLight);
         }
 
         if (mCameraWakeScreen != null) {
