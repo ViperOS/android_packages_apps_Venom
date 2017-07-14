@@ -134,6 +134,9 @@
     <!-- WİLEYFOX -->
 
     <!-- XIAOMI -->
+    <string name="device_xiaomi_cancro">Mi 3/4</string>
+    <string name="device_xiaomi_cancro_summary">cancro\nMaintainer - Rizky Benggolo (travarilo)</string>
+	
     <string name="device_xiaomi_ido">Redmi 3</string>
     <string name="device_xiaomi_ido_summary">ido\nMaintainer - Esrom Cataneo (EsromG5)</string>
 
