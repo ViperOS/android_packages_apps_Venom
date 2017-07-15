@@ -557,15 +557,6 @@
     <string name="toast_icon_title">Toast icon</string>
     <string name="toast_icon_summary">Display icon of activity that generates toast message</string>
 
-    <!-- Immersive Recents -->
-    <string name="immersive_recents_title">Immersive Recents</string>
-    <string name="immersive_recents_summary">Change the view of the recents screen</string>
-    <string name="immersive_recents_dialog_title">Select recents view</string>
-    <string name="immersive_recents_default">Default</string>
-    <string name="immersive_recents_fullscreen">Fullscreen</string>
-    <string name="immersive_recents_statusbar">Statusbar only</string>
-    <string name="immersive_recents_navbar">Navbar only</string>
-
     <!-- QS easy toggles -->
     <string name="qs_easy_toggle_title">Advanced quick setting easy toggle</string>
     <string name="qs_easy_toggle_summary">One tap action to toggle bluetooth, data, or wifi</string>
