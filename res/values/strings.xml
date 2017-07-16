@@ -613,4 +613,11 @@
     <!-- Lockscreen blur summary -->
     <string name="lockscreen_blur_enabled_summary">Enable blur on lockscreen</string>
 
+    <!-- Maintainer section -->
+    <string name="maintainer_description">Maintainer: %1$s</string>
+    <string name="loading_devices">Loading devices list...</string>
+    <string name="loading_devices_failed">Failed to load devices list</string>
+    <string name="devices_list_empty">List is empty, tap the icon to reload</string>
+    <string name="reload_list">Reload</string>
+
 </resources>
