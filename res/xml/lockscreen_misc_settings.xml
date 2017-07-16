@@ -43,6 +43,7 @@
             android:key="lock_screen_blur_enabled"
             android:icon="@drawable/lock_screen_blur_icon"
             android:title="@string/lockscreen_blur_enabled_title"
+            android:summary="@string/lockscreen_blur_enabled_summary"
             cm:requiresConfig="@*android:bool/config_uiBlurEnabled" />
 
         <cyanogenmod.preference.CMSystemSettingSwitchPreference
