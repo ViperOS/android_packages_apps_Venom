@@ -15,6 +15,43 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <!-- About Viper -->
+    <string name="about_viper">About Viper</string>
+    
+    <!-- Changelog -->
+    <string name="changelog_viper_title">Changelog</string>
+    <string name="changelog_viper_summary">View recent changes in ROM</string>
+    <string name="changelog_viper_error">Unable to load changelog</string>
+
+    <!-- Maintainers -->
+    <string name="maintainers_viper_title">Devices and maintainers</string>
+    <string name="maintainers_viper_summary">List of supported devices and their official maintainers</string>
+    <string name="maintainers_viper_error">Unable to load devices and maintainers list</string>
+
+    <!-- Website -->
+    <string name="website_viper_title">Download Center</string>
+    <string name="website_viper_summary">Visit our download portal</string>
+
+    <!-- Google+ -->
+    <string name="google_plus_viper_title">Google+</string>
+    <string name="google_plus_viper_summary">Join our G+ community</string>
+
+    <!-- Telegram -->
+    <string name="telegram_viper_title">Telegram</string>
+    <string name="telegram_viper_summary">Subscribe to our Telegram channel</string>
+
+    <!-- Github -->
+    <string name="github_viper_title">Github</string>
+    <string name="github_viper_summary">View our source code</string>
+
+    <!-- Crowdin -->
+    <string name="crowdin_viper_title">Translations</string>
+    <string name="crowdin_viper_summary">Translate to your language, visit our Crowdin</string>
+
+    <!-- OTA -->
+    <string name="ota_viper_title">System updates</string>
+    <string name="ota_viper_summary">Get the latest version of ViperOS</string>
 
     <!-- Tabs -->
     <string name="about_category">About</string>
@@ -374,19 +411,6 @@
     <!-- Battery Tile -->
     <string name="status_bar_battery_style_tile_title">Custom battery tile style</string>
     <string name="status_bar_battery_style_tile_summary">Allow to set the same icon style chosen for the statusbar battery</string>
-    
-    <!-- About Viper -->
-    <string name="about_viper">About Viper</string>
-	
-    <!-- Changelog -->
-    <string name="changelog_viper_title">Changelog</string>
-    <string name="changelog_viper_summary">View recent changes in ROM</string>
-    <string name="changelog_viper_error">Unable to load changelog</string>
-
-    <!-- Maintainers -->
-    <string name="maintainers_viper_title">Devices and maintainers</string>
-    <string name="maintainers_viper_summary">List of supported devices and their official maintainers</string>
-    <string name="maintainers_viper_error">Unable to load devices and maintainers list</string>
 	
     <!-- Quick Settings brightness slider -->
     <string name="qs_misc_category">Miscellaneous</string>
@@ -434,7 +458,7 @@
     <string name="lockscreen_battery_info_summary">Display battery info when charging</string>
 
     <!-- ViperOS Logo --> 
-    <string name="status_bar_viper_logo_title">Enable logo</string>
+    <string name="status_bar_viper_logo_title">Logo</string>
     <string name="status_bar_viper_logo_summary">Enable to show Viper logo on the status bar</string>
     <string name="status_bar_viper_logo_color">Logo color</string>
     <string name="status_bar_logo">Viper logo</string>

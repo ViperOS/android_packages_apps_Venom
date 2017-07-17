@@ -17,34 +17,33 @@
 package com.viper.venom.tabs;
 
 import android.content.Context;
-import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.UserHandle;
-import android.preference.ListPreference;
-import android.preference.SwitchPreference;
-import android.preference.Preference;
-import android.preference.PreferenceCategory;
-import android.preference.PreferenceScreen;
-import android.preference.Preference.OnPreferenceChangeListener;
-import android.provider.Settings;
+import android.support.v7.preference.PreferenceScreen;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
-import com.android.settings.Utils;
+import com.android.internal.util.viper.PackageUtils;
+import android.os.SystemProperties;
 
-public class About extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+public class About extends SettingsPreferenceFragment {
     private static final String TAG = "About";
+    private static final String KEY_VIPEROTA = "viper_ota";
+    private static final String KEY_VIPEROTA_PACKAGE_NAME = "com.viper.ota";
+
+    private PreferenceScreen mViperOTA;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.about);
-
-        ContentResolver resolver = getActivity().getContentResolver();
+        mViperOTA = (PreferenceScreen) findPreference(KEY_VIPEROTA);
+        String buildtype = SystemProperties.get("ro.viper.buildtype","unofficial");
+        if (!buildtype.equalsIgnoreCase("official") || !PackageUtils.isAppInstalled(getActivity(), KEY_VIPEROTA_PACKAGE_NAME)) {
+            getPreferenceScreen().removePreference(mViperOTA);
+        }
     }
 
     @Override
@@ -60,11 +59,6 @@ public class About extends SettingsPreferenceFragment implements
     @Override
     public void onPause() {
         super.onPause();
-    }
-
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
-        return true;
     }
 
 }

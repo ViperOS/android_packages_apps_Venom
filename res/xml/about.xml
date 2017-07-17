@@ -21,7 +21,62 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <!-- Viper Changelog -->
+    <!-- Website -->
+    <PreferenceScreen
+        android:key="viper_website"
+        android:icon="@drawable/ic_web"
+        android:title="@string/website_viper_title"
+        android:summary="@string/website_viper_summary">
+        <intent
+          android:action="android.intent.action.VIEW"
+          android:data="https://download.viper-os.com/" />
+    </PreferenceScreen>
+
+    <!-- Google+ -->
+    <PreferenceScreen
+        android:key="viper_google_plus"
+        android:icon="@drawable/ic_gplus"
+        android:title="@string/google_plus_viper_title"
+        android:summary="@string/google_plus_viper_summary">
+        <intent
+          android:action="android.intent.action.VIEW"
+          android:data="https://plus.google.com/communities/112731559207528820150" />
+    </PreferenceScreen>
+
+    <!-- Telegram -->
+    <PreferenceScreen
+        android:key="viper_telegram"
+        android:icon="@drawable/ic_telegram"
+        android:title="@string/telegram_viper_title"
+        android:summary="@string/telegram_viper_summary">
+        <intent
+          android:action="android.intent.action.VIEW"
+          android:data="https://t.me/viperos_news" />
+    </PreferenceScreen>
+
+    <!-- Github -->
+    <PreferenceScreen
+        android:key="viper_github"
+        android:icon="@drawable/ic_github"
+        android:title="@string/github_viper_title"
+        android:summary="@string/github_viper_summary">
+        <intent
+          android:action="android.intent.action.VIEW"
+          android:data="https://github.com/ViperOS-Project" />
+    </PreferenceScreen>
+
+    <!-- Crowdin -->
+    <PreferenceScreen
+        android:key="viper_crowdin"
+        android:icon="@drawable/ic_trans"
+        android:title="@string/crowdin_viper_title"
+        android:summary="@string/crowdin_viper_summary">
+        <intent
+          android:action="android.intent.action.VIEW"
+          android:data="https://translate.viper-os.com/" />
+    </PreferenceScreen>
+
+    <!-- Changelog -->
     <PreferenceScreen
         android:key="viper_changelog"
         android:icon="@drawable/changelog_icon"
@@ -29,12 +84,23 @@
         android:summary="@string/changelog_viper_summary"
         android:fragment="com.viper.venom.fragments.Changelog" />
 
-    <!-- Viper Maintainers -->
+    <!-- Maintainers -->
     <PreferenceScreen
         android:key="viper_maintainers"
         android:icon="@drawable/maintainers_icon"
         android:title="@string/maintainers_viper_title"
         android:summary="@string/maintainers_viper_summary"
         android:fragment="com.viper.venom.fragments.Maintainers" />
+
+    <!-- OTA -->
+    <PreferenceScreen
+        android:key="viper_ota"
+        android:icon="@drawable/ic_ota"
+        android:title="@string/ota_viper_title"
+        android:summary="@string/ota_viper_summary">
+        <intent android:action="android.intent.action.MAIN"
+          android:targetPackage="com.viper.ota"
+          android:targetClass="com.viper.ota.UpdatesActivity" />
+    </PreferenceScreen>
 			
 </PreferenceScreen>
