@@ -31,20 +31,4 @@
                 android:entries="@array/night_mode_entries"
                 android:entryValues="@array/night_mode_values" />
 
-         <com.viper.venom.preference.SecureSettingSwitchPreference
-                android:key="doze_notification_invert_enabled"
-				android:icon="@drawable/invert"
-                android:title="@string/doze_notification_color_invert_title"
-                android:summaryOn="@string/doze_notification_color_invert_summary_on"
-                android:summaryOff="@string/doze_notification_color_invert_summary_off"
-                android:defaultValue="true" />
-
-        <com.viper.venom.preference.SecureSettingSwitchPreference
-                android:key="notification_title_tint"
-				android:icon="@drawable/tint"
-                android:title="@string/notification_tint_title"
-                android:summaryOn="@string/notification_tint_summary_on"
-                android:summaryOff="@string/notification_tint_summary_off"
-                android:defaultValue="true" />
-
 </PreferenceScreen>

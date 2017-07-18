@@ -377,16 +377,6 @@
     <string name="night_mode_auto">Automatic</string>
     <string name="keywords_display_night_mode">dark theme night mode dim screen invert brightness</string>
 
-    <!-- Doze invert -->
-    <string name="doze_notification_color_invert_title">Ambient notification inversion</string>
-    <string name="doze_notification_color_invert_summary_off">Ambient notifications will not be inverted</string>
-    <string name="doze_notification_color_invert_summary_on">Ambient notifications will be inverted</string>
-
-    <!-- Dynamic notification tint -->
-    <string name="notification_tint_title">Dynamic notification title color</string>
-    <string name="notification_tint_summary_off">Title color on notification will be handled by the theme</string>
-    <string name="notification_tint_summary_on">Title color on notification will be taken from app icon color</string> 
-
     <!-- Network traffic -->
     <string name="network_traffic_title">Network traffic</string>
     <string name="show_network_traffic_state">Status bar traffic monitor</string>
