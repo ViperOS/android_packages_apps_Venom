@@ -10,6 +10,7 @@ import android.provider.Settings;
 import android.support.v7.preference.CheckBoxPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.PreferenceCategory;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.internal.util.cm.PowerMenuConstants;
@@ -23,19 +24,35 @@ import java.util.List;
 import cyanogenmod.providers.CMSettings;
 
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_AIRPLANE;
+import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_ASSIST;
+import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_BUGREPORT;
+import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_LOCKDOWN;
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_RESTART;
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_SCREENSHOT;
+import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_SETTINGS;
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_SILENT;
+import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_USERS;
+import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_VOICEASSIST;
 
-public class PowerMenu extends SettingsPreferenceFragment
-        implements Preference.OnPreferenceChangeListener {
+public class PowerMenu extends SettingsPreferenceFragment {
 
     final static String TAG = "PowerMenu";
+
+
+    private String CATEGORY_ACTION = "action_category";
+
+    private PreferenceCategory actionCategory;
 
     private CheckBoxPreference mRebootPref;
     private CheckBoxPreference mScreenshotPref;
     private CheckBoxPreference mAirplanePref;
+    private CheckBoxPreference mUsersPref;
+    private CheckBoxPreference mSettingsPref;
+    private CheckBoxPreference mLockdownPref;
+    private CheckBoxPreference mBugReportPref;
     private CheckBoxPreference mSilentPref;
+    private CheckBoxPreference mVoiceAssistPref;
+    private CheckBoxPreference mAssistPref;
 
     Context mContext;
     private ArrayList<String> mLocalUserConfig = new ArrayList<String>();
@@ -49,32 +66,41 @@ public class PowerMenu extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.powermenu);
         mContext = getActivity().getApplicationContext();
 
-        final PreferenceScreen prefScreen = getPreferenceScreen();
         mAvailableActions = getActivity().getResources().getStringArray(
                 R.array.power_menu_actions_array);
         mAllActions = PowerMenuConstants.getAllActions();
 
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        actionCategory = (PreferenceCategory) prefScreen.findPreference(CATEGORY_ACTION);
+
         for (String action : mAllActions) {
-            // Remove preferences not present in the overlay
+        // Remove preferences not present in the overlay
             if (!isActionAllowed(action)) {
-                if (prefScreen.findPreference(action) != null) {
-                    prefScreen.removePreference(prefScreen.findPreference(action));
-                }
+                actionCategory.removePreference(findPreference(action));
                 continue;
             }
 
             if (action.equals(GLOBAL_ACTION_KEY_RESTART)) {
-                mRebootPref = (CheckBoxPreference) prefScreen.findPreference(GLOBAL_ACTION_KEY_RESTART);
-                mRebootPref.setOnPreferenceChangeListener(this);
+                mRebootPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_RESTART);
             } else if (action.equals(GLOBAL_ACTION_KEY_SCREENSHOT)) {
-                mScreenshotPref = (CheckBoxPreference) prefScreen.findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
-                mScreenshotPref.setOnPreferenceChangeListener(this);
+                mScreenshotPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
             } else if (action.equals(GLOBAL_ACTION_KEY_AIRPLANE)) {
-                mAirplanePref = (CheckBoxPreference) prefScreen.findPreference(GLOBAL_ACTION_KEY_AIRPLANE);
-                mAirplanePref.setOnPreferenceChangeListener(this);
+                mAirplanePref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_AIRPLANE);
+            } else if (action.equals(GLOBAL_ACTION_KEY_USERS)) {
+                mUsersPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_USERS);
+            } else if (action.equals(GLOBAL_ACTION_KEY_SETTINGS)) {
+                mSettingsPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_SETTINGS);
+            } else if (action.equals(GLOBAL_ACTION_KEY_LOCKDOWN)) {
+                mLockdownPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_LOCKDOWN);
+            } else if (action.equals(GLOBAL_ACTION_KEY_BUGREPORT)) {
+                mBugReportPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_BUGREPORT);
             } else if (action.equals(GLOBAL_ACTION_KEY_SILENT)) {
-                mSilentPref = (CheckBoxPreference) prefScreen.findPreference(GLOBAL_ACTION_KEY_SILENT);
-                mSilentPref.setOnPreferenceChangeListener(this);
+                mSilentPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_SILENT);
+            } else if (action.equals(GLOBAL_ACTION_KEY_VOICEASSIST)) {
+                mSilentPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_VOICEASSIST);
+            } else if (action.equals(GLOBAL_ACTION_KEY_ASSIST)) {
+                mSilentPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_ASSIST);
             }
         }
 
@@ -84,8 +110,6 @@ public class PowerMenu extends SettingsPreferenceFragment
     @Override
     public void onStart() {
         super.onStart();
-
-        final PreferenceScreen prefScreen = getPreferenceScreen();
 
         if (mRebootPref != null) {
             mRebootPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_RESTART));
@@ -99,34 +123,97 @@ public class PowerMenu extends SettingsPreferenceFragment
             mAirplanePref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_AIRPLANE));
         }
 
+        if (mUsersPref != null) {
+            if (!UserHandle.MU_ENABLED || !UserManager.supportsMultipleUsers()) {
+                actionCategory.removePreference(findPreference(GLOBAL_ACTION_KEY_USERS));
+                mUsersPref = null;
+            } else {
+                List<UserInfo> users = ((UserManager) mContext.getSystemService(
+                        Context.USER_SERVICE)).getUsers();
+                boolean enabled = (users.size() > 1);
+                mUsersPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_USERS) && enabled);
+                mUsersPref.setEnabled(enabled);
+            }
+        }
+
+        if (mSettingsPref != null) {
+            mSettingsPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SETTINGS));
+        }
+
+        if (mLockdownPref != null) {
+            mLockdownPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_LOCKDOWN));
+        }
+
+        if (mBugReportPref != null) {
+            mBugReportPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_BUGREPORT));
+        }
+
         if (mSilentPref != null) {
             mSilentPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SILENT));
         }
 
+        if (mVoiceAssistPref != null) {
+            mVoiceAssistPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_VOICEASSIST));
+        }
+
+        if (mAssistPref != null) {
+            mAssistPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_ASSIST));
+        }
+        updatePreferences();
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        boolean value = newValue == null ? false : (boolean) newValue;
+    public void onResume() {
+        super.onResume();
+        updatePreferences();
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        boolean value;
 
         if (preference == mRebootPref) {
-            mRebootPref.setChecked(value);
+            value = mRebootPref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_RESTART);
 
         } else if (preference == mScreenshotPref) {
-            mScreenshotPref.setChecked(value);
+            value = mScreenshotPref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_SCREENSHOT);
 
         } else if (preference == mAirplanePref) {
-            mAirplanePref.setChecked(value);
+            value = mAirplanePref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_AIRPLANE);
 
+        } else if (preference == mUsersPref) {
+            value = mUsersPref.isChecked();
+            updateUserConfig(value, GLOBAL_ACTION_KEY_USERS);
+
+        } else if (preference == mSettingsPref) {
+            value = mSettingsPref.isChecked();
+            updateUserConfig(value, GLOBAL_ACTION_KEY_SETTINGS);
+
+        } else if (preference == mLockdownPref) {
+            value = mLockdownPref.isChecked();
+            updateUserConfig(value, GLOBAL_ACTION_KEY_LOCKDOWN);
+
+        } else if (preference == mBugReportPref) {
+            value = mBugReportPref.isChecked();
+            updateUserConfig(value, GLOBAL_ACTION_KEY_BUGREPORT);
+
         } else if (preference == mSilentPref) {
-            mSilentPref.setChecked(value);
+            value = mSilentPref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_SILENT);
 
+        } else if (preference == mVoiceAssistPref) {
+            value = mVoiceAssistPref.isChecked();
+            updateUserConfig(value, GLOBAL_ACTION_KEY_VOICEASSIST);
+
+        } else if (preference == mAssistPref) {
+            value = mAssistPref.isChecked();
+            updateUserConfig(value, GLOBAL_ACTION_KEY_ASSIST);
+
         } else {
-            return false;
+            return super.onPreferenceTreeClick(preference);
         }
         return true;
     }
@@ -153,6 +240,20 @@ public class PowerMenu extends SettingsPreferenceFragment
             }
         }
         saveUserConfig();
+    }
+
+    private void updatePreferences() {
+        boolean bugreport = Settings.Global.getInt(getContentResolver(),
+                Settings.Global.BUGREPORT_IN_POWER_MENU, 0) != 0;
+
+        if (mBugReportPref != null) {
+            mBugReportPref.setEnabled(bugreport);
+            if (bugreport) {
+                mBugReportPref.setSummary(null);
+            } else {
+                mBugReportPref.setSummary(R.string.power_menu_bug_report_disabled);
+            }
+        }
     }
 
     private void getUserConfig() {

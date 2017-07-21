@@ -40,29 +40,65 @@
         android:key="action_category"
         android:title="@string/actions_category" >
 
-    <CheckBoxPreference
-        android:key="restart"
-	android:icon="@drawable/restart_icon"
-        android:title="@string/power_menu_reboot_title"
-        android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="restart"
+            android:icon="@drawable/restart_icon"
+            android:title="@string/power_menu_reboot_title"
+            android:defaultValue="true" />
 
-    <CheckBoxPreference
-        android:key="screenshot"
-	android:icon="@drawable/screenshot_icon"
-        android:title="@string/power_menu_screenshot_title"
-        android:defaultValue="false" />
+        <CheckBoxPreference
+            android:key="screenshot"
+            android:icon="@drawable/screenshot_icon"
+            android:title="@string/power_menu_screenshot_title"
+            android:defaultValue="false" />
 
-    <CheckBoxPreference
-        android:key="airplane"
-        android:icon="@drawable/airplane_icon"
-        android:title="@string/power_menu_airplane_title"
-        android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="airplane"
+            android:icon="@drawable/airplane_icon"
+            android:title="@string/power_menu_airplane_title"
+            android:defaultValue="true" />
 
-    <CheckBoxPreference
-        android:key="silent"
-        android:icon="@drawable/bell_icon"
-        android:title="@string/power_menu_sound_title"
-        android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="users"
+            android:icon="@drawable/users_icon"
+            android:title="@string/power_menu_users_title"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="settings"
+            android:icon="@drawable/settings_icon"
+            android:title="@string/power_menu_settings_title"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="lockdown"
+            android:icon="@drawable/ic_lock_outline"
+            android:title="@string/power_menu_lockdown_title"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="bugreport"
+            android:icon="@drawable/bug_icon"
+            android:title="@string/power_menu_bug_report_title"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="silent"
+            android:icon="@drawable/bell_icon"
+            android:title="@string/power_menu_sound_title"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="voiceassist"
+            android:icon="@drawable/bell_icon"
+            android:title="@string/power_menu_sound_title"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="assist"
+            android:icon="@drawable/bell_icon"
+            android:title="@string/power_menu_sound_title"
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 
