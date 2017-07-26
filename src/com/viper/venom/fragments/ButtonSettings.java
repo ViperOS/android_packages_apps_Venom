@@ -280,7 +280,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 backCategory.removePreference(findPreference(CMSettings.System.BACK_WAKE_SCREEN));
             }
         } else {
-            prefScreen.removePreference(backCategory);
+            //prefScreen.removePreference(backCategory);
         }
 
         if (hasMenuKey) {
