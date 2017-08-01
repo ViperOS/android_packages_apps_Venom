@@ -17,14 +17,10 @@
 package com.viper.venom;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -61,8 +57,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Venom extends SettingsPreferenceFragment {
-
-    private static final int MENU_HELP  = 0;
 
     ViewPager mViewPager;
     String titleString[];
@@ -108,63 +102,11 @@ public class Venom extends SettingsPreferenceFragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.add(0, MENU_HELP, 0, R.string.venom_dialog_title)
-                .setIcon(R.drawable.ic_venom_info)
-                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case MENU_HELP:
-                showDialogInner(MENU_HELP);
-                Toast.makeText(getActivity(),
-                (R.string.venom_dialog_toast),
-                Toast.LENGTH_LONG).show();
-                return true;
-            default:
-                return false;
-        }
-    }
-
-    private void showDialogInner(int id) {
-        DialogFragment newFragment = MyAlertDialogFragment.newInstance(id);
-        newFragment.setTargetFragment(this, 0);
-        newFragment.show(getFragmentManager(), "dialog " + id);
-    }
-
-    public static class MyAlertDialogFragment extends DialogFragment {
-
-        public static MyAlertDialogFragment newInstance(int id) {
-            MyAlertDialogFragment frag = new MyAlertDialogFragment();
-            Bundle args = new Bundle();
-            args.putInt("id", id);
-            frag.setArguments(args);
-            return frag;
-        }
-
-        public Dialog onCreateDialog(Bundle savedInstanceState) {
-            int id = getArguments().getInt("id");
-            switch (id) {
-                case MENU_HELP:
-                    return new AlertDialog.Builder(getActivity())
-                    .setTitle(R.string.venom_dialog_title)
-                    .setMessage(R.string.venom_dialog_message)
-                    .setCancelable(false)
-                    .setNegativeButton(R.string.dlg_ok,
-                        new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                        }
-                    })
-                    .create();
-            }
-            throw new IllegalArgumentException("unknown id " + id);
-        }
-
-        @Override
-        public void onCancel(DialogInterface dialog) {
-
-        }
+        return false;
     }
 
     class StatusBarAdapter extends FragmentPagerAdapter {
