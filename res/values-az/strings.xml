@@ -16,10 +16,22 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <!-- Changelog -->
+  <!-- Maintainers -->
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <!-- Category -->
+  <string name="lockscreen_weather_title">Hava</string>
   <!-- Dialog -->
   <!-- Power Menu -->
+  <string name="powermenu_screenshot">Ekran görüntüsü</string>
+  <string name="powermenu_reboot">Yenidən başlat</string>
   <!-- Advanced reboot options -->
   <!-- Color Picker -->
   <string name="default_string">Susmaya görə</string>
@@ -36,6 +48,8 @@
   <string name="status_bar_quick_qs_pulldown_left">Sol</string>
   <string name="status_bar_quick_qs_pulldown_right">Sağ</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_right">Sağ</string>
+  <string name="status_bar_clock_position_left">Sol</string>
   <string name="status_bar_am_pm_title">AM/PM stili</string>
   <string name="status_bar_am_pm_info">24 saat forması aktivləşdirildi</string>
   <string name="status_bar_am_pm_normal">Normal</string>
@@ -146,12 +160,17 @@
   <string name="volume_keys_control_ring_stream_summary_off">Səs düymələri medya səviyyəsinə nəzarət edər</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Ekran kilidini açmadan kameranı tez açmaq</string>
+  <string name="torch_long_press_power_timeout_never">Heç vaxt</string>
+  <string name="torch_long_press_power_timeout_1_minute">1 dəqiqə</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5 dəqiqə</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10 dəqiqə</string>
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
   <string name="qs_rows_portrait_title">Sətirlər (şaquli)</string>
   <string name="qs_rows_landscape_title">Sətirlər (üfuqi)</string>
   <string name="qs_columns_title">Sütunlar</string>
   <!-- Headers -->
+  <string name="status_bar_header_title">Mövzular</string>
   <!-- OmniJaws -->
   <!-- Recents panel settings -->
   <string name="show_clear_all_recents_button_title">Hamısını təmizlə düyməsi</string>
@@ -164,6 +183,7 @@
   <string name="recents_clear_all_location_bottom_left">Sol alt</string>
   <string name="recents_clear_all_location_bottom_center">Aşağı mərkəz</string>
   <!-- Custom carrier label and position -->
+  <string name="show_carrier_disabled">Aktiv deyil</string>
   <string name="ok">Oldu</string>
   <!-- Lockscreen weather -->
   <string name="weather_category">Hava Parametrləri</string>
@@ -182,17 +202,6 @@
   <string name="weather_hide_panel_custom_summary">Görünən bildirişlər seçilən sayda bildirişə çatanda hava vəziyyəti paneli gizlənəcək</string>
   <string name="weather_hide_panel_never_summary">Hava vəziyyəti paneli gizlədilməyəcək</string>
   <string name="weather_number_of_notifications_title">Bildirişlərin sayı</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">İnversiya bildirişi</string>
-  <string name="doze_notification_color_invert_summary_off">Mühit ekranı bildirişləri tərs olmayacaq. Qaranlıq temalar üçün işlədin.</string>
-  <string name="doze_notification_color_invert_summary_on">Mühit ekranı bildirişlərini tərs olaraq göstərəcəkdir. Açıq rəng/stok tema üçün işlədin.</string>
-  <!-- Dynamic notification tint -->
   <!-- Network traffic -->
   <string name="network_traffic_title">Şəbəkə hərəkəti</string>
   <string name="show_network_traffic_state">Vəziyyət paneli hərəkət monitoru</string>
@@ -213,9 +222,6 @@
   <string name="network_traffic_autohide_threshold">Hərəkətsizlik ərəfəsi</string>
   <string name="network_traffic_hidearrow_summary">Şəbəkə hərəkəti ox göstəricilərini gizlədər</string>
   <!-- Battery Tile -->
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">Parlaqlıq diyircəyini göstər</string>
   <string name="qs_brightness_slider_summary">Sürətli parametrlərdə parlaqlıq diyircəyini Aktivləşdir/Deaktiv et</string>
@@ -249,6 +255,7 @@
   <!-- Lockscreen categories -->
   <!-- Other system settings category -->
   <!-- Other system settings category -->
+  <string name="sound_category">Səs</string>
   <!-- Wired headset ringtone audio focus -->
   <!-- Volume Steps -->
   <string name="volume_steps_title">Səs səviyyələri</string>
@@ -271,6 +278,7 @@
   <!-- Gestures category -->
   <!-- Three-fingers-swipe to screenshot -->
   <!-- Notifications category -->
+  <string name="notifications_category">Bildirişlər</string>
   <!-- Heads up timeout -->
   <!-- Heads up snooze -->
   <string name="heads_up_snooze_1min">1 dəqiqə</string>
@@ -284,14 +292,6 @@
   <!-- Toast icon -->
   <string name="toast_icon_title">Toast ikonu</string>
   <string name="toast_icon_summary">Bildirişlə əlaqəli tətbiq ikonunu göstərər</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Son istifadə olunanlar görünüşü</string>
-  <string name="immersive_recents_summary">Son istifadə olunanlar ekran görünüşünü dəyiştirmək</string>
-  <string name="immersive_recents_dialog_title">Son istifadə olunanlar görünüşünü seçin</string>
-  <string name="immersive_recents_default">Susmaya görə</string>
-  <string name="immersive_recents_fullscreen">Bütöv ekran</string>
-  <string name="immersive_recents_statusbar">Sadəcə vəziyyət paneli</string>
-  <string name="immersive_recents_navbar">Sadəcə naviqasiya paneli</string>
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <string name="screenshot_sound_title">Ekran görüntüsü səsi</string>
@@ -299,8 +299,12 @@
   <!-- Center Time + Date in header -->
   <!-- Fingerprint unlock keystore -->
   <!-- Navbar double tap to sleep -->
+  <string name="double_tap_sleep_nav_bar_title">Yuxuya keçmək üçün iki dəfə toxun</string>
   <!-- Status Bar Ticker -->
   <string name="ticker_screen_summary">Vəziyyət çubuğunu ticker tərzində xüsusiləşdir</string>
   <!-- Lockscreen visualizer -->
   <!-- Data disabled icon -->
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

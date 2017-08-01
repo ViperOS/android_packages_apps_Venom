@@ -16,16 +16,31 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <!-- Changelog -->
+  <!-- Maintainers -->
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <!-- Category -->
+  <string name="lockscreen_weather_title">मौसम</string>
   <!-- Dialog -->
   <!-- Power Menu -->
+  <string name="powermenu_screenshot">स्क्रीनशॉट</string>
+  <string name="powermenu_reboot">रीबूट करें</string>
   <!-- Advanced reboot options -->
   <!-- Color Picker -->
   <string name="default_string">Default</string>
   <!-- Status bar -->
   <!-- Status bar - Clock -->
+  <string name="status_bar_am_pm_normal">सामान्य</string>
   <!--Status bar date -->
+  <string name="status_bar_date_normal">सामान्य</string>
+  <string name="status_bar_date_style_normal">सामान्य</string>
   <!-- Status bar - Battery -->
   <!-- Status bar - Battery percentage -->
   <!-- Status bar - icon blacklist -->
@@ -35,6 +50,7 @@
   <string name="reset">रीसेट करें</string>
   <!-- Navigation Bar -->
   <!-- Power menu -->
+  <string name="power_menu_screenshot_title">स्क्रीनशॉट</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
@@ -44,14 +60,8 @@
   <!-- Custom carrier label and position -->
   <string name="ok">Okay</string>
   <!-- Lockscreen weather -->
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <!-- Dynamic notification tint -->
+  <string name="lock_screen_weather_settings_title">मौसम</string>
+  <string name="weather_hide_panel_custom_title">उपयोगकर्ता</string>
   <!-- Network traffic -->
   <string name="show_network_traffic_500">500 ms</string>
   <string name="show_network_traffic_1000">1000 ms</string>
@@ -59,9 +69,6 @@
   <string name="show_network_traffic_2000">2000 ms</string>
   <string name="network_traffic_autohide">स्वतः छुपाना</string>
   <!-- Battery Tile -->
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
   <!-- Quick Settings brightness icon -->
   <!-- SU indicator -->
@@ -79,6 +86,7 @@
   <!-- Lockscreen categories -->
   <!-- Other system settings category -->
   <!-- Other system settings category -->
+  <string name="sound_category">ध्वनि</string>
   <!-- Wired headset ringtone audio focus -->
   <!-- Volume Steps -->
   <!-- Power menu on secure lockscreen -->
@@ -92,7 +100,6 @@
   <!-- Quick settings on secure lockscreen -->
   <!-- Hide Statusbar on Lockscreen -->
   <!-- Toast icon -->
-  <!-- Immersive Recents -->
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <!-- QS Header Icons -->
@@ -102,4 +109,7 @@
   <!-- Status Bar Ticker -->
   <!-- Lockscreen visualizer -->
   <!-- Data disabled icon -->
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

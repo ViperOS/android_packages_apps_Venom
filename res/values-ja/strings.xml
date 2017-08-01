@@ -16,10 +16,22 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <!-- Changelog -->
+  <!-- Maintainers -->
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <!-- Category -->
+  <string name="lockscreen_weather_title">天気</string>
   <!-- Dialog -->
   <!-- Power Menu -->
+  <string name="powermenu_screenshot">スクリーンショット</string>
+  <string name="powermenu_reboot">再起動</string>
   <!-- Advanced reboot options -->
   <!-- Color Picker -->
   <string name="default_string">既定</string>
@@ -36,6 +48,8 @@
   <string name="status_bar_quick_qs_pulldown_left">左</string>
   <string name="status_bar_quick_qs_pulldown_right">右</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_right">右</string>
+  <string name="status_bar_clock_position_left">左</string>
   <string name="status_bar_am_pm_title">AM/PMのスタイル</string>
   <string name="status_bar_am_pm_info">24時間表示を有効にする</string>
   <string name="status_bar_am_pm_normal">標準</string>
@@ -146,6 +160,10 @@
   <string name="volume_keys_control_ring_stream_summary_off">音量キーでメディア音量をコントロールする</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">画面ロックを解除せずにすばやくカメラを起動します</string>
+  <string name="torch_long_press_power_timeout_never">非表示にしない</string>
+  <string name="torch_long_press_power_timeout_1_minute">1分</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5分</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10分</string>
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
   <string name="qs_rows_portrait_title">行 (縦)</string>
@@ -204,17 +222,6 @@
   <string name="weather_hide_panel_custom_summary">天気パネルは通知の数が指定した数に達したとき非表示になります</string>
   <string name="weather_hide_panel_never_summary">天気パネルを非表示</string>
   <string name="weather_number_of_notifications_title">通知の数</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">Color inversion</string>
-  <string name="doze_notification_color_invert_summary_off">Ambient display notifications will not be inverted. Use for dark themes.</string>
-  <string name="doze_notification_color_invert_summary_on">Ambient display notifications will show as inverted. Use for light/stock theme.</string>
-  <!-- Dynamic notification tint -->
   <!-- Network traffic -->
   <string name="network_traffic_title">ネットワークトラフィック</string>
   <string name="show_network_traffic_state">ステータスバー上のトラフィックモニター</string>
@@ -236,9 +243,6 @@
   <string name="network_traffic_hidearrow_summary">トラフィックモニターの矢印を隠す</string>
   <!-- Battery Tile -->
   <string name="status_bar_battery_style_tile_summary">ステータスバーのバッテリーと同じアイコンのスタイルを設定できるようにする</string>
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">画面の明るさスライダー</string>
   <string name="qs_brightness_slider_summary">クイック設定で画面の明るさスライダーを有効/無効にする</string>
@@ -280,6 +284,7 @@
   <!-- Lockscreen categories -->
   <!-- Other system settings category -->
   <!-- Other system settings category -->
+  <string name="sound_category">サウンド</string>
   <!-- Wired headset ringtone audio focus -->
   <string name="wired_ringtone_focus_mode_title">ここから着メロを再生するには</string>
   <string name="wired_ringtone_focus_mode_dynamic">ヘッドセット (有線) 接続されている場合、音楽を再生します。</string>
@@ -307,6 +312,7 @@
   <string name="three_finger_gesture">3本指でのジェスチャー</string>
   <string name="three_finger_gesture_summary">3本指でスワイプしてスクリーンショットを取得します</string>
   <!-- Notifications category -->
+  <string name="notifications_category">通知</string>
   <!-- Heads up timeout -->
   <string name="heads_up_time_out_title">表示時間</string>
   <string name="heads_up_time_out_summary"><xliff:g id="number">%d</xliff:g>秒</string>
@@ -333,14 +339,6 @@
   <!-- Toast icon -->
   <string name="toast_icon_title">トーストアイコン</string>
   <string name="toast_icon_summary">トーストを表示したアプリのアイコンを表示する</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Immersive Recents</string>
-  <string name="immersive_recents_summary">最近のアプリケーションの表示を変更</string>
-  <string name="immersive_recents_dialog_title">アプリ履歴の表示</string>
-  <string name="immersive_recents_default">Default</string>
-  <string name="immersive_recents_fullscreen">Fullscreen</string>
-  <string name="immersive_recents_statusbar">Statusbar only</string>
-  <string name="immersive_recents_navbar">Navbar only</string>
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <string name="screenshot_sound_title">スクリーンショットの音</string>
@@ -360,6 +358,7 @@
   <string name="fp_unlock_keystore_title">指紋ロックを解除します。</string>
   <string name="fp_unlock_keystore_summary">指紋ロックのみ（PIN/パスワード/パターンの認証無し）で解除する\n自己責任です</string>
   <!-- Navbar double tap to sleep -->
+  <string name="double_tap_sleep_nav_bar_title">ダブルタップでスリープ</string>
   <!-- Status Bar Ticker -->
   <string name="ticker_screen_title">通知ティッカー</string>
   <string name="ticker_title">ステータスバーのアイコン</string>
@@ -367,4 +366,7 @@
   <string name="ticker_summary">古いステータス バーのティッカーを有効にします。</string>
   <!-- Lockscreen visualizer -->
   <!-- Data disabled icon -->
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

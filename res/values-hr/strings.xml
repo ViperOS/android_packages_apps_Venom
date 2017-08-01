@@ -16,10 +16,22 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <!-- Changelog -->
+  <!-- Maintainers -->
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <!-- Category -->
+  <string name="lockscreen_weather_title">Vrijeme</string>
   <!-- Dialog -->
   <!-- Power Menu -->
+  <string name="powermenu_screenshot">Snimka zaslona</string>
+  <string name="powermenu_reboot">Ponovno pokreni</string>
   <!-- Advanced reboot options -->
   <!-- Color Picker -->
   <string name="default_string">Zadano</string>
@@ -36,6 +48,8 @@
   <string name="status_bar_quick_qs_pulldown_left">Lijevi</string>
   <string name="status_bar_quick_qs_pulldown_right">Desni</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_right">Desni</string>
+  <string name="status_bar_clock_position_left">Lijevi</string>
   <string name="status_bar_am_pm_title">AM/PM stil</string>
   <string name="status_bar_am_pm_info">Omogućeno je 24-satno vrijeme</string>
   <string name="status_bar_am_pm_normal">Normalno</string>
@@ -147,6 +161,10 @@
   <string name="volume_keys_control_ring_stream_summary_off">Tipke za glasnoću kontroliraju glasnoću medija</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Brzo otvorite fotoaparat bez otključavanja zaslona</string>
+  <string name="torch_long_press_power_timeout_never">Nikad</string>
+  <string name="torch_long_press_power_timeout_1_minute">1 minuta</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5 minuta</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10 minuta</string>
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
   <string name="qs_rows_portrait_title">Redci (portret)</string>
@@ -208,17 +226,6 @@
   <string name="weather_hide_panel_never_summary">Vremenska se ploča neće skrivati</string>
   <string name="weather_number_of_notifications_title">Broj obavijesti</string>
   <string name="weather_icon_pack_title">Paket ikona za prognozu</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">Inverzija obavijesti</string>
-  <string name="doze_notification_color_invert_summary_off">Obavijesti će se obrnuti. Koristite se ovime za tamne teme.</string>
-  <string name="doze_notification_color_invert_summary_on">Obavijesti će se obrnuti. Koristite se ovime za svijetle/zadane teme.</string>
-  <!-- Dynamic notification tint -->
   <!-- Network traffic -->
   <string name="network_traffic_title">Mrežni promet</string>
   <string name="show_network_traffic_state">Praćenje prometa u statusnoj traci</string>
@@ -240,9 +247,6 @@
   <string name="network_traffic_hidearrow_summary">Sakriva strelice u pokazivačima prometa.</string>
   <!-- Battery Tile -->
   <string name="status_bar_battery_style_tile_summary">Omogućite za postavljanje istog stila ikone koji ste odabrali za bateriju u statusnoj traci</string>
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">Klizač svjetline</string>
   <string name="qs_brightness_slider_summary">Prikaži klizač svjetline na ploči brzih obavijesti</string>
@@ -289,6 +293,7 @@
   <!-- Lockscreen categories -->
   <!-- Other system settings category -->
   <!-- Other system settings category -->
+  <string name="sound_category">Zvuk</string>
   <!-- Wired headset ringtone audio focus -->
   <string name="wired_ringtone_focus_mode_title">Od kuda će se reproducirati zvono</string>
   <string name="wired_ringtone_focus_mode_dynamic">Žičane slušalice ako su povezane i reproducira se glazba</string>
@@ -316,6 +321,7 @@
   <string name="three_finger_gesture">Gesta s tri prsta</string>
   <string name="three_finger_gesture_summary">Povucite tri prsta po zaslonu za snimku zaslona</string>
   <!-- Notifications category -->
+  <string name="notifications_category">Obavijesti</string>
   <!-- Heads up timeout -->
   <string name="heads_up_time_out_title">Istek</string>
   <string name="heads_up_time_out_summary">Obavijesti koje vire preko zaslona prikazivat će se <xliff:g id="number">%d</xliff:g> s.</string>
@@ -343,14 +349,6 @@
   <!-- Toast icon -->
   <string name="toast_icon_title">Ikona na tostu</string>
   <string name="toast_icon_summary">Prikazuje ikonu aplikacije koja odgovara tost obavijesti.</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Nedavne apl. u cijelom zaslonu</string>
-  <string name="immersive_recents_summary">Promijenite prikaz zaslona nedavnih aplikacija.</string>
-  <string name="immersive_recents_dialog_title">Odaberite prikaz nedavnih aplikacija</string>
-  <string name="immersive_recents_default">Zadano</string>
-  <string name="immersive_recents_fullscreen">Cijeli zaslon</string>
-  <string name="immersive_recents_statusbar">Samo statusna traka</string>
-  <string name="immersive_recents_navbar">Samo navigacijska traka</string>
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <string name="screenshot_sound_title">Zvuk snimke zaslona</string>
@@ -370,6 +368,7 @@
   <string name="fp_unlock_keystore_title">Otključavanje otiskom</string>
   <string name="fp_unlock_keystore_summary">Otključajte uređaj otiskom prsta nakon ponovnog pokretanja uređaja bez PIN-a, lozinke ili uzorka.\nNapomena: omogućite ovo na vlastiti rizik!</string>
   <!-- Navbar double tap to sleep -->
+  <string name="double_tap_sleep_nav_bar_title">Dvostruki dodir za zaključavanje</string>
   <!-- Status Bar Ticker -->
   <string name="ticker_screen_title">Ticker obavijesti</string>
   <string name="ticker_title">Ticker statusne trake</string>
@@ -382,4 +381,7 @@
   <!-- Data disabled icon -->
   <string name="data_disabled_icon_title">Ikona za onemogućene podatke</string>
   <string name="data_disabled_icon_summary">Prikazuje križić pokraj trake sa signalom kad su podaci onemogućeni.</string>
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

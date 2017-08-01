@@ -16,6 +16,15 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <!-- Changelog -->
+  <!-- Maintainers -->
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <string name="about_category">À propos</string>
   <string name="system_category">Système</string>
@@ -24,8 +33,11 @@
   <string name="battery_title">Batterie</string>
   <string name="buttons_title">Barre de navigation et boutons physiques</string>
   <string name="statusbar_clock_title">Heure &amp; Date</string>
+  <string name="lockscreen_weather_title">Prévisions Météo</string>
   <!-- Dialog -->
   <!-- Power Menu -->
+  <string name="powermenu_screenshot">Capture d\'écran</string>
+  <string name="powermenu_reboot">Redémarrer</string>
   <!-- Advanced reboot options -->
   <!-- Color Picker -->
   <string name="default_string">Par défaut</string>
@@ -42,6 +54,8 @@
   <string name="status_bar_quick_qs_pulldown_left">Gauche</string>
   <string name="status_bar_quick_qs_pulldown_right">Droite</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_right">Droite</string>
+  <string name="status_bar_clock_position_left">Gauche</string>
   <string name="status_bar_am_pm_title">Style AM/PM</string>
   <string name="status_bar_am_pm_info">Mode horloge 24 heures activée</string>
   <string name="status_bar_am_pm_normal">Normal</string>
@@ -153,12 +167,17 @@
   <string name="volume_keys_control_ring_stream_summary_off">Les boutons de volume contrôlent le volume des sons multimédia</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Ouvrir rapidement l\'appareil photo sans déverrouiller l\'écran</string>
+  <string name="torch_long_press_power_timeout_never">Jamais</string>
+  <string name="torch_long_press_power_timeout_1_minute">1 minute</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5 minutes</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10 minutes</string>
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
   <string name="qs_rows_portrait_title">Lignes (portrait)</string>
   <string name="qs_rows_landscape_title">Lignes (paysage)</string>
   <string name="qs_columns_title">Colonnes</string>
   <!-- Headers -->
+  <string name="status_bar_header_title">En-têtes</string>
   <string name="status_bar_custom_header_title">Éditer l\'image de l\'en-tête</string>
   <string name="status_bar_custom_header_summary">Afficher et personnaliser l\'image d\'en-tête dans le volet de notification</string>
   <string name="daylight_header_pack_title">Pack d\'image « mode dynamique »</string>
@@ -214,17 +233,6 @@
   <string name="weather_hide_panel_never_summary">Le panneau de météo ne sera pas masqué</string>
   <string name="weather_number_of_notifications_title">Nombre de notifications</string>
   <string name="weather_icon_pack_title">Pack d’icônes Météo</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">Inversion de notification</string>
-  <string name="doze_notification_color_invert_summary_off">Les notifications du mode Veille ne seront pas inversées. À utiliser avec des thèmes sombres.</string>
-  <string name="doze_notification_color_invert_summary_on">Les notifications du mode Veille seront inversées. À utiliser avec des thèmes clairs ou par défaut</string>
-  <!-- Dynamic notification tint -->
   <!-- Network traffic -->
   <string name="network_traffic_title">Trafic réseau</string>
   <string name="show_network_traffic_state">Moniteur de trafic dans la barre d\'état</string>
@@ -246,9 +254,6 @@
   <string name="network_traffic_hidearrow_summary">Masquer les flèches du moniteur de trafic</string>
   <!-- Battery Tile -->
   <string name="status_bar_battery_style_tile_summary">Permet de définir le même style d\'icône choisi pour la batterie dans la barre d\'état</string>
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">Curseur de luminosité</string>
   <string name="qs_brightness_slider_summary">Afficher un curseur de luminosité dans le volet des réglages rapides</string>
@@ -295,6 +300,7 @@
   <!-- Lockscreen categories -->
   <!-- Other system settings category -->
   <!-- Other system settings category -->
+  <string name="sound_category">Son</string>
   <!-- Wired headset ringtone audio focus -->
   <string name="wired_ringtone_focus_mode_title">Jouer les sonneries à partir de</string>
   <string name="wired_ringtone_focus_mode_dynamic">Casque filaire si connecté et musique en cours</string>
@@ -322,6 +328,7 @@
   <string name="three_finger_gesture">Geste avec trois doigts</string>
   <string name="three_finger_gesture_summary">Balayer l\'écran avec trois doigts pour faire une capture d\'écran</string>
   <!-- Notifications category -->
+  <string name="notifications_category">Notifications</string>
   <!-- Heads up timeout -->
   <string name="heads_up_time_out_title">Délai d\'affichage</string>
   <string name="heads_up_time_out_summary">Affichage des notifications pendant <xliff:g id="number">%d</xliff:g> secondes</string>
@@ -349,14 +356,6 @@
   <!-- Toast icon -->
   <string name="toast_icon_title">Icône des notifications contextuelles</string>
   <string name="toast_icon_summary">Afficher l\'icône de l\'application correspondant à la notification contextuelle</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Applications récentes immersives</string>
-  <string name="immersive_recents_summary">Apparence de l\'écran des applications récentes</string>
-  <string name="immersive_recents_dialog_title">Choisir l\'apparence pour les Applications récentes</string>
-  <string name="immersive_recents_default">Par défaut</string>
-  <string name="immersive_recents_fullscreen">Plein écran</string>
-  <string name="immersive_recents_statusbar">Uniquement la barre d\'état</string>
-  <string name="immersive_recents_navbar">Uniquement la barre de navigation</string>
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <string name="screenshot_sound_title">Son de capture d\'écran</string>
@@ -376,6 +375,7 @@
   <string name="fp_unlock_keystore_title">Déverrouiller avec l\'empreinte digitale</string>
   <string name="fp_unlock_keystore_summary">Déverrouiller l’appareil avec l\'empreinte digitale après un redémarrage, sans mot de passe/PIN/Schema\nNote : à vos risques et périls !</string>
   <!-- Navbar double tap to sleep -->
+  <string name="double_tap_sleep_nav_bar_title">Tapoter deux fois pour mettre en veille</string>
   <!-- Status Bar Ticker -->
   <string name="ticker_screen_title">Notifications animées</string>
   <string name="ticker_title">Paramétrage de la barre d\'état</string>
@@ -388,4 +388,7 @@
   <!-- Data disabled icon -->
   <string name="data_disabled_icon_title">Afficher l\'icône lorsque les données sont désactivées</string>
   <string name="data_disabled_icon_summary">Afficher une croix à côté du signal lorsque les données sont désactivées </string>
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

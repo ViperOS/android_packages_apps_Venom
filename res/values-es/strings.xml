@@ -16,6 +16,22 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <string name="about_viper">Sobre Viper</string>
+  <!-- Changelog -->
+  <string name="changelog_viper_title">Registro de cambios</string>
+  <string name="changelog_viper_summary">Ver cambios recientes de la ROM</string>
+  <string name="changelog_viper_error">Imposible cargar el registro de cambios</string>
+  <!-- Maintainers -->
+  <string name="maintainers_viper_title">Dispositivos y mantenedores</string>
+  <string name="maintainers_viper_summary">Lista de dispositivos soportados y sus mantenedores oficiales</string>
+  <string name="maintainers_viper_error">No se puede cargar la lista de dispositivos y mantenedores</string>
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <string name="about_category">Acerca de</string>
   <string name="system_category">Sistema</string>
@@ -23,20 +39,24 @@
   <!-- Category -->
   <string name="battery_title">Batería</string>
   <string name="buttons_title">Barra de navegación y teclas de hardware</string>
-  <string name="statusbar_clock_title">Reloj &amp; Fecha</string>
+  <string name="statusbar_clock_title">Fecha &amp; hora</string>
   <string name="statusbar_items_title">Elementos de la barra de estado</string>
-  <string name="statusbar_misc_title">Miscelanea de la barra de estado</string>
+  <string name="statusbar_misc_title">Ajustes varios de la barra de estado</string>
   <string name="quicksettings_title">Ajustes Rápidos</string>
   <string name="traffic_category">Indicadores de tráfico de red</string>
-  <string name="recents_title">Pantalla de recientes</string>
+  <string name="recents_title">Panel de Recientes</string>
   <string name="carrierlabel_title">Nombre de operador</string>
   <string name="lockscreen_ui_title">Pantalla de bloqueo</string>
+  <string name="lockscreen_weather_title">Tiempo</string>
+  <string name="lockscreen_misc_title">Misceláneo</string>
+  <string name="sound_and_notifications_category">Sonido y notificaciones</string>
   <!-- Dialog -->
   <string name="venom_dialog_title">¡Ayúdanos a ayudarte!</string>
   <string name="venom_dialog_message">SI usted encuentra algún error con algúno de estas configuraciones, posteelo en la sección de Reportes de Bugs en nuestra página de Google+. Usted DEBERÁ incluir lo siguiente cuando postee un reporte de Bug:\n\n1. El log o last_kmsg\n2. Kernel y modificaciones usadas\n3. Información útil\n\nsi usted falla al reportar algo adecuadamente, NO ESPERE que las cosas sean arregladas.</string>
-  <string name="venom_dialog_toast">¡LEER TODO!</string>
+  <string name="venom_dialog_toast">¡LEA TODO!</string>
   <!-- Power Menu -->
   <string name="power_category">Opciones del menú de apagado</string>
+  <string name="actions_category">Elementos del menú de apagado</string>
   <string name="powermenu_category">Menú de Apagado</string>
   <string name="powermenu_screenshot">Captura de pantalla</string>
   <string name="powermenu_power">Apagar</string>
@@ -59,7 +79,7 @@
   <string name="arrow_down">↓</string>
   <string name="hex">Hex:</string>
   <string name="hex_hint">#ff000000</string>
-  <string name="set">Configurar</string>
+  <string name="set">Establecer</string>
   <string name="color_default">Por defecto</string>
   <string name="default_string">Por defecto</string>
   <!-- Status bar -->
@@ -107,6 +127,7 @@
   <string name="status_bar_battery_style_circle">Circulo</string>
   <string name="status_bar_battery_style_bigcircle">Círculo Grande</string>
   <string name="status_bar_battery_style_solid">Sólido</string>
+  <string name="status_bar_battery_style_gauge">Indicador</string>
   <string name="status_bar_battery_style_text">Texto</string>
   <string name="status_bar_battery_style_hidden">Ocultos</string>
   <!-- Status bar - Battery percentage -->
@@ -129,6 +150,7 @@
   <string name="hardware_keys_appswitch_key_title">Botón de perspectiva general</string>
   <string name="hardware_keys_camera_key_title">Botón de cámara</string>
   <string name="hardware_keys_volume_keys_title">Despertar con botones de volúmen</string>
+  <string name="hardware_keys_short_press_title">Acción de pulsación corta</string>
   <string name="hardware_keys_long_press_title">Acción pulsación larga</string>
   <string name="hardware_keys_double_tap_title">Acción de doble toque</string>
   <string name="hardware_keys_action_nothing">Ninguna acción</string>
@@ -140,6 +162,11 @@
   <string name="hardware_keys_action_launch_camera">Abrir cámara</string>
   <string name="hardware_keys_action_sleep">Apagar la pantalla</string>
   <string name="hardware_keys_action_last_app">Última aplicación</string>
+  <string name="hardware_keys_action_split_screen">Pantalla dividida</string>
+  <string name="hardware_keys_action_single_handed_left">Modo a una mano (izquierda)</string>
+  <string name="hardware_keys_action_single_handed_right">Modo a una mano (derecha)</string>
+  <string name="hardware_keys_action_screenshot_full">Captura de pantalla completa</string>
+  <string name="hardware_keys_action_screenshot_region">Captura de pantalla en área seleccionada</string>
   <string name="camera_sleep_on_release_title">Vistazo de pantalla</string>
   <string name="camera_sleep_on_release_summary">Una leve pulsación mantendrá la pantalla encendida hasta que éste sea soltado</string>
   <string name="camera_launch_title">Abrir cámara</string>
@@ -155,6 +182,7 @@
   <string name="swap_volume_buttons_title">Reorientar botones</string>
   <string name="swap_volume_buttons_summary">Intercambiar los botones de volumen al rotar la pantalla</string>
   <string name="button_wake_title">Despertar dispositivo</string>
+  <string name="button_wake_summary">Despertar dispositivo presionando un botón</string>
   <string name="volume_answer_call_title">Responder llamada</string>
   <string name="volume_answer_call_summary">Responder llamadas entrantes presionando botones de volumen</string>
   <string name="home_answer_call_title">Responder llamada</string>
@@ -175,9 +203,14 @@
   <string name="reset">Restablecer</string>
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Barra de navegación</string>
+  <string name="navigation_bar_enable_title">Activar barra de navegación</string>
+  <string name="navigation_bar_enable_summary">Activar barra de navegación en la pantalla</string>
   <string name="navigation_bar_title">Botones y diseño</string>
+  <string name="navigation_bar_summary">Personalizar diseño de barra de navegación</string>
   <string name="navigation_bar_arrow_keys_title">Mostras flechas al escribir</string>
   <string name="navigation_bar_arrow_keys_summary">Mostrar los cursores izquierda y derecha mientras se escribe. Reemplaza al selector IME.</string>
+  <string name="navigation_bar_home_long_press_title">Acción de pulsación larga de Inicio</string>
+  <string name="navigation_bar_home_double_tap_title">Acción de doble toque en inicio</string>
   <string name="navigation_bar_recents_title">Pulsación larga en recientes</string>
   <!-- Power menu -->
   <string name="power_menu_title">Menú de apagado</string>
@@ -193,12 +226,25 @@
   <string name="volume_keys_control_ring_stream_summary_off">Las teclas de volumen controlan el volumen multimedia</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Abre la cámara rápidamente sin desbloquear la pantalla</string>
+  <string name="torch_long_press_power_gesture_title">Linterna en pantalla de bloqueo</string>
+  <string name="torch_long_press_power_gesture_desc">Pulsación larga en el boton de encendido con la pantalla apagada encenderá la linterna</string>
+  <string name="torch_long_press_power_timeout_title">Apagar automáticamente la linterna</string>
+  <string name="torch_long_press_power_timeout_never">Nunca</string>
+  <string name="torch_long_press_power_timeout_1_minute">1 minuto</string>
+  <string name="torch_long_press_power_timeout_2_minutes">2 minutos</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5 minutos</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10 minutos</string>
   <!-- Navbar Animation -->
+  <string name="pixel_navbar_anim_title">Animación Pixel en barra de navegación</string>
+  <string name="pixel_navbar_anim_summary">Activa la animación Pixel de la barra de navegación</string>
   <!-- Quick settings tiles -->
+  <string name="qs_tiles_category">Baldosas</string>
+  <string name="sysui_qqs_count_title">Ajustes rápidos pequeños</string>
   <string name="qs_rows_portrait_title">Filas (vertical)</string>
   <string name="qs_rows_landscape_title">Filas (horizontal)</string>
   <string name="qs_columns_title">Columnas</string>
   <!-- Headers -->
+  <string name="status_bar_header_title">Encabezado</string>
   <string name="status_bar_custom_header_title">Imagen personalizada en la barra de estado</string>
   <string name="status_bar_custom_header_summary">Habilitar cabecera personalizada en el panel de notificaciones</string>
   <string name="daylight_header_pack_title">Paquete de imagen para la cabecera</string>
@@ -211,9 +257,14 @@
   <string name="custom_header_browse_title">Ver encabezados instalados</string>
   <string name="custom_header_browse_summary">Pulsación larga sobre cualquier imagen para modo estático</string>
   <!-- OmniJaws -->
+  <string name="omnijaws_settings_title">OmniJaws</string>
+  <string name="omnijaws_settings_summary">Personalizar baldosa de tiempo</string>
   <string name="weather_config_title">Ajustes de servicio</string>
+  <string name="weather_config_summary">Configurar servicio</string>
   <string name="weather_icon_pack_title">Pack de iconos de estado</string>
+  <string name="weather_icon_pack_note">Nota\u003a puede instalar nuevos paquetes de iconos desde play store buscando \"Chronus iconos\"</string>
   <!-- Recents panel settings -->
+  <string name="recents_default_category">Aplicaciones recientes</string>
   <string name="show_clear_all_recents_button_title">Botón de borrar todo</string>
   <string name="show_clear_all_recents_button_summary">Mostrar botón de limpieza de aplicaciones recientes</string>
   <string name="recents_clear_all_location_title">Posición de boton de borrar todo</string>
@@ -224,6 +275,8 @@
   <string name="recents_clear_all_location_bottom_left">Abajo a la izquierda</string>
   <string name="recents_clear_all_location_bottom_center">Abajo en el centro</string>
   <!-- Custom carrier label and position -->
+  <string name="carrier_label_settings_title">Nombre de operador</string>
+  <string name="carrier_label_settings_summary">Nombre de operador personalizado</string>
   <string name="custom_carrier_label_title">Nombre de operador personalizado</string>
   <string name="custom_carrier_label_explain">Introduce una nueva etiqueta. Déjala en blanco para volver a la etiqueta por defecto.</string>
   <string name="custom_carrier_label_notset">Actualmente no se ha establecido una etiqueta personalizada</string>
@@ -238,6 +291,7 @@
   <string name="ok">Aceptar</string>
   <!-- Lockscreen weather -->
   <string name="weather_category">Ajustes del tiempo meteorológico</string>
+  <string name="display_category_weather_title">Opciones de tiempo en pantalla de bloqueo</string>
   <string name="lock_screen_weather_settings_title">Opciones del clima</string>
   <string name="weather_cat_notifications_title">Notificaciones</string>
   <string name="weather_show_weather_title">Mostrar clima</string>
@@ -254,17 +308,7 @@
   <string name="weather_hide_panel_never_summary">El panel del clima no se ocultará</string>
   <string name="weather_number_of_notifications_title">Número de notificaciones</string>
   <string name="weather_icon_pack_title">Pack de iconos de estado</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">Inversión de notificación</string>
-  <string name="doze_notification_color_invert_summary_off">Las notificaciones no se invierten. Úsalo para temas oscuros.</string>
-  <string name="doze_notification_color_invert_summary_on">Las notificaciones serán invertidas. Úsalo para temas claros/stock.</string>
-  <!-- Dynamic notification tint -->
+  <string name="lock_clock_title">Servicio meteorológico</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">Tráfico de red</string>
   <string name="show_network_traffic_state">Monitor de tráfico en la barra de estado</string>
@@ -283,13 +327,13 @@
   <string name="network_traffic_autohide">Auto-ocultar</string>
   <string name="network_traffic_autohide_summary">Ocultar al monitor de tráfico cuando no haya actividad</string>
   <string name="network_traffic_autohide_threshold">Umbral de inactividad</string>
+  <string name="network_traffic_hidearrow">Ocultar las flechas</string>
   <string name="network_traffic_hidearrow_summary">Ocultar las flechas en el indicador de tráfico</string>
   <!-- Battery Tile -->
+  <string name="status_bar_battery_style_tile_title">Estilo de batería personalizado</string>
   <string name="status_bar_battery_style_tile_summary">Permite establecer el mismo estilo de icono elegido para la batería de la barra de estado</string>
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
+  <string name="qs_misc_category">Varios</string>
   <string name="qs_brightness_slider_title">Barra de brillo</string>
   <string name="qs_brightness_slider_summary">Mostrar una barra de brillo en el panel de ajustes rápidos</string>
   <!-- Quick Settings brightness icon -->
@@ -302,6 +346,20 @@
   <string name="hw_keys_title">Teclas físicas</string>
   <string name="hw_keys_summary">Activar las teclas físicas</string>
   <!-- Navbar Dimensions -->
+  <string name="navbar_dimensions_title">Dimensiones de la barra de navegación</string>
+  <string name="navbar_dimensions_summary">Personalizar altura y anchura de la barra de navegación</string>
+  <string name="navigation_bar_height_title">Altura de la barra de navegación</string>
+  <string name="navigation_bar_height_landscape_title">Altura de la barra de navegación en horizontal</string>
+  <string name="navigation_bar_width_title">Anchura de la barra de navegación</string>
+  <string name="navigation_bar_size_36_dp">36 dp</string>
+  <string name="navigation_bar_size_30_dp">30 dp</string>
+  <string name="navigation_bar_size_24_dp">24 dp</string>
+  <string name="navigation_bar_size_52_dp">52 dp</string>
+  <string name="navigation_bar_size_48_dp_default">48 dp (por defecto)</string>
+  <string name="navigation_bar_size_44_dp">44 dp</string>
+  <string name="navigation_bar_size_40_dp">40 dp</string>
+  <string name="navigation_bar_size_42_dp">42 dp</string>
+  <string name="navigation_bar_size_0_dp">0 dp (deshabilitado)</string>
   <!-- Navbar dynamic color -->
   <string name="nav_bar_dynamic_title">Color de barra de navegación dinámico</string>
   <string name="nav_bar_dynamic_summary">Active o desactive esta opción para colorear la barra de navegación del color oscuro principal de la aplicación. Reinicie para visualizar los cambios</string>
@@ -312,13 +370,19 @@
   <string name="lockscreen_battery_info_title">Información de la batería en pantalla de bloqueo</string>
   <string name="lockscreen_battery_info_summary">Mostrar corriente y voltaje máximos negociados con el cargador y la temperatura de la batería en la pantalla de bloqueo cuando se esté cargando</string>
   <!-- ViperOS Logo -->
+  <string name="status_bar_viper_logo_summary">Habilitar para mostrar el logo de Viper en la barra de estado</string>
+  <string name="status_bar_viper_logo_color">Color del logo</string>
   <string name="status_bar_logo">Logo ViperOS</string>
+  <string name="status_bar_viper_logo_position">Ubicación del logotipo</string>
+  <string name="status_bar_viper_logo_position_summary">Elige en que lado quieres ver el logo, izquierda o derecha</string>
   <string name="status_bar_logo_position_right">Derecha</string>
   <string name="status_bar_logo_position_left">Izquierda</string>
   <string name="status_bar_logo_position_center">Centro</string>
   <!-- Recents Membar -->
   <string name="systemui_recents_mem_display_title">Mostrar el uso de memoria</string>
   <string name="systemui_recents_mem_display_summary">Activar o desactivar la barra de ram en aplicaciones recientes</string>
+  <string name="systemui_recents_mem_display_color">Color de la barra de memoría</string>
+  <string name="systemui_recents_mem_display_text_color">Color del texto de la barra de memoria</string>
   <!-- Aosp cards and grid recents -->
   <string name="recents_type_title">Tipo de recientes</string>
   <string name="recents_stock">AOSP Por defecto</string>
@@ -333,14 +397,19 @@
   <string name="double_tap_sleep_anywhere_title">Tap en la pantalla de bloqueo para dormir</string>
   <string name="double_tap_sleep_anywhere_summary">Doble tap para poner el dispositivo a dormir</string>
   <!-- Lockscreen categories -->
+  <string name="lockscreen_misc_category">Varios</string>
   <!-- Other system settings category -->
+  <string name="misc_category">Varios</string>
+  <string name="other_settings">Otros ajustes</string>
   <!-- Other system settings category -->
+  <string name="sound_category">Sonido</string>
   <!-- Wired headset ringtone audio focus -->
   <string name="wired_ringtone_focus_mode_title">Donde reproducirjugar los tonos de llamada de</string>
   <string name="wired_ringtone_focus_mode_dynamic">Auricular con cable si se conecta y reproduce música</string>
   <string name="wired_ringtone_focus_mode_stock">Altavoz y auricular (por defecto)</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Niveles de volumen</string>
+  <string name="volume_steps_summary">Personalizar los intervalos de volumen</string>
   <string name="volume_steps_alarm_title">Intervalos de volumen: Alarma</string>
   <string name="volume_steps_dtmf_title">Intervalos de volumen: DTMF</string>
   <string name="volume_steps_music_title">Ajustes de volumen: Música</string>
@@ -351,6 +420,7 @@
   <string name="volume_steps_reset">Restablecer</string>
   <!-- Power menu on secure lockscreen -->
   <string name="lockscreen_enable_power_menu_title">Mostrar menú de apagado en la pantalla de bloqueo</string>
+  <string name="lockscreen_enable_power_menu_summary">Mostrar u ocultar</string>
   <!-- Quicks settings vibrate -->
   <string name="quick_settings_vibrate_title">Vibrar al tocar</string>
   <string name="quick_settings_vibrate_summary">Vibrar al tocar los ajustes rápidos</string>
@@ -358,11 +428,14 @@
   <string name="fprint_sucess_vib_title">Vibración de autenticación de huella digital</string>
   <string name="fprint_sucess_vib_summary">Vibrar en éxito de la autenticación de huella digital</string>
   <!-- Gestures category -->
+  <string name="gestures_category">Gestos</string>
   <!-- Three-fingers-swipe to screenshot -->
   <string name="three_finger_gesture">Gesto con tres dedos</string>
   <string name="three_finger_gesture_summary">Capturar pantalla deslizando tres dedos</string>
   <!-- Notifications category -->
+  <string name="notifications_category">Notificaciones</string>
   <!-- Heads up timeout -->
+  <string name="heads_up_category">Notificación flotante</string>
   <string name="heads_up_time_out_title">Tiempo de espera</string>
   <string name="heads_up_time_out_summary">La notificación se mostrará durante <xliff:g id="number">%d </xliff:g> segundos</string>
   <string name="heads_up_time_out_2sec">2 segundos</string>
@@ -383,26 +456,25 @@
   <string name="heads_up_snooze_15min">15 minutos</string>
   <string name="heads_up_snooze_20min">20 minutos</string>
   <!-- Quick settings on secure lockscreen -->
+  <string name="lockscreen_enable_qs_title">Ajustes rápidos</string>
+  <string name="lockscreen_enable_qs_summary">Permite acceder a la configuración rápida en la pantalla de bloqueo</string>
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Ocultar la barra de estado</string>
   <string name="lockscreen_hide_status_bar_summary">Alternar la visibilidad de la barra de estado en la pantalla de bloqueo. Toque en la parte superior para mostrar la barra de estado</string>
   <!-- Toast icon -->
   <string name="toast_icon_title">Mostrar icono en notificación Toast</string>
   <string name="toast_icon_summary">Mostrar el icono de la aplicación correspondiente con la notificación Toast</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Modo inmersivo de Recientes</string>
-  <string name="immersive_recents_summary">Cambiar la vista de la pantalla de Recientes</string>
-  <string name="immersive_recents_dialog_title">Seleccione la vista de recientes</string>
-  <string name="immersive_recents_default">Por defecto</string>
-  <string name="immersive_recents_fullscreen">Pantalla Completa</string>
-  <string name="immersive_recents_statusbar">Solo barra de estado</string>
-  <string name="immersive_recents_navbar">Solo barra de navegación</string>
   <!-- QS easy toggles -->
+  <string name="qs_easy_toggle_title">Ajustes del Interruptor rápido</string>
+  <string name="qs_easy_toggle_summary">Activa de un toque los ajustes de Bluetooth, datos o WiFi</string>
   <!-- Screenshot Sound  -->
   <string name="screenshot_sound_title">Sonido de captura de pantalla</string>
+  <string name="screenshot_sound_summary">Opción para activar o desactivar el sonido de captura de pantalla</string>
   <!-- QS Header Icons -->
   <string name="qs_settings_icon_title">Acceso directo a ajustes</string>
   <string name="qs_settings_icon_summary">Desactivar el icono de ajustes en la cabecera</string>
+  <string name="qs_settings_expanded_title">Ajustes Atajo Ampliado</string>
+  <string name="qs_settings_expanded_summary">Sólo permitir el acceso directo de configuración cuando se expanda</string>
   <string name="qs_edit_title">Icono de edición</string>
   <string name="qs_edit_summary">Desactivar el icono de edición de las tiles en la cabecera</string>
   <string name="qs_multiuser_switch_title">Cambio de usuario</string>
@@ -416,6 +488,8 @@
   <string name="fp_unlock_keystore_title">Desbloqueo con huella digital</string>
   <string name="fp_unlock_keystore_summary">Desbloqueo con huella digital después de reiniciar el dispositivo sin PIN/contraseña/Patrón\nNote: bajo su propio riesgo!</string>
   <!-- Navbar double tap to sleep -->
+  <string name="double_tap_sleep_nav_bar_title">Doble toque para bloquear</string>
+  <string name="double_tap_sleep_nav_bar_summary">Haga un doble toque en la barra de navegación para dormir el dispositivo</string>
   <!-- Status Bar Ticker -->
   <string name="ticker_screen_title">Ticker de notificacion</string>
   <string name="ticker_title">Ticker de barra de estado</string>
@@ -425,7 +499,11 @@
   <string name="ticker_enabled">Ticker de notificacion</string>
   <string name="ticker_media_enabled">Ticker De música y notificaciones</string>
   <!-- Lockscreen visualizer -->
+  <string name="lockscreen_visualizer_summary">Muestra un efecto en la pantalla de bloqueo cuando la música esté reproduciéndose</string>
   <!-- Data disabled icon -->
   <string name="data_disabled_icon_title">Mostrar icono de datos deshabilitados</string>
   <string name="data_disabled_icon_summary">Mostrar el símbolo de una cuz junto a la barra de señal cuando se deshabilitan los datos</string>
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

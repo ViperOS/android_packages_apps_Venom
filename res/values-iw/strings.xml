@@ -16,16 +16,30 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <!-- Changelog -->
+  <!-- Maintainers -->
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <!-- Category -->
   <!-- Dialog -->
   <!-- Power Menu -->
+  <string name="powermenu_screenshot">צילום מסך</string>
+  <string name="powermenu_reboot">הפעלה מחדש</string>
   <!-- Advanced reboot options -->
   <!-- Color Picker -->
   <string name="default_string">ברירת מחדל</string>
   <!-- Status bar -->
   <!-- Status bar - Clock -->
+  <string name="status_bar_am_pm_normal">רגיל</string>
   <!--Status bar date -->
+  <string name="status_bar_date_normal">רגיל</string>
+  <string name="status_bar_date_style_normal">רגיל</string>
   <!-- Status bar - Battery -->
   <!-- Status bar - Battery percentage -->
   <!-- Status bar - icon blacklist -->
@@ -35,6 +49,7 @@
   <string name="reset">אתחל</string>
   <!-- Navigation Bar -->
   <!-- Power menu -->
+  <string name="power_menu_screenshot_title">צילום מסך</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
@@ -44,19 +59,9 @@
   <!-- Custom carrier label and position -->
   <string name="ok">אישור</string>
   <!-- Lockscreen weather -->
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <!-- Dynamic notification tint -->
+  <string name="weather_hide_panel_custom_title">משתמש</string>
   <!-- Network traffic -->
   <!-- Battery Tile -->
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
   <!-- Quick Settings brightness icon -->
   <!-- SU indicator -->
@@ -74,6 +79,7 @@
   <!-- Lockscreen categories -->
   <!-- Other system settings category -->
   <!-- Other system settings category -->
+  <string name="sound_category">סאונד</string>
   <!-- Wired headset ringtone audio focus -->
   <!-- Volume Steps -->
   <!-- Power menu on secure lockscreen -->
@@ -87,7 +93,6 @@
   <!-- Quick settings on secure lockscreen -->
   <!-- Hide Statusbar on Lockscreen -->
   <!-- Toast icon -->
-  <!-- Immersive Recents -->
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <!-- QS Header Icons -->
@@ -98,4 +103,7 @@
   <string name="ticker_screen_summary">עיצוב הV בשורת המצב</string>
   <!-- Lockscreen visualizer -->
   <!-- Data disabled icon -->
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

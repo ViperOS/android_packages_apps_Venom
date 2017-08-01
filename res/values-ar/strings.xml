@@ -16,10 +16,22 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <!-- Changelog -->
+  <!-- Maintainers -->
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <!-- Category -->
+  <string name="lockscreen_weather_title">الطقس</string>
   <!-- Dialog -->
   <!-- Power Menu -->
+  <string name="powermenu_screenshot">تصوير الشاشة</string>
+  <string name="powermenu_reboot">إعادة التشغيل</string>
   <!-- Advanced reboot options -->
   <!-- Color Picker -->
   <string name="default_string">الإفتراضي</string>
@@ -36,6 +48,8 @@
   <string name="status_bar_quick_qs_pulldown_left">يسار</string>
   <string name="status_bar_quick_qs_pulldown_right">يمين</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_right">يمين</string>
+  <string name="status_bar_clock_position_left">يسار</string>
   <string name="status_bar_am_pm_title">نمط صباحاً/مساءاً</string>
   <string name="status_bar_am_pm_info">ساعة الـ24 ساعة مفعلة</string>
   <string name="status_bar_am_pm_normal">عادي</string>
@@ -147,6 +161,10 @@
   <string name="volume_keys_control_ring_stream_summary_off">مفاتيح الصوت تتحكم بمستوى صوت الوسائط</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">إفتح الكاميرا بسرعة بدون فك قفل الشاشة</string>
+  <string name="torch_long_press_power_timeout_never">أبداً</string>
+  <string name="torch_long_press_power_timeout_1_minute">دقيقة واحدة</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5 دقائق</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10 دقائق</string>
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
   <string name="qs_rows_portrait_title">الصفوف (رأسي)</string>
@@ -208,17 +226,6 @@
   <string name="weather_hide_panel_never_summary">لوحة الطقس لن تكون مخفية</string>
   <string name="weather_number_of_notifications_title">عدد التنببهات</string>
   <string name="weather_icon_pack_title">حزمة رموز الحالة</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">عكس التنبيهات</string>
-  <string name="doze_notification_color_invert_summary_off">التنبيهات لن يتم عكسها. إستخدمها في المظاهر الداكنة.</string>
-  <string name="doze_notification_color_invert_summary_on">التنبيهات سيتم عكسها. إستخدمها للمظاهر المتوهجة/الأصلية.</string>
-  <!-- Dynamic notification tint -->
   <!-- Network traffic -->
   <string name="network_traffic_title">حركة شبكة الاتصال</string>
   <string name="show_network_traffic_state">مراقب حركة البيانات في شريط الحالة</string>
@@ -240,9 +247,6 @@
   <string name="network_traffic_hidearrow_summary">إخفِ الأسهم في مؤشر مرور البيانات</string>
   <!-- Battery Tile -->
   <string name="status_bar_battery_style_tile_summary">إسمح بإختيار نفس رمز النمط المُختار لبطارية شريط الحالة</string>
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">مزلاق السطوع</string>
   <string name="qs_brightness_slider_summary">أظهر مزلاق السطوع في لوحة الإعدادات السريعة</string>
@@ -289,6 +293,7 @@
   <!-- Lockscreen categories -->
   <!-- Other system settings category -->
   <!-- Other system settings category -->
+  <string name="sound_category">الصوت</string>
   <!-- Wired headset ringtone audio focus -->
   <string name="wired_ringtone_focus_mode_title">من أين تُشغّل نغمة الرنين</string>
   <string name="wired_ringtone_focus_mode_dynamic">السماعة السلكية إن كانت متصلة وتشتغل الأغاني</string>
@@ -316,6 +321,7 @@
   <string name="three_finger_gesture">إيماء الثلاثة أصابع</string>
   <string name="three_finger_gesture_summary">السحب بثلاث أصابع لإلتقاط الشاشة</string>
   <!-- Notifications category -->
+  <string name="notifications_category">تنببهات</string>
   <!-- Heads up timeout -->
   <string name="heads_up_time_out_title">إنتهاء المهلة</string>
   <string name="heads_up_time_out_summary">التنبيهات الخاطفة ستظهر لمدة <xliff:g id="number">%d</xliff:g> ثانية</string>
@@ -343,14 +349,6 @@
   <!-- Toast icon -->
   <string name="toast_icon_title">رمز نخب</string>
   <string name="toast_icon_summary">عرض رمز التطبيق المقابلة مع نخب</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">الحديثة الغامرة</string>
-  <string name="immersive_recents_summary">غيّر مظهر شاشة الحديثة</string>
-  <string name="immersive_recents_dialog_title">إختر مظهر الحديثة</string>
-  <string name="immersive_recents_default">الافتراضي</string>
-  <string name="immersive_recents_fullscreen">ملء الشاشة</string>
-  <string name="immersive_recents_statusbar">شريط الحالة فقط</string>
-  <string name="immersive_recents_navbar">شريط التنقل فقط</string>
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <string name="screenshot_sound_title">صوت لقطة الشاشة</string>
@@ -370,6 +368,7 @@
   <string name="fp_unlock_keystore_title">فك قفل البصمة</string>
   <string name="fp_unlock_keystore_summary">فُك قِفل الجهاز بالبصمة بعد إعادة التشغيل بدون رمز/كلمة مرور/نقش\nملاحظة: على مسؤوليتك الخاصة!</string>
   <!-- Navbar double tap to sleep -->
+  <string name="double_tap_sleep_nav_bar_title">ضغطتين للتنويم</string>
   <!-- Status Bar Ticker -->
   <string name="ticker_screen_title">مؤشر التنبيهات</string>
   <string name="ticker_title">مؤشر شريط الحالة</string>
@@ -382,4 +381,7 @@
   <!-- Data disabled icon -->
   <string name="data_disabled_icon_title">أظهر رمز البيانات معطّلة</string>
   <string name="data_disabled_icon_summary">إعرض إشارة التقاطع بجانب شريط الإشارة عندما تكون البيانات معطّلة</string>
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

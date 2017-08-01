@@ -16,10 +16,22 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <!-- Changelog -->
+  <!-- Maintainers -->
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <!-- Category -->
+  <string name="lockscreen_weather_title">날씨</string>
   <!-- Dialog -->
   <!-- Power Menu -->
+  <string name="powermenu_screenshot">스크린샷</string>
+  <string name="powermenu_reboot">다시 시작</string>
   <!-- Advanced reboot options -->
   <!-- Color Picker -->
   <string name="default_string">기본</string>
@@ -36,6 +48,8 @@
   <string name="status_bar_quick_qs_pulldown_left">왼쪽</string>
   <string name="status_bar_quick_qs_pulldown_right">오른쪽</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_right">오른쪽</string>
+  <string name="status_bar_clock_position_left">왼쪽</string>
   <string name="status_bar_am_pm_title">AM/PM 스타일</string>
   <string name="status_bar_am_pm_info">24시간 형식이 활성화됨</string>
   <string name="status_bar_am_pm_normal">보통</string>
@@ -147,6 +161,10 @@
   <string name="volume_keys_control_ring_stream_summary_off">볼륨 키로 미디어 볼륨 크기 조절</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">화면 잠금을 해제하지 않고 빠르게 카메라 열기</string>
+  <string name="torch_long_press_power_timeout_never">숨기지 않음</string>
+  <string name="torch_long_press_power_timeout_1_minute">1분</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5분</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10분</string>
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
   <string name="qs_rows_portrait_title">열 (가로 모드)</string>
@@ -208,17 +226,6 @@
   <string name="weather_hide_panel_never_summary">날씨 패널을 숨기지 않습니다</string>
   <string name="weather_number_of_notifications_title">알림 표시 개수</string>
   <string name="weather_icon_pack_title">날씨 아이콘 팩</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">색 반전</string>
-  <string name="doze_notification_color_invert_summary_off">알림의 색이 반전되지 않습니다. 어두운 테마에 사용하세요.</string>
-  <string name="doze_notification_color_invert_summary_on">알림의 색이 반전됩니다. 기본 테마나 밝은 테마에 사용하세요.</string>
-  <!-- Dynamic notification tint -->
   <!-- Network traffic -->
   <string name="network_traffic_title">네트워크 트래픽</string>
   <string name="show_network_traffic_state">상태 표시줄 네트워크 트래픽 모니터</string>
@@ -240,9 +247,6 @@
   <string name="network_traffic_hidearrow_summary">트래픽 표시기에서 화살표를 숨깁니다</string>
   <!-- Battery Tile -->
   <string name="status_bar_battery_style_tile_summary">상태 표시줄 배터리에 사용된 아이콘 스타일을 사용합니다</string>
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">밝기 조절 슬라이더</string>
   <string name="qs_brightness_slider_summary">빠른 설정에서 밝기 조절 슬라이더를 표시합니다</string>
@@ -287,6 +291,7 @@
   <!-- Lockscreen categories -->
   <!-- Other system settings category -->
   <!-- Other system settings category -->
+  <string name="sound_category">소리</string>
   <!-- Wired headset ringtone audio focus -->
   <string name="wired_ringtone_focus_mode_title">벨소리가 울릴 곳</string>
   <string name="wired_ringtone_focus_mode_dynamic">연결되어 음악을 재생 중이면 유선 헤드셋에서</string>
@@ -314,6 +319,7 @@
   <string name="three_finger_gesture">세 손가락 제스처</string>
   <string name="three_finger_gesture_summary">세 손가락을 스와이프해서 스크린샷을 찍습니다</string>
   <!-- Notifications category -->
+  <string name="notifications_category">알림</string>
   <!-- Heads up timeout -->
   <string name="heads_up_time_out_title">시간 초과</string>
   <string name="heads_up_time_out_summary">헤드업 알림은 <xliff:g id="number">%d</xliff:g>초 동안 표시됩니다</string>
@@ -341,14 +347,6 @@
   <!-- Toast icon -->
   <string name="toast_icon_title">토스트 알림 아이콘</string>
   <string name="toast_icon_summary">토스트 알림을 보낸 앱의 아이콘을 같이 표시합니다</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">몰입 모드로 최근 실행 목록 보기</string>
-  <string name="immersive_recents_summary">최근 실행 목록 보기 방식을 변경합니다</string>
-  <string name="immersive_recents_dialog_title">보기 방식 선택</string>
-  <string name="immersive_recents_default">기본</string>
-  <string name="immersive_recents_fullscreen">전체 화면</string>
-  <string name="immersive_recents_statusbar">상태 표시줄만 표시</string>
-  <string name="immersive_recents_navbar">내비게이션 바만 표시</string>
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <string name="screenshot_sound_title">스크린샷 소리</string>
@@ -368,6 +366,7 @@
   <string name="fp_unlock_keystore_title">지문 잠금 해제</string>
   <string name="fp_unlock_keystore_summary">기기를 재시작 한 이후 PIN/비밀번호/패턴을 입력하지 않고 지문으로 잠금을 해제합니다.\n주의: 모든 책임은 사용자에게 있습니다!</string>
   <!-- Navbar double tap to sleep -->
+  <string name="double_tap_sleep_nav_bar_title">더블 탭하여 화면 끄기</string>
   <!-- Status Bar Ticker -->
   <string name="ticker_screen_title">자막 알림</string>
   <string name="ticker_title">상태 표시줄 자막 알림</string>
@@ -380,4 +379,7 @@
   <!-- Data disabled icon -->
   <string name="data_disabled_icon_title">데이터 사용 중지 아이콘 표시</string>
   <string name="data_disabled_icon_summary">데이터가 사용 중지 되었을 때 신호 아이콘 옆에 X를 표시합니다</string>
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

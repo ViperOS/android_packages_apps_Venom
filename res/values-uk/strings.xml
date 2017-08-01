@@ -16,12 +16,40 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <string name="about_viper">Про Viper</string>
+  <!-- Changelog -->
+  <string name="changelog_viper_title">Звіт змін</string>
+  <!-- Maintainers -->
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
+  <string name="about_category">Про застосунок</string>
+  <string name="system_category">Система</string>
   <!-- Category -->
+  <string name="battery_title">Стан батереї</string>
+  <string name="lockscreen_weather_title">Погода</string>
   <!-- Dialog -->
+  <string name="venom_dialog_toast">ПРОЧИТАЙТЕ ВСЕ!</string>
   <!-- Power Menu -->
+  <string name="powermenu_screenshot">Знімок екрану</string>
+  <string name="powermenu_reboot">Перезавантажити</string>
+  <string name="powermenu_airplane">Літак</string>
+  <string name="powermenu_settings">Налаштування</string>
+  <string name="powermenu_lockdown">Замкнути</string>
+  <string name="powermenu_soundpanel">Панель гучності</string>
   <!-- Advanced reboot options -->
+  <string name="advanced_reboot_title">Розширений перезапуск</string>
   <!-- Color Picker -->
+  <string name="arrow_right">→</string>
+  <string name="arrow_down">↓</string>
+  <string name="hex">Hex:</string>
+  <string name="hex_hint">#ff000000</string>
+  <string name="color_default">Усталений</string>
   <string name="default_string">Стандартно</string>
   <!-- Status bar -->
   <string name="status_bar_toggle_brightness">Керування яскравістю</string>
@@ -36,6 +64,10 @@
   <string name="status_bar_quick_qs_pulldown_left">Зліва</string>
   <string name="status_bar_quick_qs_pulldown_right">Справа</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_title">Годинниковий стиль</string>
+  <string name="status_bar_clock_position_right">Правий</string>
+  <string name="status_bar_clock_position_left">Лівий</string>
+  <string name="status_bar_clock_position_center">Посередині</string>
   <string name="status_bar_am_pm_title">Стиль AM/PM</string>
   <string name="status_bar_am_pm_info">24-годинний формат часу увімкнено</string>
   <string name="status_bar_am_pm_normal">Нормальний</string>
@@ -55,11 +87,13 @@
   <string name="status_bar_date_format_custom">Користувацький java формат</string>
   <string name="status_bar_date_string_edittext_title">Має бути у форматі напр. MM/dd/yy</string>
   <string name="status_bar_date_string_edittext_summary">Введіть значення</string>
+  <string name="menu_save">Зберегти</string>
   <!-- Status bar - Battery -->
   <string name="status_bar_battery_style_title">Стиль батареї у рядку стану</string>
   <string name="status_bar_battery_style_icon_portrait">Вертикальний значок</string>
   <string name="status_bar_battery_style_icon_landscape">Горизонтальний значок</string>
   <string name="status_bar_battery_style_circle">Коло</string>
+  <string name="status_bar_battery_style_bigcircle">Велике коло</string>
   <string name="status_bar_battery_style_solid">Суцільний</string>
   <string name="status_bar_battery_style_text">Текст</string>
   <string name="status_bar_battery_style_hidden">Приховати</string>
@@ -87,13 +121,13 @@
   <string name="hardware_keys_double_tap_title">Подвійне натискання</string>
   <string name="hardware_keys_action_nothing">Жодної дії</string>
   <string name="hardware_keys_action_menu">Відкрити/закрити меню</string>
-  <string name="hardware_keys_action_app_switch">Перемикач останніх додатків</string>
+  <string name="hardware_keys_action_app_switch">Перемикач останніх застосунків</string>
   <string name="hardware_keys_action_search">Пошуковий асистент</string>
   <string name="hardware_keys_action_voice_search">Голосовий пошук</string>
-  <string name="hardware_keys_action_in_app_search">Пошук у додатку</string>
+  <string name="hardware_keys_action_in_app_search">Пошук у застосунку</string>
   <string name="hardware_keys_action_launch_camera">Запуск камери</string>
   <string name="hardware_keys_action_sleep">Вимкнути екран</string>
-  <string name="hardware_keys_action_last_app">Останній додаток</string>
+  <string name="hardware_keys_action_last_app">Останній застосунок</string>
   <string name="camera_sleep_on_release_title">Ввімкнення екрану на мить</string>
   <string name="camera_sleep_on_release_summary">Наполовину натиснута кнопка буде тримати екран увімкненим</string>
   <string name="camera_launch_title">Запуск камери</string>
@@ -113,7 +147,7 @@
   <string name="volume_answer_call_summary">Відповідь на вхідні дзвінки клавішою гучності</string>
   <string name="home_answer_call_title">Відповісти на дзвінок</string>
   <string name="home_answer_call_summary">Відповідати на дзвінок натисканням кнопки «Додому»</string>
-  <string name="kill_app_longpress_back">Закриття  програми кнопкою \"Назад\"</string>
+  <string name="kill_app_longpress_back">Закриття програми кнопкою \"Назад\"</string>
   <string name="kill_app_longpress_back_summary">Завершення програми при тривалому натисканні кнопки \"Назад\"</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Підсвітка</string>
@@ -147,12 +181,19 @@
   <string name="volume_keys_control_ring_stream_summary_off">Клавіші гучності регулюють гучність медіа</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Швидко запускайте камеру, не розблоковуючи екран</string>
+  <string name="torch_long_press_power_timeout_never">Ніколи</string>
+  <string name="torch_long_press_power_timeout_1_minute">1 хвилина</string>
+  <string name="torch_long_press_power_timeout_2_minutes">2 хвилини</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5 хвилин</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10 хвилин</string>
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
+  <string name="qs_tiles_category">Кахлі</string>
   <string name="qs_rows_portrait_title">Рядки (портретна орієнтація)</string>
   <string name="qs_rows_landscape_title">Рядки (альбомна орієнтація)</string>
   <string name="qs_columns_title">Стовпці</string>
   <!-- Headers -->
+  <string name="status_bar_header_title">Заголовки</string>
   <string name="status_bar_custom_header_title">Користувацька картинка заголовку</string>
   <string name="status_bar_custom_header_summary">Увімкнути зображення заголовку панелі сповіщення</string>
   <string name="daylight_header_pack_title">Пакет зображень заголовку</string>
@@ -208,17 +249,6 @@
   <string name="weather_hide_panel_never_summary">Панель погоди не буде приховано</string>
   <string name="weather_number_of_notifications_title">Кількість сповіщень</string>
   <string name="weather_icon_pack_title">Стиль значків</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">Інверсія сповіщень</string>
-  <string name="doze_notification_color_invert_summary_off">Сповіщення не будуть інвертовані. Використовуйте для темних тем.</string>
-  <string name="doze_notification_color_invert_summary_on">Сповіщення будуть інвертовані. Використовуйте для світлих тем.</string>
-  <!-- Dynamic notification tint -->
   <!-- Network traffic -->
   <string name="network_traffic_title">Мережевий трафік</string>
   <string name="show_network_traffic_state">Відображення трафіку в рядку стану</string>
@@ -237,12 +267,10 @@
   <string name="network_traffic_autohide">Приховувати автоматично</string>
   <string name="network_traffic_autohide_summary">Приховувати монітор трафіку, коли немає активності</string>
   <string name="network_traffic_autohide_threshold">Поріг неактивності</string>
+  <string name="network_traffic_hidearrow">Сховати стрілки</string>
   <string name="network_traffic_hidearrow_summary">Приховати стрілки в індикаторі трафіку</string>
   <!-- Battery Tile -->
   <string name="status_bar_battery_style_tile_summary">Дозволити встановити іконку, таку як в рядку стану</string>
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">Повзунок яскравості</string>
   <string name="qs_brightness_slider_summary">Показати повзунок яскравості на панелі швидких налаштувань</string>
@@ -256,9 +284,18 @@
   <string name="hw_keys_title">Апаратні кнопки</string>
   <string name="hw_keys_summary">Увімкнути апаратні кнопки</string>
   <!-- Navbar Dimensions -->
+  <string name="navigation_bar_size_36_dp">36 dp</string>
+  <string name="navigation_bar_size_30_dp">30 dp</string>
+  <string name="navigation_bar_size_24_dp">24 dp</string>
+  <string name="navigation_bar_size_52_dp">52 dp</string>
+  <string name="navigation_bar_size_48_dp_default">48 dp (усталено)</string>
+  <string name="navigation_bar_size_44_dp">44 dp</string>
+  <string name="navigation_bar_size_40_dp">40 dp</string>
+  <string name="navigation_bar_size_42_dp">42 dp</string>
+  <string name="navigation_bar_size_0_dp">0 dp (вимкнуто)</string>
   <!-- Navbar dynamic color -->
   <string name="nav_bar_dynamic_title">Динамічний колір навігаційного бару</string>
-  <string name="nav_bar_dynamic_summary">Увімкніть або вимкніть цей параметр для навігаційного бару, щоб адаптувати до стандартного кольору додатку. Перезапустіть бажаний додаток, щоб побачити ефект</string>
+  <string name="nav_bar_dynamic_summary">Увімкніть або вимкніть цей параметр для навігаційного бару, щоб адаптувати до стандартного кольору застосунку. Перезапустіть бажаний застосунок, щоб побачити ефект.</string>
   <!-- Show 4G -->
   <string name="show_4g_title">Показати 4G</string>
   <string name="show_4g_summary">Показати 4G замість LTE</string>
@@ -272,7 +309,7 @@
   <string name="status_bar_logo_position_center">У центрі</string>
   <!-- Recents Membar -->
   <string name="systemui_recents_mem_display_title">Показати використання пам\'яті</string>
-  <string name="systemui_recents_mem_display_summary">Увімкнути або вимкнути шкалу ОЗП в нещодавніх додатках</string>
+  <string name="systemui_recents_mem_display_summary">Увімкнути або вимкнути шкалу ОЗП в нещодавніх застосунках</string>
   <!-- Aosp cards and grid recents -->
   <string name="recents_type_title">Тип нещодавніх</string>
   <string name="recents_stock">Чистий AOSP</string>
@@ -289,6 +326,7 @@
   <!-- Lockscreen categories -->
   <!-- Other system settings category -->
   <!-- Other system settings category -->
+  <string name="sound_category">Звук</string>
   <!-- Wired headset ringtone audio focus -->
   <string name="wired_ringtone_focus_mode_title">Грати мелодію виклику через</string>
   <string name="wired_ringtone_focus_mode_dynamic">Навушники, якщо вони під\'єднані і грає музика</string>
@@ -316,6 +354,7 @@
   <string name="three_finger_gesture">Жест трьома пальцями</string>
   <string name="three_finger_gesture_summary">Проведіть трьома пальцями для скріншоту</string>
   <!-- Notifications category -->
+  <string name="notifications_category">Сповіщення</string>
   <!-- Heads up timeout -->
   <string name="heads_up_time_out_title">Тривалість</string>
   <string name="heads_up_time_out_summary">Сповіщення буде показуватися <xliff:g id="number">%d</xliff:g> секунд(и)</string>
@@ -327,8 +366,8 @@
   <string name="heads_up_time_out_10sec">10 секунд</string>
   <!-- Heads up snooze -->
   <string name="heads_up_snooze_title">Таймер відкладення</string>
-  <string name="heads_up_snooze_summary_one_minute">Свайп вгору приховає сповіщення від додатка на 1 хвилину</string>
-  <string name="heads_up_snooze_summary">Свайп вгору по спливаючому сповіщенню приховає його на <xliff:g id="number">%d</xliff:g> хвилин(и)</string>
+  <string name="heads_up_snooze_summary_one_minute">Свайп вгору приховає сповіщення від застосунка на 1 хвилину</string>
+  <string name="heads_up_snooze_summary">Свайп вгору по спливному сповіщенню приховає його на <xliff:g id="number">%d</xliff:g> хвилин(и)</string>
   <string name="heads_up_snooze_disabled_summary">Таймер режиму не турбувати вимкнено</string>
   <string name="heads_up_snooze_1min">1 хвилина</string>
   <string name="heads_up_snooze_3min">3 хвилини</string>
@@ -343,43 +382,39 @@
   <!-- Toast icon -->
   <string name="toast_icon_title">Значок спливаючого сповіщення</string>
   <string name="toast_icon_summary">Відображати значок додатка в спливаючих сповіщеннях</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Вигляд панелі нещодавніх</string>
-  <string name="immersive_recents_summary">Змінити вигляд панелі нещодавніх</string>
-  <string name="immersive_recents_dialog_title">Виберіть вигляд панелі нещодавніх</string>
-  <string name="immersive_recents_default">Стандартна</string>
-  <string name="immersive_recents_fullscreen">Повноекранний режим</string>
-  <string name="immersive_recents_statusbar">Тільки рядок стану</string>
-  <string name="immersive_recents_navbar">Тільки панель навігації</string>
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
-  <string name="screenshot_sound_title">Звук скріншота</string>
+  <string name="screenshot_sound_title">Звук знімання з екрану</string>
   <!-- QS Header Icons -->
-  <string name="qs_settings_icon_title">Ярлик налаштувань</string>
-  <string name="qs_settings_icon_summary">Вимкнути ярлик налаштувань в заголовку</string>
-  <string name="qs_edit_title">Значок редагування</string>
-  <string name="qs_edit_summary">Вимкнути значок редагування плиток в заголовку</string>
-  <string name="qs_multiuser_switch_title">Багатокористувацький перемикач</string>
-  <string name="qs_multiuser_switch_summary">Вимкнути багатокористувацький перемикач в заголовку</string>
+  <string name="qs_settings_icon_title">Іконка налаштувань</string>
+  <string name="qs_settings_icon_summary">Вимкнути іконку налаштувань у заголовку</string>
+  <string name="qs_edit_title">Іконка редагування</string>
+  <string name="qs_edit_summary">Вимкнути іконку редагування кахлів у заголовку</string>
+  <string name="qs_multiuser_switch_title">Перемикач користувачів</string>
+  <string name="qs_multiuser_switch_summary">Вимкнути перемикач користувачів у заголовку</string>
   <string name="qs_expand_indicator_title">Індикатор розширення</string>
   <string name="qs_expand_indicator_summary">Вимкнути індикатор розширення в заголовку</string>
   <!-- Center Time + Date in header -->
-  <string name="qs_date_time_center_title">Установити дату та час поцентру</string>
-  <string name="qs_date_time_center_summary">Потрібно вимкнути один або декілька значків</string>
+  <string name="qs_date_time_center_title">Установити дату та час посередині</string>
+  <string name="qs_date_time_center_summary">Потрібно вимкнути один або кілька значків</string>
   <!-- Fingerprint unlock keystore -->
-  <string name="fp_unlock_keystore_title">Розблокування сканером відбитків</string>
-  <string name="fp_unlock_keystore_summary">Розблокувати пристрій сканером відбитків після перезавантаження без PIN-коду/Паролю/, Графічного паролю\nПримітка: на свій страх і ризик!</string>
+  <string name="fp_unlock_keystore_title">Відімкнути за допомогою відбитку пальця</string>
+  <string name="fp_unlock_keystore_summary">Відімкнути за допомогою відбитку пальця після перезавантаження без PIN-коду/Паролю/, Графічного паролю\nПримітка: на свій ризик!</string>
   <!-- Navbar double tap to sleep -->
+  <string name="double_tap_sleep_nav_bar_title">Подвійне натискання для сну</string>
   <!-- Status Bar Ticker -->
   <string name="ticker_screen_title">Текст сповіщень</string>
-  <string name="ticker_title">Рухомий рядок в статус барі</string>
-  <string name="ticker_screen_summary">Налаштування стилю ticker в рядку стану</string>
-  <string name="ticker_summary">Ввімкнути старий рухомий рядок статус бара</string>
-  <string name="ticker_disabled">Без бігаючого рядка стану</string>
+  <string name="ticker_title">Смужка стану тексту сповіщень</string>
+  <string name="ticker_screen_summary">Налаштувати рядок стану</string>
+  <string name="ticker_summary">Увімкнути рядок сповіщень</string>
+  <string name="ticker_disabled">Жодних сповіщень</string>
   <string name="ticker_enabled">Текст сповіщень</string>
   <string name="ticker_media_enabled">Текст сповіщень і музики</string>
   <!-- Lockscreen visualizer -->
   <!-- Data disabled icon -->
   <string name="data_disabled_icon_title">Відображати іконку вимкнених даних</string>
   <string name="data_disabled_icon_summary">Відображення хрестика поруч з рівнем сигналу, коли дані вимкнуто</string>
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

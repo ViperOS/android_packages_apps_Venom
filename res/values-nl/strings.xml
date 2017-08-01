@@ -16,10 +16,22 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <!-- Changelog -->
+  <!-- Maintainers -->
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <!-- Category -->
+  <string name="lockscreen_weather_title">Weer</string>
   <!-- Dialog -->
   <!-- Power Menu -->
+  <string name="powermenu_screenshot">Schermafdruk</string>
+  <string name="powermenu_reboot">Herstart</string>
   <!-- Advanced reboot options -->
   <!-- Color Picker -->
   <string name="default_string">Standaard</string>
@@ -36,6 +48,8 @@
   <string name="status_bar_quick_qs_pulldown_left">Links</string>
   <string name="status_bar_quick_qs_pulldown_right">Rechts</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_right">Rechts</string>
+  <string name="status_bar_clock_position_left">Links</string>
   <string name="status_bar_am_pm_title">AM/PM stijl</string>
   <string name="status_bar_am_pm_info">24-uurs klok is ingeschakeld</string>
   <string name="status_bar_am_pm_normal">Normaal</string>
@@ -147,6 +161,10 @@
   <string name="volume_keys_control_ring_stream_summary_off">Volumeknoppen passen mediavolume aan</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Camera snel openen zonder het scherm te ontgrendelen</string>
+  <string name="torch_long_press_power_timeout_never">Nooit</string>
+  <string name="torch_long_press_power_timeout_1_minute">1 minuut</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5 minuten</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10 minuten</string>
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
   <string name="qs_rows_portrait_title">Rijen (staand)</string>
@@ -208,17 +226,6 @@
   <string name="weather_hide_panel_never_summary">Weervenster niet verborgen</string>
   <string name="weather_number_of_notifications_title">Aantal meldingen</string>
   <string name="weather_icon_pack_title">Pictogram verzameling</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">Inversie van meldingen</string>
-  <string name="doze_notification_color_invert_summary_off">Meldingen zullen niet omgekeerd worden. Gebruik dit voor donkere thema\'s.</string>
-  <string name="doze_notification_color_invert_summary_on">Meldingen zullen omgekeerd worden. Gebruik dit voor het licht/standaard thema.</string>
-  <!-- Dynamic notification tint -->
   <!-- Network traffic -->
   <string name="network_traffic_title">Netwerkverkeer</string>
   <string name="show_network_traffic_state">Statusbalk verkeersmonitor</string>
@@ -240,9 +247,6 @@
   <string name="network_traffic_hidearrow_summary">Pijltjes niet weergeven</string>
   <!-- Battery Tile -->
   <string name="status_bar_battery_style_tile_summary">Inschakelen om hetzelfde pictogram type te gebruiken als de accu in de statusbalk</string>
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">Helderheid schuifregelaar</string>
   <string name="qs_brightness_slider_summary">Schuifregelaar voor helderheid in het paneel snelle instellingen weergeven</string>
@@ -288,6 +292,7 @@
   <!-- Lockscreen categories -->
   <!-- Other system settings category -->
   <!-- Other system settings category -->
+  <string name="sound_category">Geluid</string>
   <!-- Wired headset ringtone audio focus -->
   <string name="wired_ringtone_focus_mode_title">Waarvandaan beltonen af spelen</string>
   <string name="wired_ringtone_focus_mode_dynamic">Bedrade headset als deze is aangesloten en muziek speelt</string>
@@ -315,6 +320,7 @@
   <string name="three_finger_gesture">Gebaar met drie vingers</string>
   <string name="three_finger_gesture_summary">Schermafbeelding maken door met drie vingers over het scherm te vegen</string>
   <!-- Notifications category -->
+  <string name="notifications_category">Meldingen</string>
   <!-- Heads up timeout -->
   <string name="heads_up_time_out_title">Tijdsduur</string>
   <string name="heads_up_time_out_summary">Notificatiebalk zal worden weergegeven gedurende <xliff:g id="number">%d</xliff:g> seconden</string>
@@ -342,14 +348,6 @@
   <!-- Toast icon -->
   <string name="toast_icon_title">Zwevende melding pictogram</string>
   <string name="toast_icon_summary">Toon pictogram behorende bij de app van de zwevende melding</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Recente fullscreen</string>
-  <string name="immersive_recents_summary">Wijzig weergave van het recente apps paneel</string>
-  <string name="immersive_recents_dialog_title">Selecteer recenten overzicht</string>
-  <string name="immersive_recents_default">Standaard</string>
-  <string name="immersive_recents_fullscreen">Volledig scherm</string>
-  <string name="immersive_recents_statusbar">Alleen statusbalk</string>
-  <string name="immersive_recents_navbar">Enkel navigatiebalk</string>
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <string name="screenshot_sound_title">Schermafbeelding geluid</string>
@@ -369,6 +367,7 @@
   <string name="fp_unlock_keystore_title">Vingerafdruk ontgrendelen</string>
   <string name="fp_unlock_keystore_summary">Ontgrendelen van apparaat met vingerafdruk na herstart zonder pincode/wachtwoord\nLet op: eigen risico!</string>
   <!-- Navbar double tap to sleep -->
+  <string name="double_tap_sleep_nav_bar_title">Dubbeltik voor slapen</string>
   <!-- Status Bar Ticker -->
   <string name="ticker_screen_title">Notificatie ticker</string>
   <string name="ticker_title">Notificatie ticker</string>
@@ -381,4 +380,7 @@
   <!-- Data disabled icon -->
   <string name="data_disabled_icon_title">Toon mobiele gegevens uitgeschakeld</string>
   <string name="data_disabled_icon_summary">Toon het kruisje naast de signaalsterkte wanneer mobiele gegevens niet beschikbaar zijn</string>
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

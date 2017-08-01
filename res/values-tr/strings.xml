@@ -16,12 +16,64 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <!-- Changelog -->
+  <!-- Maintainers -->
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
+  <string name="about_category">Hakkında</string>
+  <string name="system_category">Sistem</string>
+  <string name="statusbar_category">Durum Çubuğu</string>
   <!-- Category -->
+  <string name="battery_title">Pil</string>
+  <string name="buttons_title">Gezinti çubuğu ve donanım tuşları</string>
+  <string name="statusbar_clock_title">Saat &amp; Tarih</string>
+  <string name="statusbar_items_title">Durum çubuğu öğeleri</string>
+  <string name="statusbar_misc_title">Diğer durum çubuğu ayarları</string>
+  <string name="quicksettings_title">Hızlı Ayarlar</string>
+  <string name="traffic_category">Trafik göstergeleri</string>
+  <string name="recents_title">Son kullanılanlar ekranı</string>
+  <string name="carrierlabel_title">Operatör Etiketi</string>
+  <string name="lockscreen_ui_title">Kilit ekranı</string>
+  <string name="lockscreen_weather_title">Hava durumu</string>
+  <string name="lockscreen_misc_title">Diğer ayarlar</string>
+  <string name="sound_and_notifications_category">Ses ve Bildirimler</string>
   <!-- Dialog -->
+  <string name="venom_dialog_title">Yardımcı olmamıza yardımcı olun!</string>
+  <string name="venom_dialog_message">Bu ayarlarla alakalı herhangi bir sorun bulursanız, bu sorunu Google+ sayfamızdaki \"Bug Reports\" (Sorun Raporu) bölümüne gönderin. Sorun raporunun yanında göndermeniz GEREKENLER:\n\n1. Bir logcat veya last_kmsg\n2. Kullanılan kernel ve modlar\n3. İşe yarar bilgiler\n\nEğer bir şeyi düzgün raporlayamazsanız, bunların düzelmesini BEKLEMEYİN.</string>
+  <string name="venom_dialog_toast">TAMAMINI OKUYUN!</string>
   <!-- Power Menu -->
+  <string name="power_category">Güç menüsü ayarları</string>
+  <string name="actions_category">Güç menüsü ögeleri</string>
+  <string name="powermenu_category">Güç Menüsü</string>
+  <string name="powermenu_screenshot">Ekran görüntüsü</string>
+  <string name="powermenu_power">Güç</string>
+  <string name="powermenu_reboot">Yeniden başlat</string>
+  <string name="powermenu_airplane">Uçak Modu</string>
+  <string name="powermenu_settings">Ayarlar</string>
+  <string name="powermenu_lockdown">Kilitle</string>
+  <string name="powermenu_soundpanel">Ses Paneli</string>
   <!-- Advanced reboot options -->
+  <string name="advanced_reboot_title">Gelişmiş yeniden başlatma</string>
+  <string name="advanced_reboot_summary">Bootloader ve kurtarma seçeneklerini güç menüsünde göster</string>
+  <string name="advanced_reboot_dialog_title">Gelişmiş yeniden başlatma menüsü</string>
+  <string name="advanced_reboot_disabled">Devre dışı bırak</string>
+  <string name="advanced_reboot_hide_on_keyguard">Kilit ekranında gizle</string>
+  <string name="advanced_reboot_show_always">Her zaman göster</string>
   <!-- Color Picker -->
+  <string name="dialog_color_picker">Renk Seçici</string>
+  <string name="press_color_to_apply">Uygulamak için aşağıdaki renk üzerine basın</string>
+  <string name="arrow_right">→</string>
+  <string name="arrow_down">↓</string>
+  <string name="hex">Hex:</string>
+  <string name="hex_hint">#ff000000</string>
+  <string name="set">Uygula</string>
+  <string name="color_default">Varsayılan</string>
   <string name="default_string">Varsayılan</string>
   <!-- Status bar -->
   <string name="status_bar_toggle_brightness">Parlaklık ayarı</string>
@@ -36,6 +88,10 @@
   <string name="status_bar_quick_qs_pulldown_left">Sol</string>
   <string name="status_bar_quick_qs_pulldown_right">Sağ</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_title">Saat stili</string>
+  <string name="status_bar_clock_position_right">Sağ</string>
+  <string name="status_bar_clock_position_left">Sol</string>
+  <string name="status_bar_clock_position_center">Ortala</string>
   <string name="status_bar_am_pm_title">ÖÖ/ÖS biçimi</string>
   <string name="status_bar_am_pm_info">24 saat biçimi etkinleştirildi</string>
   <string name="status_bar_am_pm_normal">Standart</string>
@@ -55,12 +111,16 @@
   <string name="status_bar_date_format_custom">Özel java formatı</string>
   <string name="status_bar_date_string_edittext_title">Tarih formatı AA/gg/yy vb. olmalı</string>
   <string name="status_bar_date_string_edittext_summary">Dize girin</string>
+  <string name="menu_save">Kaydet</string>
+  <string name="menu_cancel">Çıkart</string>
   <!-- Status bar - Battery -->
   <string name="status_bar_battery_style_title">Durum çubuğu pil stili</string>
   <string name="status_bar_battery_style_icon_portrait">Dikey simge</string>
   <string name="status_bar_battery_style_icon_landscape">Yatay simge</string>
   <string name="status_bar_battery_style_circle">Daire</string>
+  <string name="status_bar_battery_style_bigcircle">Büyük çember</string>
   <string name="status_bar_battery_style_solid">Düz</string>
+  <string name="status_bar_battery_style_gauge">İbre</string>
   <string name="status_bar_battery_style_text">Metin</string>
   <string name="status_bar_battery_style_hidden">Gizli</string>
   <!-- Status bar - Battery percentage -->
@@ -83,6 +143,7 @@
   <string name="hardware_keys_appswitch_key_title">Genel bakış tuşu</string>
   <string name="hardware_keys_camera_key_title">Kamera tuşu</string>
   <string name="hardware_keys_volume_keys_title">Ses tuşuyla uyandır</string>
+  <string name="hardware_keys_short_press_title">Kısa basma eylemi</string>
   <string name="hardware_keys_long_press_title">Uzun tıklama eylemi</string>
   <string name="hardware_keys_double_tap_title">Çift dokunma eylemi</string>
   <string name="hardware_keys_action_nothing">Eylem yok</string>
@@ -94,6 +155,11 @@
   <string name="hardware_keys_action_launch_camera">Kamerayı başlat</string>
   <string name="hardware_keys_action_sleep">Ekranı kapat</string>
   <string name="hardware_keys_action_last_app">Son uygulama</string>
+  <string name="hardware_keys_action_split_screen">Bölünmüş ekran</string>
+  <string name="hardware_keys_action_single_handed_left">Tek el modu (sol)</string>
+  <string name="hardware_keys_action_single_handed_right">Tek el modu (sağ)</string>
+  <string name="hardware_keys_action_screenshot_full">Tam ekran görüntüsü al</string>
+  <string name="hardware_keys_action_screenshot_region">Bir bölümün ekran alıntısını al</string>
   <string name="camera_sleep_on_release_title">Ekrana göz atma</string>
   <string name="camera_sleep_on_release_summary">Yarı basma işlemi, düğme basılı tutulduğu sürece ekranı açık kalacaktır</string>
   <string name="camera_launch_title">Kamerayı başlat</string>
@@ -109,6 +175,7 @@
   <string name="swap_volume_buttons_title">Yeniden ata</string>
   <string name="swap_volume_buttons_summary">Ekran döndürüldüğünde ses tuşlarının yerini değiştir</string>
   <string name="button_wake_title">Cihazı uyandır</string>
+  <string name="button_wake_summary">Tuşa basarak cihazı uyandır</string>
   <string name="volume_answer_call_title">Çağrıya cevap ver</string>
   <string name="volume_answer_call_summary">Ses tuşlarına basarak gelen aramaları cevaplayın</string>
   <string name="home_answer_call_title">Çağrıya cevap ver</string>
@@ -129,9 +196,14 @@
   <string name="reset">Sıfırla</string>
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Gezinme çubuğu</string>
+  <string name="navigation_bar_enable_title">Gezinti çubuğunu etkinleştir</string>
+  <string name="navigation_bar_enable_summary">Ekranda gezinti çubuğunu etkinleştir</string>
   <string name="navigation_bar_title">Tuşlar ve düzen</string>
+  <string name="navigation_bar_summary">Gezinti çubuğu sıralamasını değiştir</string>
   <string name="navigation_bar_arrow_keys_title">Yazı yazarken ok tuşlarını göster</string>
   <string name="navigation_bar_arrow_keys_summary">Yazarken sol ve sağ imleç düğmelerini göster. Klavye değiştiriciyi geçersiz kılar.</string>
+  <string name="navigation_bar_home_long_press_title">Ev tuşu uzun basma eylemi</string>
+  <string name="navigation_bar_home_double_tap_title">Ev tuşu çift dokunma eylemi</string>
   <string name="navigation_bar_recents_title">Son uygulamalar tuşu uzun basma eylemi</string>
   <!-- Power menu -->
   <string name="power_menu_title">Güç menüsü</string>
@@ -147,12 +219,17 @@
   <string name="volume_keys_control_ring_stream_summary_off">Ses tuşları medya düzeyini kontrol eder</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Ekran kilidini açmadan hızlı bir şekilde kamerayı açın</string>
+  <string name="torch_long_press_power_timeout_never">Asla</string>
+  <string name="torch_long_press_power_timeout_1_minute">1 dakika</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5 dakika</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10 dakika</string>
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
   <string name="qs_rows_portrait_title">Satırlar (dikey)</string>
   <string name="qs_rows_landscape_title">Satırlar (yatay)</string>
   <string name="qs_columns_title">Sütunlar</string>
   <!-- Headers -->
+  <string name="status_bar_header_title">Başlıklar</string>
   <string name="status_bar_custom_header_title">Özel başlık görüntüsü</string>
   <string name="status_bar_custom_header_summary">Bildirim paneli başlık görüntüsünü etkinleştir</string>
   <string name="daylight_header_pack_title">Başlık görüntü paketi</string>
@@ -178,6 +255,7 @@
   <string name="recents_clear_all_location_bottom_left">Sol alt</string>
   <string name="recents_clear_all_location_bottom_center">Alt orta</string>
   <!-- Custom carrier label and position -->
+  <string name="carrier_label_settings_title">Operatör Etiketi</string>
   <string name="custom_carrier_label_title">Özel operatör etiketi</string>
   <string name="custom_carrier_label_explain">Yeni bir etiket girin. Hazır etikete geri dönmek için boş bırakın.</string>
   <string name="custom_carrier_label_notset">Özel etiket belirlenmiş olan değil</string>
@@ -208,17 +286,6 @@
   <string name="weather_hide_panel_never_summary">Hava durumu paneli gizlenmeyecek</string>
   <string name="weather_number_of_notifications_title">Bildirimlerin sayısı</string>
   <string name="weather_icon_pack_title">Durum simgesi paketi</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">Renk dönüşümü</string>
-  <string name="doze_notification_color_invert_summary_off">Ortam ekranı bildirimleri ters olmayacak. Karanlık temalar için kullanın.</string>
-  <string name="doze_notification_color_invert_summary_on">Ortam ekranı bildirimlerini ters olarak gösterecektir. Açık renk/stok tema için kullanın.</string>
-  <!-- Dynamic notification tint -->
   <!-- Network traffic -->
   <string name="network_traffic_title">Ağ trafiği</string>
   <string name="show_network_traffic_state">Durum çubuğu ağ trafiği göstergesi</string>
@@ -240,9 +307,6 @@
   <string name="network_traffic_hidearrow_summary">Ağ trafiği ok göstergelerini gizler</string>
   <!-- Battery Tile -->
   <string name="status_bar_battery_style_tile_summary">Durum çubuğu pili için seçilen aynı simge stilini ayarlamaya izin ver</string>
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">Parlaklık kaydırıcıyı göster</string>
   <string name="qs_brightness_slider_summary">Hızlı Ayarlar\'da parlaklık kaydırıcını Etkinleştir/Devre dışı bırak</string>
@@ -289,6 +353,7 @@
   <!-- Lockscreen categories -->
   <!-- Other system settings category -->
   <!-- Other system settings category -->
+  <string name="sound_category">Ses</string>
   <!-- Wired headset ringtone audio focus -->
   <string name="wired_ringtone_focus_mode_title">Zil sesini buradan çal</string>
   <string name="wired_ringtone_focus_mode_dynamic">Kablolu kulaklık bağlıysa ve müzik çalıyorken</string>
@@ -316,6 +381,7 @@
   <string name="three_finger_gesture">Üç parmak hareketi</string>
   <string name="three_finger_gesture_summary">Ekran görüntüsü almak için üç parmağınızı kaydırın</string>
   <!-- Notifications category -->
+  <string name="notifications_category">Bildirimler</string>
   <!-- Heads up timeout -->
   <string name="heads_up_time_out_title">Zaman aşımı</string>
   <string name="heads_up_time_out_summary">Bildirimler <xliff:g id="number">%d</xliff:g> saniye boyunca gösterilir</string>
@@ -343,14 +409,6 @@
   <!-- Toast icon -->
   <string name="toast_icon_title">Bildirim simgesi</string>
   <string name="toast_icon_summary">Bildirimle uyumlu uygulama simgesini görüntüler</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Son kullanılanlar görünümü</string>
-  <string name="immersive_recents_summary">Son kullanılanlar ekranı görünümünü değiştirme</string>
-  <string name="immersive_recents_dialog_title">Son kullanılanlar görünümünü seçin</string>
-  <string name="immersive_recents_default">Varsayılan</string>
-  <string name="immersive_recents_fullscreen">Tam ekran</string>
-  <string name="immersive_recents_statusbar">Yalnızca durum çubuğu</string>
-  <string name="immersive_recents_navbar">Yalnızca gezinme çubuğu</string>
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <string name="screenshot_sound_title">Ekran görüntüsü sesi</string>
@@ -370,6 +428,7 @@
   <string name="fp_unlock_keystore_title">Parmak iziyle kilit açma</string>
   <string name="fp_unlock_keystore_summary">Yeniden başlattıktan sonra PIN/Şifre/Desen olmadan parmak iziyle cihazın kilidini açın\nNot: kendi sorumluluğunuzdadır!</string>
   <!-- Navbar double tap to sleep -->
+  <string name="double_tap_sleep_nav_bar_title">Uyutmak için çift dokun</string>
   <!-- Status Bar Ticker -->
   <string name="ticker_screen_title">Bildirim şeridi</string>
   <string name="ticker_title">Durum çubuğu simgesi</string>
@@ -382,4 +441,7 @@
   <!-- Data disabled icon -->
   <string name="data_disabled_icon_title">Mobil veri devre dışı simgesini göster</string>
   <string name="data_disabled_icon_summary">Mobil veri devre dışı bırakıldığında sinyal çubuğunun yanında çapraz işaretini gösterin</string>
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

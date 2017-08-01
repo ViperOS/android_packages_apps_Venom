@@ -16,12 +16,68 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <string name="about_viper">Về Viper</string>
+  <!-- Changelog -->
+  <string name="changelog_viper_title">Nhật kí cập nhật</string>
+  <string name="changelog_viper_summary">Xem các thay đổi gần đây trong ROM</string>
+  <string name="changelog_viper_error">Không thể tải các thay đổi</string>
+  <!-- Maintainers -->
+  <string name="maintainers_viper_title">Các thiết bị và người duy trì</string>
+  <string name="maintainers_viper_summary">Danh sách các thiết bị và người duy trì RR-OS chính thức</string>
+  <string name="maintainers_viper_error">Không thể nạp danh sách thiết bị và maintainers</string>
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
+  <string name="about_category">Thông tin</string>
+  <string name="system_category">Hệ thống</string>
+  <string name="statusbar_category">Thanh trạng thái</string>
   <!-- Category -->
+  <string name="battery_title">Pin</string>
+  <string name="buttons_title">Thanh điều hướng và phím cứng</string>
+  <string name="statusbar_clock_title">Đồng hồ &amp; ngày</string>
+  <string name="statusbar_items_title">Biểu tượng thanh trạng thái</string>
+  <string name="statusbar_misc_title">Chỉ thanh trạng thái</string>
+  <string name="quicksettings_title">Cài đặt nhanh</string>
+  <string name="traffic_category">Số lưu lượng truy cập</string>
+  <string name="recents_title">Gần đây</string>
+  <string name="carrierlabel_title">Tên nhà cung cấp</string>
+  <string name="lockscreen_ui_title">Màn hình khóa</string>
+  <string name="lockscreen_weather_title">Thời tiết</string>
+  <string name="lockscreen_misc_title">Khác</string>
+  <string name="sound_and_notifications_category">Thông báo âm thanh </string>
   <!-- Dialog -->
+  <string name="venom_dialog_title">Giúp chúng tôi, giúp bạn!!</string>
+  <string name="venom_dialog_message">Nếu bạn tìm thấy một lỗi với bất kỳ của các cài đặt, đăng bài trong phần báo cáo lỗi của trang Google + của chúng tôi. Bạn phải bao gồm những điều sau đây khi đăng một báo cáo lỗi: \n\n1. Logcat hoặc last_kmsg\n2. Hạt nhân và các mods used\n3. Information\n\nIf hữu ích bạn không báo cáo một cái gì đó đầy đủ, không mong đợi những thứ được cố định.</string>
+  <string name="venom_dialog_toast">ĐỌC TOÀN BỘ ĐIỀU!</string>
   <!-- Power Menu -->
+  <string name="power_category">Tuỳ chọn menu nguồn</string>
+  <string name="actions_category">Tuỳ chọn menu nguồn</string>
+  <string name="powermenu_category">Menu nguồn </string>
+  <string name="powermenu_screenshot">Chụp ảnh màn hình</string>
+  <string name="powermenu_power">Nguồn</string>
+  <string name="powermenu_reboot">Khởi động lại</string>
+  <string name="powermenu_airplane">Máy bay</string>
+  <string name="powermenu_settings">Cài đặt</string>
+  <string name="powermenu_lockdown">Khóa lại</string>
+  <string name="powermenu_soundpanel">Bảng điều khiển âm thanh</string>
   <!-- Advanced reboot options -->
+  <string name="advanced_reboot_title">Khởi động lại nâng cao</string>
+  <string name="advanced_reboot_summary">Thêm vào tùy chọn Khởi động vào khôi phục và Khởi động vào bộ nạp khởi động trong Tùy chọn Phím nguồn</string>
+  <string name="advanced_reboot_dialog_title">Trình đơn khởi động lại nâng cao</string>
+  <string name="advanced_reboot_disabled">Tắt</string>
+  <string name="advanced_reboot_hide_on_keyguard">Ẩn khi ở màn hình khóa</string>
+  <string name="advanced_reboot_show_always">Luôn hiển thị</string>
   <!-- Color Picker -->
+  <string name="dialog_color_picker">Bảng chọn màu</string>
+  <string name="press_color_to_apply">Bấm vào màu sắc dưới đây để áp dụng</string>
+  <string name="arrow_right">→</string>
+  <string name="set">Đặt</string>
+  <string name="color_default">Mặc định</string>
   <string name="default_string">Mặc định</string>
   <!-- Status bar -->
   <string name="status_bar_toggle_brightness">Điều chỉnh độ sáng</string>
@@ -36,6 +92,10 @@
   <string name="status_bar_quick_qs_pulldown_left">Trái</string>
   <string name="status_bar_quick_qs_pulldown_right">Phải</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_title">Kiểu đồng hồ</string>
+  <string name="status_bar_clock_position_right">Phải</string>
+  <string name="status_bar_clock_position_left">Trái</string>
+  <string name="status_bar_clock_position_center">Giữa</string>
   <string name="status_bar_am_pm_title">Kiểu AM/PM</string>
   <string name="status_bar_am_pm_info">Đồng hồ dạng 24-giờ được bật</string>
   <string name="status_bar_am_pm_normal">Bình thường</string>
@@ -55,11 +115,14 @@
   <string name="status_bar_date_format_custom">Định dạng java tùy chỉnh</string>
   <string name="status_bar_date_string_edittext_title">Phải thuộc định dạng ngày, ví dụ MM/dd/yy</string>
   <string name="status_bar_date_string_edittext_summary">Nhập chuỗi</string>
+  <string name="menu_save">Lưu</string>
+  <string name="menu_cancel">Hủy bỏ</string>
   <!-- Status bar - Battery -->
   <string name="status_bar_battery_style_title">Kiểu pin thanh trạng thái</string>
   <string name="status_bar_battery_style_icon_portrait">Biểu tượng dọc</string>
   <string name="status_bar_battery_style_icon_landscape">Biểu tượng ngang</string>
   <string name="status_bar_battery_style_circle">Vòng tròn</string>
+  <string name="status_bar_battery_style_bigcircle">Vòng tròn lớn</string>
   <string name="status_bar_battery_style_solid">Khối</string>
   <string name="status_bar_battery_style_text">Chữ</string>
   <string name="status_bar_battery_style_hidden">Ẩn</string>
@@ -147,12 +210,17 @@
   <string name="volume_keys_control_ring_stream_summary_off">Phím âm lượng điều khiển âm lượng phương tiện</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Mở nhanh máy ảnh mà không cần mở khóa màn hình của bạn</string>
+  <string name="torch_long_press_power_timeout_never">Không bao giờ</string>
+  <string name="torch_long_press_power_timeout_1_minute">1 phút</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5 phút</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10 phút</string>
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
   <string name="qs_rows_portrait_title">Hàng (màn hình dọc)</string>
   <string name="qs_rows_landscape_title">Hàng (màn hình ngang)</string>
   <string name="qs_columns_title">Cột</string>
   <!-- Headers -->
+  <string name="status_bar_header_title">Tiêu đề</string>
   <string name="status_bar_custom_header_title">Tùy chỉnh hình ảnh đầu mục</string>
   <string name="status_bar_custom_header_summary">Bật hình ảnh đầu mục bảng thông báo</string>
   <string name="daylight_header_pack_title">Gói hình ảnh đầu mục</string>
@@ -178,6 +246,7 @@
   <string name="recents_clear_all_location_bottom_left">Phía dưới bên trái</string>
   <string name="recents_clear_all_location_bottom_center">Chính giữa phía dưới</string>
   <!-- Custom carrier label and position -->
+  <string name="carrier_label_settings_title">Tên nhà cung cấp</string>
   <string name="custom_carrier_label_title">Tùy chỉnh tên nhà cung cấp</string>
   <string name="custom_carrier_label_explain">Vui lòng nhập một tên mới. Để trống để trở lại với tên gốc.</string>
   <string name="custom_carrier_label_notset">Tên tùy chỉnh hiện chưa được thiết lập</string>
@@ -208,17 +277,6 @@
   <string name="weather_hide_panel_never_summary">Bảng thời tiết sẽ không được ẩn</string>
   <string name="weather_number_of_notifications_title">Số lượng thông báo</string>
   <string name="weather_icon_pack_title">Gói biểu tượng tình trạng</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">Đảo màu thông báo</string>
-  <string name="doze_notification_color_invert_summary_off">Thông báo sẽ không thể đảo màu. Sử dụng cho các chủ đề tối.</string>
-  <string name="doze_notification_color_invert_summary_on">Thông báo sẽ được đảo màu. Sử dụng cho các chủ đề sáng/gốc.</string>
-  <!-- Dynamic notification tint -->
   <!-- Network traffic -->
   <string name="network_traffic_title">Lưu lượng mạng</string>
   <string name="show_network_traffic_state">Lưu lượng mạng trên thanh trạng thái</string>
@@ -237,13 +295,13 @@
   <string name="network_traffic_autohide">Tự động ẩn</string>
   <string name="network_traffic_autohide_summary">Ẩn các thông số khi không có lưu lượng truy cập</string>
   <string name="network_traffic_autohide_threshold">Ngưỡng không hoạt động</string>
+  <string name="network_traffic_hidearrow">Ẩn mũi tên</string>
   <string name="network_traffic_hidearrow_summary">Ẩn các mũi tên ở chỉ số lưu lượng truy cập</string>
   <!-- Battery Tile -->
+  <string name="status_bar_battery_style_tile_title">Tùy chỉnh kiểu ô pin</string>
   <string name="status_bar_battery_style_tile_summary">Cho phép đặt cùng một kiểu biểu tượng được chọn cho thanh trạng thái pin</string>
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
+  <string name="qs_misc_category">Hỗn hợp</string>
   <string name="qs_brightness_slider_title">Thanh trượt độ sáng</string>
   <string name="qs_brightness_slider_summary">Hiển thị thanh trượt độ sáng trong bảng cài đặt nhanh</string>
   <!-- Quick Settings brightness icon -->
@@ -256,6 +314,16 @@
   <string name="hw_keys_title">Phím cứng</string>
   <string name="hw_keys_summary">Bật các phím cứng</string>
   <!-- Navbar Dimensions -->
+  <string name="navbar_dimensions_title">Kích thước Navbar</string>
+  <string name="navbar_dimensions_summary">Tùy chỉnh menu bar chiều rộng và chiều cao</string>
+  <string name="navigation_bar_height_title">Độ cao thanh điều hướng</string>
+  <string name="navigation_bar_height_landscape_title">Độ cao thanh điều hướng màn hình ngang</string>
+  <string name="navigation_bar_width_title">Độ rộng thanh điều hướng</string>
+  <string name="navigation_bar_size_36_dp">36 dp</string>
+  <string name="navigation_bar_size_30_dp">30 dp</string>
+  <string name="navigation_bar_size_24_dp">24 dp</string>
+  <string name="navigation_bar_size_48_dp_default">48 dp (mặc định)</string>
+  <string name="navigation_bar_size_0_dp">0 dp (tắt)</string>
   <!-- Navbar dynamic color -->
   <string name="nav_bar_dynamic_title">Màu thanh điều hướng động</string>
   <string name="nav_bar_dynamic_summary">Bật tắt chuyển đổi này để thanh điều hướng thay đổi cho hợp với các ứng dụng có màu chính tối. Khởi động lại ứng dụng bạn muốn áp dụng để xem hiệu ứng</string>
@@ -266,13 +334,19 @@
   <string name="lockscreen_battery_info_title">Thông tin pin trên màn hình khóa</string>
   <string name="lockscreen_battery_info_summary">Hiển thị điện áp bộ sạc tối đa hiện tại đã ước tính và nhiệt độ pin trên màn hình khóa trong khi sạc</string>
   <!-- ViperOS Logo -->
+  <string name="status_bar_viper_logo_summary">Cho phép hiển thị logo trên thanh trạng thái</string>
+  <string name="status_bar_viper_logo_color">Màu logo</string>
   <string name="status_bar_logo">Logo ViperOS</string>
+  <string name="status_bar_viper_logo_position">Vị trí logo</string>
+  <string name="status_bar_viper_logo_position_summary">Chọn bên hiển thị logo, trái hoặc phải</string>
   <string name="status_bar_logo_position_right">Phải</string>
   <string name="status_bar_logo_position_left">Trái</string>
   <string name="status_bar_logo_position_center">Giữa</string>
   <!-- Recents Membar -->
   <string name="systemui_recents_mem_display_title">Hiển thị thanh bộ nhớ</string>
   <string name="systemui_recents_mem_display_summary">Cho phép hoặc vô hiệu hóa thanh ram ở trang ứng dụng gần đây</string>
+  <string name="systemui_recents_mem_display_color">Màu thanh hiển thị pin</string>
+  <string name="systemui_recents_mem_display_text_color">Màu thanh hiển thị pin</string>
   <!-- Aosp cards and grid recents -->
   <string name="recents_type_title">Loại gần đây</string>
   <string name="recents_stock">AOSP Gốc</string>
@@ -287,14 +361,19 @@
   <string name="double_tap_sleep_anywhere_title">Chạm màn hình khóa để tắt màn hình</string>
   <string name="double_tap_sleep_anywhere_summary">Chạm hai lần bất cứ đâu trên màn hình khóa để đưa thiết bị vào chế độ ngủ</string>
   <!-- Lockscreen categories -->
+  <string name="lockscreen_misc_category">Hỗn hợp</string>
   <!-- Other system settings category -->
+  <string name="misc_category">Hỗn hợp</string>
+  <string name="other_settings">Các cài đặt khác</string>
   <!-- Other system settings category -->
+  <string name="sound_category">Âm thanh</string>
   <!-- Wired headset ringtone audio focus -->
   <string name="wired_ringtone_focus_mode_title">Phát các nhạc chuông từ</string>
   <string name="wired_ringtone_focus_mode_dynamic">Tai nghe có dây nếu đã kết nối và đang phát nhạc</string>
   <string name="wired_ringtone_focus_mode_stock">Loa và tai nghe (mặc định)</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Các mức âm lượng</string>
+  <string name="volume_steps_summary">Tùy chỉnh mức âm lượng</string>
   <string name="volume_steps_alarm_title">Mức âm lượng: Báo thức</string>
   <string name="volume_steps_dtmf_title">Mức âm lượng: DTMF</string>
   <string name="volume_steps_music_title">Mức âm lượng: Nhạc</string>
@@ -305,6 +384,7 @@
   <string name="volume_steps_reset">Thiết lập lại</string>
   <!-- Power menu on secure lockscreen -->
   <string name="lockscreen_enable_power_menu_title">Hiện menu nguồn trên màn hình khóa</string>
+  <string name="lockscreen_enable_power_menu_summary">Hiển thị hoặc ẩn</string>
   <!-- Quicks settings vibrate -->
   <string name="quick_settings_vibrate_title">Rung khi chạm</string>
   <string name="quick_settings_vibrate_summary">Rung khi chạm các ô</string>
@@ -312,11 +392,14 @@
   <string name="fprint_sucess_vib_title">Rung khi xác thực dấu vân tay</string>
   <string name="fprint_sucess_vib_summary">Rung khi xác thực dấu vân tay thành công</string>
   <!-- Gestures category -->
+  <string name="gestures_category">Cử chỉ</string>
   <!-- Three-fingers-swipe to screenshot -->
   <string name="three_finger_gesture">Cử chỉ ba ngón tay</string>
   <string name="three_finger_gesture_summary">Vuốt ba ngón tay để ảnh chụp ảnh màn hình</string>
   <!-- Notifications category -->
+  <string name="notifications_category">Thông báo</string>
   <!-- Heads up timeout -->
+  <string name="heads_up_category">Thông báo nổi</string>
   <string name="heads_up_time_out_title">Thời gian chờ</string>
   <string name="heads_up_time_out_summary">Thông báo nổi sẽ hiển thị trong <xliff:g id="number">%d</xliff:g> giây</string>
   <string name="heads_up_time_out_2sec">2 giây</string>
@@ -337,26 +420,25 @@
   <string name="heads_up_snooze_15min">15 phút</string>
   <string name="heads_up_snooze_20min">20 phút</string>
   <!-- Quick settings on secure lockscreen -->
+  <string name="lockscreen_enable_qs_title">Cài đặt nhanh</string>
+  <string name="lockscreen_enable_qs_summary">Cho phép truy cập vào cài đặt nhanh và gạt phím tắt trên màn hình khóa an toàn</string>
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Ẩn thanh trạng thái</string>
   <string name="lockscreen_hide_status_bar_summary">Bật/tắt thanh trạng thái trên màn hình khóa. Chạm vào phần đầu để hiển thị thanh trạng thái</string>
   <!-- Toast icon -->
   <string name="toast_icon_title">Biểu tượng thông báo nhanh</string>
   <string name="toast_icon_summary">Hiển thị các biểu tượng ứng dụng tương ứng với thông báo nhanh</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Màn hình gần đây toàn màn hình</string>
-  <string name="immersive_recents_summary">Thay đổi cách hiển thị màn hình gần đây</string>
-  <string name="immersive_recents_dialog_title">Chọn màn hình gần đây</string>
-  <string name="immersive_recents_default">Mặc định</string>
-  <string name="immersive_recents_fullscreen">Toàn màn hình</string>
-  <string name="immersive_recents_statusbar">Chỉ thanh trạng thái</string>
-  <string name="immersive_recents_navbar">Chỉ thanh điều hướng</string>
   <!-- QS easy toggles -->
+  <string name="qs_easy_toggle_title">Nhanh chóng chuyển đổi thiết lập nâng cao một cách dễ dàng</string>
+  <string name="qs_easy_toggle_summary">Một chạm để bật/tắt bluetooth, data, or wifi</string>
   <!-- Screenshot Sound  -->
   <string name="screenshot_sound_title">Âm thanh chụp màn hình</string>
+  <string name="screenshot_sound_summary">Các tùy chọn để kích hoạt hoặc vô hiệu hóa âm thanh ảnh chụp màn hình</string>
   <!-- QS Header Icons -->
   <string name="qs_settings_icon_title">Lối tắt cài đặt</string>
   <string name="qs_settings_icon_summary">Tắt lối tắt cài đặt trong đầu mục</string>
+  <string name="qs_settings_expanded_title">Mở rộng Các lối tắt cài đặt</string>
+  <string name="qs_settings_expanded_summary">Chỉ bật các lối tắt cài đặt khi mở rộng</string>
   <string name="qs_edit_title">Biểu tượng Chỉnh sửa</string>
   <string name="qs_edit_summary">Tắt ô chỉnh sửa biểu tượng trong đầu mục</string>
   <string name="qs_multiuser_switch_title">Chuyển đổi đa người dùng</string>
@@ -370,6 +452,8 @@
   <string name="fp_unlock_keystore_title">Mở khóa bằng vân tay</string>
   <string name="fp_unlock_keystore_summary">Mở khóa điện thoại bằng vân tay sau khi khởi động lại mà không cần PIN/Mật khẩu/Mẫu hình\nChú ý: nguy cơ của riêng bạn!</string>
   <!-- Navbar double tap to sleep -->
+  <string name="double_tap_sleep_nav_bar_title">Chạm hai lần để tắt màn hình</string>
+  <string name="double_tap_sleep_nav_bar_summary">Chạm hai lần vào thanh điều hướng để tắt màn hình</string>
   <!-- Status Bar Ticker -->
   <string name="ticker_screen_title">Thông báo dạng ticker</string>
   <string name="ticker_title">Biểu tượng trên thanh trạng thái</string>
@@ -382,4 +466,7 @@
   <!-- Data disabled icon -->
   <string name="data_disabled_icon_title">Hiển thị biểu tượng vô hiệu hóa dữ liệu</string>
   <string name="data_disabled_icon_summary">Hiển thị các dấu hiệu chéo bên cạnh thanh tín hiệu khi dữ liệu bị vô hiệu hóa</string>
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

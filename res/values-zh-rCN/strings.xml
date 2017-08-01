@@ -16,10 +16,22 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <!-- Changelog -->
+  <!-- Maintainers -->
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <!-- Category -->
+  <string name="lockscreen_weather_title">天气</string>
   <!-- Dialog -->
   <!-- Power Menu -->
+  <string name="powermenu_screenshot">屏幕截图</string>
+  <string name="powermenu_reboot">重新启动</string>
   <!-- Advanced reboot options -->
   <!-- Color Picker -->
   <string name="default_string">默认</string>
@@ -36,6 +48,8 @@
   <string name="status_bar_quick_qs_pulldown_left">左侧</string>
   <string name="status_bar_quick_qs_pulldown_right">右侧</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_right">右侧</string>
+  <string name="status_bar_clock_position_left">左侧</string>
   <string name="status_bar_am_pm_title">上午 / 下午样式</string>
   <string name="status_bar_am_pm_info">24小时制已启用</string>
   <string name="status_bar_am_pm_normal">正常</string>
@@ -147,12 +161,17 @@
   <string name="volume_keys_control_ring_stream_summary_off">音量键控制媒体音量</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">在不解锁屏幕的情况下快速打开相机</string>
+  <string name="torch_long_press_power_timeout_never">从不</string>
+  <string name="torch_long_press_power_timeout_1_minute">1 分钟</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5 分钟</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10 分钟</string>
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
   <string name="qs_rows_portrait_title">行 （纵向）</string>
   <string name="qs_rows_landscape_title">行 （横向）</string>
   <string name="qs_columns_title">列</string>
   <!-- Headers -->
+  <string name="status_bar_header_title">标题</string>
   <string name="status_bar_custom_header_title">自定义顶部图像</string>
   <string name="status_bar_custom_header_summary">启用通知面板顶部界面图像</string>
   <string name="daylight_header_pack_title">情景图像</string>
@@ -208,17 +227,6 @@
   <string name="weather_hide_panel_never_summary">天气面板不被隐藏</string>
   <string name="weather_number_of_notifications_title">通知数量</string>
   <string name="weather_icon_pack_title">状况图标包</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">通知反色</string>
-  <string name="doze_notification_color_invert_summary_off">使用暗色主题时，通知将不会反转颜色。</string>
-  <string name="doze_notification_color_invert_summary_on">使用亮色主题时，通知将会反转颜色。</string>
-  <!-- Dynamic notification tint -->
   <!-- Network traffic -->
   <string name="network_traffic_title">网速显示</string>
   <string name="show_network_traffic_state">状态栏显示当前网速</string>
@@ -240,9 +248,6 @@
   <string name="network_traffic_hidearrow_summary">隐藏流量监控中的箭头</string>
   <!-- Battery Tile -->
   <string name="status_bar_battery_style_tile_summary">允许为状态栏的电池图标设定相同的图标样式</string>
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">亮度滑块</string>
   <string name="qs_brightness_slider_summary">在快捷开关面板中显示亮度滑块</string>
@@ -289,6 +294,7 @@
   <!-- Lockscreen categories -->
   <!-- Other system settings category -->
   <!-- Other system settings category -->
+  <string name="sound_category">声音</string>
   <!-- Wired headset ringtone audio focus -->
   <string name="wired_ringtone_focus_mode_title">以下情况播放音乐</string>
   <string name="wired_ringtone_focus_mode_dynamic">在连接有线耳机后开始播放音乐</string>
@@ -316,6 +322,7 @@
   <string name="three_finger_gesture">三指手势</string>
   <string name="three_finger_gesture_summary">三指下滑截屏</string>
   <!-- Notifications category -->
+  <string name="notifications_category">通知</string>
   <!-- Heads up timeout -->
   <string name="heads_up_time_out_title">超时</string>
   <string name="heads_up_time_out_summary">查看通知将显示为 <xliff:g id="number">%d</xliff:g> 秒</string>
@@ -343,14 +350,6 @@
   <!-- Toast icon -->
   <string name="toast_icon_title">Toast 通知图标</string>
   <string name="toast_icon_summary">在 Toast 通知上显示对应应用的图标</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">沉浸式最近任务</string>
-  <string name="immersive_recents_summary">更改最近任务界面的视图</string>
-  <string name="immersive_recents_dialog_title">选择最近任务视图</string>
-  <string name="immersive_recents_default">默认</string>
-  <string name="immersive_recents_fullscreen">沉浸式</string>
-  <string name="immersive_recents_statusbar">仅状态栏</string>
-  <string name="immersive_recents_navbar">仅导航栏</string>
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <string name="screenshot_sound_title">截图声音</string>
@@ -370,6 +369,7 @@
   <string name="fp_unlock_keystore_title">指纹解锁</string>
   <string name="fp_unlock_keystore_summary">在重启后用指纹解锁设备，无须 PIN/密码/图案\n注意：请注意风险！</string>
   <!-- Navbar double tap to sleep -->
+  <string name="double_tap_sleep_nav_bar_title">双击休眠</string>
   <!-- Status Bar Ticker -->
   <string name="ticker_screen_title">通知提示</string>
   <string name="ticker_title">状态类时钟</string>
@@ -382,4 +382,7 @@
   <!-- Data disabled icon -->
   <string name="data_disabled_icon_title">显示数据禁用图标</string>
   <string name="data_disabled_icon_summary">当数据禁用时，不显示图标旁边的 “×“ 图标</string>
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

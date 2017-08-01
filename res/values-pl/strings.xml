@@ -16,25 +16,47 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <string name="about_viper">O projekcie Viper</string>
+  <!-- Changelog -->
+  <string name="changelog_viper_title">Lista zmian</string>
+  <string name="changelog_viper_summary">Zobacz ostatnie zmiany</string>
+  <string name="changelog_viper_error">Nie można wczytać listy zmian</string>
+  <!-- Maintainers -->
+  <string name="maintainers_viper_title">Urządzenia i ich opiekunowie</string>
+  <string name="maintainers_viper_summary">Lista urządzeń i ich oficjalnych opiekunów</string>
+  <string name="maintainers_viper_error">Nie można załadować listy urządzeń i opiekunów</string>
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <string name="about_category">O programie</string>
   <string name="system_category">System</string>
-  <string name="statusbar_category">Pasek stanu</string>
+  <string name="statusbar_category">Pasek statusu</string>
   <!-- Category -->
   <string name="battery_title">Stan baterii</string>
   <string name="buttons_title">Pasek nawigacyjny i przyciski fizyczne</string>
   <string name="statusbar_clock_title">Zegar &amp; data</string>
-  <string name="statusbar_items_title">Ikony paska stanu</string>
+  <string name="statusbar_items_title">Ikony paska statusu</string>
+  <string name="statusbar_misc_title">Różne</string>
   <string name="quicksettings_title">Szybkie ustawienia</string>
   <string name="traffic_category">Wskaźnik ruchu sieciowego</string>
   <string name="recents_title">Typ ostatnich aplikacji</string>
-  <string name="carrierlabel_title">Etykieta operatora</string>
+  <string name="carrierlabel_title">Nazwa sieci operatora</string>
   <string name="lockscreen_ui_title">Ekran blokady</string>
+  <string name="lockscreen_weather_title">Pogoda</string>
+  <string name="lockscreen_misc_title">Różne</string>
+  <string name="sound_and_notifications_category">Dźwięki i powiadomienia</string>
   <!-- Dialog -->
   <string name="venom_dialog_title">Pomóż nam, pomóż sobie!</string>
+  <string name="venom_dialog_message">Jeśli znajdziesz błąd w którymkolwiek z tych ustawień, poinformuj o tym w dziale raporty błędów naszej społeczności na Google+. Raport MUSI zawierać następujące dane: \n\n1. Logcat lub last_kmsg\n2. Używany\n3 kernel i zastosowane modyfikacje.\n3. Przydatna informacja\n\nJeśli nie dołączysz odpowiednich danych, nie spodziewaj się pomocy z naszej strony.</string>
   <string name="venom_dialog_toast">PRZECZYTAJ CAŁOŚĆ!</string>
   <!-- Power Menu -->
   <string name="power_category">Opcje menu zasilania</string>
+  <string name="actions_category">Elementy menu zasilania</string>
   <string name="powermenu_category">Opcje zasilania</string>
   <string name="powermenu_screenshot">Zrzut ekranu</string>
   <string name="powermenu_power">Zasilanie</string>
@@ -58,7 +80,7 @@
   <string name="hex">Hex:</string>
   <string name="hex_hint">#ff000000</string>
   <string name="set">Ustaw</string>
-  <string name="color_default">Domyślnie</string>
+  <string name="color_default">Domyślne</string>
   <string name="default_string">Domyślne</string>
   <!-- Status bar -->
   <string name="status_bar_toggle_brightness">Regulacja jasności</string>
@@ -114,11 +136,11 @@
   <string name="status_bar_battery_percentage_text_inside">Wewnątrz ikony</string>
   <string name="status_bar_battery_percentage_text_next">Obok ikony</string>
   <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Ikony paska stanu</string>
-  <string name="status_bar_icons_summary">Wybierz, które ikony będą wyświetlane w pasku stanu</string>
+  <string name="status_bar_icons_title">Ikony paska statusu</string>
+  <string name="status_bar_icons_summary">Wybierz, które ikony będą wyświetlane w pasku statusu</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Usypianie podwójnym dotknięciem</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Dotknij dwukrotnie na pasku stanu, aby wyłączyć ekran</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Dotknij dwukrotnie na pasku statusu, aby wyłączyć ekran</string>
   <!-- Button settings -->
   <string name="hardware_keys_power_key_title">Przycisk zasilania</string>
   <string name="hardware_keys_home_key_title">Przycisk Home</string>
@@ -142,8 +164,9 @@
   <string name="hardware_keys_action_last_app">Ostatnia aplikacja</string>
   <string name="hardware_keys_action_split_screen">Podziel ekran</string>
   <string name="hardware_keys_action_single_handed_left">Tryb jednej dłoni (lewa)</string>
-  <string name="hardware_keys_action_single_handed_right">Tryb jednej dłoni (lewa)</string>
+  <string name="hardware_keys_action_single_handed_right">Tryb jednej dłoni (prawa)</string>
   <string name="hardware_keys_action_screenshot_full">Wykonaj pełny zrzut ekranu</string>
+  <string name="hardware_keys_action_screenshot_region">Wykonaj częściowy zrzut ekranu</string>
   <string name="camera_sleep_on_release_title">Podgląd ekranu</string>
   <string name="camera_sleep_on_release_summary">Lekkie naciśnięcie aktywuje ekran tylko do czasu zwolnienia przycisku</string>
   <string name="camera_launch_title">Uruchom aparat</string>
@@ -180,10 +203,10 @@
   <string name="reset">Resetuj</string>
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Pasek nawigacji</string>
-  <string name="navigation_bar_enable_title">Aktywuj pas nawigacji</string>
-  <string name="navigation_bar_enable_summary">Aktywuj pas nawigacji na ekranie</string>
+  <string name="navigation_bar_enable_title">Włącz pasek nawigacyjny</string>
+  <string name="navigation_bar_enable_summary">Włącz pasek nawigacyjny na ekranie</string>
   <string name="navigation_bar_title">Przyciski i ich układ</string>
-  <string name="navigation_bar_summary">Dostosuj układ paska nawigacji</string>
+  <string name="navigation_bar_summary">Dostosuj układ paska nawigacyjnego</string>
   <string name="navigation_bar_arrow_keys_title">Pokaż klawisze strzałek podczas pisania</string>
   <string name="navigation_bar_arrow_keys_summary">Pokaż przyciski lewego i prawego kursora podczas pisania. Zastępuje przełącznik IME.</string>
   <string name="navigation_bar_home_long_press_title">Działanie \"Home\" po przytrzymaniu</string>
@@ -205,12 +228,18 @@
   <string name="camera_double_tap_power_gesture_desc">Szybko uruchom aparat bez odblokowywania ekranu</string>
   <string name="torch_long_press_power_gesture_title">Latarka przy wyłączonym ekranie</string>
   <string name="torch_long_press_power_gesture_desc">Przytrzymaj przycisk zasilania przy wyłączonym ekranie, aby włączyć latarkę</string>
+  <string name="torch_long_press_power_timeout_title">Automatycznie wyłącz latarkę</string>
+  <string name="torch_long_press_power_timeout_never">Nigdy</string>
+  <string name="torch_long_press_power_timeout_1_minute">1 minuta</string>
+  <string name="torch_long_press_power_timeout_2_minutes">2 minuty</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5 minut</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10 minut</string>
   <!-- Navbar Animation -->
   <string name="pixel_navbar_anim_title">Animacja paska nawigacyjnego Pixel</string>
-  <string name="pixel_navbar_anim_summary">Aktywuj animacje paska nawigacyjnego Pixel</string>
+  <string name="pixel_navbar_anim_summary">Aktywuje animacje paska nawigacyjnego Pixel</string>
   <!-- Quick settings tiles -->
   <string name="qs_tiles_category">Kafelki</string>
-  <string name="sysui_qqs_count_title">Małe kafelki Szybkich Ustawień</string>
+  <string name="sysui_qqs_count_title">Małe kafelki szybkich ustawień</string>
   <string name="qs_rows_portrait_title">Wiersze (pion)</string>
   <string name="qs_rows_landscape_title">Wiersze (poziom)</string>
   <string name="qs_columns_title">Kolumny</string>
@@ -229,10 +258,11 @@
   <string name="custom_header_browse_summary">Naciśnij i przytrzymaj dowolny obraz by użyć trybu statycznego</string>
   <!-- OmniJaws -->
   <string name="omnijaws_settings_title">OmniJaws</string>
-  <string name="omnijaws_settings_summary">Dostosuj Pogodę</string>
+  <string name="omnijaws_settings_summary">Dostosuj kafelkę pogody</string>
   <string name="weather_config_title">Ustawienia usługi</string>
   <string name="weather_config_summary">Konfigurowanie usługi</string>
   <string name="weather_icon_pack_title">Paczka ikon stanu</string>
+  <string name="weather_icon_pack_note">Podpowiedź\u003a Nowe paczki ikon możesz zainstalować ze Sklepu Play, wyszukując \"Chronus icons\"</string>
   <!-- Recents panel settings -->
   <string name="recents_default_category">Ostatnie</string>
   <string name="show_clear_all_recents_button_title">Przycisk \"Wyczyść wszystko\"</string>
@@ -245,15 +275,15 @@
   <string name="recents_clear_all_location_bottom_left">Dolny lewy róg</string>
   <string name="recents_clear_all_location_bottom_center">U dołu po środku</string>
   <!-- Custom carrier label and position -->
-  <string name="carrier_label_settings_title">Etykieta operatora</string>
-  <string name="carrier_label_settings_summary">Własna etykieta</string>
+  <string name="carrier_label_settings_title">Nazwa sieci operatora</string>
+  <string name="carrier_label_settings_summary">Własna nazwa sieci operatora</string>
   <string name="custom_carrier_label_title">Własna etykieta</string>
   <string name="custom_carrier_label_explain">Wprowadź nowy tekst. Pozostaw puste, aby powrócić do domyślnego.</string>
   <string name="custom_carrier_label_notset">Własny tekst nie jest ustawiony</string>
   <string name="show_carrier_title">Etykieta sieci</string>
   <string name="show_carrier_disabled">Nieaktywny</string>
   <string name="show_carrier_keyguard">Tylko na ekranie blokady</string>
-  <string name="show_carrier_statusbar">Tylko pasek stanu</string>
+  <string name="show_carrier_statusbar">Tylko pasek statusu</string>
   <string name="show_carrier_enabled">Ekran blokady &amp; pasek stanu</string>
   <string name="status_bar_carrier_color">Kolor etykiety</string>
   <string name="status_bar_carrier_size">Rozmiar tekstu</string>
@@ -279,26 +309,6 @@
   <string name="weather_number_of_notifications_title">Liczba powiadomień</string>
   <string name="weather_icon_pack_title">Paczka ikon stanu</string>
   <string name="lock_clock_title">Serwis pogodowy</string>
-  <!-- Day/Night -->
-  <string name="daynight_title">Motyw tematu</string>
-  <string name="daynight_header_title">Motyw tematu</string>
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <string name="night_mode_title">Motyw urządzenia</string>
-  <string name="night_mode_summary">Zmiana motywu domyślnego urządzenia</string>
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <string name="night_mode_summary">Zmiana motywu domyślnego urządzenia</string>
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <string name="night_mode_no">Jasny</string>
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <string name="night_mode_yes">Viper dark</string>
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <string name="night_mode_auto">Automatyczny</string>
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">Inwersja powiadomień</string>
-  <string name="doze_notification_color_invert_summary_off">Powiadomienia nie będą pokazywane. Użyj dla ciemnego motywu.</string>
-  <string name="doze_notification_color_invert_summary_on">Powiadomienia będą pokazywane. Użyj dla jasnego/stockowego motywu.</string>
-  <!-- Dynamic notification tint -->
-  <string name="notification_tint_title">Dynamiczna zmiana koloru tytułu powiadomienia</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">Ruch sieciowy</string>
   <string name="show_network_traffic_state">Wskaźnik ruchu sieciowego na pasku stanu</string>
@@ -320,18 +330,8 @@
   <string name="network_traffic_hidearrow">Ukryj strzałki</string>
   <string name="network_traffic_hidearrow_summary">Ukryj strzałki wskaźnika ruchu</string>
   <!-- Battery Tile -->
-  <string name="status_bar_battery_style_tile_title">Niestandardowy styl baterii</string>
-  <string name="status_bar_battery_style_tile_summary">Pozwala ustawić ten sam styl ikona wybrany pasek stanu baterii</string>
-  <!-- About Viper -->
-  <string name="about_viper">O Viper</string>
-  <!-- Changelog -->
-  <string name="changelog_viper_title">Lista zmian</string>
-  <string name="changelog_viper_summary">Zobacz ostatnie zmiany</string>
-  <string name="changelog_viper_error">Nie można wczytać listy zmian</string>
-  <!-- Maintainers -->
-  <string name="maintainers_viper_title">Urządzenia i ich opiekunowie</string>
-  <string name="maintainers_viper_summary">Lista urządzeń i ich oficjalnych opiekunów</string>
-  <string name="maintainers_viper_error">Nie można załadować listy urządzeń i opiekunów</string>
+  <string name="status_bar_battery_style_tile_title">Własny styl kafelki baterii</string>
+  <string name="status_bar_battery_style_tile_summary">Pozwala ustawić ten sam styl ikony, co na pasku statusu</string>
   <!-- Quick Settings brightness slider -->
   <string name="qs_misc_category">Różne</string>
   <string name="qs_brightness_slider_title">Suwak jasności</string>
@@ -347,9 +347,9 @@
   <string name="hw_keys_summary">Włącz klawisze sprzętowe</string>
   <!-- Navbar Dimensions -->
   <string name="navbar_dimensions_title">Wymiary paska nawigacyjnego</string>
-  <string name="navbar_dimensions_summary">Dostosowywanie paska nawigacji szerokości i wysokości</string>
-  <string name="navigation_bar_height_title">Wysokość paska nawigacji</string>
-  <string name="navigation_bar_height_landscape_title">Wysokość paska nawigacji w poziomie</string>
+  <string name="navbar_dimensions_summary">Dostosowywanie szerokości i wysokości paska nawigacyjnego</string>
+  <string name="navigation_bar_height_title">Wysokość paska nawigacyjnego</string>
+  <string name="navigation_bar_height_landscape_title">Wysokość paska nawigacyjnego w poziomie</string>
   <string name="navigation_bar_width_title">Szerokość paska nawigacji</string>
   <string name="navigation_bar_size_36_dp">36 dp</string>
   <string name="navigation_bar_size_30_dp">30 dp</string>
@@ -370,7 +370,6 @@
   <string name="lockscreen_battery_info_title">Informacje o ładowaniu na ekranie blokady</string>
   <string name="lockscreen_battery_info_summary">Wyświetl szacowane maksymalne napięcie oraz temperaturę baterii na ekranie blokady podczas ładowania</string>
   <!-- ViperOS Logo -->
-  <string name="status_bar_viper_logo_title">Włącz logo</string>
   <string name="status_bar_viper_logo_summary">Włącz, aby pokazać logo Viper na pasku statusu</string>
   <string name="status_bar_viper_logo_color">Kolor loga</string>
   <string name="status_bar_logo">Logo ViperOS</string>
@@ -421,6 +420,7 @@
   <string name="volume_steps_reset">Resetuj</string>
   <!-- Power menu on secure lockscreen -->
   <string name="lockscreen_enable_power_menu_title">Pokaż menu zasilania na ekranie blokady</string>
+  <string name="lockscreen_enable_power_menu_summary">Pokaż lub ukryj</string>
   <!-- Quicks settings vibrate -->
   <string name="quick_settings_vibrate_title">Wibracja przy dotknięciu</string>
   <string name="quick_settings_vibrate_summary">Wibracje podczas dotykania przełączników</string>
@@ -459,26 +459,22 @@
   <string name="lockscreen_enable_qs_title">Szybkie ustawienia</string>
   <string name="lockscreen_enable_qs_summary">Zezwalaj na dostęp do szybkich ustawień i skrótów przesuwania palcem na ekranie blokady</string>
   <!-- Hide Statusbar on Lockscreen -->
-  <string name="lockscreen_hide_status_bar_title">Ukryj pasek stanu</string>
-  <string name="lockscreen_hide_status_bar_summary">Przełącz widoczność pasku stanu na ekranie blokady. Naciśnij na górze, aby pokazać pasek stanu.</string>
+  <string name="lockscreen_hide_status_bar_title">Ukryj pasek statusu</string>
+  <string name="lockscreen_hide_status_bar_summary">Przełącz widoczność pasku statusu na ekranie blokady. Naciśnij na górze, aby pokazać pasek statusu</string>
   <!-- Toast icon -->
   <string name="toast_icon_title">Ikona w dymku powiadomień</string>
   <string name="toast_icon_summary">Wyświetl ikonę aplikacji w dymku</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Pełnoekranowe ostatnio uruchomione</string>
-  <string name="immersive_recents_summary">Zmiana widoku ekranu ostatnich aplikacji</string>
-  <string name="immersive_recents_dialog_title">Wybierz widok ostatnich aplikacji</string>
-  <string name="immersive_recents_default">Domyślne</string>
-  <string name="immersive_recents_fullscreen">Pełny ekran</string>
-  <string name="immersive_recents_statusbar">Tylko pasek stanu</string>
-  <string name="immersive_recents_navbar">Tylko pasek nawigacji</string>
   <!-- QS easy toggles -->
+  <string name="qs_easy_toggle_title">Ułatwiony przełącznik szybkich ustawień</string>
+  <string name="qs_easy_toggle_summary">Jedno stuknięcie do przełączania bluetooth, dane komórkowe i Wi-Fi</string>
   <!-- Screenshot Sound  -->
   <string name="screenshot_sound_title">Dźwięk zrzutu ekranu</string>
+  <string name="screenshot_sound_summary">Opcja włączenia lub wyłączenia dźwięku zrzutu ekranu</string>
   <!-- QS Header Icons -->
   <string name="qs_settings_icon_title">Ustawienia skrótów</string>
   <string name="qs_settings_icon_summary">Wyłącz skrót do ustawień w nagłówku</string>
   <string name="qs_settings_expanded_title">Rozszerzone ustawienia skrótów</string>
+  <string name="qs_settings_expanded_summary">Tylko włącz skrót do ustawień przy rozszerzonym panelu</string>
   <string name="qs_edit_title">Ikona edycji</string>
   <string name="qs_edit_summary">Wyłącz ikonę edycji kafelek w nagłówku</string>
   <string name="qs_multiuser_switch_title">Przełącznik użytkowników</string>
@@ -507,4 +503,7 @@
   <!-- Data disabled icon -->
   <string name="data_disabled_icon_title">Pokaż ikonę wyłączonych danych</string>
   <string name="data_disabled_icon_summary">Wyświetl znak krzyża obok paska sygnału, gdy dane są wyłączony</string>
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

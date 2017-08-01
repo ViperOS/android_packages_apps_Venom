@@ -16,6 +16,22 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <string name="about_viper">Tentang Viper</string>
+  <!-- Changelog -->
+  <string name="changelog_viper_title">Log perubahan</string>
+  <string name="changelog_viper_summary">Melihat perubahan terbaru pada ROM</string>
+  <string name="changelog_viper_error">Tak dapat memuat log perubahan</string>
+  <!-- Maintainers -->
+  <string name="maintainers_viper_title">Perangkat dan pengelolanya</string>
+  <string name="maintainers_viper_summary">Daftar perangkat yang didukung dan pengelola resminya</string>
+  <string name="maintainers_viper_error">Tidak dapat memuat daftar perangkat dan pengelola</string>
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <string name="about_category">Tentang</string>
   <string name="system_category">Sistem</string>
@@ -148,6 +164,9 @@
   <string name="hardware_keys_action_last_app">Aplikasi terakhir</string>
   <string name="hardware_keys_action_split_screen">Layar belah</string>
   <string name="hardware_keys_action_single_handed_left">Mode satu tangan (kiri)</string>
+  <string name="hardware_keys_action_single_handed_right">Modus satu tangan (kanan)</string>
+  <string name="hardware_keys_action_screenshot_full">Ambil sebuah tangkapan layar penuh</string>
+  <string name="hardware_keys_action_screenshot_region">Ambil sebuah tangkapan layar sebagian</string>
   <string name="camera_sleep_on_release_title">Pengintip layar</string>
   <string name="camera_sleep_on_release_summary">Menahan setengah akan membuat layar tetap menyala hanya ketika tombol tertekan</string>
   <string name="camera_launch_title">Buka kamera</string>
@@ -163,6 +182,7 @@
   <string name="swap_volume_buttons_title">Reorientasi</string>
   <string name="swap_volume_buttons_summary">Tukar fungsi tombol volume ketika layar diputar</string>
   <string name="button_wake_title">Bangunkan perangkat</string>
+  <string name="button_wake_summary">Bangunkan perangkat dengan menekan tombol</string>
   <string name="volume_answer_call_title">Menjawab panggilan</string>
   <string name="volume_answer_call_summary">Menjawab panggilan dengan menekan tombol volume</string>
   <string name="home_answer_call_title">Menjawab panggilan</string>
@@ -183,9 +203,14 @@
   <string name="reset">Atur ulang</string>
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Bar navigasi</string>
+  <string name="navigation_bar_enable_title">Aktifkan bilah navigasi</string>
+  <string name="navigation_bar_enable_summary">Aktifkan tombol navigasi pada layar</string>
   <string name="navigation_bar_title">Tombol dan tata letak</string>
+  <string name="navigation_bar_summary">Sesuaikan tampilan bilah navigasi</string>
   <string name="navigation_bar_arrow_keys_title">Tampilkan tombol panah saat mengetik</string>
   <string name="navigation_bar_arrow_keys_summary">Tampilkan tombol kursor kiri dan kanan saat mengetik. Menggantikan pengubah IME.</string>
+  <string name="navigation_bar_home_long_press_title">Tindakan menekan lama home</string>
+  <string name="navigation_bar_home_double_tap_title">Tindakan ketuk dua kali home</string>
   <string name="navigation_bar_recents_title">Tindakan menekan lama Recent</string>
   <!-- Power menu -->
   <string name="power_menu_title">Menu daya</string>
@@ -201,12 +226,25 @@
   <string name="volume_keys_control_ring_stream_summary_off">Tombol volume mengontrol volume media</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Membuka kamera langsung tanpa membuka layar kunci</string>
+  <string name="torch_long_press_power_gesture_title">Senter pada layar kunci</string>
+  <string name="torch_long_press_power_gesture_desc">Tekan lama tombol power ketika layar mati untuk menyalakan senter</string>
+  <string name="torch_long_press_power_timeout_title">Otomatis mematikan senter</string>
+  <string name="torch_long_press_power_timeout_never">Tidak pernah</string>
+  <string name="torch_long_press_power_timeout_1_minute">1 menit</string>
+  <string name="torch_long_press_power_timeout_2_minutes">2 menit</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5 menit</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10 menit</string>
   <!-- Navbar Animation -->
+  <string name="pixel_navbar_anim_title">Animasi Pixel bilah navigasi</string>
+  <string name="pixel_navbar_anim_summary">Mengaktifkan animasi Pixel pada bilah navigasi</string>
   <!-- Quick settings tiles -->
+  <string name="qs_tiles_category">Menu</string>
+  <string name="sysui_qqs_count_title">Menu QS kecil</string>
   <string name="qs_rows_portrait_title">Baris (potret)</string>
   <string name="qs_rows_landscape_title">Baris (landscape)</string>
   <string name="qs_columns_title">Kolom</string>
   <!-- Headers -->
+  <string name="status_bar_header_title">Header</string>
   <string name="status_bar_custom_header_title">Gambar Header khusus</string>
   <string name="status_bar_custom_header_summary">Mengaktifkan gambar pada Header panel pemberitahuan</string>
   <string name="daylight_header_pack_title">Paket gambar Header</string>
@@ -219,9 +257,14 @@
   <string name="custom_header_browse_title">Jelajahi Header yang terpasang</string>
   <string name="custom_header_browse_summary">Tekan dan tahan pada setiap gambar untuk digunakan pada mode statis</string>
   <!-- OmniJaws -->
+  <string name="omnijaws_settings_title">OmniJaws</string>
+  <string name="omnijaws_settings_summary">Sesuaikan menu cuaca</string>
   <string name="weather_config_title">Pengaturan layanan</string>
+  <string name="weather_config_summary">Sesuaikan layanan</string>
   <string name="weather_icon_pack_title">Paket ikon kondisi</string>
+  <string name="weather_icon_pack_note">Catatan\u003a anda bisa memasang paket ikon baru dari play store dengan mencari \"Chronus icons\"</string>
   <!-- Recents panel settings -->
+  <string name="recents_default_category">Terbaru</string>
   <string name="show_clear_all_recents_button_title">Tombol \'hapus semua\'</string>
   <string name="show_clear_all_recents_button_summary">Tampilkan tombol \'hapus semua\'</string>
   <string name="recents_clear_all_location_title">Lokasi tombol \'hapus semua\'</string>
@@ -232,6 +275,8 @@
   <string name="recents_clear_all_location_bottom_left">Kiri bawah</string>
   <string name="recents_clear_all_location_bottom_center">Tengah bawah</string>
   <!-- Custom carrier label and position -->
+  <string name="carrier_label_settings_title">Label Operator</string>
+  <string name="carrier_label_settings_summary">Sesuaikan label operator</string>
   <string name="custom_carrier_label_title">Kostum label operator</string>
   <string name="custom_carrier_label_explain">Silahkan masukkan label baru. Biarkan kosong untuk menggunakan label bawaan.</string>
   <string name="custom_carrier_label_notset">Saat ini kostum label belum ditentukan</string>
@@ -246,6 +291,7 @@
   <string name="ok">Oke</string>
   <!-- Lockscreen weather -->
   <string name="weather_category">Pengaturan cuaca</string>
+  <string name="display_category_weather_title">Opsi cuaca pada layar kunci</string>
   <string name="lock_screen_weather_settings_title">Pilihan cuaca</string>
   <string name="weather_cat_notifications_title">Pemberitahuan</string>
   <string name="weather_show_weather_title">Tampilkan cuaca</string>
@@ -262,17 +308,7 @@
   <string name="weather_hide_panel_never_summary">Panel cuaca tidak akan tersembunyi</string>
   <string name="weather_number_of_notifications_title">Jumlah pemberitahuan</string>
   <string name="weather_icon_pack_title">Paket ikon kondisi</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">Inversi pemberitahuan</string>
-  <string name="doze_notification_color_invert_summary_off">Pemberitahuan tidak akan terinversi. Gunakan untuk tema gelap.</string>
-  <string name="doze_notification_color_invert_summary_on">Pemberitahuan akan terinversi. Gunakan untuk tema cerah/bawaan.</string>
-  <!-- Dynamic notification tint -->
+  <string name="lock_clock_title">Layanan Cuaca</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">Lalu lintas jaringan</string>
   <string name="show_network_traffic_state">Status bar lalu lintas data</string>
@@ -291,15 +327,11 @@
   <string name="network_traffic_autohide">Sembunyikan otomatis</string>
   <string name="network_traffic_autohide_summary">sembunyikan monitor lalu lintas saat tidak ada aktifitas</string>
   <string name="network_traffic_autohide_threshold">Ambang tidak aktif</string>
+  <string name="network_traffic_hidearrow">Sembunyikan panah</string>
   <string name="network_traffic_hidearrow_summary">Sembunyikan panah pada indikator trafik data</string>
   <!-- Battery Tile -->
+  <string name="status_bar_battery_style_tile_title">Gaya khusus menu baterai</string>
   <string name="status_bar_battery_style_tile_summary">Memungkinkan untuk mengatur gaya ikon yang sama dengan yang dipilih untuk baterai statusbar</string>
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
-  <string name="maintainers_viper_title">Perangkat dan pengelolanya</string>
-  <string name="maintainers_viper_summary">Daftar perangkat yang didukung dan pengelola resminya</string>
-  <string name="maintainers_viper_error">Tidak dapat memuat daftar perangkat dan pengelola</string>
   <!-- Quick Settings brightness slider -->
   <string name="qs_misc_category">Macam-macam</string>
   <string name="qs_brightness_slider_title">Slider kecerahan</string>
@@ -338,7 +370,6 @@
   <string name="lockscreen_battery_info_title">Info baterai pada kunci layar</string>
   <string name="lockscreen_battery_info_summary">Menampilkan maksimal arus-tegangan yang dinegosiasikan pengisi daya dan suhu baterai pada lockscreen saat pengisian</string>
   <!-- ViperOS Logo -->
-  <string name="status_bar_viper_logo_title">Aktifkan logo</string>
   <string name="status_bar_viper_logo_summary">Aktifkn untuk menampilkan logo Viper pada bilah status</string>
   <string name="status_bar_viper_logo_color">Warna logo</string>
   <string name="status_bar_logo">Logo ViperOS</string>
@@ -370,6 +401,7 @@
   <!-- Other system settings category -->
   <string name="misc_category">Macam-macam</string>
   <!-- Other system settings category -->
+  <string name="sound_category">Suara</string>
   <!-- Wired headset ringtone audio focus -->
   <string name="wired_ringtone_focus_mode_title">Mana untuk bermain nada dering</string>
   <string name="wired_ringtone_focus_mode_dynamic">Kabel headset jika terhubung dan bermain musik</string>
@@ -397,6 +429,7 @@
   <string name="three_finger_gesture">Gerakan tiga jari</string>
   <string name="three_finger_gesture_summary">Gesekkan tiga jari untuk mengambil tangkapan layar</string>
   <!-- Notifications category -->
+  <string name="notifications_category">Pemberitahuan</string>
   <!-- Heads up timeout -->
   <string name="heads_up_time_out_title">Waktu Habis</string>
   <string name="heads_up_time_out_summary">Pemberitahuan mengintip akan muncul untuk <xliff:g id="number">%d </xliff:g> detik</string>
@@ -424,14 +457,6 @@
   <!-- Toast icon -->
   <string name="toast_icon_title">Ikon \'Toast\'</string>
   <string name="toast_icon_summary">Tampilkan ikon aplikasi sesuai dengan \'toast\'</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Recents mendalam</string>
-  <string name="immersive_recents_summary">Mengubah tampilan layar recents</string>
-  <string name="immersive_recents_dialog_title">Pilih tampilan recents</string>
-  <string name="immersive_recents_default">Standar</string>
-  <string name="immersive_recents_fullscreen">Layar penuh</string>
-  <string name="immersive_recents_statusbar">Hanya status bar</string>
-  <string name="immersive_recents_navbar">Hanya navbar</string>
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <string name="screenshot_sound_title">Suara tangkapan layar</string>
@@ -451,6 +476,7 @@
   <string name="fp_unlock_keystore_title">FP buka kunci</string>
   <string name="fp_unlock_keystore_summary">Membuka perangkat dengan sidik jari setelah menyala tanpa Kata sandi/PIN/Pola\nCatatan: resiko Anda sendiri!</string>
   <!-- Navbar double tap to sleep -->
+  <string name="double_tap_sleep_nav_bar_title">Ketuk dua kali untuk tidur</string>
   <!-- Status Bar Ticker -->
   <string name="ticker_screen_title">Notifikasi ticker</string>
   <string name="ticker_title">Bar status ticker</string>
@@ -463,4 +489,7 @@
   <!-- Data disabled icon -->
   <string name="data_disabled_icon_title">Menunjukkan ikon data dinonaktifkan</string>
   <string name="data_disabled_icon_summary">Menampilkan tanda silang di sebelah bar sinyal saat data dinonaktifkan</string>
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

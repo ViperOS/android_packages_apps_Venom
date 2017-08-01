@@ -16,10 +16,22 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <!-- Changelog -->
+  <!-- Maintainers -->
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <!-- Category -->
+  <string name="lockscreen_weather_title">天氣</string>
   <!-- Dialog -->
   <!-- Power Menu -->
+  <string name="powermenu_screenshot">擷取螢幕畫面</string>
+  <string name="powermenu_reboot">重新啟動</string>
   <!-- Advanced reboot options -->
   <!-- Color Picker -->
   <string name="default_string">預設</string>
@@ -36,6 +48,8 @@
   <string name="status_bar_quick_qs_pulldown_left">靠左對齊</string>
   <string name="status_bar_quick_qs_pulldown_right">靠右對齊</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_right">右滑</string>
+  <string name="status_bar_clock_position_left">左滑</string>
   <string name="status_bar_am_pm_title">上午/下午樣式</string>
   <string name="status_bar_am_pm_info">24 小時時鐘已啟用</string>
   <string name="status_bar_am_pm_normal">一般</string>
@@ -61,6 +75,7 @@
   <string name="status_bar_battery_style_icon_landscape">橫式圖示</string>
   <string name="status_bar_battery_style_circle">環形</string>
   <string name="status_bar_battery_style_solid">純色</string>
+  <string name="status_bar_battery_style_gauge">量規</string>
   <string name="status_bar_battery_style_text">文字</string>
   <string name="status_bar_battery_style_hidden">隐藏</string>
   <!-- Status bar - Battery percentage -->
@@ -83,6 +98,7 @@
   <string name="hardware_keys_appswitch_key_title">預覽按鍵佈局</string>
   <string name="hardware_keys_camera_key_title">相機鍵</string>
   <string name="hardware_keys_volume_keys_title">音量鍵</string>
+  <string name="hardware_keys_short_press_title">短按動作</string>
   <string name="hardware_keys_long_press_title">長按動作</string>
   <string name="hardware_keys_double_tap_title">輕觸兩下動作</string>
   <string name="hardware_keys_action_nothing">無動作</string>
@@ -94,6 +110,11 @@
   <string name="hardware_keys_action_launch_camera">啟動相機</string>
   <string name="hardware_keys_action_sleep">關閉螢幕</string>
   <string name="hardware_keys_action_last_app">最後一個應用程式</string>
+  <string name="hardware_keys_action_split_screen">分割畫面</string>
+  <string name="hardware_keys_action_single_handed_left">單手模式（左）</string>
+  <string name="hardware_keys_action_single_handed_right">單手模式（右）</string>
+  <string name="hardware_keys_action_screenshot_full">擷取全螢幕畫面</string>
+  <string name="hardware_keys_action_screenshot_region">擷取選取區域畫面</string>
   <string name="camera_sleep_on_release_title">螢幕窺視</string>
   <string name="camera_sleep_on_release_summary">只有當按下按鈕時，半按將會保持螢幕開啟</string>
   <string name="camera_launch_title">啟動相機</string>
@@ -109,6 +130,7 @@
   <string name="swap_volume_buttons_title">調整方向</string>
   <string name="swap_volume_buttons_summary">螢幕旋轉時交換音量鍵</string>
   <string name="button_wake_title">喚醒裝置</string>
+  <string name="button_wake_summary">透過按鈕來喚醒裝置</string>
   <string name="volume_answer_call_title">接聽電話</string>
   <string name="volume_answer_call_summary">按音量鍵接聽電話</string>
   <string name="home_answer_call_title">接聽電話</string>
@@ -129,9 +151,14 @@
   <string name="reset">重設</string>
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">導航列</string>
+  <string name="navigation_bar_enable_title">啟用導覽列</string>
+  <string name="navigation_bar_enable_summary">啟用螢幕上導覽按鈕</string>
   <string name="navigation_bar_title">按鈕與配置</string>
+  <string name="navigation_bar_summary">自定義導覽列</string>
   <string name="navigation_bar_arrow_keys_title">輸入時顯示方向鍵</string>
   <string name="navigation_bar_arrow_keys_summary">輸入時顯示游標鍵。取代輸入法切換器。</string>
+  <string name="navigation_bar_home_long_press_title">主畫面按鈕長按動作</string>
+  <string name="navigation_bar_home_double_tap_title">主畫面按鈕輕觸兩下動作</string>
   <string name="navigation_bar_recents_title">多工按鈕長按動作</string>
   <!-- Power menu -->
   <string name="power_menu_title">電源功能表選項</string>
@@ -147,12 +174,25 @@
   <string name="volume_keys_control_ring_stream_summary_off">音量鍵控制媒體音量</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">不須解鎖螢幕即可快速開啟相機</string>
+  <string name="torch_long_press_power_gesture_title">在鎖定畫面中開啟手電筒</string>
+  <string name="torch_long_press_power_gesture_desc">螢幕關閉時，長按電源鍵以開啟手電筒</string>
+  <string name="torch_long_press_power_timeout_title">自動關閉手電筒</string>
+  <string name="torch_long_press_power_timeout_never">永不</string>
+  <string name="torch_long_press_power_timeout_1_minute">1 分鐘</string>
+  <string name="torch_long_press_power_timeout_2_minutes">2 分鐘</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5 分鐘</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10 分鐘</string>
   <!-- Navbar Animation -->
+  <string name="pixel_navbar_anim_title">Pixel 導覽列動畫</string>
+  <string name="pixel_navbar_anim_summary">開啟 Pixel 導覽列動畫</string>
   <!-- Quick settings tiles -->
+  <string name="qs_tiles_category">瓷磚</string>
+  <string name="sysui_qqs_count_title">小型快速設定瓷磚</string>
   <string name="qs_rows_portrait_title">行 (縱向)</string>
   <string name="qs_rows_landscape_title">行 (橫向)</string>
   <string name="qs_columns_title">欄</string>
   <!-- Headers -->
+  <string name="status_bar_header_title">標頭</string>
   <string name="status_bar_custom_header_title">自訂標頭圖片</string>
   <string name="status_bar_custom_header_summary">啟用通知面板標頭圖片</string>
   <string name="daylight_header_pack_title">標頭圖片包</string>
@@ -165,9 +205,14 @@
   <string name="custom_header_browse_title">瀏覽已安裝的標頭</string>
   <string name="custom_header_browse_summary">長時間按任何圖片用於靜態模式</string>
   <!-- OmniJaws -->
+  <string name="omnijaws_settings_title">OmniJaws</string>
+  <string name="omnijaws_settings_summary">自定義天氣瓷磚</string>
   <string name="weather_config_title">服務設定</string>
+  <string name="weather_config_summary">配置服務</string>
   <string name="weather_icon_pack_title">狀態圖示包</string>
+  <string name="weather_icon_pack_note">注意：您現在可以從 Play 商店安裝新的圖標包了，請搜尋「Chronus icons」</string>
   <!-- Recents panel settings -->
+  <string name="recents_default_category">最近的應用程式</string>
   <string name="show_clear_all_recents_button_title">全部清除按鈕</string>
   <string name="show_clear_all_recents_button_summary">顯示全部清除按鈕</string>
   <string name="recents_clear_all_location_title">全部清除按鈕位置</string>
@@ -178,6 +223,8 @@
   <string name="recents_clear_all_location_bottom_left">左下</string>
   <string name="recents_clear_all_location_bottom_center">底部置中</string>
   <!-- Custom carrier label and position -->
+  <string name="carrier_label_settings_title">電信商標籤</string>
+  <string name="carrier_label_settings_summary">自定義電信商標籤</string>
   <string name="custom_carrier_label_title">自訂電信業者名稱</string>
   <string name="custom_carrier_label_explain">請輸入新的電信業者名稱，留空為恢復預設名稱。</string>
   <string name="custom_carrier_label_notset">自訂標籤目前尚未設定</string>
@@ -192,6 +239,7 @@
   <string name="ok">好</string>
   <!-- Lockscreen weather -->
   <string name="weather_category">天氣設定</string>
+  <string name="display_category_weather_title">鎖屏天氣選項</string>
   <string name="lock_screen_weather_settings_title">天氣選項</string>
   <string name="weather_cat_notifications_title">通知</string>
   <string name="weather_show_weather_title">顯示天氣</string>
@@ -208,17 +256,7 @@
   <string name="weather_hide_panel_never_summary">天氣面板不會被隱藏</string>
   <string name="weather_number_of_notifications_title">通知數量</string>
   <string name="weather_icon_pack_title">狀態圖示包</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">通知反轉</string>
-  <string name="doze_notification_color_invert_summary_off">通知不會被反轉。 用於黑暗的主題。</string>
-  <string name="doze_notification_color_invert_summary_on">通知將反轉。 用於淡色/原始主題。</string>
-  <!-- Dynamic notification tint -->
+  <string name="lock_clock_title">天氣資訊服務</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">網路流量</string>
   <string name="show_network_traffic_state">狀態列流量監測器</string>
@@ -237,12 +275,11 @@
   <string name="network_traffic_autohide">自動隱藏</string>
   <string name="network_traffic_autohide_summary">沒有活動時隱藏流量監測器</string>
   <string name="network_traffic_autohide_threshold">活動監測門檻</string>
+  <string name="network_traffic_hidearrow">隱藏箭頭</string>
   <string name="network_traffic_hidearrow_summary">隱藏路況指示器中的箭頭</string>
   <!-- Battery Tile -->
+  <string name="status_bar_battery_style_tile_title">自訂電池瓷磚樣式</string>
   <string name="status_bar_battery_style_tile_summary">選擇狀態列電池允許設定相同的圖示樣式</string>
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">亮度滑動條</string>
   <string name="qs_brightness_slider_summary">在快速設定面板中顯示亮度滑動條</string>
@@ -289,6 +326,7 @@
   <!-- Lockscreen categories -->
   <!-- Other system settings category -->
   <!-- Other system settings category -->
+  <string name="sound_category">音效</string>
   <!-- Wired headset ringtone audio focus -->
   <string name="wired_ringtone_focus_mode_title">播放鈴聲來至於</string>
   <string name="wired_ringtone_focus_mode_dynamic">在連接有線耳機後開始撥放音樂</string>
@@ -316,6 +354,7 @@
   <string name="three_finger_gesture">三指手勢</string>
   <string name="three_finger_gesture_summary">同時滑動三支指頭以擷取螢幕畫面</string>
   <!-- Notifications category -->
+  <string name="notifications_category">通知</string>
   <!-- Heads up timeout -->
   <string name="heads_up_time_out_title">逾時</string>
   <string name="heads_up_time_out_summary">查看通知將顯示為 <xliff:g id="number">%d </xliff:g> 秒</string>
@@ -343,14 +382,6 @@
   <!-- Toast icon -->
   <string name="toast_icon_title">彈出訊息圖示</string>
   <string name="toast_icon_summary">顯示與彈出訊息相關的應用程式圖示</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">全螢幕總覽</string>
-  <string name="immersive_recents_summary">變更總覽螢幕樣式</string>
-  <string name="immersive_recents_dialog_title">選擇總覽樣式</string>
-  <string name="immersive_recents_default">預設</string>
-  <string name="immersive_recents_fullscreen">全螢幕</string>
-  <string name="immersive_recents_statusbar">僅顯示狀態列</string>
-  <string name="immersive_recents_navbar">僅顯示導航列</string>
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <string name="screenshot_sound_title">螢幕擷取音效</string>
@@ -370,6 +401,7 @@
   <string name="fp_unlock_keystore_title">FP 解鎖</string>
   <string name="fp_unlock_keystore_summary">在重新啟動後用指紋解鎖裝置，無須 PIN /密碼/圖案\n注意：自擔風險！</string>
   <!-- Navbar double tap to sleep -->
+  <string name="double_tap_sleep_nav_bar_title">輕觸兩下即可休眠</string>
   <!-- Status Bar Ticker -->
   <string name="ticker_screen_title">通知提示</string>
   <string name="ticker_title">狀態列提示通知</string>
@@ -382,4 +414,7 @@
   <!-- Data disabled icon -->
   <string name="data_disabled_icon_title">顯示數據停用圖示</string>
   <string name="data_disabled_icon_summary">當數據停用時，不顯示圖示旁邊的「×」圖示</string>
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

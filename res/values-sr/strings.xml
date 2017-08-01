@@ -16,10 +16,22 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <!-- Changelog -->
+  <!-- Maintainers -->
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <!-- Category -->
+  <string name="lockscreen_weather_title">Време</string>
   <!-- Dialog -->
   <!-- Power Menu -->
+  <string name="powermenu_screenshot">Снимак екрана</string>
+  <string name="powermenu_reboot">Поново покрени</string>
   <!-- Advanced reboot options -->
   <!-- Color Picker -->
   <string name="default_string">Подразумевано</string>
@@ -36,12 +48,17 @@
   <string name="status_bar_quick_qs_pulldown_left">Лево</string>
   <string name="status_bar_quick_qs_pulldown_right">Десно</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_right">Десно</string>
+  <string name="status_bar_clock_position_left">Лево</string>
   <string name="status_bar_am_pm_title">AM/PM стил</string>
   <string name="status_bar_am_pm_info">Омогућено је 24-сатно време</string>
   <string name="status_bar_am_pm_normal">Нормално</string>
   <string name="status_bar_am_pm_small">Мало</string>
   <string name="status_bar_am_pm_hidden">Сакривено</string>
   <!--Status bar date -->
+  <string name="status_bar_date_small">Мало</string>
+  <string name="status_bar_date_normal">Нормална</string>
+  <string name="status_bar_date_style_normal">Нормална</string>
   <!-- Status bar - Battery -->
   <string name="status_bar_battery_style_title">Стил батерије у статусној траци</string>
   <string name="status_bar_battery_style_icon_portrait">Икона у портрету</string>
@@ -130,6 +147,7 @@
   <string name="volume_keys_control_ring_stream_summary_off">Дугмад за гласноћу контролишу јачину звука медија</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Брзо покретање камере без одкључавања екрана</string>
+  <string name="torch_long_press_power_timeout_never">Никада</string>
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
   <!-- Headers -->
@@ -145,6 +163,7 @@
   <string name="recents_clear_all_location_bottom_left">Доле лево</string>
   <string name="recents_clear_all_location_bottom_center">Доле на центру</string>
   <!-- Custom carrier label and position -->
+  <string name="show_carrier_disabled">Онемогућено</string>
   <string name="ok">У реду</string>
   <!-- Lockscreen weather -->
   <string name="weather_category">Поставке времеске прогнозе</string>
@@ -163,17 +182,6 @@
   <string name="weather_hide_panel_custom_summary">Панел времена ће бити сакривен када видљива обавештења достигну одабрани број обавештења</string>
   <string name="weather_hide_panel_never_summary">Панел времена неће бити сакриван</string>
   <string name="weather_number_of_notifications_title">Број обавештења</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">Инверзија обавештења</string>
-  <string name="doze_notification_color_invert_summary_off">Обавештења се неће обрнути. Користите за тамне теме.</string>
-  <string name="doze_notification_color_invert_summary_on">Обавештења ће се обрнути. Користите за светле/подразумеване теме.</string>
-  <!-- Dynamic notification tint -->
   <!-- Network traffic -->
   <string name="network_traffic_title">Мрежни промет</string>
   <string name="show_network_traffic_state">Праћење промета у статусној траци</string>
@@ -194,9 +202,6 @@
   <string name="network_traffic_autohide_threshold">Праг неактивности</string>
   <string name="network_traffic_hidearrow_summary">Скривање стрелица на индикаторима саобраћаја</string>
   <!-- Battery Tile -->
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">Клизач осветљења</string>
   <string name="qs_brightness_slider_summary">Прикажи клизач осветљења на плочи брзих обавештења</string>
@@ -212,6 +217,7 @@
   <string name="show_4g_summary">Приказује 4G уместо LTE поред иконе сигнала</string>
   <!-- Lockscreen battery info indicator -->
   <!-- ViperOS Logo -->
+  <string name="status_bar_logo_position_left">Лево</string>
   <!-- Recents Membar -->
   <string name="systemui_recents_mem_display_title">Прикажи меморијску траку</string>
   <string name="systemui_recents_mem_display_summary">Омогућите или онемогућите траку о РАМ-у у панелу недавних апликација</string>
@@ -229,6 +235,7 @@
   <!-- Lockscreen categories -->
   <!-- Other system settings category -->
   <!-- Other system settings category -->
+  <string name="sound_category">Звук</string>
   <!-- Wired headset ringtone audio focus -->
   <!-- Volume Steps -->
   <string name="volume_steps_title">Кораци гласноће</string>
@@ -251,6 +258,7 @@
   <!-- Gestures category -->
   <!-- Three-fingers-swipe to screenshot -->
   <!-- Notifications category -->
+  <string name="notifications_category">Обавештења</string>
   <!-- Heads up timeout -->
   <!-- Heads up snooze -->
   <!-- Quick settings on secure lockscreen -->
@@ -258,14 +266,6 @@
   <!-- Toast icon -->
   <string name="toast_icon_title">Икона на тосту</string>
   <string name="toast_icon_summary">Приказује икону апликације која одговара тост обавештењу</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Недавне апликације целог екрана</string>
-  <string name="immersive_recents_summary">Промените приказ панела са недавним апликацијама</string>
-  <string name="immersive_recents_dialog_title">Одаберите приказ недавних апликација</string>
-  <string name="immersive_recents_default">Подразумевано</string>
-  <string name="immersive_recents_fullscreen">Цео екран</string>
-  <string name="immersive_recents_statusbar">Само статусна трака</string>
-  <string name="immersive_recents_navbar">Само навигацијска трака</string>
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <string name="screenshot_sound_title">Звук сликања екрана</string>
@@ -277,4 +277,7 @@
   <string name="ticker_screen_summary">Прилагодите стил тикера у статусној траци</string>
   <!-- Lockscreen visualizer -->
   <!-- Data disabled icon -->
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

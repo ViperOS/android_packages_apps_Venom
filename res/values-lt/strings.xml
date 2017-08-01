@@ -16,6 +16,15 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <!-- Changelog -->
+  <!-- Maintainers -->
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <!-- Category -->
   <!-- Dialog -->
@@ -41,19 +50,9 @@
   <!-- Recents panel settings -->
   <!-- Custom carrier label and position -->
   <!-- Lockscreen weather -->
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <!-- Dynamic notification tint -->
+  <string name="weather_hide_panel_custom_title">Naudotojas</string>
   <!-- Network traffic -->
   <!-- Battery Tile -->
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
   <!-- Quick Settings brightness icon -->
   <!-- SU indicator -->
@@ -84,7 +83,6 @@
   <!-- Quick settings on secure lockscreen -->
   <!-- Hide Statusbar on Lockscreen -->
   <!-- Toast icon -->
-  <!-- Immersive Recents -->
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <!-- QS Header Icons -->
@@ -94,4 +92,7 @@
   <!-- Status Bar Ticker -->
   <!-- Lockscreen visualizer -->
   <!-- Data disabled icon -->
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

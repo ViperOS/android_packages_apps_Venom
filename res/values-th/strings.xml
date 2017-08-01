@@ -16,6 +16,22 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <string name="about_viper">เกี่ยวกับViper</string>
+  <!-- Changelog -->
+  <string name="changelog_viper_title">บันทึกการเปลี่ยนแปลง</string>
+  <string name="changelog_viper_summary">ดูการเปลี่ยนแปลงล่าสุดใน ROM</string>
+  <string name="changelog_viper_error">ไม่สามารถโหลดเนื้อเรื่องได้</string>
+  <!-- Maintainers -->
+  <string name="maintainers_viper_title">อุปกรณ์และผู้ดูแล</string>
+  <string name="maintainers_viper_summary">รายการของอุปกรณ์ที่รองรับและผู้ดูแลของพวกเขาอย่างเป็นทางการ</string>
+  <string name="maintainers_viper_error">ไม่สามารถโหลดรายการอุปกรณ์และผู้ดูแล</string>
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <string name="about_category">เกี่ยวกับเรา</string>
   <string name="system_category">ระบบ</string>
@@ -30,8 +46,11 @@
   <string name="traffic_category">แสดงการจราจรดาต้า</string>
   <string name="recents_title">รายการล่าสุด</string>
   <string name="carrierlabel_title">ป้ายชื่อผู้ให้บริการ</string>
+  <string name="lockscreen_weather_title">สภาพอากาศ</string>
   <!-- Dialog -->
   <!-- Power Menu -->
+  <string name="powermenu_screenshot">ภาพหน้าจอ</string>
+  <string name="powermenu_reboot">เริ่มระบบใหม่</string>
   <!-- Advanced reboot options -->
   <!-- Color Picker -->
   <!-- Status bar -->
@@ -143,22 +162,11 @@
   <string name="show_clear_all_recents_button_summary">แสดง ข้อความ \"ล้างทั้งหมด\" ในปุ่ม</string>
   <string name="recents_clear_all_location_title">ล้างตำแหน่งของปุ่มทั้งหมด</string>
   <!-- Custom carrier label and position -->
+  <string name="carrier_label_settings_title">ป้ายชื่อผู้ให้บริการ</string>
   <!-- Lockscreen weather -->
+  <string name="lock_screen_weather_settings_title">สภาพอากาศ</string>
+  <string name="weather_hide_panel_custom_title">ผู้ใช้</string>
   <string name="weather_icon_pack_title">สภาพชุดไอคอน</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <string name="night_mode_title">ธีมอุปกรณ์</string>
-  <string name="night_mode_summary">เปลี่ยนแปลงชุดรูปแบบเป็นค่าเริ่มต้น</string>
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <string name="night_mode_summary">เปลี่ยนแปลงชุดรูปแบบเป็นค่าเริ่มต้น</string>
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <string name="night_mode_no">สว่าง</string>
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <string name="night_mode_yes">ไวเปอร์สีทึบ</string>
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <string name="night_mode_auto">อัตโนมัติ</string>
-  <!-- Doze invert -->
-  <!-- Dynamic notification tint -->
   <!-- Network traffic -->
   <string name="network_traffic_title">การจราจรของข้อมูล</string>
   <string name="show_network_traffic_state">แสดงบนแถบสถานะ</string>
@@ -178,16 +186,6 @@
   <string name="network_traffic_autohide_summary">ซ่อนการแสดงผลเมื่อมีไม่มีกิจกรรม</string>
   <string name="network_traffic_hidearrow">ซ่อนลูกศร</string>
   <!-- Battery Tile -->
-  <!-- About Viper -->
-  <string name="about_viper">เกี่ยวกับViper</string>
-  <!-- Changelog -->
-  <string name="changelog_viper_title">บันทึกการเปลี่ยนแปลง</string>
-  <string name="changelog_viper_summary">ดูการเปลี่ยนแปลงล่าสุดใน ROM</string>
-  <string name="changelog_viper_error">ไม่สามารถโหลดเนื้อเรื่องได้</string>
-  <!-- Maintainers -->
-  <string name="maintainers_viper_title">อุปกรณ์และผู้ดูแล</string>
-  <string name="maintainers_viper_summary">รายการของอุปกรณ์ที่รองรับและผู้ดูแลของพวกเขาอย่างเป็นทางการ</string>
-  <string name="maintainers_viper_error">ไม่สามารถโหลดรายการอุปกรณ์และผู้ดูแล</string>
   <!-- Quick Settings brightness slider -->
   <string name="qs_misc_category">เบ็ดเตล็ด</string>
   <string name="qs_brightness_slider_title">แถบเลื่อนความสว่าง</string>
@@ -211,8 +209,11 @@
   <!-- Media art -->
   <!-- Lockscreen tap-to sleep -->
   <!-- Lockscreen categories -->
+  <string name="lockscreen_misc_category">เบ็ดเตล็ด</string>
   <!-- Other system settings category -->
+  <string name="misc_category">เบ็ดเตล็ด</string>
   <!-- Other system settings category -->
+  <string name="sound_category">เสียง</string>
   <!-- Wired headset ringtone audio focus -->
   <!-- Volume Steps -->
   <!-- Power menu on secure lockscreen -->
@@ -226,14 +227,17 @@
   <!-- Quick settings on secure lockscreen -->
   <!-- Hide Statusbar on Lockscreen -->
   <!-- Toast icon -->
-  <!-- Immersive Recents -->
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <!-- QS Header Icons -->
   <!-- Center Time + Date in header -->
   <!-- Fingerprint unlock keystore -->
   <!-- Navbar double tap to sleep -->
+  <string name="double_tap_sleep_nav_bar_title">แตะสองครั้งเพื่อปิดจอ</string>
   <!-- Status Bar Ticker -->
   <!-- Lockscreen visualizer -->
   <!-- Data disabled icon -->
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>

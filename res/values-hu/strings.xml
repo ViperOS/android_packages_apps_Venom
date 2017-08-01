@@ -16,10 +16,22 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About Viper -->
+  <!-- Changelog -->
+  <!-- Maintainers -->
+  <!-- Website -->
+  <!-- Google+ -->
+  <!-- Telegram -->
+  <!-- Github -->
+  <!-- Crowdin -->
+  <!-- OTA -->
   <!-- Tabs -->
   <!-- Category -->
+  <string name="lockscreen_weather_title">Időjárás</string>
   <!-- Dialog -->
   <!-- Power Menu -->
+  <string name="powermenu_screenshot">Képernyőmentés</string>
+  <string name="powermenu_reboot">Újraindítás</string>
   <!-- Advanced reboot options -->
   <!-- Color Picker -->
   <string name="default_string">Alapértelmezett</string>
@@ -36,6 +48,8 @@
   <string name="status_bar_quick_qs_pulldown_left">Bal</string>
   <string name="status_bar_quick_qs_pulldown_right">Jobb</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_right">Jobb</string>
+  <string name="status_bar_clock_position_left">Bal</string>
   <string name="status_bar_am_pm_title">De/Du stílusa</string>
   <string name="status_bar_am_pm_info">24-órás kijelzés engedélyezve</string>
   <string name="status_bar_am_pm_normal">Normál</string>
@@ -147,12 +161,17 @@
   <string name="volume_keys_control_ring_stream_summary_off">Médiahang vezérlése hangerőgombokkal</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">A kamera gyors megnyitása a képernyő feloldása nélkül</string>
+  <string name="torch_long_press_power_timeout_never">Soha</string>
+  <string name="torch_long_press_power_timeout_1_minute">1 perc</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5 perc</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10 perc</string>
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
   <string name="qs_rows_portrait_title">Sorok (álló)</string>
   <string name="qs_rows_landscape_title">Sorok (fekvő)</string>
   <string name="qs_columns_title">Oszlopok</string>
   <!-- Headers -->
+  <string name="status_bar_header_title">Fejlécek</string>
   <string name="status_bar_custom_header_title">Egyéni fejléckép</string>
   <string name="status_bar_custom_header_summary">Értesítési panel egyéni kép engedélyezése</string>
   <string name="daylight_header_pack_title">Fejléckép csomag</string>
@@ -208,17 +227,6 @@
   <string name="weather_hide_panel_never_summary">Időjárás panel nem kerül elrejtésre</string>
   <string name="weather_number_of_notifications_title">Értesítések száma</string>
   <string name="weather_icon_pack_title">Állapot ikoncsomag</string>
-  <!-- Day/Night -->
-  <!-- Display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
-  <!-- Display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <!-- Display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
-  <!-- Doze invert -->
-  <string name="doze_notification_color_invert_title">Értesítés inverzió</string>
-  <string name="doze_notification_color_invert_summary_off">Értesítések nem lesznek invertálva. Sötét téma esetén használja.</string>
-  <string name="doze_notification_color_invert_summary_on">Értesítések invertálva lesznek. Világos/gyári téma esetén használja.</string>
-  <!-- Dynamic notification tint -->
   <!-- Network traffic -->
   <string name="network_traffic_title">Hálózati forgalom</string>
   <string name="show_network_traffic_state">Állapotsori forgalom kijelzés</string>
@@ -240,9 +248,6 @@
   <string name="network_traffic_hidearrow_summary">Forgalmat jelző nyilak elrejtése</string>
   <!-- Battery Tile -->
   <string name="status_bar_battery_style_tile_summary">Lehetővé teszi, hogy ugyanazt az ikonstílust állítsa be, mint az állapotsoron</string>
-  <!-- About Viper -->
-  <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">Fényerő csúszka</string>
   <string name="qs_brightness_slider_summary">Fényerő csúszka megjelenítése a gyorsbeállítások panelen</string>
@@ -289,6 +294,7 @@
   <!-- Lockscreen categories -->
   <!-- Other system settings category -->
   <!-- Other system settings category -->
+  <string name="sound_category">Hangok</string>
   <!-- Wired headset ringtone audio focus -->
   <string name="wired_ringtone_focus_mode_title">A csengőhangok lejátszásának helye</string>
   <string name="wired_ringtone_focus_mode_dynamic">Vezetékes fejhallgató, ha csatlakoztatva van és zenét hallgat</string>
@@ -316,6 +322,7 @@
   <string name="three_finger_gesture">Három ujjas gesztus</string>
   <string name="three_finger_gesture_summary">Csúsztasson három ujjal a képernyőmentéshez</string>
   <!-- Notifications category -->
+  <string name="notifications_category">Értesítések</string>
   <!-- Heads up timeout -->
   <string name="heads_up_time_out_title">Időkorlát</string>
   <string name="heads_up_time_out_summary">Lebegő értesítések megjelenítése <xliff:g id="number">%d</xliff:g> másodpercig</string>
@@ -343,14 +350,6 @@
   <!-- Toast icon -->
   <string name="toast_icon_title">Buborékszöveg ikon</string>
   <string name="toast_icon_summary">A buborékszöveghez tartozó alkalmazás ikonjának megjelenítése</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Teljes képernyős előzmények</string>
-  <string name="immersive_recents_summary">Előzmények képernyő megjelenésének módosítása</string>
-  <string name="immersive_recents_dialog_title">Megjelenítés választása</string>
-  <string name="immersive_recents_default">Alapértelmezett</string>
-  <string name="immersive_recents_fullscreen">Teljes képernyő</string>
-  <string name="immersive_recents_statusbar">Csak állapotsor</string>
-  <string name="immersive_recents_navbar">Csak navigációs sáv</string>
   <!-- QS easy toggles -->
   <!-- Screenshot Sound  -->
   <string name="screenshot_sound_title">Képernyőmentés hang</string>
@@ -370,6 +369,7 @@
   <string name="fp_unlock_keystore_title">Feloldás ujjlenyomattal</string>
   <string name="fp_unlock_keystore_summary">A készülék feloldása az ujjlenyomattal PIN/Jelszó/Minta nélkül\nMegjegyzés: saját felelősségre!</string>
   <!-- Navbar double tap to sleep -->
+  <string name="double_tap_sleep_nav_bar_title">Dupla érintésre alvás</string>
   <!-- Status Bar Ticker -->
   <string name="ticker_screen_title">Értesítés gördítése állapotsoron</string>
   <string name="ticker_title">Értesítés gördítése állapotsoron</string>
@@ -382,4 +382,7 @@
   <!-- Data disabled icon -->
   <string name="data_disabled_icon_title">Mobilnet kikapcsolva ikon</string>
   <string name="data_disabled_icon_summary">A térerő mellett x jel megjelenítése, ha a mobilnet le van tiltva</string>
+  <!-- Light buttons on touch -->
+  <!-- Lockscreen blur summary -->
+  <!-- Maintainer section -->
 </resources>
