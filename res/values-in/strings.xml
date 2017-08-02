@@ -22,10 +22,6 @@
   <string name="changelog_viper_title">Log perubahan</string>
   <string name="changelog_viper_summary">Melihat perubahan terbaru pada ROM</string>
   <string name="changelog_viper_error">Tak dapat memuat log perubahan</string>
-  <!-- Maintainers -->
-  <string name="maintainers_viper_title">Perangkat dan pengelolanya</string>
-  <string name="maintainers_viper_summary">Daftar perangkat yang didukung dan pengelola resminya</string>
-  <string name="maintainers_viper_error">Tidak dapat memuat daftar perangkat dan pengelola</string>
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -50,10 +46,6 @@
   <string name="lockscreen_weather_title">Cuaca</string>
   <string name="lockscreen_misc_title">Macam</string>
   <string name="sound_and_notifications_category">Suara dan Notifikasi</string>
-  <!-- Dialog -->
-  <string name="venom_dialog_title">Bantu kami membantu kamu!</string>
-  <string name="venom_dialog_message">Jika kamu menemukan bug dengan setelan ini, laporkan di laman seksi Bug Reports Google+ kami. Kamu HARUS memasukan ini ketika melapor sebuah bug:\n\n1. Logcat atau last_kmsg\n2. Kernel dan modif lain\n3. Informasi berguna\n\nJika kamu gagal melaporkan sesuatu dengan jelas, JANGAN harap masalah dapat diperbaiki.</string>
-  <string name="venom_dialog_toast">BACA KESELURUHAN!</string>
   <!-- Power Menu -->
   <string name="power_category">Pilihan menu power</string>
   <string name="actions_category">Item menu power</string>
@@ -491,5 +483,4 @@
   <string name="data_disabled_icon_summary">Menampilkan tanda silang di sebelah bar sinyal saat data dinonaktifkan</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
-  <!-- Maintainer section -->
 </resources>

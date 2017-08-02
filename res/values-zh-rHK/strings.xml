@@ -18,7 +18,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About Viper -->
   <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -28,7 +27,6 @@
   <!-- Tabs -->
   <!-- Category -->
   <string name="lockscreen_weather_title">天氣</string>
-  <!-- Dialog -->
   <!-- Power Menu -->
   <string name="powermenu_screenshot">螢幕截圖</string>
   <string name="powermenu_reboot">重新啟動</string>
@@ -415,5 +413,4 @@
   <string name="data_disabled_icon_summary">當數據停用時，不顯示圖示旁邊的「×」圖示</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
-  <!-- Maintainer section -->
 </resources>

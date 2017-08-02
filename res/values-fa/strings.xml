@@ -18,7 +18,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About Viper -->
   <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -27,11 +26,11 @@
   <!-- OTA -->
   <!-- Tabs -->
   <!-- Category -->
-  <!-- Dialog -->
   <!-- Power Menu -->
   <!-- Advanced reboot options -->
   <!-- Color Picker -->
   <!-- Status bar -->
+  <string name="status_bar_quick_qs_pulldown_off">خاموش</string>
   <!-- Status bar - Clock -->
   <!--Status bar date -->
   <!-- Status bar - Battery -->
@@ -46,6 +45,7 @@
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
   <!-- Headers -->
+  <string name="status_bar_header_title">سربرگ ها</string>
   <!-- OmniJaws -->
   <!-- Recents panel settings -->
   <!-- Custom carrier label and position -->
@@ -94,5 +94,4 @@
   <!-- Data disabled icon -->
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
-  <!-- Maintainer section -->
 </resources>

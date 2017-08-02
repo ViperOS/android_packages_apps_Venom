@@ -22,10 +22,6 @@
   <string name="changelog_viper_title">Modifiche</string>
   <string name="changelog_viper_summary">Visualizza le ultime modifiche della ROM</string>
   <string name="changelog_viper_error">Impossibile caricare le modifiche</string>
-  <!-- Maintainers -->
-  <string name="maintainers_viper_title">Dispositivi e manutentori</string>
-  <string name="maintainers_viper_summary">Elenco dei dispositivi supportati e dei loro manutentori ufficiali</string>
-  <string name="maintainers_viper_error">Impossibile caricare l\'elenco dispositivi e manutentori</string>
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -50,10 +46,6 @@
   <string name="lockscreen_weather_title">Meteo</string>
   <string name="lockscreen_misc_title">Varie</string>
   <string name="sound_and_notifications_category">Suoni e notifiche</string>
-  <!-- Dialog -->
-  <string name="venom_dialog_title">Aiutaci ad aiutarti!</string>
-  <string name="venom_dialog_message">Se trovate un bug con una qualsiasi di queste impostazioni, post nella sezione Bug report della nostra pagina Google +. È necessario includere il seguente quando la pubblicazione di un report di bug: \n\n1. Un logcat o last_kmsg\n2. Used\n3 del kernel e mods. Information\n\nIf utile non si riesce a segnalare qualcosa adeguatamente, non aspettatevi cose per essere risolto.</string>
-  <string name="venom_dialog_toast">LEGGI TUTTO!</string>
   <!-- Power Menu -->
   <string name="power_category">Opzioni menù alimentazione</string>
   <string name="actions_category">Elementi menù alimentazione</string>
@@ -505,5 +497,4 @@
   <string name="data_disabled_icon_summary">Mostra una X accanto alla barra del segnale quando i dati sono disabilitati</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
-  <!-- Maintainer section -->
 </resources>

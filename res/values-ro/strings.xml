@@ -18,7 +18,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About Viper -->
   <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -28,7 +27,6 @@
   <!-- Tabs -->
   <!-- Category -->
   <string name="lockscreen_weather_title">Meteo</string>
-  <!-- Dialog -->
   <!-- Power Menu -->
   <string name="powermenu_screenshot">Captură ecran</string>
   <string name="powermenu_reboot">Repornire</string>
@@ -297,5 +295,4 @@
   <!-- Data disabled icon -->
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
-  <!-- Maintainer section -->
 </resources>

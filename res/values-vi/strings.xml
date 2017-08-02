@@ -22,10 +22,6 @@
   <string name="changelog_viper_title">Nhật kí cập nhật</string>
   <string name="changelog_viper_summary">Xem các thay đổi gần đây trong ROM</string>
   <string name="changelog_viper_error">Không thể tải các thay đổi</string>
-  <!-- Maintainers -->
-  <string name="maintainers_viper_title">Các thiết bị và người duy trì</string>
-  <string name="maintainers_viper_summary">Danh sách các thiết bị và người duy trì RR-OS chính thức</string>
-  <string name="maintainers_viper_error">Không thể nạp danh sách thiết bị và maintainers</string>
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -50,10 +46,6 @@
   <string name="lockscreen_weather_title">Thời tiết</string>
   <string name="lockscreen_misc_title">Khác</string>
   <string name="sound_and_notifications_category">Thông báo âm thanh </string>
-  <!-- Dialog -->
-  <string name="venom_dialog_title">Giúp chúng tôi, giúp bạn!!</string>
-  <string name="venom_dialog_message">Nếu bạn tìm thấy một lỗi với bất kỳ của các cài đặt, đăng bài trong phần báo cáo lỗi của trang Google + của chúng tôi. Bạn phải bao gồm những điều sau đây khi đăng một báo cáo lỗi: \n\n1. Logcat hoặc last_kmsg\n2. Hạt nhân và các mods used\n3. Information\n\nIf hữu ích bạn không báo cáo một cái gì đó đầy đủ, không mong đợi những thứ được cố định.</string>
-  <string name="venom_dialog_toast">ĐỌC TOÀN BỘ ĐIỀU!</string>
   <!-- Power Menu -->
   <string name="power_category">Tuỳ chọn menu nguồn</string>
   <string name="actions_category">Tuỳ chọn menu nguồn</string>
@@ -468,5 +460,4 @@
   <string name="data_disabled_icon_summary">Hiển thị các dấu hiệu chéo bên cạnh thanh tín hiệu khi dữ liệu bị vô hiệu hóa</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
-  <!-- Maintainer section -->
 </resources>

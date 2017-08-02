@@ -22,10 +22,6 @@
   <string name="changelog_viper_title">История изменений</string>
   <string name="changelog_viper_summary">Просмотреть изменения в прошивке</string>
   <string name="changelog_viper_error">Ошибка загрузки списка изменений</string>
-  <!-- Maintainers -->
-  <string name="maintainers_viper_title">Устройства и разработчики</string>
-  <string name="maintainers_viper_summary">Список устройств и людей, поддерживающих эти устройства</string>
-  <string name="maintainers_viper_error">Ошибка загрузки список устройств и людей, поддерживающих эти устройства</string>
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -50,10 +46,6 @@
   <string name="lockscreen_weather_title">Погода</string>
   <string name="lockscreen_misc_title">Прочее</string>
   <string name="sound_and_notifications_category">Звуки и уведомления</string>
-  <!-- Dialog -->
-  <string name="venom_dialog_title">Помогите нам помочь вам!</string>
-  <string name="venom_dialog_message">Если Вы найдете ошибку в любых из этих настроек, сообщите в разделе багрепортов на нашей странице Google+. Вы ДОЛЖНЫ прикрепить следующее:\n\n 1. Logcat или last_kmsg\n2. используемое ядро и моды\n3. Любую полезную информацию.\n\n Если Вы не сможете адекватно сообщить о проблеме, не ждите, что мы её исправим.</string>
-  <string name="venom_dialog_toast">ПРОЧИТАЙТЕ ЭТО ПОЛНОСТЬЮ!</string>
   <!-- Power Menu -->
   <string name="power_category">Настройка меню выключения</string>
   <string name="actions_category">Пункты меню выключения</string>
@@ -505,5 +497,4 @@
   <string name="data_disabled_icon_summary">Показывать крест над значком сети, когда передача данных отключена</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
-  <!-- Maintainer section -->
 </resources>

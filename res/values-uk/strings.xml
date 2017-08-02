@@ -20,7 +20,6 @@
   <string name="about_viper">Про Viper</string>
   <!-- Changelog -->
   <string name="changelog_viper_title">Звіт змін</string>
-  <!-- Maintainers -->
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -33,8 +32,6 @@
   <!-- Category -->
   <string name="battery_title">Стан батереї</string>
   <string name="lockscreen_weather_title">Погода</string>
-  <!-- Dialog -->
-  <string name="venom_dialog_toast">ПРОЧИТАЙТЕ ВСЕ!</string>
   <!-- Power Menu -->
   <string name="powermenu_screenshot">Знімок екрану</string>
   <string name="powermenu_reboot">Перезавантажити</string>
@@ -416,5 +413,4 @@
   <string name="data_disabled_icon_summary">Відображення хрестика поруч з рівнем сигналу, коли дані вимкнуто</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
-  <!-- Maintainer section -->
 </resources>

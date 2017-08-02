@@ -18,7 +18,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About Viper -->
   <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -34,7 +33,6 @@
   <string name="buttons_title">Barre de navigation et boutons physiques</string>
   <string name="statusbar_clock_title">Heure &amp; Date</string>
   <string name="lockscreen_weather_title">Prévisions Météo</string>
-  <!-- Dialog -->
   <!-- Power Menu -->
   <string name="powermenu_screenshot">Capture d\'écran</string>
   <string name="powermenu_reboot">Redémarrer</string>
@@ -390,5 +388,4 @@
   <string name="data_disabled_icon_summary">Afficher une croix à côté du signal lorsque les données sont désactivées </string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
-  <!-- Maintainer section -->
 </resources>

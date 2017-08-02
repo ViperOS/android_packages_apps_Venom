@@ -17,23 +17,66 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About Viper -->
+  <string name="about_viper">O Viperu</string>
   <!-- Changelog -->
-  <!-- Maintainers -->
+  <string name="changelog_viper_title">Popis promjena</string>
+  <string name="changelog_viper_summary">Pogledajte nedavne promjene ROM-a</string>
+  <string name="changelog_viper_error">Nije moguće učitati popis promjena</string>
   <!-- Website -->
+  <string name="website_viper_title">Centar za preuzimanja</string>
+  <string name="website_viper_summary">Posjetite naš portal za preuzimanja</string>
   <!-- Google+ -->
+  <string name="google_plus_viper_title">Google+</string>
+  <string name="google_plus_viper_summary">Pridružite se našoj G+ zajednici</string>
   <!-- Telegram -->
+  <string name="telegram_viper_title">Telegram</string>
+  <string name="telegram_viper_summary">Pretplatite se na naš Telegram kanal</string>
   <!-- Github -->
+  <string name="github_viper_title">Github</string>
+  <string name="github_viper_summary">Pogledajte naš izvorni kôd</string>
   <!-- Crowdin -->
+  <string name="crowdin_viper_title">Prijevodi</string>
+  <string name="crowdin_viper_summary">Prevedite na Vaš jezik, posjetite naš Crowdin</string>
   <!-- OTA -->
+  <string name="ota_viper_title">Ažuriranja sustava</string>
+  <string name="ota_viper_summary">Nabavite najnoviju inačicu ViperOS-a</string>
   <!-- Tabs -->
+  <string name="about_category">Informacije</string>
+  <string name="system_category">Sustav</string>
+  <string name="statusbar_category">Statusna traka</string>
   <!-- Category -->
+  <string name="battery_title">Baterija</string>
+  <string name="buttons_title">Navigacijska traka i hardverske tipke</string>
+  <string name="statusbar_clock_title">Sat i datum</string>
+  <string name="statusbar_items_title">Stavke statusne trake</string>
+  <string name="quicksettings_title">Brze postavke</string>
+  <string name="traffic_category">Pokazatelji prometa</string>
+  <string name="recents_title">Zaslon nedavnih aplikacija</string>
+  <string name="carrierlabel_title">Naziv operatera</string>
+  <string name="lockscreen_ui_title">Zaslon zaključavanja</string>
   <string name="lockscreen_weather_title">Vrijeme</string>
-  <!-- Dialog -->
+  <string name="lockscreen_misc_title">Razno</string>
+  <string name="sound_and_notifications_category">Zvuk i obavijesti</string>
   <!-- Power Menu -->
   <string name="powermenu_screenshot">Snimka zaslona</string>
+  <string name="powermenu_power">Isključi</string>
   <string name="powermenu_reboot">Ponovno pokreni</string>
+  <string name="powermenu_airplane">Zrakoplovni način</string>
+  <string name="powermenu_settings">Postavke</string>
   <!-- Advanced reboot options -->
+  <string name="advanced_reboot_dialog_title">Napredne opcije izbornika za ponovno pokretanje</string>
+  <string name="advanced_reboot_disabled">Onemogući</string>
+  <string name="advanced_reboot_hide_on_keyguard">Sakrij na zaslonu zaključavanja</string>
+  <string name="advanced_reboot_show_always">Uvijek prikaži</string>
   <!-- Color Picker -->
+  <string name="dialog_color_picker">Birač boja</string>
+  <string name="press_color_to_apply">Pritisnite na boju ispod za primjenu</string>
+  <string name="arrow_right">→</string>
+  <string name="arrow_down">↓</string>
+  <string name="hex">Hex:</string>
+  <string name="hex_hint">#ff000000</string>
+  <string name="set">Postavi</string>
+  <string name="color_default">Zadano</string>
   <string name="default_string">Zadano</string>
   <!-- Status bar -->
   <string name="status_bar_toggle_brightness">Kontrola svjetline</string>
@@ -48,8 +91,10 @@
   <string name="status_bar_quick_qs_pulldown_left">Lijevi</string>
   <string name="status_bar_quick_qs_pulldown_right">Desni</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_title">Stil sata</string>
   <string name="status_bar_clock_position_right">Desni</string>
   <string name="status_bar_clock_position_left">Lijevi</string>
+  <string name="status_bar_clock_position_center">Centar</string>
   <string name="status_bar_am_pm_title">AM/PM stil</string>
   <string name="status_bar_am_pm_info">Omogućeno je 24-satno vrijeme</string>
   <string name="status_bar_am_pm_normal">Normalno</string>
@@ -69,11 +114,14 @@
   <string name="status_bar_date_format_custom">Prilagođeni java format</string>
   <string name="status_bar_date_string_edittext_title">Mora biti u obliku datuma npr. MM.DD.GG</string>
   <string name="status_bar_date_string_edittext_summary">Unesite niz znakova</string>
+  <string name="menu_save">Spremi</string>
+  <string name="menu_cancel">Odbaci</string>
   <!-- Status bar - Battery -->
   <string name="status_bar_battery_style_title">Stil baterije u statusnoj traci</string>
   <string name="status_bar_battery_style_icon_portrait">Ikona u portretu</string>
   <string name="status_bar_battery_style_icon_landscape">Ikona u pejzažu</string>
   <string name="status_bar_battery_style_circle">Krug</string>
+  <string name="status_bar_battery_style_bigcircle">Veliki krug</string>
   <string name="status_bar_battery_style_solid">Puna</string>
   <string name="status_bar_battery_style_text">Tekst</string>
   <string name="status_bar_battery_style_hidden">Skriveno</string>
@@ -155,22 +203,29 @@
   <string name="power_menu_users_title">Prebacivanje korisnika</string>
   <string name="power_menu_settings_title">Prečac postavki</string>
   <string name="power_menu_lockdown_title">Zaključavanje uređaja</string>
+  <string name="power_menu_bug_report_title">Prijava greške</string>
   <string name="power_menu_sound_title">Ploča glasnoće</string>
   <string name="volume_keys_control_ring_stream_title">Kontrola glasnoće zvona</string>
   <string name="volume_keys_control_ring_stream_summary_on">Tipke za glasnoću kontroliraju glasnoću zvona</string>
   <string name="volume_keys_control_ring_stream_summary_off">Tipke za glasnoću kontroliraju glasnoću medija</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Brzo otvorite fotoaparat bez otključavanja zaslona</string>
+  <string name="torch_long_press_power_gesture_title">Svjetiljka na zaslonu zaključavanja</string>
   <string name="torch_long_press_power_timeout_never">Nikad</string>
   <string name="torch_long_press_power_timeout_1_minute">1 minuta</string>
+  <string name="torch_long_press_power_timeout_2_minutes">2 minute</string>
   <string name="torch_long_press_power_timeout_5_minutes">5 minuta</string>
   <string name="torch_long_press_power_timeout_10_minutes">10 minuta</string>
   <!-- Navbar Animation -->
+  <string name="pixel_navbar_anim_title">Pixel animacija navigacijske trake</string>
   <!-- Quick settings tiles -->
+  <string name="qs_tiles_category">Pločice</string>
+  <string name="sysui_qqs_count_title">Male pločice brzih postavki</string>
   <string name="qs_rows_portrait_title">Redci (portret)</string>
   <string name="qs_rows_landscape_title">Redci (pejzaž)</string>
   <string name="qs_columns_title">Stupci</string>
   <!-- Headers -->
+  <string name="status_bar_header_title">Zaglavlja</string>
   <string name="status_bar_custom_header_title">Prilagođena slika u zaglavlju</string>
   <string name="status_bar_custom_header_summary">Omogućite sliku zaglavlja u ploči obavijesti</string>
   <string name="daylight_header_pack_title">Paket slika zaglavlja</string>
@@ -183,9 +238,13 @@
   <string name="custom_header_browse_title">Pregledaj instalirana zaglavlja</string>
   <string name="custom_header_browse_summary">Pritisnite i držite bilo koju sliku da biste je upotrebljavali u statičnom načinu.</string>
   <!-- OmniJaws -->
+  <string name="omnijaws_settings_title">OmniJaws</string>
+  <string name="omnijaws_settings_summary">Prilagodi pločicu vremenske prognoze</string>
   <string name="weather_config_title">Postavke usluge</string>
+  <string name="weather_config_summary">Postavi uslugu</string>
   <string name="weather_icon_pack_title">Paket ikona za prognozu</string>
   <!-- Recents panel settings -->
+  <string name="recents_default_category">Nedavno</string>
   <string name="show_clear_all_recents_button_title">Gumb za čišćenje svih aplikacija</string>
   <string name="show_clear_all_recents_button_summary">Prikaz gumba za čišćenje svih aplikacija</string>
   <string name="recents_clear_all_location_title">Lokacija gumba za čišćenje</string>
@@ -196,6 +255,7 @@
   <string name="recents_clear_all_location_bottom_left">Dolje lijevo</string>
   <string name="recents_clear_all_location_bottom_center">Dolje u sredini</string>
   <!-- Custom carrier label and position -->
+  <string name="carrier_label_settings_title">Naziv operatera</string>
   <string name="custom_carrier_label_title">Prilagođeni naziv operatera</string>
   <string name="custom_carrier_label_explain">Unesite novi naziv. Ostavite prazno za povratak na zadani naziv.</string>
   <string name="custom_carrier_label_notset">Prilagođeni naziv trenutno nije postavljen</string>
@@ -226,6 +286,7 @@
   <string name="weather_hide_panel_never_summary">Vremenska se ploča neće skrivati</string>
   <string name="weather_number_of_notifications_title">Broj obavijesti</string>
   <string name="weather_icon_pack_title">Paket ikona za prognozu</string>
+  <string name="lock_clock_title">Usluga vremenske prognoze</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">Mrežni promet</string>
   <string name="show_network_traffic_state">Praćenje prometa u statusnoj traci</string>
@@ -244,10 +305,12 @@
   <string name="network_traffic_autohide">Automatski sakrij</string>
   <string name="network_traffic_autohide_summary">Sakriva praćenje prometa kada nema aktivnosti.</string>
   <string name="network_traffic_autohide_threshold">Prag neaktivnosti</string>
+  <string name="network_traffic_hidearrow">Sakrij strelice</string>
   <string name="network_traffic_hidearrow_summary">Sakriva strelice u pokazivačima prometa.</string>
   <!-- Battery Tile -->
   <string name="status_bar_battery_style_tile_summary">Omogućite za postavljanje istog stila ikone koji ste odabrali za bateriju u statusnoj traci</string>
   <!-- Quick Settings brightness slider -->
+  <string name="qs_misc_category">Razno</string>
   <string name="qs_brightness_slider_title">Klizač svjetline</string>
   <string name="qs_brightness_slider_summary">Prikaži klizač svjetline na ploči brzih obavijesti</string>
   <!-- Quick Settings brightness icon -->
@@ -260,6 +323,15 @@
   <string name="hw_keys_title">Hardverske tipke</string>
   <string name="hw_keys_summary">Omogućite hardverske tipke</string>
   <!-- Navbar Dimensions -->
+  <string name="navigation_bar_size_36_dp">36 dp</string>
+  <string name="navigation_bar_size_30_dp">30 dp</string>
+  <string name="navigation_bar_size_24_dp">24 dp</string>
+  <string name="navigation_bar_size_52_dp">52 dp</string>
+  <string name="navigation_bar_size_48_dp_default">48 dp (zadano)</string>
+  <string name="navigation_bar_size_44_dp">44 dp</string>
+  <string name="navigation_bar_size_40_dp">40 dp</string>
+  <string name="navigation_bar_size_42_dp">42 dp</string>
+  <string name="navigation_bar_size_0_dp">0 dp (isključeno)</string>
   <!-- Navbar dynamic color -->
   <string name="nav_bar_dynamic_title">Dinamična boja navigacijske trake</string>
   <string name="nav_bar_dynamic_summary">Omogućite ili onemogućite ovo da bi se navigacijska traka prilagođavala aplikacijama primarno tamne boje. Ponovno pokrenite željenu aplikaciju da biste vidjeli učinak</string>
@@ -270,7 +342,10 @@
   <string name="lockscreen_battery_info_title">Informacije o bateriji na zaklj. zaslonu</string>
   <string name="lockscreen_battery_info_summary">Prikazuje maksimalni i trenutni napon punjača i temperaturu baterije na zaključanom zaslonu tijekom punjenja.</string>
   <!-- ViperOS Logo -->
+  <string name="status_bar_viper_logo_title">Logo</string>
+  <string name="status_bar_viper_logo_color">Boja logotipa</string>
   <string name="status_bar_logo">Logotip ViperOSa</string>
+  <string name="status_bar_viper_logo_position">Lokacija logotipa</string>
   <string name="status_bar_logo_position_right">Desno</string>
   <string name="status_bar_logo_position_left">Lijevo</string>
   <string name="status_bar_logo_position_center">Sredina</string>
@@ -291,7 +366,10 @@
   <string name="double_tap_sleep_anywhere_title">Dodir za spavanje</string>
   <string name="double_tap_sleep_anywhere_summary">Dvaput dodirnite bilo gdje na zaključanom zaslonu za zaključavanje uređaja.</string>
   <!-- Lockscreen categories -->
+  <string name="lockscreen_misc_category">Razno</string>
   <!-- Other system settings category -->
+  <string name="misc_category">Razno</string>
+  <string name="other_settings">Ostale postavke</string>
   <!-- Other system settings category -->
   <string name="sound_category">Zvuk</string>
   <!-- Wired headset ringtone audio focus -->
@@ -343,6 +421,7 @@
   <string name="heads_up_snooze_15min">15 minuta</string>
   <string name="heads_up_snooze_20min">20 minuta</string>
   <!-- Quick settings on secure lockscreen -->
+  <string name="lockscreen_enable_qs_title">Brze postavke</string>
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Sakrij statusnu traku</string>
   <string name="lockscreen_hide_status_bar_summary">Promijenite vidljivost statusne trake na zaključanom zaslonu. Dodirnite vrh za prikaz statusne trake.</string>
@@ -383,5 +462,5 @@
   <string name="data_disabled_icon_summary">Prikazuje križić pokraj trake sa signalom kad su podaci onemogućeni.</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
-  <!-- Maintainer section -->
+  <string name="lockscreen_blur_enabled_summary">Omogući zamagljivanje na zaslonu zaključavanja</string>
 </resources>

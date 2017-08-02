@@ -18,7 +18,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About Viper -->
   <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -34,8 +33,6 @@
   <string name="recents_title">Tela de Recents</string>
   <string name="lockscreen_ui_title">Ecrã de bloqueio</string>
   <string name="lockscreen_weather_title">Meteorologia</string>
-  <!-- Dialog -->
-  <string name="venom_dialog_toast">LEIA TUDO!</string>
   <!-- Power Menu -->
   <string name="powermenu_screenshot">Captura de ecrã</string>
   <string name="powermenu_power">Ligar</string>
@@ -421,5 +418,4 @@
   <string name="data_disabled_icon_summary">Mostrar um X junto do ícone de rede quando os dados estiverem desligados</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
-  <!-- Maintainer section -->
 </resources>

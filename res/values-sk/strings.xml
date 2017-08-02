@@ -22,10 +22,6 @@
   <string name="changelog_viper_title">Zoznam zmien</string>
   <string name="changelog_viper_summary">Zobraziť najnovšie zmeny v ROM</string>
   <string name="changelog_viper_error">Nie je možné načítať zoznam zmien</string>
-  <!-- Maintainers -->
-  <string name="maintainers_viper_title">Zariadenia a správcovia</string>
-  <string name="maintainers_viper_summary">Zoznam podporovaných zariadení a ich oficiálni správcovia</string>
-  <string name="maintainers_viper_error">Nedá sa načítať zoznam zariadení a správcov</string>
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -50,10 +46,6 @@
   <string name="lockscreen_weather_title">Počasie</string>
   <string name="lockscreen_misc_title">Rôzne</string>
   <string name="sound_and_notifications_category">Zvuk a upozornenia</string>
-  <!-- Dialog -->
-  <string name="venom_dialog_title">Pomôžte nám, pomôžeme vám!</string>
-  <string name="venom_dialog_message">Pokiaľ nájdete chybu v niektorom z týchto nastavení, popíšte chybu na našej stránke G+/Reports. Správa musí obsahovať nasledujúce:\n\n1. Logcat alebo last_kmsg\n2. Jadro a používané vylepšenia\n3. Užitočné informácie\n\nPokiaľ niečo nenahlásite adekvátne, NEČAKAJTE, že chyby budú opravené.</string>
-  <string name="venom_dialog_toast">ČÍTAJTE DO KONCA!</string>
   <!-- Power Menu -->
   <string name="power_category">Možnosti ponuky tlačidla Napájanie</string>
   <string name="actions_category">Položky ponuky tlačidla Napájanie</string>
@@ -505,5 +497,4 @@
   <string name="data_disabled_icon_summary">Zobraziť znak X na ikone signálu siete, keď sú dáta zakázané</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
-  <!-- Maintainer section -->
 </resources>

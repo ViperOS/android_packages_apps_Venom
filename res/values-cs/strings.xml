@@ -22,16 +22,24 @@
   <string name="changelog_viper_title">Seznam změn</string>
   <string name="changelog_viper_summary">Zobrazit nedávné změny v ROM</string>
   <string name="changelog_viper_error">Chyba při načítání seznamu změn</string>
-  <!-- Maintainers -->
-  <string name="maintainers_viper_title">Zařízení a správci</string>
-  <string name="maintainers_viper_summary">Seznam podporovaných zařízení a jejich oficiální správci</string>
-  <string name="maintainers_viper_error">Nelze načíst seznam zařízení a správců</string>
   <!-- Website -->
+  <string name="website_viper_title">Centrum stahování</string>
+  <string name="website_viper_summary">Navštivte náš portál pro stahování</string>
   <!-- Google+ -->
+  <string name="google_plus_viper_title">Google+</string>
+  <string name="google_plus_viper_summary">Připoj se k naší G+ komunitě</string>
   <!-- Telegram -->
+  <string name="telegram_viper_title">Telegram</string>
+  <string name="telegram_viper_summary">Odebírejte náš Telegram kanál</string>
   <!-- Github -->
+  <string name="github_viper_title">Github</string>
+  <string name="github_viper_summary">Zobrazit náš zdrojový kód</string>
   <!-- Crowdin -->
+  <string name="crowdin_viper_title">Překlady</string>
+  <string name="crowdin_viper_summary">Přeložte do svého jazyka, navštivte náš Crowdin</string>
   <!-- OTA -->
+  <string name="ota_viper_title">Aktualizace systému</string>
+  <string name="ota_viper_summary">Získejte nejnovější verzi ViperOS</string>
   <!-- Tabs -->
   <string name="about_category">O aplikaci</string>
   <string name="system_category">Systém</string>
@@ -50,10 +58,6 @@
   <string name="lockscreen_weather_title">Počasí</string>
   <string name="lockscreen_misc_title">Různé</string>
   <string name="sound_and_notifications_category">Zvuky a upozornění</string>
-  <!-- Dialog -->
-  <string name="venom_dialog_title">Pomozte nám, pomůžem vám!</string>
-  <string name="venom_dialog_message">Pokud najdete chybu v některém z těchto nastavení, popište chybu na naší stránce G+/Reports. Zpráva musí obsahovat následující:\n\n1. Logcat nebo last_kmsg\n2. Jádro a používané vylepšení\n3. Užitečné informace\n\nPokud se něco nepodaří nahlásit adekvátně, NEČEKEJTE, že chyby budou opraveny.</string>
-  <string name="venom_dialog_toast">ČTĚTE DO KONCE!</string>
   <!-- Power Menu -->
   <string name="power_category">Možnosti nabídky tlačítka Vypnout</string>
   <string name="actions_category">Položky nabídky tlačítka Vypnout</string>
@@ -189,6 +193,7 @@
   <string name="home_answer_call_summary">Stiskem tlačítka „Domů“ bude hovor přijat</string>
   <string name="kill_app_longpress_back">Ukončení aplikace tlačítkem zpět</string>
   <string name="kill_app_longpress_back_summary">Násilné ukončení aplikace dlouhým stiskem tlačítka zpět</string>
+  <string name="kill_app_longpress_back_delay">Prodleva \'zabití\' aplikace</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Podsvícení</string>
   <string name="button_backlight_enabled">Podsvícení tlačítek</string>
@@ -220,7 +225,9 @@
   <string name="power_menu_users_title">Přepnutí uživatele</string>
   <string name="power_menu_settings_title">Zástupce nastavení</string>
   <string name="power_menu_lockdown_title">Uzamčení zařízení</string>
+  <string name="power_menu_bug_report_title">Hlášení o chybě</string>
   <string name="power_menu_sound_title">Panel hlasitosti</string>
+  <string name="power_menu_bug_report_disabled">Hlášení chyb je zakázáno ve vývojářském nastavení</string>
   <string name="volume_keys_control_ring_stream_title">Ovládání hlasitost vyzvánění</string>
   <string name="volume_keys_control_ring_stream_summary_on">Tlačítka hlasitosti ovládají hlasitost vyzvánění</string>
   <string name="volume_keys_control_ring_stream_summary_off">Tlačítka hlasitosti ovládají hlasitost médií</string>
@@ -370,6 +377,7 @@
   <string name="lockscreen_battery_info_title">Informace o baterii na zamykací obrazovce</string>
   <string name="lockscreen_battery_info_summary">Zobrazit maximální proud, napětí a teplotu baterie při nabíjení na zamykací obrazovce</string>
   <!-- ViperOS Logo -->
+  <string name="status_bar_viper_logo_title">Logo</string>
   <string name="status_bar_viper_logo_summary">Povolení zobrazení loga Viper ve stavové liště</string>
   <string name="status_bar_viper_logo_color">Barva loga</string>
   <string name="status_bar_logo">ViperOS logo</string>
@@ -504,6 +512,9 @@
   <string name="data_disabled_icon_title">Zobrazit ikonu při vypnutí dat</string>
   <string name="data_disabled_icon_summary">Zobrazit křížek na ikoně signálu sítě při vypnutých datech</string>
   <!-- Light buttons on touch -->
+  <string name="button_light_press_title">Rozsvícení tlačítek při dotyku</string>
+  <string name="button_light_press_summary_off">Tlačítka se rozsvítí vždy, když se dotknete obrazovky.</string>
+  <string name="button_light_press_summary_on">Tlačítka se rozsvítí pouze při dotyku.</string>
   <!-- Lockscreen blur summary -->
-  <!-- Maintainer section -->
+  <string name="lockscreen_blur_enabled_summary">Povolit rozostření na zamykací obrazovce</string>
 </resources>

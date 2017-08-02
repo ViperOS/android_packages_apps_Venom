@@ -18,7 +18,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About Viper -->
   <!-- Changelog -->
-  <!-- Maintainers -->
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -31,7 +30,6 @@
   <string name="battery_title">Akku</string>
   <string name="lockscreen_weather_title">Wetter</string>
   <string name="lockscreen_misc_title">Sonstiges</string>
-  <!-- Dialog -->
   <!-- Power Menu -->
   <string name="powermenu_screenshot">Screenshot</string>
   <string name="powermenu_reboot">Neustart</string>
@@ -389,5 +387,4 @@
   <string name="data_disabled_icon_summary">Zeige das Kreuzzeichen neben dem Signalbalken wenn Mobile Daten ausgeschaltet sind</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
-  <!-- Maintainer section -->
 </resources>

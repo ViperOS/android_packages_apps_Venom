@@ -22,10 +22,6 @@
   <string name="changelog_viper_title">บันทึกการเปลี่ยนแปลง</string>
   <string name="changelog_viper_summary">ดูการเปลี่ยนแปลงล่าสุดใน ROM</string>
   <string name="changelog_viper_error">ไม่สามารถโหลดเนื้อเรื่องได้</string>
-  <!-- Maintainers -->
-  <string name="maintainers_viper_title">อุปกรณ์และผู้ดูแล</string>
-  <string name="maintainers_viper_summary">รายการของอุปกรณ์ที่รองรับและผู้ดูแลของพวกเขาอย่างเป็นทางการ</string>
-  <string name="maintainers_viper_error">ไม่สามารถโหลดรายการอุปกรณ์และผู้ดูแล</string>
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -47,7 +43,6 @@
   <string name="recents_title">รายการล่าสุด</string>
   <string name="carrierlabel_title">ป้ายชื่อผู้ให้บริการ</string>
   <string name="lockscreen_weather_title">สภาพอากาศ</string>
-  <!-- Dialog -->
   <!-- Power Menu -->
   <string name="powermenu_screenshot">ภาพหน้าจอ</string>
   <string name="powermenu_reboot">เริ่มระบบใหม่</string>
@@ -239,5 +234,4 @@
   <!-- Data disabled icon -->
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
-  <!-- Maintainer section -->
 </resources>

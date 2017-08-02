@@ -22,10 +22,6 @@
   <string name="changelog_viper_title">Registro de cambios</string>
   <string name="changelog_viper_summary">Ver cambios recientes de la ROM</string>
   <string name="changelog_viper_error">Imposible cargar el registro de cambios</string>
-  <!-- Maintainers -->
-  <string name="maintainers_viper_title">Dispositivos y mantenedores</string>
-  <string name="maintainers_viper_summary">Lista de dispositivos soportados y sus mantenedores oficiales</string>
-  <string name="maintainers_viper_error">No se puede cargar la lista de dispositivos y mantenedores</string>
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -50,10 +46,6 @@
   <string name="lockscreen_weather_title">Tiempo</string>
   <string name="lockscreen_misc_title">Misceláneo</string>
   <string name="sound_and_notifications_category">Sonido y notificaciones</string>
-  <!-- Dialog -->
-  <string name="venom_dialog_title">¡Ayúdanos a ayudarte!</string>
-  <string name="venom_dialog_message">SI usted encuentra algún error con algúno de estas configuraciones, posteelo en la sección de Reportes de Bugs en nuestra página de Google+. Usted DEBERÁ incluir lo siguiente cuando postee un reporte de Bug:\n\n1. El log o last_kmsg\n2. Kernel y modificaciones usadas\n3. Información útil\n\nsi usted falla al reportar algo adecuadamente, NO ESPERE que las cosas sean arregladas.</string>
-  <string name="venom_dialog_toast">¡LEA TODO!</string>
   <!-- Power Menu -->
   <string name="power_category">Opciones del menú de apagado</string>
   <string name="actions_category">Elementos del menú de apagado</string>
@@ -505,5 +497,4 @@
   <string name="data_disabled_icon_summary">Mostrar el símbolo de una cuz junto a la barra de señal cuando se deshabilitan los datos</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
-  <!-- Maintainer section -->
 </resources>
