@@ -55,7 +55,7 @@ import okhttp3.Response;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 
-public class Maintainers extends SettingsPreferenceFragment {
+public class OfficialDevices extends SettingsPreferenceFragment {
 
     private final String TAG = this.getClass().getSimpleName();
     private static final String REQUEST_TAG = "loadDeviceList";
@@ -72,7 +72,7 @@ public class Maintainers extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
-        addPreferencesFromResource(R.xml.device_maintainers);
+        addPreferencesFromResource(R.xml.official_devices);
         prefScreen = getPreferenceScreen();
         sharedPreferences = getActivity().getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
         httpClient = new OkHttpClient.Builder()
@@ -227,12 +227,11 @@ public class Maintainers extends SettingsPreferenceFragment {
                     SortedSet<String> devices_sorted = new TreeSet<>(devices.keySet());
                     for (final String name : devices_sorted) {
                         final String codename = devices.get(name).get("codename");
-                        final String maintainer_name = devices.get(name).get("maintainer_name");
                         final String xda_thread = devices.get(name).get("xda_thread");
                         Preference devicePref = new Preference(prefScreen.getContext());
                         devicePref.setIcon(R.drawable.phone_tint);
                         devicePref.setTitle(name);
-                        devicePref.setSummary(codename + "\n" + String.format(getString(R.string.maintainer_description), maintainer_name));
+                        devicePref.setSummary(codename);
                         devicePref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                             @Override
                             public boolean onPreferenceClick(Preference preference) {
@@ -271,12 +270,10 @@ public class Maintainers extends SettingsPreferenceFragment {
                 String name = jsonObj.getString("name");
                 String brand = jsonObj.getString("brand");
                 String codename = jsonObj.getString("codename");
-                String maintainer_name = jsonObj.getString("maintainer_name");
                 String xda_thread = jsonObj.getString("xda_thread");
                 if (brand.equals(brand_)){
                     HashMap<String, String> vars = new HashMap<>();
                     vars.put("codename",codename);
-                    vars.put("maintainer_name",maintainer_name);
                     vars.put("xda_thread",xda_thread);
                     result.put(name,vars);
                 }

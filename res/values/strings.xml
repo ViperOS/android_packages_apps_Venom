@@ -24,10 +24,13 @@
     <string name="changelog_viper_summary">View recent changes in ROM</string>
     <string name="changelog_viper_error">Unable to load changelog</string>
 
-    <!-- Maintainers -->
-    <string name="maintainers_viper_title">Devices and maintainers</string>
-    <string name="maintainers_viper_summary">List of supported devices and their official maintainers</string>
-    <string name="maintainers_viper_error">Unable to load devices and maintainers list</string>
+    <!-- Official devices -->
+    <string name="official_devices_title">Official devices</string>
+    <string name="official_devices_summary">Officially supported devices</string>
+    <string name="loading_devices">Loading devices list...</string>
+    <string name="loading_devices_failed">Failed to load devices list</string>
+    <string name="devices_list_empty">List is empty, tap the icon to reload</string>
+    <string name="reload_list">Reload</string>
 
     <!-- Website -->
     <string name="website_viper_title">Download Center</string>
@@ -612,12 +615,5 @@
 
     <!-- Lockscreen blur summary -->
     <string name="lockscreen_blur_enabled_summary">Enable blur on lockscreen</string>
-
-    <!-- Maintainer section -->
-    <string name="maintainer_description">Maintainer: %1$s</string>
-    <string name="loading_devices">Loading devices list...</string>
-    <string name="loading_devices_failed">Failed to load devices list</string>
-    <string name="devices_list_empty">List is empty, tap the icon to reload</string>
-    <string name="reload_list">Reload</string>
 
 </resources>

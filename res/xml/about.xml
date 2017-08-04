@@ -84,13 +84,13 @@
         android:summary="@string/changelog_viper_summary"
         android:fragment="com.viper.venom.fragments.Changelog" />
 
-    <!-- Maintainers -->
+    <!-- Official devices -->
     <PreferenceScreen
-        android:key="viper_maintainers"
-        android:icon="@drawable/maintainers_icon"
-        android:title="@string/maintainers_viper_title"
-        android:summary="@string/maintainers_viper_summary"
-        android:fragment="com.viper.venom.fragments.Maintainers" />
+        android:key="viper_official_devices"
+        android:icon="@drawable/phone_tint"
+        android:title="@string/official_devices_title"
+        android:summary="@string/official_devices_summary"
+        android:fragment="com.viper.venom.fragments.OfficialDevices" />
 
     <!-- OTA -->
     <PreferenceScreen
