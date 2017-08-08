@@ -22,6 +22,7 @@
   <string name="changelog_viper_title">Nhật kí cập nhật</string>
   <string name="changelog_viper_summary">Xem các thay đổi gần đây trong ROM</string>
   <string name="changelog_viper_error">Không thể tải các thay đổi</string>
+  <!-- Official devices -->
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -460,4 +461,5 @@
   <string name="data_disabled_icon_summary">Hiển thị các dấu hiệu chéo bên cạnh thanh tín hiệu khi dữ liệu bị vô hiệu hóa</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
+  <!-- ANBI -->
 </resources>

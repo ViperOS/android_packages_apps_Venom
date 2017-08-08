@@ -18,6 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About Viper -->
   <!-- Changelog -->
+  <!-- Official devices -->
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -438,4 +439,5 @@
   <string name="data_disabled_icon_summary">Mobil veri devre dışı bırakıldığında sinyal çubuğunun yanında çapraz işaretini gösterin</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
+  <!-- ANBI -->
 </resources>

@@ -18,6 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About Viper -->
   <!-- Changelog -->
+  <!-- Official devices -->
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -381,4 +382,5 @@
   <string name="data_disabled_icon_summary">إعرض إشارة التقاطع بجانب شريط الإشارة عندما تكون البيانات معطّلة</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
+  <!-- ANBI -->
 </resources>

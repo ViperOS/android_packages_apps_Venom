@@ -18,6 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About Viper -->
   <!-- Changelog -->
+  <!-- Official devices -->
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -100,4 +101,5 @@
   <!-- Data disabled icon -->
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
+  <!-- ANBI -->
 </resources>

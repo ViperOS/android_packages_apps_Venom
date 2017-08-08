@@ -22,6 +22,7 @@
   <string name="changelog_viper_title">Popis promjena</string>
   <string name="changelog_viper_summary">Pogledajte nedavne promjene ROM-a</string>
   <string name="changelog_viper_error">Nije moguće učitati popis promjena</string>
+  <!-- Official devices -->
   <!-- Website -->
   <string name="website_viper_title">Centar za preuzimanja</string>
   <string name="website_viper_summary">Posjetite naš portal za preuzimanja</string>
@@ -49,6 +50,7 @@
   <string name="buttons_title">Navigacijska traka i hardverske tipke</string>
   <string name="statusbar_clock_title">Sat i datum</string>
   <string name="statusbar_items_title">Stavke statusne trake</string>
+  <string name="statusbar_misc_title">Statusna traka - razno</string>
   <string name="quicksettings_title">Brze postavke</string>
   <string name="traffic_category">Pokazatelji prometa</string>
   <string name="recents_title">Zaslon nedavnih aplikacija</string>
@@ -58,12 +60,16 @@
   <string name="lockscreen_misc_title">Razno</string>
   <string name="sound_and_notifications_category">Zvuk i obavijesti</string>
   <!-- Power Menu -->
+  <string name="power_category">Opcije izbornika isključivanja</string>
+  <string name="actions_category">Stavke izbornika isključivanja</string>
+  <string name="powermenu_category">Izbornik isključivanja</string>
   <string name="powermenu_screenshot">Snimka zaslona</string>
   <string name="powermenu_power">Isključi</string>
   <string name="powermenu_reboot">Ponovno pokreni</string>
   <string name="powermenu_airplane">Zrakoplovni način</string>
   <string name="powermenu_settings">Postavke</string>
   <!-- Advanced reboot options -->
+  <string name="advanced_reboot_title">Napredno ponovno pokretanje</string>
   <string name="advanced_reboot_dialog_title">Napredne opcije izbornika za ponovno pokretanje</string>
   <string name="advanced_reboot_disabled">Onemogući</string>
   <string name="advanced_reboot_hide_on_keyguard">Sakrij na zaslonu zaključavanja</string>
@@ -156,6 +162,8 @@
   <string name="hardware_keys_action_launch_camera">Pokreni fotoaparat</string>
   <string name="hardware_keys_action_sleep">Isključi zaslon</string>
   <string name="hardware_keys_action_last_app">Zadnja aplikacija</string>
+  <string name="hardware_keys_action_screenshot_full">Snimi cijeli zaslon</string>
+  <string name="hardware_keys_action_screenshot_region">Snimi dio zaslona</string>
   <string name="camera_sleep_on_release_title">Virenje preko zaslona</string>
   <string name="camera_sleep_on_release_summary">Polovični pritisak će zadržati zaslon uključenim samo dok držite pritisnut gumb</string>
   <string name="camera_launch_title">Pokreni fotoaparat</string>
@@ -191,6 +199,8 @@
   <string name="reset">Poništi</string>
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Navigacijska traka</string>
+  <string name="navigation_bar_enable_title">Omogući navigacijsku traku</string>
+  <string name="navigation_bar_enable_summary">Omogući zaslonske navigacijske tipke</string>
   <string name="navigation_bar_title">Gumbi i izgled</string>
   <string name="navigation_bar_arrow_keys_title">Prikaži strelice tijekom upisivanja</string>
   <string name="navigation_bar_arrow_keys_summary">Prikazivat će lijeve i desne kursorske tipke tijekom unosa teksta. Zamjenjuje zadani prebacivač tipkovnica.</string>
@@ -211,6 +221,7 @@
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Brzo otvorite fotoaparat bez otključavanja zaslona</string>
   <string name="torch_long_press_power_gesture_title">Svjetiljka na zaslonu zaključavanja</string>
+  <string name="torch_long_press_power_timeout_title">Automatski isključi svjetiljku</string>
   <string name="torch_long_press_power_timeout_never">Nikad</string>
   <string name="torch_long_press_power_timeout_1_minute">1 minuta</string>
   <string name="torch_long_press_power_timeout_2_minutes">2 minute</string>
@@ -388,6 +399,7 @@
   <string name="volume_steps_reset">Poništi</string>
   <!-- Power menu on secure lockscreen -->
   <string name="lockscreen_enable_power_menu_title">Prikaži izbornik napajanja na zaključanom zaslonu</string>
+  <string name="lockscreen_enable_power_menu_summary">Prikaži ili sakrij</string>
   <!-- Quicks settings vibrate -->
   <string name="quick_settings_vibrate_title">Vibriracija na dodir</string>
   <string name="quick_settings_vibrate_summary">Vibracija pri dodiru pločica</string>
@@ -395,6 +407,7 @@
   <string name="fprint_sucess_vib_title">Vibracija provjere otiska prsta</string>
   <string name="fprint_sucess_vib_summary">Vibracija pri uspješnoj provjeri otiska prsta</string>
   <!-- Gestures category -->
+  <string name="gestures_category">Geste</string>
   <!-- Three-fingers-swipe to screenshot -->
   <string name="three_finger_gesture">Gesta s tri prsta</string>
   <string name="three_finger_gesture_summary">Povucite tri prsta po zaslonu za snimku zaslona</string>
@@ -463,4 +476,5 @@
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
   <string name="lockscreen_blur_enabled_summary">Omogući zamagljivanje na zaslonu zaključavanja</string>
+  <!-- ANBI -->
 </resources>

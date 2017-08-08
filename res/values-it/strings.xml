@@ -22,12 +22,31 @@
   <string name="changelog_viper_title">Modifiche</string>
   <string name="changelog_viper_summary">Visualizza le ultime modifiche della ROM</string>
   <string name="changelog_viper_error">Impossibile caricare le modifiche</string>
+  <!-- Official devices -->
+  <string name="official_devices_title">Dispositivi ufficiali</string>
+  <string name="official_devices_summary">Dispositivi ufficialmente supportati</string>
+  <string name="loading_devices">Elenco dispositivi in caricamento...</string>
+  <string name="loading_devices_failed">Impossibile caricare l\'elenco dei dispositivi</string>
+  <string name="devices_list_empty">Elenco vuoto, tocca l\'icona per ricaricare</string>
+  <string name="reload_list">Ricarica</string>
   <!-- Website -->
+  <string name="website_viper_title">Centro download</string>
+  <string name="website_viper_summary">Visita il nostro portale di download</string>
   <!-- Google+ -->
+  <string name="google_plus_viper_title">Google+</string>
+  <string name="google_plus_viper_summary">Entra nella comunità su G+</string>
   <!-- Telegram -->
+  <string name="telegram_viper_title">Telegram</string>
+  <string name="telegram_viper_summary">Iscriviti al nostro canale Telegram</string>
   <!-- Github -->
+  <string name="github_viper_title">Github</string>
+  <string name="github_viper_summary">Visualizza il nostro codice sorgente</string>
   <!-- Crowdin -->
+  <string name="crowdin_viper_title">Traduzioni</string>
+  <string name="crowdin_viper_summary">Traduci nella tua lingua, visita il nostro sito Crowdin</string>
   <!-- OTA -->
+  <string name="ota_viper_title">Aggiornamenti di sistema</string>
+  <string name="ota_viper_summary">Ottieni l\'ultima versione di ViperOS</string>
   <!-- Tabs -->
   <string name="about_category">Informazioni</string>
   <string name="system_category">Sistema</string>
@@ -181,6 +200,7 @@
   <string name="home_answer_call_summary">Premendo il pulsante Home si risponderà alla chiamata in entrata</string>
   <string name="kill_app_longpress_back">Chiudi app con pulsante indietro</string>
   <string name="kill_app_longpress_back_summary">Chiude l\'applicazione corrente con la pressione prolungata del tasto indietro</string>
+  <string name="kill_app_longpress_back_delay">Ritardo chiusura app</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Retroilluminazione</string>
   <string name="button_backlight_enabled">Illumina pulsanti</string>
@@ -212,7 +232,9 @@
   <string name="power_menu_users_title">Cambio utente</string>
   <string name="power_menu_settings_title">Scorciatoia impostazioni</string>
   <string name="power_menu_lockdown_title">Blocco dispositivo</string>
+  <string name="power_menu_bug_report_title">Segnalazione di bug</string>
   <string name="power_menu_sound_title">Pannello suoni</string>
+  <string name="power_menu_bug_report_disabled">La segnalazione degli errori è disattivata nelle impostazioni di sviluppo</string>
   <string name="volume_keys_control_ring_stream_title">Controllo volume suoneria</string>
   <string name="volume_keys_control_ring_stream_summary_on">I tasti volume regolano la suoneria</string>
   <string name="volume_keys_control_ring_stream_summary_off">I tasti volume regolano i contenuti multimediali</string>
@@ -362,6 +384,7 @@
   <string name="lockscreen_battery_info_title">Info batteria schermata di blocco</string>
   <string name="lockscreen_battery_info_summary">Mostra il voltaggio e la temperatura della batteria sulla schermata di blocco durante la carica</string>
   <!-- ViperOS Logo -->
+  <string name="status_bar_viper_logo_title">Logo</string>
   <string name="status_bar_viper_logo_summary">Abilita per mostrare il logo Viper nella barra di stato</string>
   <string name="status_bar_viper_logo_color">Colore logo</string>
   <string name="status_bar_logo">Logo ViperOS</string>
@@ -376,14 +399,14 @@
   <string name="systemui_recents_mem_display_color">Colore barra di memoria</string>
   <string name="systemui_recents_mem_display_text_color">Colore testo barra di memoria</string>
   <!-- Aosp cards and grid recents -->
-  <string name="recents_type_title">Stile Recenti</string>
+  <string name="recents_type_title">Stile dei recenti</string>
   <string name="recents_stock">Carte</string>
   <string name="recents_grid">Griglia</string>
   <!-- Recents lock icon -->
   <string name="recents_lock_icon_title">Icona di blocco</string>
   <string name="recents_lock_icon_summary">Mostra blocco recenti come icona attività nell\'intestazione</string>
   <!-- Media art -->
-  <string name="media_art_title">Copertina applicazioni multimediali</string>
+  <string name="media_art_title">Copertina multimediale</string>
   <string name="media_art_summary">Abilita la visualizzazione della copertina dei file multimediali nella schermata di blocco</string>
   <!-- Lockscreen tap-to sleep -->
   <string name="double_tap_sleep_anywhere_title">Doppio tocco per sospensione</string>
@@ -411,7 +434,7 @@
   <string name="volume_steps_voice_call_title">Livelli volume: Chiamata</string>
   <string name="volume_steps_reset">Ripristina</string>
   <!-- Power menu on secure lockscreen -->
-  <string name="lockscreen_enable_power_menu_title">Mostra il menù di spegnimento nella schermata di blocco</string>
+  <string name="lockscreen_enable_power_menu_title">Mostra il menù alimentazione nella schermata di blocco</string>
   <string name="lockscreen_enable_power_menu_summary">Mostra o nascondi</string>
   <!-- Quicks settings vibrate -->
   <string name="quick_settings_vibrate_title">Vibra al tocco</string>
@@ -496,5 +519,10 @@
   <string name="data_disabled_icon_title">Mostra l\'icona dei dati disattivati</string>
   <string name="data_disabled_icon_summary">Mostra una X accanto alla barra del segnale quando i dati sono disabilitati</string>
   <!-- Light buttons on touch -->
+  <string name="button_light_press_title">Illumina pulsanti al tocco</string>
+  <string name="button_light_press_summary_off">I pulsanti si accendono in qualsiasi momento quando viene rilevato un tocco sullo schermo.</string>
+  <string name="button_light_press_summary_on">I pulsanti si accendono solo se vengono premuti tasti fisici.</string>
   <!-- Lockscreen blur summary -->
+  <string name="lockscreen_blur_enabled_summary">Disattiva le impostazioni rapide nella schermata di blocco</string>
+  <!-- ANBI -->
 </resources>

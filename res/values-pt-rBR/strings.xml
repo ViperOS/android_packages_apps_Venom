@@ -22,6 +22,13 @@
   <string name="changelog_viper_title">Log de mudanças</string>
   <string name="changelog_viper_summary">Ver as mudanças recentes</string>
   <string name="changelog_viper_error">Não foi possível carregar o changelog</string>
+  <!-- Official devices -->
+  <string name="official_devices_title">Dispositivos oficiais</string>
+  <string name="official_devices_summary">Dispositivos oficialmente suportados</string>
+  <string name="loading_devices">Carregando a lista de dispositivos...</string>
+  <string name="loading_devices_failed">Falha ao carregar a lista de dispositivos</string>
+  <string name="devices_list_empty">A lista está vazia, toque no ícone para recarregar</string>
+  <string name="reload_list">Recarregar</string>
   <!-- Website -->
   <string name="website_viper_title">Central de downloads</string>
   <string name="website_viper_summary">Visite nossa central oficial de downloads</string>
@@ -517,4 +524,7 @@
   <string name="button_light_press_summary_on">As luzes irão acender apenas quando o botão for tocado.</string>
   <!-- Lockscreen blur summary -->
   <string name="lockscreen_blur_enabled_summary">Permitir que o fundo da tela de bloqueio seja desfocado</string>
+  <!-- ANBI -->
+  <string name="anbi_title">Toque acidental</string>
+  <string name="anbi_summary">Evitar interação com os botões de navegação enquanto a tela estiver sendo tocada</string>
 </resources>

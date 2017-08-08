@@ -17,13 +17,21 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About Viper -->
+  <string name="about_viper">Über Viper</string>
   <!-- Changelog -->
+  <string name="changelog_viper_title">Changelog</string>
+  <string name="changelog_viper_error">Laden des Changelogs fehlgeschlagen</string>
+  <!-- Official devices -->
   <!-- Website -->
+  <string name="website_viper_title">Download Center</string>
   <!-- Google+ -->
+  <string name="google_plus_viper_title">Google+</string>
   <!-- Telegram -->
   <!-- Github -->
   <!-- Crowdin -->
+  <string name="crowdin_viper_title">Übersetzungen</string>
   <!-- OTA -->
+  <string name="ota_viper_title">Systemaktualisierungen</string>
   <!-- Tabs -->
   <string name="system_category">System</string>
   <!-- Category -->
@@ -387,4 +395,5 @@
   <string name="data_disabled_icon_summary">Zeige das Kreuzzeichen neben dem Signalbalken wenn Mobile Daten ausgeschaltet sind</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
+  <!-- ANBI -->
 </resources>

@@ -22,12 +22,25 @@
   <string name="changelog_viper_title">Registro de cambios</string>
   <string name="changelog_viper_summary">Ver cambios recientes de la ROM</string>
   <string name="changelog_viper_error">Imposible cargar el registro de cambios</string>
+  <!-- Official devices -->
   <!-- Website -->
+  <string name="website_viper_title">Centro de Descargas</string>
+  <string name="website_viper_summary">Visita nuestro portal de descargas</string>
   <!-- Google+ -->
+  <string name="google_plus_viper_title">Google+</string>
+  <string name="google_plus_viper_summary">Únete a nuestra comunidad en G+</string>
   <!-- Telegram -->
+  <string name="telegram_viper_title">Telegram</string>
+  <string name="telegram_viper_summary">Subscrítebe a nuestro canal en Telegram</string>
   <!-- Github -->
+  <string name="github_viper_title">Github</string>
+  <string name="github_viper_summary">Ver nuestro código fuente</string>
   <!-- Crowdin -->
+  <string name="crowdin_viper_title">Traducciones</string>
+  <string name="crowdin_viper_summary">Traduce a tu idioma, visita nuestro Crowdin</string>
   <!-- OTA -->
+  <string name="ota_viper_title">Actualizaciones del sistema</string>
+  <string name="ota_viper_summary">Obten la última versión de ViperOS</string>
   <!-- Tabs -->
   <string name="about_category">Acerca de</string>
   <string name="system_category">Sistema</string>
@@ -181,6 +194,7 @@
   <string name="home_answer_call_summary">Pulsando el botón de encendido se contestará la llamada entrante</string>
   <string name="kill_app_longpress_back">Matar aplicación con botón de volver</string>
   <string name="kill_app_longpress_back_summary">Cerrar la aplicacion de primer plano al dejar presionada la tecla atras</string>
+  <string name="kill_app_longpress_back_delay">Retraso en el cierre de la aplicación</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Luz de fondo</string>
   <string name="button_backlight_enabled">Iluminar botones</string>
@@ -212,7 +226,9 @@
   <string name="power_menu_users_title">Cambio de usuario</string>
   <string name="power_menu_settings_title">Acceso directo para ajustes</string>
   <string name="power_menu_lockdown_title">Bloqueo de dispositivo</string>
+  <string name="power_menu_bug_report_title">Informe de fallo</string>
   <string name="power_menu_sound_title">Panel de sonido</string>
+  <string name="power_menu_bug_report_disabled">El informe de fallos está deshabilitado en las opciones de desarrollador</string>
   <string name="volume_keys_control_ring_stream_title">Controlar el volumen del tono de llamada</string>
   <string name="volume_keys_control_ring_stream_summary_on">Las teclas de volumen controlan el volumen del timbre</string>
   <string name="volume_keys_control_ring_stream_summary_off">Las teclas de volumen controlan el volumen multimedia</string>
@@ -362,6 +378,7 @@
   <string name="lockscreen_battery_info_title">Información de la batería en pantalla de bloqueo</string>
   <string name="lockscreen_battery_info_summary">Mostrar corriente y voltaje máximos negociados con el cargador y la temperatura de la batería en la pantalla de bloqueo cuando se esté cargando</string>
   <!-- ViperOS Logo -->
+  <string name="status_bar_viper_logo_title">Logo</string>
   <string name="status_bar_viper_logo_summary">Habilitar para mostrar el logo de Viper en la barra de estado</string>
   <string name="status_bar_viper_logo_color">Color del logo</string>
   <string name="status_bar_logo">Logo ViperOS</string>
@@ -496,5 +513,10 @@
   <string name="data_disabled_icon_title">Mostrar icono de datos deshabilitados</string>
   <string name="data_disabled_icon_summary">Mostrar el símbolo de una cuz junto a la barra de señal cuando se deshabilitan los datos</string>
   <!-- Light buttons on touch -->
+  <string name="button_light_press_title">Encender botones al tocar</string>
+  <string name="button_light_press_summary_off">Los botones se encenderán cuando se toque la pantalla.</string>
+  <string name="button_light_press_summary_on">Los botones se encenderán cuando se toquen los botones del HW.</string>
   <!-- Lockscreen blur summary -->
+  <string name="lockscreen_blur_enabled_summary">Activar desenfoque en la pantalla de bloqueo</string>
+  <!-- ANBI -->
 </resources>

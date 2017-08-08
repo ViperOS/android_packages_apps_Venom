@@ -22,6 +22,13 @@
   <string name="changelog_viper_title">Seznam změn</string>
   <string name="changelog_viper_summary">Zobrazit nedávné změny v ROM</string>
   <string name="changelog_viper_error">Chyba při načítání seznamu změn</string>
+  <!-- Official devices -->
+  <string name="official_devices_title">Oficiální zařízení</string>
+  <string name="official_devices_summary">Oficiálně podporované zařízení</string>
+  <string name="loading_devices">Načítání seznamu zařízení...</string>
+  <string name="loading_devices_failed">Nepodařilo se načíst seznam zařízení</string>
+  <string name="devices_list_empty">Seznam je prázdný, klepněte na ikonu pro obnovení</string>
+  <string name="reload_list">Obnovit</string>
   <!-- Website -->
   <string name="website_viper_title">Centrum stahování</string>
   <string name="website_viper_summary">Navštivte náš portál pro stahování</string>
@@ -517,4 +524,5 @@
   <string name="button_light_press_summary_on">Tlačítka se rozsvítí pouze při dotyku.</string>
   <!-- Lockscreen blur summary -->
   <string name="lockscreen_blur_enabled_summary">Povolit rozostření na zamykací obrazovce</string>
+  <!-- ANBI -->
 </resources>

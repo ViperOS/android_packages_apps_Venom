@@ -22,12 +22,25 @@
   <string name="changelog_viper_title">บันทึกการเปลี่ยนแปลง</string>
   <string name="changelog_viper_summary">ดูการเปลี่ยนแปลงล่าสุดใน ROM</string>
   <string name="changelog_viper_error">ไม่สามารถโหลดเนื้อเรื่องได้</string>
+  <!-- Official devices -->
   <!-- Website -->
+  <string name="website_viper_title">ศูนย์ดาวน์โหลด</string>
+  <string name="website_viper_summary">แวะไปที่เว็บไซต์การดาวน์โหลดของเรา</string>
   <!-- Google+ -->
+  <string name="google_plus_viper_title">Google +</string>
+  <string name="google_plus_viper_summary">เข้าร่วมกับชุมชน G+</string>
   <!-- Telegram -->
+  <string name="telegram_viper_title">โทรเลข</string>
+  <string name="telegram_viper_summary">ติดตามช่องโทรเลขของเรา</string>
   <!-- Github -->
+  <string name="github_viper_title">Github</string>
+  <string name="github_viper_summary">ดูSourceแหล่งที่มาของเรา</string>
   <!-- Crowdin -->
+  <string name="crowdin_viper_title">การแปลภาษา</string>
+  <string name="crowdin_viper_summary">แปลภาษาของคุณ โปรดเยี่ยมชม Crowdin ของเรา</string>
   <!-- OTA -->
+  <string name="ota_viper_title">การอัปเดตระบบ</string>
+  <string name="ota_viper_summary">รับเวอร์ชันล่าสุดของ ViperOS</string>
   <!-- Tabs -->
   <string name="about_category">เกี่ยวกับเรา</string>
   <string name="system_category">ระบบ</string>
@@ -42,14 +55,53 @@
   <string name="traffic_category">แสดงการจราจรดาต้า</string>
   <string name="recents_title">รายการล่าสุด</string>
   <string name="carrierlabel_title">ป้ายชื่อผู้ให้บริการ</string>
+  <string name="lockscreen_ui_title">หน้าจอขณะล็อก</string>
   <string name="lockscreen_weather_title">สภาพอากาศ</string>
+  <string name="lockscreen_misc_title">เบ็ดเตล็ด</string>
+  <string name="sound_and_notifications_category">เสียงและการแจ้งเตือน</string>
   <!-- Power Menu -->
+  <string name="power_category">เมนูตัวเลือกปุ่มPower</string>
+  <string name="actions_category">รายการเมนูปุ่มPower</string>
+  <string name="powermenu_category">ปุ่มPower</string>
   <string name="powermenu_screenshot">ภาพหน้าจอ</string>
+  <string name="powermenu_power">ปิด</string>
   <string name="powermenu_reboot">เริ่มระบบใหม่</string>
+  <string name="powermenu_airplane">เครื่องบิน</string>
+  <string name="powermenu_settings">การตั้งค่า</string>
+  <string name="powermenu_lockdown">ล็อกลง</string>
+  <string name="powermenu_soundpanel">แผงระดับเสียง</string>
   <!-- Advanced reboot options -->
+  <string name="advanced_reboot_title">เริ่มระบบใหม่แบบขั้นสูง</string>
+  <string name="advanced_reboot_summary">รวมตัวเลือกในเมนูPowerสำหรับบูตเข้า bootloader และ recovery</string>
+  <string name="advanced_reboot_dialog_title">เริ่มระบบใหม่แบบขั้นสูง</string>
+  <string name="advanced_reboot_disabled">ปิด​ใช้​งาน</string>
+  <string name="advanced_reboot_hide_on_keyguard">ซ่อนบนหน้าจอเมื่อล็อก</string>
+  <string name="advanced_reboot_show_always">แสดงเสมอ</string>
   <!-- Color Picker -->
+  <string name="dialog_color_picker">ตัวเลือกสี</string>
+  <string name="press_color_to_apply">กดบนสีที่ต้องการก่อนกดใช้</string>
+  <string name="arrow_right">→</string>
+  <string name="arrow_down">↓</string>
+  <string name="hex">Hex</string>
+  <string name="hex_hint">#ff000000</string>
+  <string name="set">ตั้ง​ค่า</string>
+  <string name="color_default">ค่าเริ่มต้น</string>
+  <string name="default_string">ค่าเริ่มต้น</string>
   <!-- Status bar -->
+  <string name="status_bar_toggle_brightness">ควบคุมความสว่าง</string>
+  <string name="status_bar_toggle_brightness_summary">ปรับความสว่าง โดยเลื่อนบนแถบสถานะ</string>
+  <string name="status_bar_notif_count_title">แสดงจำนวนการแจ้งเตือน</string>
+  <string name="status_bar_notif_count_summary">แสดงจำนวนการแจ้งเตือนที่ค้างอยู่</string>
+  <string name="status_bar_quick_qs_pulldown_title">ปัดลงอย่างเร็ว</string>
+  <string name="status_bar_quick_qs_pulldown_summary">ปัดขอบด้าน%1$sของแถบสถานะเพื่อเปิดแผงตั้งค่า</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">ซ้าย</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">ขวา</string>
+  <string name="status_bar_quick_qs_pulldown_off">ปิด</string>
+  <string name="status_bar_quick_qs_pulldown_left">ซ้าย</string>
+  <string name="status_bar_quick_qs_pulldown_right">ขวา</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_title">รูปแบบนาฬิกา</string>
+  <string name="status_bar_clock_position_right">ขวา</string>
   <string name="status_bar_clock_position_left">ซ้าย</string>
   <string name="status_bar_clock_position_center">กลาง</string>
   <string name="status_bar_am_pm_title">รูปแบบ AM/PM</string>
@@ -70,6 +122,7 @@
   <string name="status_bar_date_style_uppercase">ตัวพิมพ์ใหญ่</string>
   <string name="status_bar_date_format_custom">กำหนดรูปแบบจาวาเอง</string>
   <string name="status_bar_date_string_edittext_title">ต้องเป็นรูปแบบวันที่ เช่น เดือน/วัน/ปี</string>
+  <string name="status_bar_date_string_edittext_summary">ป้อนสตริง</string>
   <string name="menu_save">บันทึก</string>
   <string name="menu_cancel">ละทิ้ง</string>
   <!-- Status bar - Battery -->
@@ -105,7 +158,13 @@
   <string name="hardware_keys_short_press_title">การแตะสั้นๆ</string>
   <string name="hardware_keys_long_press_title">การกดค้าง</string>
   <string name="hardware_keys_double_tap_title">การแตะสองครั้ง</string>
+  <string name="hardware_keys_action_nothing">ไม่มีแอ็กชัน</string>
+  <string name="hardware_keys_action_menu">เปิด/ปิด เมนู</string>
+  <string name="hardware_keys_action_app_switch">ตัวสลับใช้งานแอปล่าสุด</string>
+  <string name="volbtn_cursor_control_off">ปิด​ใช้​งาน</string>
   <!-- Key backlight -->
+  <string name="backlight_summary_disabled">ปิด​ใช้​งาน</string>
+  <string name="backlight_summary_enabled">เปิดใช้งาน</string>
   <string name="reset">รีเซ็ต</string>
   <!-- Navigation Bar -->
   <string name="navigation_bar_title">ปุ่มและรูปแบบ</string>
@@ -131,6 +190,10 @@
   <string name="camera_double_tap_power_gesture_desc">กล้องเปิดได้อย่างรวดเร็วโดยไม่ต้องปลดล็อกหน้าจอ</string>
   <string name="torch_long_press_power_gesture_title">ไฟฉายในหน้าจอล็อกสกีน</string>
   <string name="torch_long_press_power_gesture_desc">กดปุ่มเพาเวอร์ในขณะที่หน้าจอปิดอยู่เพื่อเปิดแฟลช</string>
+  <string name="torch_long_press_power_timeout_never">ไม่เคย</string>
+  <string name="torch_long_press_power_timeout_1_minute">1 นาที</string>
+  <string name="torch_long_press_power_timeout_5_minutes">5 นาที</string>
+  <string name="torch_long_press_power_timeout_10_minutes">10 นาที</string>
   <!-- Navbar Animation -->
   <!-- Quick settings tiles -->
   <string name="qs_rows_portrait_title">แถว (แนวตั้ง)</string>
@@ -143,9 +206,14 @@
   <string name="daylight_header_pack_title">ชุด หัวข้อรูปภาพ</string>
   <string name="status_bar_custom_header_shadow_title">เงาของ หัวข้อรูปภาพ</string>
   <string name="status_bar_custom_header_shadow_summary">เพื่อการมองเห็นที่ดีกว่าในภาพที่สว่าง</string>
+  <string name="unit_percent">\u0025</string>
   <string name="static_header_provider_title">Static</string>
   <string name="daylight_header_provider_title">ไดนามิก</string>
+  <string name="custom_header_provider_title">ผู้ให้บริการบนแถบหัวข้อ</string>
+  <string name="custom_header_browse_title">เรียกดูส่วนหัวข้อที่ติดตั้งไว้</string>
+  <string name="custom_header_browse_summary">กดรูปเพื่อใช้สำหรับโหมดสถิติ</string>
   <!-- OmniJaws -->
+  <string name="omnijaws_settings_title">OmniJaws</string>
   <string name="omnijaws_settings_summary">กำหนดการจัดเรียง สภาพอากาศ</string>
   <string name="weather_config_title">การตั้งค่า</string>
   <string name="weather_config_summary">กำหนดค่าบริการ</string>
@@ -156,12 +224,47 @@
   <string name="show_clear_all_recents_button_title">เปิดใช้งานล้าง แอปทั้งหมด</string>
   <string name="show_clear_all_recents_button_summary">แสดง ข้อความ \"ล้างทั้งหมด\" ในปุ่ม</string>
   <string name="recents_clear_all_location_title">ล้างตำแหน่งของปุ่มทั้งหมด</string>
+  <string name="recents_clear_all_location_top_right">ด้านบนขวา</string>
+  <string name="recents_clear_all_location_top_left">ด้านบนซ้าย</string>
+  <string name="recents_clear_all_location_top_center">บนตรงกลาง</string>
+  <string name="recents_clear_all_location_bottom_right">ล่างขวา</string>
+  <string name="recents_clear_all_location_bottom_left">ล่างซ้าย</string>
+  <string name="recents_clear_all_location_bottom_center">กลางด้านล่าง</string>
   <!-- Custom carrier label and position -->
   <string name="carrier_label_settings_title">ป้ายชื่อผู้ให้บริการ</string>
+  <string name="carrier_label_settings_summary">กำหนดป้ายชื่อผู้ให้บริการ</string>
+  <string name="custom_carrier_label_title">ป้ายชื่อผู้ให้บริการที่กำหนดเอง</string>
+  <string name="custom_carrier_label_explain">โปรดป้อนป้ายชื่อใหม่ ปล่อยว่างไว้เพื่อแปลงกลับเป็นป้ายเดิม</string>
+  <string name="custom_carrier_label_notset">ป้ายชื่อกำหนดเองขณะนี้ไม่ได้ตั้งค่า</string>
+  <string name="show_carrier_title">ป้ายชื่อผู้ให้บริการ</string>
+  <string name="show_carrier_disabled">ปิด​ใช้​งาน</string>
+  <string name="show_carrier_keyguard">ล็อคหน้าจอเท่านั้น</string>
+  <string name="show_carrier_statusbar">แถบสถานะเท่านั้น</string>
+  <string name="show_carrier_enabled">ล็อคหน้าจอ &amp; แถบสถานะ</string>
+  <string name="status_bar_carrier_color">สีป้ายชื่อผู้ให้บริการ</string>
+  <string name="status_bar_carrier_size">ขนาดป้ายชื่อผู้ให้บริการ</string>
+  <string name="cancel">ยกเลิก</string>
+  <string name="ok">ตกลง</string>
   <!-- Lockscreen weather -->
+  <string name="weather_category">สภาพอากาศหน้าจอขณะล็อก</string>
+  <string name="display_category_weather_title">ตัวเลือกสภาพอากาศหน้าจอขณะล็อก</string>
   <string name="lock_screen_weather_settings_title">สภาพอากาศ</string>
+  <string name="weather_cat_notifications_title">การแจ้งเตือน</string>
+  <string name="weather_show_weather_title">แสดงสภาพอากาศ</string>
+  <string name="weather_show_weather_summary">เปิดใช้งานการแสดงข้อมูลสภาพอากาศ</string>
+  <string name="weather_show_location_title">แสดงตำแหน่งที่ตั้ง</string>
+  <string name="weather_show_location_summary">เปิดใช้งานเพื่อแสดงตำแหน่ง</string>
+  <string name="weather_hide_panel_title">ซ่อนแผงสภาพอากาศ</string>
+  <string name="weather_hide_panel_dlg_title">เลือกเวลาว่าแผงอากาศจะถูกซ่อนตอนไหน</string>
+  <string name="weather_hide_panel_auto_title">อัตโนมัติ</string>
   <string name="weather_hide_panel_custom_title">ผู้ใช้</string>
+  <string name="weather_hide_panel_never_title">ไม่เคย</string>
+  <string name="weather_hide_panel_auto_summary">แผงอากาศจะถูกซ่อนเมื่อการแจ้งเตือนที่เต็มหน้าจอ</string>
+  <string name="weather_hide_panel_custom_summary">แผงอากาศจะถูกซ่อนเมื่อการแจ้งเตือนที่ปรากฏตามจำนวนที่กำหนด</string>
+  <string name="weather_hide_panel_never_summary">แผงสภาพอากาศที่ไม่ถูกซ่อน</string>
+  <string name="weather_number_of_notifications_title">จำนวนการแจ้งเตือน</string>
   <string name="weather_icon_pack_title">สภาพชุดไอคอน</string>
+  <string name="lock_clock_title">บริการพยากรณ์อากาศ</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">การจราจรของข้อมูล</string>
   <string name="show_network_traffic_state">แสดงบนแถบสถานะ</string>
@@ -179,14 +282,19 @@
   <string name="show_network_traffic_2000">2000 มิลลิวินาที</string>
   <string name="network_traffic_autohide">ซ่อนอัตโนมัติ</string>
   <string name="network_traffic_autohide_summary">ซ่อนการแสดงผลเมื่อมีไม่มีกิจกรรม</string>
+  <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
   <string name="network_traffic_hidearrow">ซ่อนลูกศร</string>
+  <string name="network_traffic_hidearrow_summary">ซ่อนลูกศรบ่งชี้การจราจรเครือข่าย</string>
   <!-- Battery Tile -->
+  <string name="status_bar_battery_style_tile_title">กำหนดลักษณะแบตเตอรี่เอง</string>
+  <string name="status_bar_battery_style_tile_summary">อนุญาตให้มีการตั้งค่าไอคอนลักษณะเดียวกันสำหรับแถบสถานะแบตเตอรี่</string>
   <!-- Quick Settings brightness slider -->
   <string name="qs_misc_category">เบ็ดเตล็ด</string>
   <string name="qs_brightness_slider_title">แถบเลื่อนความสว่าง</string>
   <string name="qs_brightness_slider_summary">แสดงแถบเลื่อนความสว่างในแผงการตั้งค่าด่วน</string>
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">ไอคอน ความสว่าง</string>
+  <string name="brightness_icon_summary">แสดงเป็นไอคอนความสว่างทางด้านซ้ายของแถบ brighness เพื่อปรับความสว่างอัตโนมัติ</string>
   <!-- SU indicator -->
   <string name="show_su_indicator_title">เปิดใช้งานไอคอน SU</string>
   <string name="show_su_indicator_summary">เลือกเพื่อเปิด หรือปิดไอคอน superuser </string>
@@ -194,10 +302,17 @@
   <string name="hw_keys_title">ปุ่มบนตัวเครื่อง</string>
   <string name="hw_keys_summary">ปิดใช้งานปุ่มบนตัวเครื่อง</string>
   <!-- Navbar Dimensions -->
+  <string name="navbar_dimensions_title">ขนาดแถบนำทาง</string>
+  <string name="navbar_dimensions_summary">กำหนดขนาดบาร์กว้างและความสูง</string>
+  <string name="navigation_bar_height_title">ความสูงของแถบนำทาง</string>
+  <string name="navigation_bar_height_landscape_title">นำแถบแนวนอนสูง</string>
+  <string name="navigation_bar_width_title">ความกว้างของแถบนำทาง</string>
+  <string name="navigation_bar_size_36_dp">36 dp</string>
   <!-- Navbar dynamic color -->
   <!-- Show 4G -->
   <!-- Lockscreen battery info indicator -->
   <!-- ViperOS Logo -->
+  <string name="status_bar_logo_position_left">ซ้าย</string>
   <!-- Recents Membar -->
   <!-- Aosp cards and grid recents -->
   <!-- Recents lock icon -->
@@ -212,21 +327,65 @@
   <!-- Wired headset ringtone audio focus -->
   <!-- Volume Steps -->
   <!-- Power menu on secure lockscreen -->
+  <string name="lockscreen_enable_power_menu_summary">แสดงหรือซ่อน</string>
   <!-- Quicks settings vibrate -->
+  <string name="quick_settings_vibrate_title">สั่นเมื่อแตะ</string>
+  <string name="quick_settings_vibrate_summary">สั่นเมื่อสัมผัสแผงลัด</string>
   <!-- fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">สั่นเมื่อทำการตรวจสอบลายนิ้วมือ</string>
+  <string name="fprint_sucess_vib_summary">สั่นเมื่อประสบความสำเร็จในการตรวจสอบ</string>
   <!-- Gestures category -->
+  <string name="gestures_category">รูปแบบลายเส้น</string>
   <!-- Three-fingers-swipe to screenshot -->
+  <string name="three_finger_gesture">ปัดนิ้วเพื่อจับภาพหน้าจอ</string>
+  <string name="three_finger_gesture_summary">สามนิ้วปัดเพื่อบันทึกภาพหน้าจอ</string>
   <!-- Notifications category -->
+  <string name="notifications_category">การแจ้งเตือน</string>
   <!-- Heads up timeout -->
+  <string name="heads_up_category">Heads up</string>
+  <string name="heads_up_time_out_title">หมดเวลา</string>
+  <string name="heads_up_time_out_summary">ซ่อนการแสดงการแจ้งเตือน <xliff:g id="number">%d</xliff:g> วินาที</string>
+  <string name="heads_up_time_out_2sec">2 วินาที</string>
+  <string name="heads_up_time_out_4sec">4 วินาที</string>
+  <string name="heads_up_time_out_5sec">5 วินาที</string>
+  <string name="heads_up_time_out_6sec">6 วินาที</string>
+  <string name="heads_up_time_out_8sec">8 วินาที</string>
+  <string name="heads_up_time_out_10sec">10 วินาที</string>
   <!-- Heads up snooze -->
+  <string name="heads_up_snooze_title">ตั้งเวลาปลุก</string>
+  <string name="heads_up_snooze_disabled_summary">ตัวตั้งเวลาถูกปิดการใช้งาน</string>
+  <string name="heads_up_snooze_1min">1 นาที</string>
+  <string name="heads_up_snooze_3min">3 นาที</string>
+  <string name="heads_up_snooze_5min">5 นาที</string>
+  <string name="heads_up_snooze_10min">10 นาที</string>
+  <string name="heads_up_snooze_15min">15 นาที</string>
+  <string name="heads_up_snooze_20min">20 นาที</string>
   <!-- Quick settings on secure lockscreen -->
+  <string name="lockscreen_enable_qs_title">การตั้งค่าด่วน</string>
+  <string name="lockscreen_enable_qs_summary">อนุญาตให้เข้าถึงการตั้งค่าด่วนและกวาดทางลัดบนหน้าจอขณะล็อคอยู่</string>
   <!-- Hide Statusbar on Lockscreen -->
+  <string name="lockscreen_hide_status_bar_title">แถบสถานะ</string>
+  <string name="lockscreen_hide_status_bar_summary">แสดงแถบสถานะบนหน้าจอขณะล็อก</string>
   <!-- Toast icon -->
   <!-- QS easy toggles -->
+  <string name="qs_easy_toggle_title">การสลับการใช้งานอย่างรวดเร็วบนแผงการตั้งค่าลัดขั้นสูง</string>
+  <string name="qs_easy_toggle_summary">การดำเนินการแตะครั้งเดียวเพื่อbluetooth, data, หรือ wifi</string>
   <!-- Screenshot Sound  -->
+  <string name="screenshot_sound_title">เปิดใช้งานเสียงscreenshot</string>
+  <string name="screenshot_sound_summary">เลือกเพื่อเปิด หรือปิดเสียงscreenshot</string>
   <!-- QS Header Icons -->
+  <string name="qs_settings_icon_title">การตั้งค่า Shortcut</string>
+  <string name="qs_settings_icon_summary">เปิดการใช้งานShotcutการตั้งค่าแถบหัวข้อ</string>
+  <string name="qs_settings_expanded_title">การตั้งค่าส่วนขยายเพิ่มของShortcut</string>
+  <string name="qs_settings_expanded_summary">เปิดการใช้งานShotcutการตั้งค่าเฉพาะเมื่อ expanded</string>
+  <string name="qs_edit_title">แก้ไขไอคอน</string>
+  <string name="qs_multiuser_switch_title">สลับผู้ใช้หลายคน</string>
+  <string name="qs_multiuser_switch_summary">เปิดใช้งานผู้ใช้หลายคนที่แถบหัวข้อ</string>
   <!-- Center Time + Date in header -->
+  <string name="qs_date_time_center_title">วันและเวลากลาง</string>
+  <string name="qs_date_time_center_summary">ต้องมีอย่าง น้อยหนึ่งไอคอน (แสดงด้านล่าง) ถูกปิดใช้งาน</string>
   <!-- Fingerprint unlock keystore -->
+  <string name="fp_unlock_keystore_title">ปลดล็อคลายนิ้วมือ</string>
   <!-- Navbar double tap to sleep -->
   <string name="double_tap_sleep_nav_bar_title">แตะสองครั้งเพื่อปิดจอ</string>
   <!-- Status Bar Ticker -->
@@ -234,4 +393,5 @@
   <!-- Data disabled icon -->
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
+  <!-- ANBI -->
 </resources>

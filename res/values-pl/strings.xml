@@ -22,6 +22,7 @@
   <string name="changelog_viper_title">Lista zmian</string>
   <string name="changelog_viper_summary">Zobacz ostatnie zmiany</string>
   <string name="changelog_viper_error">Nie można wczytać listy zmian</string>
+  <!-- Official devices -->
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -497,4 +498,5 @@
   <string name="data_disabled_icon_summary">Wyświetl znak krzyża obok paska sygnału, gdy dane są wyłączony</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
+  <!-- ANBI -->
 </resources>

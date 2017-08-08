@@ -22,6 +22,7 @@
   <string name="changelog_viper_title">Log perubahan</string>
   <string name="changelog_viper_summary">Melihat perubahan terbaru pada ROM</string>
   <string name="changelog_viper_error">Tak dapat memuat log perubahan</string>
+  <!-- Official devices -->
   <!-- Website -->
   <!-- Google+ -->
   <!-- Telegram -->
@@ -483,4 +484,5 @@
   <string name="data_disabled_icon_summary">Menampilkan tanda silang di sebelah bar sinyal saat data dinonaktifkan</string>
   <!-- Light buttons on touch -->
   <!-- Lockscreen blur summary -->
+  <!-- ANBI -->
 </resources>

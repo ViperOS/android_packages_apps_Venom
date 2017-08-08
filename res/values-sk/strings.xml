@@ -22,12 +22,31 @@
   <string name="changelog_viper_title">Zoznam zmien</string>
   <string name="changelog_viper_summary">Zobraziť najnovšie zmeny v ROM</string>
   <string name="changelog_viper_error">Nie je možné načítať zoznam zmien</string>
+  <!-- Official devices -->
+  <string name="official_devices_title">Oficiálne zariadenia</string>
+  <string name="official_devices_summary">Oficiálne podporované zariadenia</string>
+  <string name="loading_devices">Načítavanie zoznamu zariadení...</string>
+  <string name="loading_devices_failed">Načítavanie zoznamu zariadení zlyhalo</string>
+  <string name="devices_list_empty">Zoznam je prázdny, kliknite na ikonu nové načítanie</string>
+  <string name="reload_list">Načítať znovu</string>
   <!-- Website -->
+  <string name="website_viper_title">Centrum sťahovania</string>
+  <string name="website_viper_summary">Navštívte náš portál pre sťahovanie</string>
   <!-- Google+ -->
+  <string name="google_plus_viper_title">Google+</string>
+  <string name="google_plus_viper_summary">Pripojte sa k našej komunite G+</string>
   <!-- Telegram -->
+  <string name="telegram_viper_title">Telegram</string>
+  <string name="telegram_viper_summary">Odoberajte náš Telegram kanál</string>
   <!-- Github -->
+  <string name="github_viper_title">Github</string>
+  <string name="github_viper_summary">Zobraziť náš zdrojový kód</string>
   <!-- Crowdin -->
+  <string name="crowdin_viper_title">Preklady</string>
+  <string name="crowdin_viper_summary">Preložte do svojho jazyka, navštívte náš Crowdin</string>
   <!-- OTA -->
+  <string name="ota_viper_title">Aktualizácie systému</string>
+  <string name="ota_viper_summary">Získajte najnovšiu verziu ViperOS</string>
   <!-- Tabs -->
   <string name="about_category">O aplikácii</string>
   <string name="system_category">Systém</string>
@@ -181,6 +200,7 @@
   <string name="home_answer_call_summary">Stlačením tlačidla Domov sa prijme aktuálny hovor</string>
   <string name="kill_app_longpress_back">Ukončiť aplikáciu tlačidlom Späť</string>
   <string name="kill_app_longpress_back_summary">Násilné ukončenie aplikácie dlhým stlačením tlačidla Späť</string>
+  <string name="kill_app_longpress_back_delay">Oneskorenie pri ukončení aplikácie</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Podsvietenie</string>
   <string name="button_backlight_enabled">Podsvietenie tlačidiel</string>
@@ -212,7 +232,9 @@
   <string name="power_menu_users_title">Prepínač používateľov</string>
   <string name="power_menu_settings_title">Odkaz na nastavenia</string>
   <string name="power_menu_lockdown_title">Zamknúť zariadenie</string>
+  <string name="power_menu_bug_report_title">Nahlásenie chyby</string>
   <string name="power_menu_sound_title">Panel zvuku</string>
+  <string name="power_menu_bug_report_disabled">Hlásenie chýb je zakázané v nastaveniach pre vývojárov</string>
   <string name="volume_keys_control_ring_stream_title">Ovládanie hlasitosti zvonenia</string>
   <string name="volume_keys_control_ring_stream_summary_on">Tlačidlá hlasitosti ovládajú hlasitosť vyzváňania</string>
   <string name="volume_keys_control_ring_stream_summary_off">Tlačidlá hlasitosti ovládajú hlasitosť médií</string>
@@ -362,6 +384,7 @@
   <string name="lockscreen_battery_info_title">Informácie o batérii na obrazovke uzamknutia</string>
   <string name="lockscreen_battery_info_summary">Zobraziť maximálny prúd, napätie a teplotu batérie pri nabíjaní na obrazovke uzamknutia</string>
   <!-- ViperOS Logo -->
+  <string name="status_bar_viper_logo_title">Logo</string>
   <string name="status_bar_viper_logo_summary">Povolenie zobrazenie loga Viper v stavovom riadku</string>
   <string name="status_bar_viper_logo_color">Farba loga</string>
   <string name="status_bar_logo">ViperOS logo</string>
@@ -496,5 +519,10 @@
   <string name="data_disabled_icon_title">Zobraziť ikonu vypnuté dáta</string>
   <string name="data_disabled_icon_summary">Zobraziť znak X na ikone signálu siete, keď sú dáta zakázané</string>
   <!-- Light buttons on touch -->
+  <string name="button_light_press_title">Podsvietenie tlačidiel pri dotyku</string>
+  <string name="button_light_press_summary_off">Podsvietenie tlačidiel sa rozsvieti keď sa dotknete obrazovky.</string>
+  <string name="button_light_press_summary_on">Podsvietenie tlačidiel sa rozsvieti iba pri stlačení hw tlačidiel.</string>
   <!-- Lockscreen blur summary -->
+  <string name="lockscreen_blur_enabled_summary">Povoliť rozostrenie na obrazovke uzamknutia</string>
+  <!-- ANBI -->
 </resources>
