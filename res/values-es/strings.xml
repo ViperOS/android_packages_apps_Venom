@@ -23,6 +23,12 @@
   <string name="changelog_viper_summary">Ver cambios recientes de la ROM</string>
   <string name="changelog_viper_error">Imposible cargar el registro de cambios</string>
   <!-- Official devices -->
+  <string name="official_devices_title">Dispositivos oficiales</string>
+  <string name="official_devices_summary">Dispositivos con soporte oficial</string>
+  <string name="loading_devices">Cargando lista de dispositivos...</string>
+  <string name="loading_devices_failed">Falló al cargar la lista de dispositivos</string>
+  <string name="devices_list_empty">La lista está vacía, toque el icono para recargar</string>
+  <string name="reload_list">Recargar</string>
   <!-- Website -->
   <string name="website_viper_title">Centro de Descargas</string>
   <string name="website_viper_summary">Visita nuestro portal de descargas</string>
@@ -519,4 +525,6 @@
   <!-- Lockscreen blur summary -->
   <string name="lockscreen_blur_enabled_summary">Activar desenfoque en la pantalla de bloqueo</string>
   <!-- ANBI -->
+  <string name="anbi_title">Toque accidental</string>
+  <string name="anbi_summary">Previene la interacción con los botones de navegación mientras se toque la pantalla</string>
 </resources>
