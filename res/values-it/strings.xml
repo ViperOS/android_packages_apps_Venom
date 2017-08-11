@@ -525,4 +525,6 @@
   <!-- Lockscreen blur summary -->
   <string name="lockscreen_blur_enabled_summary">Disattiva le impostazioni rapide nella schermata di blocco</string>
   <!-- ANBI -->
+  <string name="anbi_title">Tocco accidentale</string>
+  <string name="anbi_summary">Impedire l\'interazione con i pulsanti di navigazione mentre si tocca lo schermo</string>
 </resources>

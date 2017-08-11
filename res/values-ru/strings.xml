@@ -525,4 +525,6 @@
   <!-- Lockscreen blur summary -->
   <string name="lockscreen_blur_enabled_summary">Размытие на экране блокировки</string>
   <!-- ANBI -->
+  <string name="anbi_title">Случайное нажатие</string>
+  <string name="anbi_summary">Предотвращение нажатия кнопок навигации при касании экрана</string>
 </resources>

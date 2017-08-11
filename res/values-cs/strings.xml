@@ -525,4 +525,6 @@
   <!-- Lockscreen blur summary -->
   <string name="lockscreen_blur_enabled_summary">Povolit rozostření na zamykací obrazovce</string>
   <!-- ANBI -->
+  <string name="anbi_title">Náhodný dotyk</string>
+  <string name="anbi_summary">Zabránit interakci s navigačními tlačítky během dotyku obrazovky</string>
 </resources>
