@@ -18,33 +18,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/system"
-        android:icon="@drawable/bottomnav_system"
-        android:title="@string/bottom_nav_system_title"
+        android:id="@+id/statusbar"
+        android:icon="@drawable/main_statusbar"
+        android:title="@string/status_bar_category"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/recents"
+        android:icon="@drawable/main_recents"
+        android:title="@string/recents_category"
         app:showAsAction="ifRoom|withText"/>
 
     <item
         android:id="@+id/lockscreen"
-        android:icon="@drawable/bottomnav_lockscreen"
-        android:title="@string/bottom_nav_lockscreen_title"
-        app:showAsAction="ifRoom|withText"/>
-
-    <item
-        android:id="@+id/statusbar"
-        android:icon="@drawable/bottomnav_statusbar"
-        android:title="@string/bottom_nav_statusbar_title"
+        android:icon="@drawable/main_lockscreen"
+        android:title="@string/lockscreen_category"
         app:showAsAction="ifRoom|withText"/>
 
     <item
         android:id="@+id/navigation"
-        android:icon="@drawable/bottomnav_navigation"
-        android:title="@string/bottom_nav_navigation_title"
+        android:icon="@drawable/main_navigation"
+        android:title="@string/navigation_category"
         app:showAsAction="ifRoom|withText"/>
 
     <item
-        android:id="@+id/multitasking"
-        android:icon="@drawable/bottomnav_multitasking"
-        android:title="@string/bottom_nav_multitasking_title"
+        android:id="@+id/system"
+        android:icon="@drawable/main_system"
+        android:title="@string/system_category"
         app:showAsAction="ifRoom|withText"/>
 
 </menu>

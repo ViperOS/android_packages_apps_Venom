@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
+     Copyright (C) 2016 Material Design Icons
      Copyright (C) 2018 ToxycOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,10 +15,12 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/recents_category"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-
-
-</PreferenceScreen>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportHeight="24.0"
+    android:viewportWidth="24.0">
+    <path
+        android:fillColor="?android:attr/colorControlNormal"
+        android:pathData="M2,2H16V16H2V2M22,8V22H8V18H18V8H22M4,4V14H14V4H4Z" />
+</vector>

@@ -1,7 +1,8 @@
-Dirty Tweaks
-==============
-
-A flexible, easy to use, all in one tweaks app for AOSP!
+Hazard
+==============================
+![Hazard](http://i.imgur.com/MIpJb1z.jpg)
+==============================
+## Based on DU-Tweaks
 
 ## License
 

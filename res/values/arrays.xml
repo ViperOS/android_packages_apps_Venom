@@ -14,10 +14,6 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/recents_category"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+<resources>
 
-
-</PreferenceScreen>
+</resources>
