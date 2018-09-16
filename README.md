@@ -1,6 +1,6 @@
-Hazard
+Venom
 ==============================
-![Hazard](http://i.imgur.com/MIpJb1z.jpg)
+![Venom](http://i.imgur.com/RP0zzSW.png)
 ==============================
 ## Based on DU-Tweaks
 

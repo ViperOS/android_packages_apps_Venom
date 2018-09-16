@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 ToxycOS Project
+     Copyright (C) 2018 ViperOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -19,5 +19,22 @@
     android:title="@string/system_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- Button Settings -->
+    <Preference
+        android:key="button_settings"
+        android:layout="@layout/preference_button_settings"
+        android:fragment="com.viper.venom.fragments.ButtonSettings" />
+
+    <!-- Battery light -->
+    <Preference
+        android:key="battery_charging_light"
+        android:layout="@layout/preference_battery_charging_light"
+        android:fragment="com.viper.venom.fragments.LedSettings" />
+
+    <!-- Misc Settings -->
+    <Preference
+        android:key="misc_settings"
+        android:layout="@layout/preference_misc_settings"
+        android:fragment="com.viper.venom.fragments.MiscSettings" />
 
 </PreferenceScreen>

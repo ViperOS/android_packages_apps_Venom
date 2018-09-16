@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 ToxycOS Project
+     Copyright (C) 2018 ViperOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     
     <!-- General app strings -->
-    <string name="hazard_title">Hazard</string>
+    <string name="venom_title">Venom</string>
     <string name="add">Add</string>
     <string name="advanced">Advanced</string>
     <string name="cancel">Cancel</string>
@@ -26,6 +26,11 @@
     <string name="gestures_category">Gestures</string>
     <string name="security_category">Security</string>
     <string name="hardware_category">Hardware</string>
+    <string name="list_preference_default_summary">%s</string>
+    <string name="dlg_cancel">cancel</string>
+    <string name="dlg_reset_values_message">Reset values to\nAndroid- or Venom default?</string>
+    <string name="dlg_reset_android">Android</string>
+    <string name="dlg_reset_venom">Venom</string>
     <string name="dlg_ok">OK</string>
     <string name="attention">Attention</string>
     <string name="loading">Loading\u2026</string>
@@ -37,12 +42,63 @@
     <string name="color_title">Color</string>
     <string name="colors_title">Colors</string>
 
-    <!-- hazard categories -->
+    <!-- SystemUI Restart -->
+    <string name="systemui_restart_toast">This feature requires a SystemUI restart to be applied. We\'ll restart the SystemUI right now.</string>
+
+    <!-- venom categories -->
     <string name="recents_category">Recents</string>
     <string name="status_bar_category">Statusbar</string>
     <string name="system_category">System</string>
     <string name="lockscreen_category">Lockscreen</string>
+    <string name="lockscreen_style">Lockscreen Style</string>
     <string name="navigation_category">Navigation</string>
+    <string name="quicksettings_title">Quick Settings</string>
+    <string name="misc_settings_title">Misc</string>
+    <string name="button_settings">Buttons</string>
+    <string name="navbar_category">Navigation bar</string>
+    <string name="misc_settings_summary">Miscellaneous options for customization</string>
+    <string name="battery_light_settings">Battery charging light</string>
+    <string name="battery_light_settings_summary">Enable and configure how the LED should work</string>
+    <string name="battery_style_title">Battery style</string>
+    <string name="battery_style_summary">Change the look of the icon in the statusbar</string>
+    <string name="button_settings_title">Buttons</string>
+    <string name="button_settings_title_summary">Perform custom button actions</string>
+    <string name="carrier_label_title">Carrier label</string>
+    <string name="carrier_label_summary">Customize your statusbar carrier label</string>
+    <string name="lockscreen_clock_selection_title">Clock style</string>
+    <string name="lockscreen_clock_selection_summary">Change lockscreen clock style</string>
+    <string name="lockscreen_misc_selection_title">Security settings</string>
+    <string name="lockscreen_misc_selection_summary">Screen unlock settings</string>
+    <string name="network_traffic_title">Network traffic</string>
+    <string name="network_traffic_summary">Show me network traffic status</string>
+    <string name="show_clear_all_recents_button_title">Clear all button</string>
+    <string name="show_clear_all_recents_button_summary">Show clear all button</string>
+    <string name="recents_type_title">Recents Layout</string>
+    <string name="recents_type_summary">Change recents layout for Stock, Grid, Android Go</string>
+    <string name="status_bar_clock_date_settings_title">Clock &amp; date</string>
+    <string name="status_bar_clock_date_settings_summary">Choose how to display the clock &amp; date in the status bar</string>
+    <string name="quicksettings_summary">Change more quick settings</string>
+    <string name="ticker_mode_title">Statusbar notification ticker</string>
+    <string name="ticker_mode_title_summary">Quickly show song title and notification in status bar</string>
+
+
+    <!-- about categorie -->
+    <string name="about_category">About</string>
+    <string name="about_category_summary">A little about our team and our purpose</string>
+    <string name="about_viper">ViperOS</string>
+    <string name="about_viper_discription">Who we are?\nWe are the ViperOS team, an organized and Brazilian team that aims to jointly develop a clean and useful Android operational system.\nWe value pure android, but it always looks more beautiful with more details, does not it?\nWe offer a simple and easy menu for customization of your device, we value a clean and direct interface, try in your device possibilities of customizations and a good experience.\nWe offer useful resources for your day-to-day life. Updated every month with security patch according to Google.\nOur ROM offers a theme engine for you to customize to your liking, our philosophy is to deliver a stable ROM with useful features and we cherish a lightweight interface prioritizing performance and battery for your device.</string>
+    <string name="jbcdroid_name">JBCDroid</string>
+    <string name="jbcdroid_discription">Founder | Lead Developer | Maintainer</string>
+    <string name="esrom_name">EsromTech</string>
+    <string name="esrom_discription">Co-Lead Developer | Maintainer</string>
+    <string name="rkschunk_name">RKSchunk</string>
+    <string name="rkschunk_discription">Maintainer</string>
+    <string name="matheeusaf_name">Matheeusaf</string>
+    <string name="matheeusaf_discription">Website Creator | Website Manager</string>
+    <string name="kley_name">Kley76</string>
+    <string name="kley_discription">Designer | Maintainer</string>
+    <string name="joshua_name">Joshua M.</string>
+    <string name="joshua_discription">Designer | Maintainer</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -54,5 +110,19 @@
     <string name="set">Set</string>
     <string name="color_default">Default</string>
 
-</resources>
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider_title">Brightness slider</string>
+    <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
 
+    <!-- Quick Settings brightness icon -->
+    <string name="brightness_icon_title">Brightness icon </string>
+    <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
+
+    <!-- Round Corner Radius -->
+    <string name="corners_category">Corners</string>
+    <string name="corner_radius">Rounded Corner Radius</string>
+    <string name="content_padding">Corner Content Padding</string>
+    <string name="corner_fwvals">Use framework values</string>
+    <string name="corner_fwvals_summary">Useful if the device actually has rounded corners</string>
+
+</resources>

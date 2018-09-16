@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018 ViperOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="@*android:color/venom_icon"
+        android:pathData="M14.664062 3C12.65911 2.9974302 10.811733 3.6182395 9.1894531 4.8417969 8.7188478 5.1967745 7.8444713 6.0708007 7.4863281 6.5449219 6.5883596 7.7336707 5.9807661 9.1749991 5.7324219 10.699219c-0.078495 0.481363 -0.078495 2.124105 0 2.605469 0.2483442 1.524219 0.8559377 2.965548 1.7539062 4.154296 0.3581432 0.474122 1.2325197 1.348148 1.703125 1.703125 1.2430879 0.937613 2.6133049 1.518189 4.1367189 1.753907 0.653163 0.101622 1.849178 0.112211 2.513672 0.02344 1.967667 -0.262232 3.798376 -1.172204 5.21289 -2.59375 1.372394 -1.379028 2.239802 -3.113541 2.539063 -5.078125 0.09368 -0.61464 0.09368 -1.914656 0 -2.529297C23.030689 7.0547602 20.388798 4.1417402 16.798828 3.2480469 16.109653 3.076924 15.459392 3.0009345 14.664062 3Zm-0.972656 4.5683594l0.707032 0 0.708984 0 0 2.4140625 0 2.4121091 1.599609 1.091797 1.59961 1.089844 -0.08008 0.11914c-0.04394 0.06565 -0.213574 0.318607 -0.376953 0.5625 -0.16339 0.244011 -0.316683 0.444846 -0.341797 0.445313 -0.02514 0.000234 -0.894764 -0.57949 -1.93164 -1.287109l-1.884766 -1.285157 0 -2.78125 0 -2.7812496zm-12.1113279 1.0058594l0 0.6855468 0 0.6855469 1.3242188 0 1.3261719 0 0 -0.6855469 0 -0.6855468 -1.3261719 0 -1.3242188 0zm-1.27929685 2.7421872l0 0.685547 0 0.685547 1.96484375 0 1.9648438 0 0 -0.685547 0 -0.685547 -1.9648438 0 -1.96484375 0zm1.27929685 2.742188l0 0.685547 0 0.685547 1.3242188 0 1.3261719 0 0 -0.685547 0 -0.685547 -1.3261719 0 -1.3242188 0z" />
+</vector>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 ToxycOS Project
+     Copyright (C) 2018 ViperOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@
     <color name="actionbar_icon_color">@android:color/white</color>
     <color name="card_background">#fffafafa</color>
 
-    <!-- hazard -->
+    <!-- Venom -->
     <color name="preference_background_color">@*android:color/accent_device_default_light</color>
 
     <!-- Bottom navigation -->

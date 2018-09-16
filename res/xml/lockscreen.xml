@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 ToxycOS Project
+     Copyright (C) 2018 ViperOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -19,6 +19,14 @@
     android:title="@string/lockscreen_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceScreen
+        android:key="lockscreen_clock_date_style"
+        android:layout="@layout/preference_lockscreen_clock_date_style"
+        android:fragment="com.viper.venom.fragments.LockscreenSettings" />
+
+    <PreferenceScreen
+        android:key="misc_lockscreen"
+        android:layout="@layout/preference_misc_lockscreen"
+        android:fragment="com.viper.venom.fragments.LockscreenMisc" />
 
 </PreferenceScreen>
-

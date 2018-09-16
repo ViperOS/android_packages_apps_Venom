@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 ToxycOS Project
+     Copyright (C) 2018 ViperOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -35,5 +35,8 @@
     <dimen name="oval_notification_size">26dp</dimen>
 
     <dimen name="picker_circle_preview_size">26dp</dimen>
+
+    <!-- Shortcut picker -->
+    <dimen name="shortcut_picker_left_padding">70dip</dimen>
 
 </resources>
