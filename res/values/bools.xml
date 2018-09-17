@@ -14,11 +14,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
 
-    <plurals name="backlight_timeout_time">
-        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> second</item>
-        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> seconds</item>
-    </plurals>
+    <!-- Default value for battery_light_enabled preference -->
+    <bool name="def_battery_light_enabled">true</bool>
+    <!-- Default value for battery light pulse -->
+    <bool name="def_battery_light_pulse">true</bool>
 
 </resources>

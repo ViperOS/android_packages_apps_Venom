@@ -16,17 +16,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- The position of the volume rocker, as opposed to the natural
-         orientation of the display.
-         Currently used for the volume button re-orient functionality.
-         This integer should be set to:
-
-         1 - if the volume rocker is on (or parallel to) one the lateral
-             sides, relative to the natural orientation of the display
-             (true for all phones and some tablets)
-         2 - the volume rocker is on (or parallel to) the top or bottom,
-             relative to the natural orientation of the display
-             (true for some tablets) -->
-    <integer name="config_volumeRockerVsDisplayOrientation">1</integer>
+  <plurals name="backlight_timeout_time">
+    <item quantity="one"><xliff:g id="seconds">%d</xliff:g> segundo</item>
+    <item quantity="other"><xliff:g id="seconds">%d</xliff:g> segundos</item>
+  </plurals>
 
 </resources>

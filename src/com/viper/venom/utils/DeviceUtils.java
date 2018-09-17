@@ -20,6 +20,7 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.AlertDialog; 
 import android.app.IActivityManager;
+import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.ActivityInfo;
@@ -35,9 +36,14 @@ import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CameraManager;
 import android.net.ConnectivityManager;
+import android.nfc.NfcAdapter;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.UserManager;
+import android.os.SystemProperties;
+import android.provider.Settings;
 import android.telephony.TelephonyManager;
+import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.view.DisplayInfo;
 import android.view.Surface;
@@ -45,6 +51,8 @@ import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.android.settings.R;
+
+import static org.lineageos.internal.util.DeviceKeysConstants.*;
 
 public final class DeviceUtils {
     private static final String TAG = "DeviceUtils";
@@ -64,6 +72,13 @@ public final class DeviceUtils {
         TelephonyManager telephony =
                 (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
         return telephony != null && telephony.isVoiceCapable();
+    }
+
+    /* returns whether the device has volume rocker or not. */
+    public static boolean hasVolumeRocker(Context context) {
+        final int deviceKeys = context.getResources().getInteger(
+                org.lineageos.platform.internal.R.integer.config_deviceHardwareKeys);
+        return (deviceKeys & KEY_MASK_VOLUME) != 0;
     }
 
     public static boolean isWifiOnly(Context context) {
@@ -200,6 +215,28 @@ public final class DeviceUtils {
                 break;
         }
         activity.setRequestedOrientation(frozenRotation);
+    }
+
+    public static boolean isDozeAvailable(Context context) {
+        String name = Build.IS_DEBUGGABLE ? SystemProperties.get("debug.doze.component") : null;
+        if (TextUtils.isEmpty(name)) {
+            name = context.getResources().getString(
+                    com.android.internal.R.string.config_dozeComponent);
+        }
+        return !TextUtils.isEmpty(name);
+    }
+
+    public static boolean deviceSupportsMobileData(Context ctx) {
+        ConnectivityManager cm = (ConnectivityManager) ctx.getSystemService(Context.CONNECTIVITY_SERVICE);
+        return cm.isNetworkSupported(ConnectivityManager.TYPE_MOBILE);
+    }
+
+    public static boolean deviceSupportsBluetooth() {
+        return (BluetoothAdapter.getDefaultAdapter() != null);
+    }
+
+    public static boolean deviceSupportsNfc(Context ctx) {
+        return NfcAdapter.getDefaultAdapter(ctx) != null;
     }
 
     public static boolean deviceSupportsFlashLight(Context context) {

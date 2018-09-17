@@ -14,9 +14,65 @@
      limitations under the License.
 -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/battery_light_settings"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+        android:key="general_section"
+        android:title="@string/notification_light_general_title">
 
+        <lineageos.preference.LineageSystemSettingSwitchPreference
+            android:key="battery_light_enabled"
+            android:title="@string/battery_light_title"
+            android:defaultValue="@bool/def_battery_light_enabled" />
+
+        <lineageos.preference.LineageSystemSettingSwitchPreference
+            android:key="battery_light_pulse"
+            android:title="@string/battery_low_pulse_title"
+            android:defaultValue="@bool/def_battery_light_pulse"
+            android:dependency="battery_light_enabled" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="colors_list"
+        android:title="@string/battery_light_list_title"
+        android:dependency="battery_light_enabled" >
+
+        <com.viper.venom.fragments.ApplicationLightPreference
+            android:key="low_color"
+            android:title="@string/battery_light_low_color_title"
+            android:persistent="false" />
+
+        <com.viper.venom.fragments.ApplicationLightPreference
+            android:key="medium_color"
+            android:title="@string/battery_light_medium_color_title"
+            android:persistent="false" />
+
+        <com.viper.venom.fragments.ApplicationLightPreference
+            android:key="full_color"
+            android:title="@string/battery_light_full_color_title"
+            android:persistent="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="brightness_section"
+        android:title="@string/light_brightness_title"
+        android:dependency="battery_light_enabled" >
+
+        <com.viper.venom.fragments.BatteryBrightnessPreference
+            android:key="battery_light_brightness_level"
+            android:title="@string/battery_light_brightness_normal"
+            android:dependency="battery_light_enabled" />
+
+        <com.viper.venom.fragments.BatteryBrightnessZenPreference
+            android:key="battery_light_brightness_level_zen"
+            android:title="@string/battery_light_brightness_zen"
+            android:dependency="battery_light_enabled" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

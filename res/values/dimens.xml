@@ -39,4 +39,8 @@
     <!-- Shortcut picker -->
     <dimen name="shortcut_picker_left_padding">70dip</dimen>
 
+    <!-- Berry lite -->
+    <dimen name="style_accent_preview">32dp</dimen>
+    <dimen name="style_accent_icon">24dp</dimen>
+
 </resources>

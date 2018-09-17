@@ -16,48 +16,86 @@
 
 package com.viper.venom.fragments;
 
-
-import android.app.ActivityManagerNative;
-import android.content.Context;
 import android.content.ContentResolver;
-import android.content.pm.PackageManager.NameNotFoundException;
-import android.content.res.Resources;
+import android.content.Context;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.os.RemoteException;
-import android.os.ServiceManager;
-import android.support.v7.preference.Preference;
 import android.support.v7.preference.ListPreference;
-import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
-import android.provider.Settings;
-import android.util.Log;
-import android.view.WindowManagerGlobal;
-import android.view.IWindowManager;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import android.support.v7.preference.Preference;
 
-import java.util.Locale;
-import android.text.TextUtils;
-import android.view.View;
+import lineageos.preference.LineageSecureSettingSwitchPreference;
+import lineageos.providers.LineageSettings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.settings.Utils;
 
-public class NetworkTraffic extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+
+public class NetworkTraffic extends SettingsPreferenceFragment
+        implements Preference.OnPreferenceChangeListener  {
+
+    private static final String TAG = "NetworkTraffic";
+
+    private ListPreference mNetTrafficMode;
+    private LineageSecureSettingSwitchPreference mNetTrafficAutohide;
+    private ListPreference mNetTrafficUnits;
+    private LineageSecureSettingSwitchPreference mNetTrafficShowUnits;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         addPreferencesFromResource(R.xml.traffic_settings);
-
         final ContentResolver resolver = getActivity().getContentResolver();
-        final PreferenceScreen prefSet = getPreferenceScreen();
 
+        mNetTrafficMode = (ListPreference)
+                findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_MODE);
+        int mode = LineageSettings.Secure.getIntForUser(resolver,
+                LineageSettings.Secure.NETWORK_TRAFFIC_MODE, 0, UserHandle.USER_CURRENT);
+        mNetTrafficMode.setValue(String.valueOf(mode));
+        mNetTrafficMode.setOnPreferenceChangeListener(this);
+
+        mNetTrafficAutohide = (LineageSecureSettingSwitchPreference)
+                findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_AUTOHIDE);
+
+        mNetTrafficUnits = (ListPreference)
+                findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_UNITS);
+        int units = LineageSettings.Secure.getIntForUser(resolver,
+                LineageSettings.Secure.NETWORK_TRAFFIC_UNITS, /* Mbps */ 1, UserHandle.USER_CURRENT);
+        mNetTrafficUnits.setValue(String.valueOf(units));
+
+        mNetTrafficShowUnits = (LineageSecureSettingSwitchPreference)
+                findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_SHOW_UNITS);
+
+        updateEnabledStates(mode);
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mNetTrafficMode) {
+            int mode = Integer.valueOf((String) newValue);
+            updateEnabledStates(mode);
+            return true;
+        }
+        return false;
+    }
+
+    private void updateEnabledStates(int mode) {
+        final boolean enabled = mode != 0;
+        mNetTrafficAutohide.setEnabled(enabled);
+        mNetTrafficUnits.setEnabled(enabled);
+        mNetTrafficShowUnits.setEnabled(enabled);
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        LineageSettings.Secure.putIntForUser(resolver,
+                LineageSettings.Secure.NETWORK_TRAFFIC_MODE, 0, UserHandle.USER_CURRENT);
+        LineageSettings.Secure.putIntForUser(resolver,
+                LineageSettings.Secure.NETWORK_TRAFFIC_AUTOHIDE, 0, UserHandle.USER_CURRENT);
+        LineageSettings.Secure.putIntForUser(resolver,
+                LineageSettings.Secure.NETWORK_TRAFFIC_UNITS, 1, UserHandle.USER_CURRENT);
+        LineageSettings.Secure.putIntForUser(resolver,
+                LineageSettings.Secure.NETWORK_TRAFFIC_SHOW_UNITS, 1, UserHandle.USER_CURRENT);
     }
 
     @Override
@@ -65,13 +103,4 @@ public class NetworkTraffic extends SettingsPreferenceFragment implements OnPref
         return MetricsEvent.VENOM;
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        return false;
-    }
 }

@@ -39,6 +39,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import java.util.Locale;
+import android.text.format.DateFormat;
 import android.text.TextUtils;
 import android.view.View;
 
@@ -47,7 +48,21 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
+import lineageos.preference.LineageSystemSettingListPreference;
+
 public class ClockDateSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+
+    private static final String CATEGORY_CLOCK = "status_bar_clock_key";
+
+    private static final String ICON_BLACKLIST = "icon_blacklist";
+
+    private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
+    private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
+
+    private LineageSystemSettingListPreference mStatusBarClock;
+    private LineageSystemSettingListPreference mStatusBarAmPm;
+
+    private PreferenceCategory mStatusBarClockCategory;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,6 +72,14 @@ public class ClockDateSettings extends SettingsPreferenceFragment implements OnP
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
+
+        mStatusBarAmPm =
+                (LineageSystemSettingListPreference) findPreference(STATUS_BAR_AM_PM);
+        mStatusBarClock =
+                (LineageSystemSettingListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
+
+        mStatusBarClockCategory =
+                (PreferenceCategory) getPreferenceScreen().findPreference(CATEGORY_CLOCK);
 
     }
 
@@ -68,6 +91,37 @@ public class ClockDateSettings extends SettingsPreferenceFragment implements OnP
     @Override
     public void onResume() {
         super.onResume();
+
+        final boolean hasNotch = getResources().getBoolean(
+                org.lineageos.platform.internal.R.bool.config_haveNotch);
+
+        final String curIconBlacklist = Settings.Secure.getString(getContext().getContentResolver(),
+                ICON_BLACKLIST);
+
+        if (TextUtils.delimitedStringContains(curIconBlacklist, ',', "clock")) {
+            getPreferenceScreen().removePreference(mStatusBarClockCategory);
+        } else {
+            getPreferenceScreen().addPreference(mStatusBarClockCategory);
+        }
+
+        if (DateFormat.is24HourFormat(getActivity())) {
+            mStatusBarAmPm.setEnabled(false);
+            mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
+        }
+
+        // Adjust status bar preferences for RTL
+        if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
+            if (hasNotch) {
+                mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch_rtl);
+                mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch_rtl);
+            } else {
+                mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_rtl);
+                mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_rtl);
+            }
+        } else if (hasNotch) {
+            mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch);
+            mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
+        }
     }
 
     @Override
