@@ -43,4 +43,8 @@
     <dimen name="style_accent_preview">32dp</dimen>
     <dimen name="style_accent_icon">24dp</dimen>
 
+    <dimen name="alert_dialog_padding_material">20dp</dimen>
+    <dimen name="color_preference_width">18dip</dimen>
+    <dimen name="color_preference_height">18dip</dimen>
+
 </resources>

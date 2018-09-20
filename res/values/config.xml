@@ -29,4 +29,8 @@
              (true for some tablets) -->
     <integer name="config_volumeRockerVsDisplayOrientation">1</integer>
 
+    <!-- does the device have multi color led support or only
+         a fixed set of led colors -->
+    <bool name="config_has_multi_color_led">true</bool>
+
 </resources>

@@ -321,4 +321,45 @@
         <item>org.lineageos.overlay.black</item>
     </string-array>
 
+    <!-- Battery Styles -->
+    <string-array name="battery_styles_entries" translatable="false">
+        <item>@string/battery_style_default</item>
+        <item>@string/battery_style_meter_horizontal</item>
+        <item>@string/battery_style_circle</item>
+        <item>@string/battery_style_text</item>
+        <item>@string/battery_style_round_rect</item>
+        <item>@string/battery_style_droid</item>
+    </string-array>
+
+    <string-array name="battery_styles_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="battery_percent_enable_entries" translatable="false">
+        <item>@string/battery_percent_none</item>
+        <item>@string/battery_percent_always</item>
+        <item>@string/battery_percent_expanded</item>
+    </string-array>
+
+    <string-array name="battery_percent_enable_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="entries_led_colors" translatable="false">
+        <item>@string/led_color_green</item>
+        <item>@string/led_color_red</item>
+    </string-array>
+
+    <string-array name="values_led_colors" translatable="false">
+        <item>#FF00FF00</item>
+        <item>#FFFF0000</item>
+    </string-array>
+
 </resources>

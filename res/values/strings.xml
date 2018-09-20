@@ -395,4 +395,34 @@
     <string name="style_dark_overlay_black">Black</string>
     <string name="style_permission_error">Storage access permission is needed to analyze your wallpaper, please grant it to use this feature</string>
 
+    <!-- Battery Styles -->
+    <string name="battery_title">Battery display</string>
+    <string name="statusbar_battery_summary">Set style of status bar battery display</string>
+    <string name="statusbar_percent_inside_title">Percent overlay</string>
+    <string name="statusbar_percent_inside_summary">Display battery percentage on top of the the battery image</string>
+    <string name="statusbar_charging_image_title">Charging indicator</string>
+    <string name="statusbar_category_charging_title">Charging</string>
+    <string name="statusbar_charging_image_summary">Display bolt indicator while charging. Hides percent overlay</string>
+    <string name="statusbar_battery_charging_color_title">Color</string>
+    <string name="statusbar_battery_charging_color_enable_title">Color while charging</string>
+    <string name="statusbar_battery_charging_color_enable_summary"></string>
+    <string name="battery_enable_title">Show battery</string>
+    <string name="statusbar_battery_low_color_enable_title">Low battery color</string>
+    <string name="statusbar_battery_low_color_enable_summary">Enable different color if battery below 15%</string>
+    <string name="battery_style_text">Text only</string>
+    <string name="battery_style_default">Default</string>
+    <string name="battery_style_meter_horizontal">Horizontal bar</string>
+    <string name="battery_style_circle">Circle</string>
+    <string name="battery_style_droid">Viper</string>
+    <string name="battery_style_round_rect">Square</string>
+    <string name="statusbar_battery_dotted_line_title">Dotted line</string>
+    <string name="statusbar_battery_dotted_line_summary">Use dotted line effect for certain styles</string>
+    <string name="battery_percent_none">Never</string>
+    <string name="battery_percent_always">Always</string>
+    <string name="battery_percent_expanded">Only when expanded</string>
+    <string name="battery_percent_title">Show percent</string>
+
+    <string name="led_color_green">Green</string>
+    <string name="led_color_red">Red</string>
+
 </resources>

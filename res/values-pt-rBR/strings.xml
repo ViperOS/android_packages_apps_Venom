@@ -375,4 +375,32 @@
   <string name="style_dark_overlay_black">Preto</string>
   <string name="style_permission_error">É necessária a permissão de acesso ao armazenamento para analisar o seu papel de parede. Por favor, conceda a permissão para usar este recurso.</string>
 
+  <!-- Battery Styles -->
+  <string name="battery_title">Monitor de bateria</string>
+  <string name="statusbar_battery_summary">Definir o estilo da bateria na barra de status</string>
+  <string name="statusbar_percent_inside_title">Visualizar porcentagem</string>
+  <string name="statusbar_percent_inside_summary">Mostrar percentagem sobre o ícone da bateria</string>
+  <string name="statusbar_charging_image_title">Indicador de carga</string>
+  <string name="statusbar_category_charging_title">Carregando</string>
+  <string name="statusbar_charging_image_summary">Exibir indicador de raio durante a carga. Isto esconde a porcentagem de bateria em amostra</string>
+  <string name="statusbar_battery_charging_color_title">Cor</string>
+  <string name="statusbar_battery_charging_color_enable_title">Cor durante o carregamento</string>
+  <string name="battery_enable_title">Mostrar bateria</string>
+  <string name="statusbar_battery_low_color_enable_title">Cor de bateria fraca</string>
+  <string name="statusbar_battery_low_color_enable_summary">Ativar uma cor diferente se o nível de bateria for inferior a 15%</string>
+  <string name="battery_style_text">Somente texto</string>
+  <string name="battery_style_default">Padrão</string>
+  <string name="battery_style_meter_horizontal">Barra horizontal</string>
+  <string name="battery_style_circle">Círculo</string>
+  <string name="battery_style_round_rect">Quadrado</string>
+  <string name="statusbar_battery_dotted_line_title">Linha pontilhada</string>
+  <string name="statusbar_battery_dotted_line_summary">Use efeito de linha pontilhada para determinados estilos</string>
+  <string name="battery_percent_none">Nunca</string>
+  <string name="battery_percent_always">Sempre</string>
+  <string name="battery_percent_expanded">Apenas quando expandido</string>
+  <string name="battery_percent_title">Mostrar porcentagem</string>
+
+  <string name="led_color_green">Verde</string>
+  <string name="led_color_red">Vermelho</string>
+
 </resources>

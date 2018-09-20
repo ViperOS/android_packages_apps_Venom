@@ -16,8 +16,67 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/battery_style_title">
 
+        <ListPreference
+            android:key="statusbar_battery_style"
+            android:title="@string/battery_style_title"
+            android:entries="@array/battery_styles_entries"
+            android:entryValues="@array/battery_styles_values"
+            android:persistent="false"
+            android:defaultValue="0"/>
 
+        <ListPreference
+            android:key="statusbar_battery_percent_enable"
+            android:title="@string/battery_percent_title"
+            android:entries="@array/battery_percent_enable_entries"
+            android:entryValues="@array/battery_percent_enable_values"
+            android:persistent="false"
+            android:defaultValue="0"/>
+
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="statusbar_battery_percent_inside"
+            android:title="@string/statusbar_percent_inside_title"
+            android:summary="@string/statusbar_percent_inside_summary"
+            android:defaultValue="false"/>
+
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="statusbar_battery_low_color_enable"
+            android:title="@string/statusbar_battery_low_color_enable_title"
+            android:summary="@string/statusbar_battery_low_color_enable_summary"
+            android:defaultValue="true"/>
+
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="statusbar_battery_dotted_line"
+            android:title="@string/statusbar_battery_dotted_line_title"
+            android:summary="@string/statusbar_battery_dotted_line_summary"
+            android:defaultValue="false"/>
+
+        <PreferenceCategory
+            android:key="statusbar_category_charging"
+            android:title="@string/statusbar_category_charging_title">
+
+            <com.viper.venom.preference.SystemSettingSwitchPreference
+                android:key="statusbar_battery_charging_image"
+                android:title="@string/statusbar_charging_image_title"
+                android:summary="@string/statusbar_charging_image_summary"
+                android:defaultValue="true"/>
+
+            <com.viper.venom.preference.SystemSettingSwitchPreference
+                android:key="statusbar_battery_charging_color_enable"
+                android:title="@string/statusbar_battery_charging_color_enable_title"
+                android:summary="@string/statusbar_battery_charging_color_enable_summary"
+                android:defaultValue="false"/>
+
+            <com.viper.venom.preference.ColorSelectPreference
+                android:key="statusbar_battery_charging_color"
+                settings:multiColor="true"
+                settings:withAlpha="true"
+                android:title="@string/statusbar_battery_charging_color_title"
+                android:persistent="false"
+                android:dependency ="statusbar_battery_charging_color_enable"/>
+
+        </PreferenceCategory>
 
 </PreferenceScreen>
