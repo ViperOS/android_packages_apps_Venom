@@ -31,11 +31,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.lineageos.internal.notification.LightsCapabilities;
-import com.viper.venom.preference.CustomDialogPreference;
+import com.viper.venom.preference.CustomDialogPref;
 
 import com.android.settings.R;
 
-public class ApplicationLightPreference extends CustomDialogPreference<LightSettingsDialog>
+public class ApplicationLightPreference extends CustomDialogPref<LightSettingsDialog>
         implements View.OnLongClickListener {
 
     private static String TAG = "AppLightPreference";

@@ -36,13 +36,13 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.android.settings.R;
-import com.viper.venom.preference.CustomDialogPreference;
+import com.viper.venom.preference.CustomDialogPref;
 
 import static org.lineageos.internal.util.DeviceKeysConstants.*;
 
 import lineageos.providers.LineageSettings;
 
-public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialog> implements
+public class ButtonBacklightBrightness extends CustomDialogPref<AlertDialog> implements
         SeekBar.OnSeekBarChangeListener {
     private static final int DEFAULT_BUTTON_TIMEOUT = 5;
 

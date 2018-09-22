@@ -40,11 +40,11 @@ import lineageos.providers.LineageSettings;
 
 import org.lineageos.internal.notification.LightsCapabilities;
 import org.lineageos.internal.notification.LineageNotification;
-import com.viper.venom.preference.CustomDialogPreference;
+import com.viper.venom.preference.CustomDialogPref;
 
 import com.android.settings.R;
 
-public class BrightnessPreference extends CustomDialogPreference<AlertDialog>
+public class BrightnessPreference extends CustomDialogPref<AlertDialog>
         implements SeekBar.OnSeekBarChangeListener {
 
     private static String TAG = "BrightnessPreference";

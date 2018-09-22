@@ -46,6 +46,8 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
+import com.viper.venom.fragments.ButtonBacklightBrightness;
+
 import com.viper.venom.utils.DeviceUtils;
 import com.viper.venom.utils.TelephonyUtils;
 
