@@ -25,6 +25,12 @@
         android:layout="@layout/preference_color_manager"
         android:fragment="com.viper.venom.fragments.style.StylePreferences" />
 
+    <!-- Custom Font -->
+    <com.viper.venom.fragments.display.FontDialogPreference
+        android:key="custom_font"
+        android:layout="@layout/preference_custom_font"
+        android:persistent="false" />
+
     <!-- Button Settings -->
     <Preference
         android:key="button_settings"

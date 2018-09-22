@@ -454,4 +454,9 @@
   <string name="ticker_enabled">Notificação</string>
   <string name="ticker_media_enabled">Notificação e música</string>
 
+  <!-- Font picker -->
+  <string name="font_picker_title">Seletor de fontes</string>
+  <string name="font_picker_summary">Altere o estilo de fonte da rom</string>
+  <string name="font_picker_progress">Aplicando nova fonte\u2026</string>
+
 </resources>
