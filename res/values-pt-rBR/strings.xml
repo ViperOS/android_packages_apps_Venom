@@ -70,8 +70,6 @@
   <string name="lockscreen_misc_selection_summary">Configurações de desbloqueio de tela</string>
   <string name="network_traffic_title">Trafego da internet</string>
   <string name="network_traffic_summary">Me mostra o estado do trafego da internet</string>
-  <string name="show_clear_all_recents_button_title">Botão circular</string>
-  <string name="show_clear_all_recents_button_summary">Mostrar um botão circular ao invés do texto \"Limpar Tudo\"</string>
   <string name="recents_type_title">Layout de recentes</string>
   <string name="recents_type_summary">Alterar layout de recentes para Padrão, Grade, Android Go</string>
   <string name="status_bar_clock_date_settings_title">Relógio &amp; data</string>
@@ -421,5 +419,17 @@
   <string name="status_bar_logo_disabled">Desativado</string>
   <string name="status_bar_logo_left">Esquerda</string>
   <string name="status_bar_logo_right">Direita</string>
+
+  <!-- Recents panel settings -->
+  <string name="recents_default_category">Recentes</string>
+  <string name="show_clear_all_recents_button_title">Botão circular</string>
+  <string name="show_clear_all_recents_button_summary">Mostrar um botão circular ao invés do texto \"Limpar Tudo\"</string>
+  <string name="recents_clear_all_location_title">Localização do botão circular</string>
+  <string name="recents_clear_all_location_top_right">Superior Direito</string>
+  <string name="recents_clear_all_location_top_left">Superior esquerdo</string>
+  <string name="recents_clear_all_location_top_center">Superior central</string>
+  <string name="recents_clear_all_location_bottom_right">Canto inferior direito</string>
+  <string name="recents_clear_all_location_bottom_left">Inferior Esquerdo</string>
+  <string name="recents_clear_all_location_bottom_center">Inferior central</string>
 
 </resources>
