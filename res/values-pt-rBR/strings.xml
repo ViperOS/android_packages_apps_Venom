@@ -414,4 +414,12 @@
   <string name="show_carrier_statusbar">Barra de Status</string>
   <string name="show_carrier_enabled">Ambos</string>
 
+  <!-- ViperOS statusbar logo -->
+  <string name="status_bar_logo_title">ViperOS logo</string>
+  <string name="status_bar_logo_summary">Ativar para mostrar o logotipo da ViperOS na barra de status</string>
+  <string name="status_bar_logo_dialog_title">Posição do logotipo ViperOS</string>
+  <string name="status_bar_logo_disabled">Desativado</string>
+  <string name="status_bar_logo_left">Esquerda</string>
+  <string name="status_bar_logo_right">Direita</string>
+
 </resources>
