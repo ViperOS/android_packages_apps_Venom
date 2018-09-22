@@ -26,6 +26,12 @@
         android:entryValues="@array/status_bar_quick_qs_pulldown_values"
         android:defaultValue="0" />
 
+    <PreferenceScreen
+        android:key="qs_rows_columns"
+        android:title="@string/qs_rows_columns_title"
+        android:summary="@string/qs_rows_columns_title_summary"
+        android:fragment="com.viper.venom.fragments.QsRows" />
+
     <PreferenceCategory
         android:key="quick_settings_general_category"
         android:title="@string/qs_brightness_slider_title">

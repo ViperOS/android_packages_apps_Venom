@@ -441,4 +441,12 @@
   <string name="recents_grid">Grade</string>
   <string name="recents_go">Android Go</string>
 
+  <!-- Quick settings tiles -->
+  <string name="qs_rows_columns_title">Linhas e colunas da configurações rápidas</string>
+  <string name="qs_rows_columns_title_summary">Alterar linhas e colunas da configurações rápidas</string>
+  <string name="qs_rows_portrait_title">Linhas (retrato)</string>
+  <string name="qs_rows_landscape_title">Linhas (paisagem)</string>
+  <string name="qs_columns_portrait_title">Colunas (retrato)</string>
+  <string name="qs_columns_landscape_title">Colunas (paisagem)</string>
+
 </resources>

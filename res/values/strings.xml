@@ -463,4 +463,12 @@
     <string name="recents_grid">Grid</string>
     <string name="recents_go">Android Go</string>
 
+    <!-- Quick settings tiles -->
+    <string name="qs_rows_columns_title">QS rows and columns</string>
+    <string name="qs_rows_columns_title_summary">Change QS rows and columns</string>
+    <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
+    <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
+    <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
+    <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
+
 </resources>
