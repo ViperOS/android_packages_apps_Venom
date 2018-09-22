@@ -432,4 +432,8 @@
   <string name="recents_clear_all_location_bottom_left">Inferior Esquerdo</string>
   <string name="recents_clear_all_location_bottom_center">Inferior central</string>
 
+  <!-- P animations -->
+  <string name="system_default_animation_title">Estilo de animação Android P</string>
+  <string name="system_default_animation_summary">Ativar animações \"Padrão\" Android P</string>
+
 </resources>

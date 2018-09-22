@@ -83,14 +83,14 @@ public class MiscSettings extends SettingsPreferenceFragment implements OnPrefer
         // Rounded Corner Radius
         mCornerRadius = (CustomSeekBarPreference) findPreference(SYSUI_ROUNDED_SIZE);
         int cornerRadius = Settings.Secure.getInt(getContentResolver(),
-                Settings.Secure.SYSUI_ROUNDED_SIZE, 25);
+                Settings.Secure.SYSUI_ROUNDED_SIZE, 0);
         mCornerRadius.setValue(cornerRadius / 1);
         mCornerRadius.setOnPreferenceChangeListener(this);
 
         // Rounded Content Padding
         mContentPadding = (CustomSeekBarPreference) findPreference(SYSUI_ROUNDED_CONTENT_PADDING);
         int contentPadding = Settings.Secure.getInt(getContentResolver(),
-                Settings.Secure.SYSUI_ROUNDED_CONTENT_PADDING, 10);
+                Settings.Secure.SYSUI_ROUNDED_CONTENT_PADDING, 0);
         mContentPadding.setValue(contentPadding / 1);
         mContentPadding.setOnPreferenceChangeListener(this);
 
