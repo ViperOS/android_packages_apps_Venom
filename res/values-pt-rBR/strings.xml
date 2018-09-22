@@ -436,4 +436,9 @@
   <string name="system_default_animation_title">Estilo de animação Android P</string>
   <string name="system_default_animation_summary">Ativar animações \"Padrão\" Android P</string>
 
+    <!-- AOSP Recents Style -->
+  <string name="recents_stock">Padrão</string>
+  <string name="recents_grid">Grade</string>
+  <string name="recents_go">Android Go</string>
+
 </resources>
