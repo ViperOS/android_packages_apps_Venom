@@ -252,10 +252,6 @@
     <string name="torch_long_press_power_timeout_5min">5 minutes</string>
     <string name="torch_long_press_power_timeout_10min">10 minutes</string>
 
-    <!-- Advanced restart options -->
-    <string name="advanced_reboot_title">Advanced restart</string>
-    <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
-
     <!-- Status bar -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
@@ -480,5 +476,26 @@
     <string name="font_picker_title">Font picker</string>
     <string name="font_picker_summary">Change the rom font style</string>
     <string name="font_picker_progress">Applying new font\u2026</string>
+
+    <!-- global acions config -->
+    <string name="global_actions_power_title">Power</string>
+    <string name="global_actions_reboot_title">Restart</string>
+    <string name="global_actions_lockdown_title">Lock</string>
+    <string name="global_actions_settings_title">Settings</string>
+    <string name="global_actions_airplane_title">Airplane mode</string>
+    <string name="global_actions_screenshot_title">Screenshot</string>
+    <string name="global_actions_screenrecord_title">Screenrecord</string>
+    <string name="global_actions_torch_title">Flashlight</string>
+    <string name="global_actions_users_title">Users</string>
+    <string name="global_actions_voiceassist_title">Voiceassist</string>
+    <string name="global_actions_silent_title">Silent mode</string>
+    <string name="global_actions_dnd_title">Do not disturb</string>
+    <string name="global_actions_summary">Actions shown in power menu</string>
+    <string name="global_actions_header">Some actions are only visible depending on the setup or only if the device is unlocked</string>
+    <string name="global_actions_advanced_reboot_summary">Show more options in restart menu</string>
+    <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
+    <string name="global_actions_advanced_reboot_summary_new">Show more options in restart menu if not locked</string>
+    <string name="lockscreen_power_menu_disabled_title">Disable power menu when locked</string>
+    <string name="lockscreen_power_menu_disabled_summary">Disable power menu on secure lock screens</string>
 
 </resources>

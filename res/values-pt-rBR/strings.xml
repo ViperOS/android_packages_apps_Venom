@@ -239,10 +239,6 @@
   <string name="torch_long_press_power_timeout_5min">5 minutos</string>
   <string name="torch_long_press_power_timeout_10min">10 minutos</string>
 
-  <!-- Advanced restart options -->
-  <string name="advanced_reboot_title">Reinício avançado</string>
-  <string name="advanced_reboot_summary">Quando desbloqueado, incluir opções no menu liga/desliga para reiniciar o dispositivo em modo de recuperação ou bootloader</string>
-
   <!-- Status bar -->
   <string name="status_bar_title">Barra de status</string>
   <string name="status_bar_quick_qs_pulldown_title">Deslizar rápido para baixo</string>
@@ -458,5 +454,25 @@
   <string name="font_picker_title">Seletor de fontes</string>
   <string name="font_picker_summary">Altere o estilo de fonte da rom</string>
   <string name="font_picker_progress">Aplicando nova fonte\u2026</string>
+
+  <!-- global acions config -->
+  <string name="global_actions_power_title">Energia</string>
+  <string name="global_actions_reboot_title">Reiniciar</string>
+  <string name="global_actions_lockdown_title">Bloquear</string>
+  <string name="global_actions_settings_title">Configurações</string>
+  <string name="global_actions_airplane_title">Modo avião</string>
+  <string name="global_actions_screenshot_title">Captura de tela</string>
+  <string name="global_actions_screenrecord_title">Gravar tela</string>
+  <string name="global_actions_torch_title">Lanterna</string>
+  <string name="global_actions_users_title">Usuários</string>
+  <string name="global_actions_voiceassist_title">Assistente de voz</string>
+  <string name="global_actions_silent_title">Modo silencioso</string>
+  <string name="global_actions_dnd_title">Não perturbe</string>
+  <string name="global_actions_summary">Ações mostradas no menu de energia</string>
+  <string name="global_actions_header">Algumas ações são apenas visíveis, dependendo da configuração ou somente se o dispositivo é desbloqueado</string>
+  <string name="global_actions_advanced_reboot_summary">Mostrar mais opções no menu reiniciar</string>
+  <string name="global_actions_advanced_reboot_title">Ativar opções avançadas de reinicio</string>
+  <string name="lockscreen_power_menu_disabled_title">Desativar o menu de energia com o dispositivo bloqueado</string>
+  <string name="lockscreen_power_menu_disabled_summary">Desativar o menu de energia em telas de bloqueio seguras</string>
 
 </resources>
