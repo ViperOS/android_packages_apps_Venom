@@ -488,4 +488,11 @@
   <string name="lockscreen_date_selection_str_box">Caixa semitransparente</string>
   <string name="lockscreen_date_selection_str_round">Caixa semitransparente (redonda)</string>
 
+  <string name="hide_lockscreen_clock_title">Widget de relógio</string>
+  <string name="hide_lockscreen_clock_summary">Alterar a visibilidade do widget de relógio</string>
+  <string name="hide_lockscreen_date_title">Widget de data</string>
+  <string name="hide_lockscreen_date_summary">Altere a visibilidade da data abaixo do widget de relógio</string>
+  <string name="hide_lockscreen_alarm_title">Texto de alarme</string>
+  <string name="hide_lockscreen_alarm_summary">Altere a visibilidade do texto do alarme embaixo do widget de relógio</string>
+
 </resources>
