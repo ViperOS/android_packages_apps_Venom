@@ -475,4 +475,17 @@
   <string name="lockscreen_power_menu_disabled_title">Desativar o menu de energia com o dispositivo bloqueado</string>
   <string name="lockscreen_power_menu_disabled_summary">Desativar o menu de energia em telas de bloqueio seguras</string>
 
+  <!-- Lockscreen clock, date, & alarm -->
+  <string name="lockscreen_clock_selection_digital">Padrão</string>
+  <string name="lockscreen_clock_selection_digital_bold">Digital (negrito)</string>
+  <string name="lockscreen_clock_selection_analog">Analógico</string>
+  <string name="lockscreen_clock_selection_analog_deadpool">Analógico (deadpool)</string>
+  <string name="lockscreen_clock_selection_sammy">Sammy</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Sammy (negrito)</string>
+  <string name="lockscreen_date_selection_title">Estilo da data</string>
+  <string name="lockscreen_date_selection_default_aosp">Padrão (tamanho pequeno)</string>
+  <string name="lockscreen_date_selection_default">Padrão</string>
+  <string name="lockscreen_date_selection_str_box">Caixa semitransparente</string>
+  <string name="lockscreen_date_selection_str_round">Caixa semitransparente (redonda)</string>
+
 </resources>

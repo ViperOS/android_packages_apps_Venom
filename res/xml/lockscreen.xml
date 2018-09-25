@@ -24,9 +24,9 @@
         android:layout="@layout/preference_lockscreen_clock_date_style"
         android:fragment="com.viper.venom.fragments.LockscreenSettings" />
 
-    <PreferenceScreen
+    <!-- <PreferenceScreen
         android:key="misc_lockscreen"
         android:layout="@layout/preference_misc_lockscreen"
-        android:fragment="com.viper.venom.fragments.LockscreenMisc" />
+        android:fragment="com.viper.venom.fragments.LockscreenMisc" /> -->
 
 </PreferenceScreen>
