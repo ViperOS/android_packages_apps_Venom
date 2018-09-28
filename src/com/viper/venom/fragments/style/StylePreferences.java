@@ -16,6 +16,7 @@
 package com.viper.venom.fragments.style;
 
 import android.Manifest;
+import android.content.Context;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.WallpaperManager;
@@ -28,6 +29,8 @@ import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.ServiceManager;
+import android.os.RemoteException;
 import android.support.annotation.ColorInt;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -40,6 +43,7 @@ import android.widget.Toast;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.statusbar.IStatusBarService;
 
 import com.viper.venom.fragments.style.models.Accent;
 import com.viper.venom.fragments.style.models.StyleStatus;
@@ -71,6 +75,8 @@ public class StylePreferences extends SettingsPreferenceFragment {
     private String mPackageName;
 
     private byte mOkStatus = 0;
+
+    private IStatusBarService mStatusBarService;
 
     @Override
     public void onCreate(Bundle savedInstance) {
@@ -155,6 +161,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
         if (!(newValue instanceof String)) {
             return false;
         }
+        resUI();
         return mInterface.setDarkOverlay((String) newValue);
     }
 
@@ -280,8 +287,20 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
         setDarkStyleEnabled(value);
         setStyleIcon(value);
+        resUI();
 
         return true;
+    }
+
+    private void resUI(){
+        IStatusBarService statusBarService = IStatusBarService.Stub.asInterface(ServiceManager.checkService(Context.STATUS_BAR_SERVICE));
+        if (statusBarService != null) {
+            try {
+                statusBarService.restartUI();
+            } catch (RemoteException e) {
+                // do nothing.
+            }
+        }
     }
 
     private void setDarkStyleEnabled(int value) {
