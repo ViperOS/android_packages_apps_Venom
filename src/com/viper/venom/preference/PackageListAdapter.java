@@ -42,7 +42,7 @@ import java.util.TreeSet;
 public class PackageListAdapter extends BaseAdapter implements Runnable {
     private PackageManager mPm;
     private LayoutInflater mInflater;
-    private List<PackageItem> mInstalledPackages = new LinkedList<PackageItem>();
+    private final List<PackageItem> mInstalledPackages = new LinkedList<PackageItem>();
 
     // Packages which don't have launcher icons, but which we want to show nevertheless
     private static final String[] PACKAGE_WHITELIST = new String[] {
@@ -118,12 +118,12 @@ public class PackageListAdapter extends BaseAdapter implements Runnable {
         if (convertView != null) {
             holder = (ViewHolder) convertView.getTag();
         } else {
-            convertView = mInflater.inflate(R.layout.preference_icon, null, false);
+            convertView = mInflater.inflate(R.layout.applist_preference_icon, null, false);
             holder = new ViewHolder();
             convertView.setTag(holder);
             holder.title = (TextView) convertView.findViewById(com.android.internal.R.id.title);
             holder.summary = (TextView) convertView.findViewById(com.android.internal.R.id.summary);
-            holder.icon = (ImageView) convertView.findViewById(com.android.internal.R.id.icon);
+            holder.icon = (ImageView) convertView.findViewById(R.id.icon);
         }
 
         PackageItem applicationInfo = getItem(position);
