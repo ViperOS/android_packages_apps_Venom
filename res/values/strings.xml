@@ -90,8 +90,10 @@
     <string name="about_category_summary">A little about our team and our purpose</string>
     <string name="about_viper">ViperOS</string>
     <string name="about_viper_discription">Who we are?\nWe are the ViperOS team, an organized and Brazilian team that aims to jointly develop a clean and useful Android operational system.\nWe value pure android, but it always looks more beautiful with more details, does not it?\nWe offer a simple and easy menu for customization of your device, we value a clean and direct interface, try in your device possibilities of customizations and a good experience.\nWe offer useful resources for your day-to-day life. Updated every month with security patch according to Google.\nOur ROM offers a theme engine for you to customize to your liking, our philosophy is to deliver a stable ROM with useful features and we cherish a lightweight interface prioritizing performance and battery for your device.</string>
+    <string name="birdman_name">BIRDManJ</string>
+    <string name="birdman_discription">Founder | Lead Developer | Maintainer</string>
     <string name="jbcdroid_name">JBCDroid</string>
-    <string name="jbcdroid_discription">Founder | Lead Developer | Maintainer</string>
+    <string name="jbcdroid_discription">Co-Founder | Lead Developer | Maintainer</string>
     <string name="esrom_name">EsromTech</string>
     <string name="esrom_discription">Co-Lead Developer | Maintainer</string>
     <string name="rkschunk_name">RKSchunk</string>
