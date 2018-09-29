@@ -35,9 +35,9 @@ import com.viper.venom.about.DiagonalView;
 import com.android.settings.R;
 
 public class FancyAboutPage extends RelativeLayout {
-    private TextView l1,l2,jbcname,esromname,rkschunkname,matheeusafname,kleyname,joshuaname,jbcdescription,esromdescription,rkschunkdescription,matheeusafdescription,kleydescription,joshuadescription;
+    private TextView l1,l2,jbcname,esromname,rkschunkname,matheeusafname,kleyname,joshuaname,zjrdroidname,jbcdescription,esromdescription,rkschunkdescription,matheeusafdescription,kleydescription,joshuadescription,zjrdroiddescription;
     DiagonalView diagonalView;
-    ImageView jbc,esrom,rk,matheeusaf,kley,joshua,gg,tl,tw,git;
+    ImageView jbc,esrom,rk,matheeusaf,kley,joshua,zjrdroid,gg,tl,tw,git;
     String twitterurl,ggurl,tlurl,githuburl;
     private void init(Context context) {
         //do stuff that was in your original constructor...
@@ -52,18 +52,21 @@ public class FancyAboutPage extends RelativeLayout {
         matheeusafname=(TextView) findViewById(R.id.matheeusafname);
         kleyname=(TextView) findViewById(R.id.kleyname);
         joshuaname=(TextView) findViewById(R.id.joshuaname);
+        zjrdroidname=(TextView) findViewById(R.id.zjrdroidname);
         jbcdescription=(TextView) findViewById(R.id.jbcdescription);
         esromdescription=(TextView) findViewById(R.id.esromdescription);
         rkschunkdescription=(TextView) findViewById(R.id.rkschunkdescription);
         matheeusafdescription=(TextView) findViewById(R.id.matheeusafdescription);
         kleydescription=(TextView) findViewById(R.id.kleydescription);
         joshuadescription=(TextView) findViewById(R.id.joshuadescription);
+        zjrdroiddescription=(TextView) findViewById(R.id.zjrdroiddescription);
         jbc=(ImageView) findViewById(R.id.jbc);
         esrom=(ImageView) findViewById(R.id.esrom);
         rk=(ImageView) findViewById(R.id.rk);
         matheeusaf=(ImageView) findViewById(R.id.matheeusaf);
         kley=(ImageView) findViewById(R.id.kley);
         joshua=(ImageView) findViewById(R.id.joshua);
+        zjrdroid=(ImageView) findViewById(R.id.zjrdroid);
         tw=(ImageView) findViewById(R.id.twitter);
         gg=(ImageView) findViewById(R.id.google);
         tl=(ImageView) findViewById(R.id.telegram);
@@ -159,6 +162,7 @@ public class FancyAboutPage extends RelativeLayout {
        matheeusaf.setImageResource(Icon);
        kley.setImageResource(Icon);
        joshua.setImageResource(Icon);
+       zjrdroid.setImageResource(Icon);
     }
     public void setAppName(String AppName){
        jbcname.setText(AppName);
@@ -167,6 +171,7 @@ public class FancyAboutPage extends RelativeLayout {
        matheeusafname.setText(AppName);
        kleyname.setText(AppName);
        joshuaname.setText(AppName);
+       zjrdroidname.setText(AppName);
     }
     public void setAppDescription(String AppDescription){
         jbcdescription.setText(AppDescription);
@@ -175,6 +180,7 @@ public class FancyAboutPage extends RelativeLayout {
         matheeusafdescription.setText(AppDescription);
         kleydescription.setText(AppDescription);
         joshuadescription.setText(AppDescription);
+        zjrdroiddescription.setText(AppDescription);
     }
 
 }
