@@ -506,4 +506,15 @@
   <string name="weather_icon_pack_title">Pacote de ícones do tempo</string>
   <string name="weather_icon_pack_note">Nota\u003a Você pode instalar novos pacotes de ícones da play store procurando por \"Chronus icons\"</string>
 
+  <!-- StatusBar weather settings -->
+  <string name="statusbar_weather_title">Clima na barra de status</string>
+  <string name="statusbar_weather_summary">Configurar a partir das configurações rápidas/clima</string>
+  <string name="statusbar_weather_dialog_title">Estilo do clima na barra de status</string>
+  <string name="status_bar_weather_hidden">Ocultar clima</string>
+  <string name="status_bar_temperature_image_show_scale">Exibir temperatura com escala e imagem</string>
+  <string name="status_bar_temperature_image_hide_scale">Exibir temperatura com imagem sem escala</string>
+  <string name="status_bar_temperature_show_scale_hide_image">Exibir temperatura com escala</string>
+  <string name="status_bar_temperature_hide_scale_hide_image">Exibir temperatura sem escala</string>
+  <string name="status_bar_show_image">Exibir imagem</string>
+
 </resources>
