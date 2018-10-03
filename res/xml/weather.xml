@@ -45,4 +45,33 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="lock_screen_weather_category"
+        android:title="@string/lock_screen_weather_category_title" >
+
+         <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="lock_screen_show_weather"
+            android:title="@string/lock_screen_show_weather_title"
+            android:summaryOn="@string/lock_screen_show_weather_summaryOn"
+            android:summaryOff="@string/lock_screen_show_weather_summaryOff"
+            android:defaultValue="false" />
+
+         <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="lock_screen_show_weather_location"
+            android:title="@string/lock_screen_show_location_title"
+            android:summaryOn="@string/lock_screen_show_location_summaryOn"
+            android:summaryOff="@string/lock_screen_show_location_summaryOff"
+            android:defaultValue="true"
+            android:dependency="lock_screen_show_weather" />
+
+         <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="lock_screen_weather_condition_icon"
+            android:title="@string/lock_screen_weather_condition_icon_title"
+            android:summaryOn="@string/lock_screen_weather_condition_icon_summaryOn"
+            android:summaryOff="@string/lock_screen_weather_condition_icon_summaryOff"
+            android:defaultValue="true"
+            android:dependency="lock_screen_show_weather" />
+
+     </PreferenceCategory>
+
 </PreferenceScreen>

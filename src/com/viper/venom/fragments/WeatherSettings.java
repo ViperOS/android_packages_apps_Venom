@@ -24,6 +24,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.UserHandle;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
@@ -45,7 +46,6 @@ public class WeatherSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "OmniJawsSettings";
-    private static final String CATEGORY_WEATHER = "weather_category";
     private static final String WEATHER_ICON_PACK = "weather_icon_pack";
     private static final String DEFAULT_WEATHER_ICON_PACKAGE = "org.omnirom.omnijaws";
     private static final String WEATHER_SERVICE_PACKAGE = "org.omnirom.omnijaws";
@@ -68,10 +68,7 @@ public class WeatherSettings extends SettingsPreferenceFragment
         final ContentResolver resolver = getActivity().getContentResolver();
         final PackageManager pm = getActivity().getPackageManager();
 
-        mWeatherCategory = (PreferenceCategory) prefSet.findPreference(CATEGORY_WEATHER);
-        if (mWeatherCategory != null && (!Util.isPackageInstalled(WEATHER_SERVICE_PACKAGE, pm))) {
-            prefSet.removePreference(mWeatherCategory);
-        } else {
+        if (DeviceUtils.isPackageInstalled(WEATHER_SERVICE_PACKAGE, pm)) {
             String settingsJaws = Settings.System.getString(resolver,
                     Settings.System.OMNIJAWS_WEATHER_ICON_PACK);
             if (settingsJaws == null) {
@@ -130,9 +127,9 @@ public class WeatherSettings extends SettingsPreferenceFragment
             int valueIndex = mWeatherIconPack.findIndexOfValue(value);
             mWeatherIconPack.setSummary(mWeatherIconPack.getEntries()[valueIndex]);
         } else if (preference == mStatusBarWeather) {
-            int temperatureShow = Integer.valueOf((String) newValue);
-            int index = mStatusBarWeather.findIndexOfValue((String) newValue);
-            Settings.System.putIntForUser(resolver,
+            int temperatureShow = Integer.valueOf((String) objValue);
+            int index = mStatusBarWeather.findIndexOfValue((String) objValue);
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
                    Settings.System.STATUS_BAR_SHOW_WEATHER_TEMP,
                    temperatureShow, UserHandle.USER_CURRENT);
             if (temperatureShow == 0) {
