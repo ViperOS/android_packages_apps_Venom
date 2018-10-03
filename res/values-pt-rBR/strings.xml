@@ -497,4 +497,13 @@
   <string name="hide_lockscreen_alarm_title">Texto de alarme</string>
   <string name="hide_lockscreen_alarm_summary">Altere a visibilidade do texto do alarme embaixo do widget de relógio</string>
 
+  <!-- Weather - OmniJaws Settings -->
+  <string name="weather_title">Clima</string>
+  <string name="weather_title_summary">Personalização para o clima</string>
+  <string name="weather_config_title">Configurar previsão do tempo</string>
+  <string name="header_weather_title">Cabeçalho da previsão do tempo</string>
+  <string name="header_weather_summary">Habilitar painel do tempo no cabeçalho</string>
+  <string name="weather_icon_pack_title">Pacote de ícones do tempo</string>
+  <string name="weather_icon_pack_note">Nota\u003a Você pode instalar novos pacotes de ícones da play store procurando por \"Chronus icons\"</string>
+
 </resources>

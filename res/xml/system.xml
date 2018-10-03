@@ -55,6 +55,12 @@
         android:layout="@layout/preference_powermenu_settings"
         android:fragment="com.viper.venom.fragments.PowerMenuSettings" />
 
+    <!-- Weather -->
+    <Preference
+        android:key="weather_settings"
+        android:layout="@layout/preference_weather_settings"
+        android:fragment="com.viper.venom.fragments.WeatherSettings" />
+
     <!-- Misc Settings -->
     <Preference
         android:key="misc_settings"
