@@ -529,4 +529,9 @@
   <string name="lock_screen_weather_condition_icon_summaryOn">Ícone de tempo é mostrado na tela de bloqueio</string>
   <string name="lock_screen_weather_condition_icon_summaryOff">Ícone de tempo é mostrado na tela de bloqueio</string>
 
+  <!-- Face auto unlock -->
+  <string name="face_auto_unlock_title">Desbloqueio facial</string>
+  <string name="face_auto_unlock_summary">Dispensar tela de bloqueio rapidamente com desbloqueio facial</string>
+  <string name="secure_category_settings">Segurança</string>
+
 </resources>
