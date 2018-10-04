@@ -534,4 +534,8 @@
   <string name="face_auto_unlock_summary">Dispensar tela de bloqueio rapidamente com desbloqueio facial</string>
   <string name="secure_category_settings">Segurança</string>
 
+  <!-- Fingerprint vibrate -->
+  <string name="fprint_sucess_vib_title">Vibração na autenticação</string>
+  <string name="fprint_sucess_vib_summary">Vibrar quando autenticar sua digital</string>
+
 </resources>
