@@ -538,4 +538,10 @@
   <string name="fprint_sucess_vib_title">Vibração na autenticação</string>
   <string name="fprint_sucess_vib_summary">Vibrar quando autenticar sua digital</string>
 
+  <!-- Recents Membar -->
+  <string name="recents_mem_display_category">Barra de memória</string>
+  <string name="systemui_recents_mem_display_title">Mostrar barra de memória</string>
+  <string name="systemui_recents_mem_display_summaryOn">Barra de memória ativada</string>
+  <string name="systemui_recents_mem_display_summaryOff">Barra de memória desativada</string>
+
 </resources>

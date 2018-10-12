@@ -39,4 +39,17 @@
 
      </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="systemui_recents_mem_display_category"
+        android:title="@string/recents_mem_display_category">
+
+        <com.viper.venom.preference.SystemSettingSwitchPreference
+            android:key="systemui_recents_mem_display"
+            android:title="@string/systemui_recents_mem_display_title"
+            android:summaryOn="@string/systemui_recents_mem_display_summaryOn"
+            android:summaryOff="@string/systemui_recents_mem_display_summaryOff"
+            android:defaultValue="true" />
+
+     </PreferenceCategory>
+
 </PreferenceScreen>

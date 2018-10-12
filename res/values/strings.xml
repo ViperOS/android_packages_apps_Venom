@@ -564,4 +564,10 @@
     <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
     <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
 
+    <!-- Recents Membar -->
+    <string name="recents_mem_display_category">Memory Bar</string>
+    <string name="systemui_recents_mem_display_title">Show memory bar</string>
+    <string name="systemui_recents_mem_display_summaryOn">Memory bar enabled</string>
+    <string name="systemui_recents_mem_display_summaryOff">Memory bar disabled</string>
+
 </resources>
