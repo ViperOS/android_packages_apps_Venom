@@ -25,7 +25,7 @@
             android:entries="@array/battery_styles_entries"
             android:entryValues="@array/battery_styles_values"
             android:persistent="false"
-            android:defaultValue="0"/>
+            android:defaultValue="2"/>
 
         <ListPreference
             android:key="statusbar_battery_percent_enable"
@@ -39,7 +39,7 @@
             android:key="statusbar_battery_percent_inside"
             android:title="@string/statusbar_percent_inside_title"
             android:summary="@string/statusbar_percent_inside_summary"
-            android:defaultValue="false"/>
+            android:defaultValue="true"/>
 
         <com.viper.venom.preference.SystemSettingSwitchPreference
             android:key="statusbar_battery_low_color_enable"
