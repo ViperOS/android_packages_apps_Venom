@@ -544,4 +544,8 @@
   <string name="systemui_recents_mem_display_summaryOn">Barra de memória ativada</string>
   <string name="systemui_recents_mem_display_summaryOff">Barra de memória desativada</string>
 
+  <!-- Lockscreen battery info indicator -->
+  <string name="lockscreen_battery_info_title">Informação da Bateria</string>
+  <string name="lockscreen_battery_info_summary">Exibe a tensão de corrente máxima carregada do carregador e a temperatura da bateria na tela de bloqueio durante o carregamento</string>
+
 </resources>

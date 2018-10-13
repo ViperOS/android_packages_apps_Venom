@@ -570,4 +570,7 @@
     <string name="systemui_recents_mem_display_summaryOn">Memory bar enabled</string>
     <string name="systemui_recents_mem_display_summaryOff">Memory bar disabled</string>
 
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
 </resources>
