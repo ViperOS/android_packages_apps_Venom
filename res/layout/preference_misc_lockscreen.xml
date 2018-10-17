@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:src="@drawable/ic_settings_lockscreen_miscs"
-            android:background="@*android:color/accent_device_default_light"
+            android:background="@drawable/buttonshape"
             android:scaleType="center"/>
 
         <TextView
