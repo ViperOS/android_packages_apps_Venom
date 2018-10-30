@@ -46,10 +46,6 @@
   <!-- Venom Settings -->
   <string name="quicksettings_title">Configurações rápidas</string>
   <string name="quicksettings_summary">Altere as configurações rápidas</string>
-  <string name="themesettings_title">Gerenciador de cores</string>
-  <string name="themesettings_summary">Mude as cores do sistema com várias combinações de temas</string>
-  <string name="buttonsettings_title">Botões</string>
-  <string name="buttonsettings_summary">Executar ações de botões personalizadas</string>
 
   <!-- About Categorie -->
   <string name="about_viper_discription">Quem somos?\nSomos a equipe ViperOS, uma equipe organizada e brasileira que visa desenvolver em conjunto um sistema operacional Android limpo e com recursos úteis.\nValorizamos o android puro, mas ele sempre fica mais bonito com detalhes a mais, não é mesmo?\nOferecemos um menu simples e fácil para customização do seu dispositivo, valorizamos uma interface limpa e direta, tento em seu aparelho possibilidades de customizações e uma boa experiência.\nOferecemos recursos úteis para o seu dia-a-dia. Atualizada todo mês com patch de segurança de acordo com o Google.\nNossa ROM oferece um motor de temas para você customizar a seu gosto, nossa filosofia é entregar uma ROM estável com recursos úteis e prezamos por uma interface leve priorizando o desempenho e bateria para seu dispositivo.</string>
@@ -61,5 +57,14 @@
   <string name="kley_discription">Designer</string>
   <string name="joshua_discription">Designer | Mantenedor</string>
   <string name="zjrdroid_discription">Desenvolvedor | Mantenedor</string>
+
+  <!-- Quick Settings brightness slider -->
+  <string name="qs_brightness_slider_title">Controle deslizante de brilho</string>
+  <string name="qs_brightness_slider_summary">Mostrar o controle deslizante de brilho no painel de configurações rápidas</string>
+
+  <!-- QS Brightness Slider position -->
+  <string name="qs_brightness_slider_hide">Ocultar</string>
+  <string name="qs_brightness_slider_top">Cima</string>
+  <string name="qs_brightness_slider_bottom">Baixo</string>
 
 </resources>
