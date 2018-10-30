@@ -17,8 +17,20 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
     android:title="@string/quicksettings_title">
 
+    <PreferenceCategory
+        android:key="quick_settings_general_category"
+        android:title="@string/qs_brightness_slider_title">
 
+        <com.viper.venom.support.preferences.LineageSecureSettingListPreference
+            android:key="qs_show_brightness_slider"
+            android:title="@string/qs_brightness_slider_title"
+            android:entries="@array/qs_brightness_slider_entries"
+            android:entryValues="@array/qs_brightness_slider_values"
+            android:defaultValue="1" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
