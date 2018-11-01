@@ -31,6 +31,10 @@
     <!-- Venom Settings -->
     <string name="quicksettings_title">Quick Settings</string>
     <string name="quicksettings_summary">Change more quick settings</string>
+    <string name="themesettings_title">Color manager</string>
+    <string name="themesettings_summary">Change system colors with various theme combinations</string>
+    <string name="buttonsettings_title">Buttons</string>
+    <string name="buttonsettings_summary">Perform custom button actions</string>
 
     <!-- About Categorie -->
     <string name="about_viper">ViperOS</string>

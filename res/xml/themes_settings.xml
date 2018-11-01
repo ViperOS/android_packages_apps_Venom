@@ -19,6 +19,21 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title="@string/themesettings_title">
 
+    <PreferenceCategory
+        android:key="theme_category"
+        android:title="@string/theme_category_title">
 
+        <ListPreference
+            android:key="system_theme_style"
+            android:title="@string/device_theme"
+            android:entries="@array/system_theme_style_entries"
+            android:entryValues="@array/system_theme_style_values"
+            android:persistent="false" />
+
+        <Preference
+            android:key="accent_picker"
+            android:title="@string/theme_accent_picker_title" />
+
+     </PreferenceCategory>
 
 </PreferenceScreen>
