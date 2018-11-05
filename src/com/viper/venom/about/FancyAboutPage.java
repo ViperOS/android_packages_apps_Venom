@@ -37,8 +37,8 @@ import com.android.settings.R;
 public class FancyAboutPage extends RelativeLayout {
     private TextView l1,l2,birname,jbcname,esromname,rkschunkname,matheeusafname,kleyname,joshuaname,zjrdroidname,birdescription,jbcdescription,esromdescription,rkschunkdescription,matheeusafdescription,kleydescription,joshuadescription,zjrdroiddescription;
     DiagonalView diagonalView;
-    ImageView bir,jbc,esrom,rk,matheeusaf,kley,joshua,zjrdroid,gg,tl,tw,git;
-    String twitterurl,ggurl,tlurl,githuburl;
+    ImageView bir,jbc,esrom,rk,matheeusaf,kley,joshua,zjrdroid,gg,tl,git;
+    String ggurl,tlurl,githuburl;
     private void init(Context context) {
         //do stuff that was in your original constructor...
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(
@@ -70,7 +70,6 @@ public class FancyAboutPage extends RelativeLayout {
         kley=(ImageView) findViewById(R.id.kley);
         joshua=(ImageView) findViewById(R.id.joshua);
         zjrdroid=(ImageView) findViewById(R.id.zjrdroid);
-        tw=(ImageView) findViewById(R.id.twitter);
         gg=(ImageView) findViewById(R.id.google);
         tl=(ImageView) findViewById(R.id.telegram);
         git=(ImageView) findViewById(R.id.github);
@@ -101,19 +100,6 @@ public class FancyAboutPage extends RelativeLayout {
         diagonalView.setImageResource(drawable);
     }
 
-    public void addTwitterLink(String twitterAddress){
-        tw.setVisibility(VISIBLE);
-        twitterurl=twitterAddress;
-        tw.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!twitterurl.startsWith("http://") && !twitterurl.startsWith("https://"))
-                    twitterurl = "http://" + twitterurl;
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(twitterurl));
-                getContext().startActivity(browserIntent);
-            }
-        });
-    }
     public void addGoogleLink(String googleAddress){
         gg.setVisibility(VISIBLE);
         ggurl=googleAddress;

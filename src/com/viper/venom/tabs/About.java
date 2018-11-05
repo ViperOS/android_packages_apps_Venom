@@ -59,7 +59,6 @@ public class About extends SettingsPreferenceFragment implements
         FancyAboutPage fancyAboutPage = (FancyAboutPage)view. findViewById(R.id.fancyaboutpage);
 
         fancyAboutPage.setCover(R.drawable.coverimg);
-        fancyAboutPage.addTwitterLink("https://twitter.com/viperos_news");
         fancyAboutPage.addGoogleLink("https://plus.google.com/communities/112731559207528820150");
         fancyAboutPage.addTelegramLink("https://t.me/viperos_news");
         fancyAboutPage.addGitHubLink("https://github.com/Viper-Project");

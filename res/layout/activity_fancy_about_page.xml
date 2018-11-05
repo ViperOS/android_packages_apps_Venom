@@ -48,29 +48,19 @@
         android:text="@string/about_viper_discription" />
 
     <ImageView
-        android:id="@+id/twitter"
+        android:id="@+id/google"
         android:layout_width="54dp"
         android:layout_height="54dp"
         android:layout_alignStart="@+id/description"
         android:layout_below="@+id/description"
         android:layout_marginTop="12dp"
-        android:src="@drawable/twitter" />
-
-    <ImageView
-        android:id="@+id/google"
-        android:layout_width="54dp"
-        android:layout_height="54dp"
-        android:layout_alignBottom="@+id/twitter"
-        android:layout_marginStart="14dp"
-        android:visibility="gone"
-        android:layout_toEndOf="@+id/twitter"
         android:src="@drawable/google" />
 
     <ImageView
         android:id="@+id/telegram"
         android:layout_width="54dp"
         android:layout_height="54dp"
-        android:layout_alignBottom="@+id/twitter"
+        android:layout_alignBottom="@+id/google"
         android:layout_marginStart="14dp"
         android:layout_toEndOf="@+id/google"
         android:visibility="gone"
@@ -80,7 +70,7 @@
         android:id="@+id/github"
         android:layout_width="54dp"
         android:layout_height="54dp"
-        android:layout_alignBottom="@+id/twitter"
+        android:layout_alignBottom="@+id/google"
         android:layout_marginStart="14dp"
         android:layout_toEndOf="@+id/telegram"
         android:visibility="gone"
@@ -92,7 +82,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/twitter"
+        android:layout_below="@+id/google"
         android:layout_marginTop="16dp"
         android:padding="4dp"
         app:cardElevation="4dp"
