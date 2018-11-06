@@ -34,6 +34,10 @@
             android:key="accent_picker"
             android:title="@string/theme_accent_picker_title" />
 
+        <Preference
+            android:key="qs_tile_style"
+            android:title="@string/qs_tile_style_title" />
+
      </PreferenceCategory>
 
 </PreferenceScreen>
