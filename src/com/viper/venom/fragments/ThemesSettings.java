@@ -59,7 +59,7 @@ public class ThemesSettings extends DashboardFragment {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new QsTileStylesPreferenceController(context, lifecycle, fragment));
         controllers.add(new AccentPickerPreferenceController(context, lifecycle, fragment));
-        controllers.add(new SystemThemePreferenceController(context));
+        controllers.add(new SystemThemePreferenceController(context, lifecycle, fragment));
         return controllers;
     }
 }
