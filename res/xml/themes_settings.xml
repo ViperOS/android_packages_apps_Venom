@@ -23,12 +23,9 @@
         android:key="theme_category"
         android:title="@string/theme_category_title">
 
-        <ListPreference
+        <Preference
             android:key="system_theme_style"
-            android:title="@string/device_theme"
-            android:entries="@array/system_theme_style_entries"
-            android:entryValues="@array/system_theme_style_values"
-            android:persistent="false" />
+            android:title="@string/device_theme" />
 
         <Preference
             android:key="accent_picker"
