@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018 ViperOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <!-- General app strings -->
+    <string name="venom_title">Venom</string>
+    <string name="add">Add</string>
+    <string name="advanced">Advanced</string>
+    <string name="cancel">Cancel</string>
+    <string name="choose_app">Choose app</string>
+    <string name="general_category">General</string>
+    <string name="gestures_category">Gestures</string>
+    <string name="security_category">Security</string>
+    <string name="hardware_category">Hardware</string>
+    <string name="dlg_ok">OK</string>
+    <string name="attention">Attention</string>
+    <string name="loading">Loading\u2026</string>
+    <string name="reset">Reset</string>
+    <string name="reset_colors">Reset colors</string>
+    <string name="reset_android">Android</string>
+    <string name="text_title">Text</string>
+    <string name="icon_title">Icon</string>
+    <string name="color_title">Color</string>
+    <string name="colors_title">Colors</string>
+
+    <!-- Venom Tab -->
+    <string name="recents_tab">Recents</string>
+    <string name="status_bar_tab">Statusbar</string>
+    <string name="system_tab">System</string>
+    <string name="lockscreen_tab">Lockscreen</string>
+    <string name="about_tab">About</string>
+
+    <!-- Venom Settings -->
+    <string name="quicksettings_title">Quick Settings</string>
+    <string name="quicksettings_summary">Change more quick settings</string>
+    <string name="themesettings_title">Color manager</string>
+    <string name="themesettings_summary">Change system colors with various theme combinations</string>
+    <string name="buttonsettings_title">Buttons</string>
+    <string name="buttonsettings_summary">Perform custom button actions</string>
+
+    <!-- About Categorie -->
+    <string name="about_viper">ViperOS</string>
+    <string name="about_viper_discription">Who we are?\nWe are the ViperOS team, an organized and Brazilian team that aims to jointly develop a clean and useful Android operational system.\nWe value pure android, but it always looks more beautiful with more details, does not it?\nWe offer a simple and easy menu for customization of your device, we value a clean and direct interface, try in your device possibilities of customizations and a good experience.\nWe offer useful resources for your day-to-day life. Updated every month with security patch according to Google.\nOur ROM offers a theme engine for you to customize to your liking, our philosophy is to deliver a stable ROM with useful features and we cherish a lightweight interface prioritizing performance and battery for your device.</string>
+    <string name="birdman_name">BIRDManJ</string>
+    <string name="birdman_discription">Founder | Lead Developer | Maintainer</string>
+    <string name="jbcdroid_name">JBCDroid</string>
+    <string name="jbcdroid_discription">Co-Founder | Lead Developer | Maintainer</string>
+    <string name="esrom_name">EsromTech</string>
+    <string name="esrom_discription">Co-Lead Developer | Maintainer</string>
+    <string name="rkschunk_name">RKSchunk</string>
+    <string name="rkschunk_discription">Maintainer</string>
+    <string name="matheeusaf_name">Matheeusaf</string>
+    <string name="matheeusaf_discription">Website Creator | Website Manager</string>
+    <string name="kley_name">Kley76</string>
+    <string name="kley_discription">Designer | Maintainer</string>
+    <string name="joshua_name">Joshua M.</string>
+    <string name="joshua_discription">Designer | Maintainer</string>
+    <string name="zjrdroid_name">ZJRDroid</string>
+    <string name="zjrdroid_discription">Social Networks Manager | Maintainer</string>
+
+</resources>
+
