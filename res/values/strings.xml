@@ -73,6 +73,8 @@
     <string name="powermenu_title_summary">Change options for power menu</string>
     <string name="notifications_title">Notifications</string>
     <string name="notifications_title_summary">Change options for notifications</string>
+    <string name="lockscreensettings_title">Misc</string>
+    <string name="lockscreensettings_summary">Miscellaneous options for lockscreen</string>
 
     <!-- About Categorie -->
     <string name="about_viper">ViperOS</string>
@@ -353,5 +355,10 @@
     <string name="led_notification_text">LED light enabled by settings</string>
     <string name="notification_light_no_apps_summary">To add per app control, activate \'%1$s\' and press \'\u002b\' on the menu bar</string>
 
-</resources>
+    <!-- Weather -->
+    <string name="weather_title">Weather</string>
+    <string name="weather_unit">Temperature unit</string>
+    <string name="weather_unit_metric" translatable="false">Celsius</string>
+    <string name="weather_unit_imperial" translatable="false">Fahrenheit</string>
 
+</resources>
