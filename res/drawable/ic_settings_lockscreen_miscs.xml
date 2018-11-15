@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017 The ABC rom
-     Copyright (C) 2019 ViperOS Project
+<!--
+     Copyright (C) 2018 ViperOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,16 +14,13 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-
-    <com.viper.venom.support.preferences.CategoryVenomPreference
-        android:key="misc_lockscreen"
-        android:fragment="com.viper.venom.fragments.LockscreenMisc"
-        android:icon="@drawable/ic_settings_lockscreen_miscs"
-        android:title="@string/lockscreensettings_title"
-        android:summary="@string/lockscreensettings_summary" />
-
-
-</PreferenceScreen>
+    <path
+        android:fillColor="@*android:color/venom_icon"
+        android:pathData="M19,4h-4L7.11,16.63 4.5,12 9,4H5L0.5,12 5,20h4l7.89,-12.63L19.5,12 15,20h4l4.5,-8z" />
+</vector>

@@ -72,6 +72,8 @@
   <string name="powermenu_title_summary">Alterar opções para o menu de energia</string>
   <string name="notifications_title">Notificação</string>
   <string name="notifications_title_summary">Alterar opções de notificação</string>
+  <string name="lockscreensettings_title">Diversos</string>
+  <string name="lockscreensettings_summary">Opções diversas para lockscreen</string>
 
   <!-- About Categorie -->
   <string name="about_viper_discription">Quem somos?\nSomos a equipe ViperOS, uma equipe organizada e brasileira que visa desenvolver em conjunto um sistema operacional Android limpo e com recursos úteis.\nValorizamos o android puro, mas ele sempre fica mais bonito com detalhes a mais, não é mesmo?\nOferecemos um menu simples e fácil para customização do seu dispositivo, valorizamos uma interface limpa e direta, tento em seu aparelho possibilidades de customizações e uma boa experiência.\nOferecemos recursos úteis para o seu dia-a-dia. Atualizada todo mês com patch de segurança de acordo com o Google.\nNossa ROM oferece um motor de temas para você customizar a seu gosto, nossa filosofia é entregar uma ROM estável com recursos úteis e prezamos por uma interface leve priorizando o desempenho e bateria para seu dispositivo.</string>
@@ -330,5 +332,9 @@
   <string name="led_notification_title">Configurações de brilho</string>
   <string name="led_notification_text">Luz de LED ativada nas configurações</string>
   <string name="notification_light_no_apps_summary">Para adicionar controle por app, ative o \'%1$s\' e pressione \'\u002b\' na barra de menu</string>
+
+  <!-- Weather -->
+  <string name="weather_title">Clima</string>
+  <string name="weather_unit">Unidade de temperatura</string>
 
 </resources>
