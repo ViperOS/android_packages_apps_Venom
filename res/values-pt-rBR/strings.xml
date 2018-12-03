@@ -337,4 +337,21 @@
   <string name="weather_title">Clima</string>
   <string name="weather_unit">Unidade de temperatura</string>
 
+  <!-- Battery Styles -->
+  <string name="battery_style_title">Estilo de Bateria</string>
+  <string name="battery_style_summary">Estilo do ícone de bateria na barra de status</string>
+  <string name="battery_style_port">Ícone em modo retrato</string>
+  <string name="battery_style_circle">Círculo</string>
+  <string name="battery_style_dotted_circle">Círculo Pontilhado</string>
+  <string name="battery_style_big_circle">Círculo Grande</string>
+  <string name="battery_style_big_dotted_circle">Círculo Pontilhado Grande</string>
+  <string name="battery_style_text">Texto</string>
+  <string name="battery_style_hidden">Escondido</string>
+  <string name="battery_percent_hidden">Escondido</string>
+  <string name="show_battery_percent_title">Porcentagem da Bateria</string>
+  <string name="show_battery_percent_summary">Mostrar a porcentagem do nível da bateria perto do ícone</string>
+  <string name="battery_style_category_title">Nível de bateria</string>
+  <string name="battery_percent_outside">Fora</string>
+  <string name="battery_percent_inside">Dentro</string>
+
 </resources>

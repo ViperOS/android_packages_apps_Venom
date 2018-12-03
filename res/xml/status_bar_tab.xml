@@ -33,6 +33,13 @@
         android:fragment="com.viper.venom.fragments.ClockDateSettings" />
 
     <com.viper.venom.support.preferences.CategoryVenomPreference
+        android:key="battery_settings"
+        android:fragment="com.viper.venom.fragments.BatterysSettings"
+        android:icon="@drawable/ic_batterys_settings"
+        android:title="@string/battery_style_title"
+        android:summary="@string/battery_style_summary" />
+
+    <com.viper.venom.support.preferences.CategoryVenomPreference
         android:key="network_traffic"
         android:icon="@drawable/ic_networktraffic"
         android:title="@string/network_traffic_title"
