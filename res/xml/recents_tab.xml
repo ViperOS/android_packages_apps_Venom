@@ -20,11 +20,17 @@
 
 
     <com.viper.venom.support.preferences.CategoryVenomPreference
+        android:key="recents_clear_all"
+        android:fragment="com.viper.venom.fragments.RecentsClearAllSettings"
+        android:icon="@drawable/recents_clear_all_icon"
+        android:title="@string/show_clear_all_recents_button_title"
+        android:summary="@string/show_clear_all_recents_button_summary" />
+
+    <com.viper.venom.support.preferences.CategoryVenomPreference
         android:key="recents_settings"
         android:fragment="com.viper.venom.fragments.RecentsSettingsMisc"
         android:icon="@drawable/ic_settings_miscs"
         android:title="@string/recents_settings_title"
         android:summary="@string/recents_settings_summary" />
-
 
 </PreferenceScreen>
