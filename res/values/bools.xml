@@ -16,6 +16,9 @@
 -->
 <resources>
 
-    <dimen name="oval_notification_size">26dp</dimen>
+    <!-- Default value for battery_light_enabled preference -->
+    <bool name="def_battery_light_enabled">true</bool>
+    <!-- Default value for battery light pulse -->
+    <bool name="def_battery_light_pulse">true</bool>
 
 </resources>

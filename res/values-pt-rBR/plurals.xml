@@ -14,8 +14,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <dimen name="oval_notification_size">26dp</dimen>
+  <plurals name="backlight_timeout_time">
+    <item quantity="one"><xliff:g id="seconds">%d</xliff:g> segundo</item>
+    <item quantity="other"><xliff:g id="seconds">%d</xliff:g> segundos</item>
+  </plurals>
 
 </resources>
