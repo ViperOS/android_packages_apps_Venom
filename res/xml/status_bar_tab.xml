@@ -25,4 +25,25 @@
         android:title="@string/quicksettings_title"
         android:summary="@string/quicksettings_summary" />
 
+    <com.viper.venom.support.preferences.CategoryVenomPreference
+        android:key="status_bar_clock_date_settings"
+        android:icon="@drawable/ic_settings_clock_date"
+        android:title="@string/status_bar_clock_date_settings_title"
+        android:summary="@string/status_bar_clock_date_settings_summary"
+        android:fragment="com.viper.venom.fragments.ClockDateSettings" />
+
+    <com.viper.venom.support.preferences.CategoryVenomPreference
+        android:key="network_traffic"
+        android:icon="@drawable/ic_networktraffic"
+        android:title="@string/network_traffic_title"
+        android:summary="@string/network_traffic_summary"
+        android:fragment="com.viper.venom.fragments.NetworkTraffic" />
+
+    <com.viper.venom.support.preferences.CategoryVenomPreference
+        android:key="statusbar_misc"
+        android:icon="@drawable/ic_settings_miscs"
+        android:title="@string/misc_settings_title"
+        android:summary="@string/misc_settings_summary"
+        android:fragment="com.viper.venom.fragments.StatusBarMisc" />
+
 </PreferenceScreen>

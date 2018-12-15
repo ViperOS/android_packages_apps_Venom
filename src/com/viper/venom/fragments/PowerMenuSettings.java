@@ -47,32 +47,25 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
-import lineageos.preference.LineageSystemSettingListPreference;
+import lineageos.providers.LineageSettings;
 
-public class QuickSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
-
-    private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
-
-    private static final int PULLDOWN_DIR_NONE = 0;
-    private static final int PULLDOWN_DIR_RIGHT = 1;
-    private static final int PULLDOWN_DIR_LEFT = 2;
-
-    private LineageSystemSettingListPreference mQuickPulldown;
+public class PowerMenuSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.quick_settings);
+        addPreferencesFromResource(R.xml.powermenu_settings);
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
 
-        mQuickPulldown =
-                (LineageSystemSettingListPreference) findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
-        mQuickPulldown.setOnPreferenceChangeListener(this);
-        updateQuickPulldownSummary(mQuickPulldown.getIntValue(0));
+    }
 
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        LineageSettings.Secure.putIntForUser(resolver,
+                LineageSettings.Secure.ADVANCED_REBOOT, 1, UserHandle.USER_CURRENT);
     }
 
     @Override
@@ -83,41 +76,10 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
     @Override
     public void onResume() {
         super.onResume();
-
-        // Adjust status bar preferences for RTL
-        if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
-            mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
-            mQuickPulldown.setEntryValues(R.array.status_bar_quick_qs_pulldown_values_rtl);
-        }
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        int value = Integer.parseInt((String) newValue);
-        if (preference == mQuickPulldown) {
-            updateQuickPulldownSummary(value);
-        }
-        return true;
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        return false;
     }
-
-    private void updateQuickPulldownSummary(int value) {
-        String summary="";
-        switch (value) {
-            case PULLDOWN_DIR_NONE:
-                summary = getResources().getString(
-                    R.string.status_bar_quick_qs_pulldown_off);
-                break;
-
-            case PULLDOWN_DIR_LEFT:
-            case PULLDOWN_DIR_RIGHT:
-                summary = getResources().getString(
-                    R.string.status_bar_quick_qs_pulldown_summary,
-                    getResources().getString(value == PULLDOWN_DIR_LEFT
-                        ? R.string.status_bar_quick_qs_pulldown_summary_left
-                        : R.string.status_bar_quick_qs_pulldown_summary_right));
-                break;
-        }
-        mQuickPulldown.setSummary(summary);
-    }
-
 }

@@ -20,6 +20,13 @@
         xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
         android:title="@string/quicksettings_title">
 
+    <lineageos.preference.LineageSystemSettingListPreference
+        android:key="qs_quick_pulldown"
+        android:title="@string/status_bar_quick_qs_pulldown_title"
+        android:entries="@array/status_bar_quick_qs_pulldown_entries"
+        android:entryValues="@array/status_bar_quick_qs_pulldown_values"
+        android:defaultValue="0" />
+
     <PreferenceCategory
         android:key="quick_settings_general_category"
         android:title="@string/qs_brightness_slider_title">

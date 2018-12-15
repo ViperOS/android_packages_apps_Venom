@@ -26,5 +26,36 @@
         android:title="@string/themesettings_title"
         android:summary="@string/themesettings_summary" />
 
+    <!-- Button Settings -->
+    <com.viper.venom.support.preferences.CategoryVenomPreference
+        android:key="button_settings"
+        android:icon="@drawable/ic_settings_buttons"
+        android:title="@string/button_settings_title"
+        android:summary="@string/button_settings_title_summary"
+        android:fragment="com.viper.venom.fragments.ButtonSettings" />
+ 
+     <!-- Battery light -->
+     <com.viper.venom.support.preferences.CategoryVenomPreference
+        android:key="battery_charging_light"
+        android:icon="@drawable/ic_batterys_led_settings"
+        android:title="@string/battery_light_settings"
+        android:summary="@string/battery_light_settings_summary"
+        android:fragment="com.viper.venom.fragments.LedSettings" />
+
+    <!-- Notification light -->
+    <com.viper.venom.support.preferences.CategoryVenomPreference
+        android:key="notification_light"
+        android:icon="@drawable/ic_settings_light_notifications"
+        android:title="@string/notifications_title"
+        android:summary="@string/notifications_title_summary"
+        android:fragment="com.viper.venom.fragments.NotificationLightSettings" />
+
+     <!-- Power Menu -->
+    <com.viper.venom.support.preferences.CategoryVenomPreference
+        android:key="powermenu_settings"
+        android:icon="@drawable/ic_settings_powermenu"
+        android:title="@string/powermenu_title"
+        android:summary="@string/powermenu_title_summary"
+        android:fragment="com.viper.venom.fragments.PowerMenuSettings" />
 
 </PreferenceScreen>
