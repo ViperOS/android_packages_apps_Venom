@@ -378,4 +378,9 @@
     <string name="battery_percent_outside">Outside</string>
     <string name="battery_percent_inside">Inside</string>
 
+    <!-- Rounded corners -->
+    <string name="corners_category">Corners</string> 
+    <string name="corner_radius">Rounded Corner Radius</string>
+    <string name="content_padding">Corner Content Padding</string>
+
 </resources>
