@@ -16,62 +16,69 @@
 
 package com.viper.venom.fragments;
 
-
-import android.app.ActivityManagerNative;
 import android.content.Context;
 import android.content.ContentResolver;
-import android.content.pm.PackageManager.NameNotFoundException;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.UserHandle;
-import android.os.RemoteException;
-import android.os.ServiceManager;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.ListPreference;
-import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
-import android.util.Log;
-import android.view.WindowManagerGlobal;
-import android.view.IWindowManager;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import java.util.Locale;
-import android.text.TextUtils;
-import android.view.View;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.settings.Utils;
 
-public class StatusBarMisc extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+import com.android.internal.logging.nano.MetricsProto;
+
+import com.viper.venom.support.preferences.CustomSeekBarPreference;
+
+public class StatusBarMisc extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+
+    private static final String SYSUI_ROUNDED_CONTENT_PADDING = "sysui_rounded_content_padding";
+    private static final String SYSUI_ROUNDED_SIZE = "sysui_rounded_size";
+
+    private CustomSeekBarPreference mContentPadding;
+    private CustomSeekBarPreference mCornerRadius;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         addPreferencesFromResource(R.xml.status_bar_misc);
+        PreferenceScreen prefSet = getPreferenceScreen();
+        ContentResolver resolver = getActivity().getContentResolver();
 
-        final ContentResolver resolver = getActivity().getContentResolver();
-        final PreferenceScreen prefSet = getPreferenceScreen();
+        mContentPadding = (CustomSeekBarPreference) findPreference(SYSUI_ROUNDED_CONTENT_PADDING);
+        int contentPadding = Settings.Secure.getInt(resolver,
+                Settings.Secure.SYSUI_ROUNDED_CONTENT_PADDING, 1);
+                mContentPadding.setValue(contentPadding / 1);
+                mContentPadding.setOnPreferenceChangeListener(this);
+
+        mCornerRadius = (CustomSeekBarPreference) findPreference(SYSUI_ROUNDED_SIZE);
+        int cornerRadius = Settings.Secure.getInt(resolver,
+                Settings.Secure.SYSUI_ROUNDED_SIZE, 1);
+                mCornerRadius.setValue(cornerRadius / 1);
+                mCornerRadius.setOnPreferenceChangeListener(this);
 
     }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mContentPadding) {
+            int value = (Integer) newValue;
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.SYSUI_ROUNDED_CONTENT_PADDING, value * 1);
+            return true;
+        } else if (preference == mCornerRadius) {
+            int value = (Integer) newValue;
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.SYSUI_ROUNDED_SIZE, value * 1);
+            return true;
+        }
+        return false;
+     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.VENOM;
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        return false;
+        return MetricsProto.MetricsEvent.VENOM;
     }
 }

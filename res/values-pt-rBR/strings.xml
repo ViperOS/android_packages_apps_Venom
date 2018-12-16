@@ -354,4 +354,9 @@
   <string name="battery_percent_outside">Fora</string>
   <string name="battery_percent_inside">Dentro</string>
 
+  <!-- Round Corner Radius -->
+  <string name="corners_category">Cantos</string>
+  <string name="corner_radius">Raios dos Cantos Arredondado</string>
+  <string name="content_padding">Preenchimento de conteúdo de canto</string>
+
 </resources>
