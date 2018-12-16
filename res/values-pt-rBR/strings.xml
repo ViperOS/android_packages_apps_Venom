@@ -87,6 +87,10 @@
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">Controle deslizante de brilho</string>
   <string name="qs_brightness_slider_summary">Mostrar o controle deslizante de brilho no painel de configurações rápidas</string>
+  <string name="status_bar_brightness_slider_auto_title">Brilho automático</string>
+  <string name="status_bar_brightness_slider_auto_summary">Exibir controle para brilho da tela adaptável perto do controle deslizante</string>
+  <string name="status_bar_toggle_brightness">Controle de brilho</string>
+  <string name="status_bar_toggle_brightness_summary">Permite ajustar o brilho deslizando através da barra de status</string>
 
   <!-- QS Brightness Slider position -->
   <string name="qs_brightness_slider_hide">Ocultar</string>
