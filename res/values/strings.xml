@@ -269,8 +269,7 @@
     <string name="network_traffic_mode_down">Download only</string>
     <string name="network_traffic_mode_all">Upload and download</string>
     <string name="network_traffic_autohide">Auto hide</string>
-    <string name="network_traffic_autohide_kilobits">kb/s</string>
-    <string name="network_traffic_autohide_summary">Hide the traffic monitor when below inactivity threshold</string>
+    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_units_title">Traffic measurement units</string>
     <string name="network_traffic_units_kilobits">Kilobits per second (kb/s)</string>
     <string name="network_traffic_units_megabits">Megabits per second (Mb/s)</string>
