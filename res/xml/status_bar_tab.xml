@@ -44,7 +44,7 @@
         android:icon="@drawable/ic_networktraffic"
         android:title="@string/network_traffic_title"
         android:summary="@string/network_traffic_summary"
-        android:fragment="com.viper.venom.fragments.NetworkTraffic" />
+        android:fragment="com.viper.venom.fragments.NetworkTrafficSettings" />
 
     <com.viper.venom.support.preferences.CategoryVenomPreference
         android:key="statusbar_misc"
