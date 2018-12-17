@@ -359,4 +359,9 @@
   <string name="corner_radius">Raios dos Cantos Arredondado</string>
   <string name="content_padding">Preenchimento de conteúdo de canto</string>
 
+  <!-- Lockscreen battery info indicator -->
+  <string name="lockscreen_battery_info_title">Informação da Bateria</string>
+  <string name="lockscreen_battery_info_summary">Exibe a tensão de corrente máxima carregada do carregador e a temperatura da bateria na tela de bloqueio durante o carregamento</string>
+  <string name="charging_title">Informação de carregamento</string>
+
 </resources>
