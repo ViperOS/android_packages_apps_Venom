@@ -371,4 +371,12 @@
     <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
     <string name="charging_title">Charging Info</string>
 
+    <!-- Face auto unlock -->
+    <string name="face_unlock_title">Face unlock</string>
+    <string name="face_auto_unlock_title">Automatic face unlock</string>
+    <string name="face_auto_unlock_summary">Dismiss lock screen after face unlock</string>
+    <string name="security_title">Security</string>
+    <string name="lockscreen_security_title">Lockscreen Security</string>
+    <string name="lockscreen_security_summary">Lockscreen security settings</string>
+
 </resources>

@@ -363,4 +363,12 @@
   <string name="lockscreen_battery_info_summary">Exibe a tensão de corrente máxima carregada do carregador e a temperatura da bateria na tela de bloqueio durante o carregamento</string>
   <string name="charging_title">Informação de carregamento</string>
 
+  <!-- Face auto unlock -->
+  <string name="face_unlock_title">Desbloqueio facial</string>
+  <string name="face_auto_unlock_title">Desbloqueio facial automático</string>
+  <string name="face_auto_unlock_summary">Ignorar tela de bloqueio após o desbloqueio facial</string>
+  <string name="security_title">Segurança</string>
+  <string name="lockscreen_security_title">Segurança na tela de bloqueio</string>
+  <string name="lockscreen_security_summary">Configurações de segurança na tela de bloqueio</string>
+
 </resources>
