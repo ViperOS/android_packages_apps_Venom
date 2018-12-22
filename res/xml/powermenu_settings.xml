@@ -20,43 +20,16 @@
     android:key="power_menu"
     android:title="@string/power_menu_title">
 
-    <PreferenceCategory
-        android:key="power_key"
-        android:title="@string/hardware_keys_power_key_title" >
+    <com.viper.venom.support.preferences.SecureSettingSwitchPreference
+        android:key="advanced_reboot"
+        android:title="@string/global_actions_advanced_reboot_title"
+        android:summary="@string/global_actions_advanced_reboot_summary_new"
+        android:defaultValue="false" />
 
-        <lineageos.preference.LineageSecureSettingSwitchPreference
-            android:key="advanced_reboot"
-            android:title="@string/advanced_reboot_title"
-            android:summary="@string/advanced_reboot_summary"
-            android:defaultValue="true" />
-
-        <PreferenceScreen
-            android:key="power_menu"
-            android:title="@string/powermenu_title"
-            android:summary="@string/powermenu_title_summary"
-            android:fragment="com.viper.venom.fragments.PowerMenuActions" />
-
-        <SwitchPreference
-            android:key="power_end_call"
-            android:title="@string/power_end_call_title"
-            android:summary="@string/power_end_call_summary"
-            android:persistent="false"/>
-
-        <lineageos.preference.LineageSystemSettingSwitchPreference
-            android:key="torch_long_press_power_gesture"
-            android:title="@string/torch_long_press_power_gesture_title"
-            android:summary="@string/torch_long_press_power_gesture_desc"
-            android:defaultValue="false"
-            lineage:requiresConfig="@*android:bool/config_supportLongPressPowerWhenNonInteractive" />
-
-        <ListPreference
-            android:key="torch_long_press_power_timeout"
-            android:dialogTitle="@string/torch_long_press_power_timeout_title"
-            android:title="@string/torch_long_press_power_timeout_title"
-            android:entries="@array/torch_long_press_power_timeout_entries"
-            android:entryValues="@array/torch_long_press_power_timeout_values"
-            android:dependency="torch_long_press_power_gesture"
-            android:persistent="false" />
-    </PreferenceCategory>
+    <com.viper.venom.support.preferences.SecureSettingSwitchPreference
+        android:key="lockscreen_power_menu_disabled"
+        android:title="@string/lockscreen_power_menu_disabled_title"
+        android:summary="@string/lockscreen_power_menu_disabled_summary"
+        android:defaultValue="false" />
 
 </PreferenceScreen>
