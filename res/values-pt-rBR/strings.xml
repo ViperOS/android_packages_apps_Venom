@@ -197,6 +197,26 @@
   <string name="navigation_bar_home_double_tap_title">Ação de toque duplo no botão de Página Inicial</string>
   <string name="navigation_bar_app_switch_long_press_title">Pressionar e segurar no botão de visão geral</string>
 
+  <!-- global acions config -->
+  <string name="global_actions_power_title">Energia</string>
+  <string name="global_actions_reboot_title">Reiniciar</string>
+  <string name="global_actions_lockdown_title">Bloquear</string>
+  <string name="global_actions_settings_title">Configurações</string>
+  <string name="global_actions_airplane_title">Modo avião</string>
+  <string name="global_actions_screenshot_title">Captura de tela</string>
+  <string name="global_actions_screenrecord_title">Gravar tela</string>
+  <string name="global_actions_torch_title">Lanterna</string>
+  <string name="global_actions_users_title">Usuários</string>
+  <string name="global_actions_voiceassist_title">Assistente de voz</string>
+  <string name="global_actions_silent_title">Modo silencioso</string>
+  <string name="global_actions_dnd_title">Não perturbe</string>
+  <string name="global_actions_summary">Ações mostradas no menu de energia</string>
+  <string name="global_actions_header">Algumas ações são apenas visíveis, dependendo da configuração ou somente se o dispositivo é desbloqueado</string>
+  <string name="global_actions_advanced_reboot_summary">Mostrar mais opções no menu reiniciar</string>
+  <string name="global_actions_advanced_reboot_title">Ativar opções avançadas de reinicio</string>
+  <string name="lockscreen_power_menu_disabled_title">Desativar o menu de energia com o dispositivo bloqueado</string>
+  <string name="lockscreen_power_menu_disabled_summary">Desativar o menu de energia em telas de bloqueio seguras</string>
+
   <!-- Power menu -->
   <string name="power_menu_title">Opções do botão liga/desliga</string>
   <string name="power_menu_screenshot_title">Captura de tela</string>
