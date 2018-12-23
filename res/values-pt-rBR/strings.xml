@@ -403,4 +403,8 @@
   <string name="show_carrier_statusbar">Barra de Status</string>
   <string name="show_carrier_enabled">Ambos</string>
 
+  <!-- Viper logo -->
+  <string name="vp_logo_title">ViperOS logo</string>
+  <string name="vp_logo_summary">Deixe que todos saibam que você está usando o Viper quando vir sua tela</string>
+
 </resources>
