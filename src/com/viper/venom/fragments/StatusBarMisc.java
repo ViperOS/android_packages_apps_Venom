@@ -22,6 +22,7 @@ import android.os.Bundle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+ import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 
 import com.android.settings.R;
@@ -35,9 +36,11 @@ public class StatusBarMisc extends SettingsPreferenceFragment implements Prefere
 
     private static final String SYSUI_ROUNDED_CONTENT_PADDING = "sysui_rounded_content_padding";
     private static final String SYSUI_ROUNDED_SIZE = "sysui_rounded_size";
+    private static final String KEY_STATUS_BAR_LOGO = "status_bar_logo";
 
     private CustomSeekBarPreference mContentPadding;
     private CustomSeekBarPreference mCornerRadius;
+    private SwitchPreference mShowVpLogo;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -58,6 +61,11 @@ public class StatusBarMisc extends SettingsPreferenceFragment implements Prefere
                 mCornerRadius.setValue(cornerRadius / 1);
                 mCornerRadius.setOnPreferenceChangeListener(this);
 
+        mShowVpLogo = (SwitchPreference) findPreference(KEY_STATUS_BAR_LOGO);
+        mShowVpLogo.setChecked((Settings.System.getInt(getContentResolver(),
+             Settings.System.STATUS_BAR_LOGO, 0) == 1));
+        mShowVpLogo.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -72,6 +80,11 @@ public class StatusBarMisc extends SettingsPreferenceFragment implements Prefere
             int value = (Integer) newValue;
             Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.SYSUI_ROUNDED_SIZE, value * 1);
+            return true;
+        } else if  (preference == mShowVpLogo) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_LOGO, value ? 1 : 0);
             return true;
         }
         return false;

@@ -412,4 +412,8 @@
     <string name="show_carrier_statusbar">Statusbar only</string>
     <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
 
+    <!-- Viper logo -->
+    <string name="vp_logo_title">ViperOS logo</string>
+    <string name="vp_logo_summary">Let everyone know that you\'re using Viper when they see your screen</string>
+
 </resources>
