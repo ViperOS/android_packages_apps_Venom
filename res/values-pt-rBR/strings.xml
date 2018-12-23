@@ -391,4 +391,16 @@
   <string name="lockscreen_security_title">Segurança na tela de bloqueio</string>
   <string name="lockscreen_security_summary">Configurações de segurança na tela de bloqueio</string>
 
+  <!-- Custom carrier label and position -->
+  <string name="carrier_category">Nome da operadora</string>
+  <string name="carrier_label_settings_summary">Personalize o nome da operadora</string>
+  <string name="custom_carrier_label_title">Nome personalizado da operadora</string>
+  <string name="custom_carrier_label_explain">Insira um nome de operadora personalizado. Deixe em branco para usar o seu nome de operadora padrão</string>
+  <string name="custom_carrier_label_notset">Nome personalizado não definido</string>
+  <string name="show_carrier_title">Nome da operadora</string>
+  <string name="show_carrier_disabled">Desativar</string>
+  <string name="show_carrier_keyguard">Tela de bloqueio</string>
+  <string name="show_carrier_statusbar">Barra de Status</string>
+  <string name="show_carrier_enabled">Ambos</string>
+
 </resources>
