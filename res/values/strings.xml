@@ -416,4 +416,10 @@
     <string name="vp_logo_title">ViperOS logo</string>
     <string name="vp_logo_summary">Let everyone know that you\'re using Viper when they see your screen</string>
 
+    <!-- Recents membar -->
+    <string name="recents_settings_title">Misc</string>
+    <string name="recents_settings_summary">Miscellaneous options for customization</string>
+    <string name="recents_show_membar_title">Memory bar</string>
+    <string name="recents_show_membar_summary">Show a bar with the device\'s available memory</string>
+
 </resources>
