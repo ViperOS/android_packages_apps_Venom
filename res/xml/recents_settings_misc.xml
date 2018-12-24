@@ -16,14 +16,18 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/recents_settings_title">
 
-    <com.viper.venom.support.preferences.CategoryVenomPreference
-        android:key="recents_settings"
-        android:fragment="com.viper.venom.fragments.RecentsSettingsMisc"
-        android:icon="@drawable/ic_settings_miscs"
-        android:title="@string/recents_settings_title"
-        android:summary="@string/recents_settings_summary" />
-
+    <PreferenceCategory
+        android:key="membar_recents"
+        android:title="@string/recents_show_membar_title">
+        <com.viper.venom.support.preferences.SystemSettingSwitchPreference
+            android:key="systemui_recents_mem_display"
+            android:title="@string/recents_show_membar_title"
+            android:summary="@string/recents_show_membar_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
 
 </PreferenceScreen>
+
