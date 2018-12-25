@@ -425,4 +425,10 @@
   <string name="recents_clear_all_location_bottom_left">Inferior Esquerdo</string>
   <string name="recents_clear_all_location_bottom_center">Inferior central</string>
 
+  <!-- Recents style -->
+  <string name="recents_style_title">Estilo do recentes</string>
+  <string name="recents_style_summary">Alterar estilo recente</string>
+  <string name="recents_style_quickstep">QuickStep</string>
+  <string name="recents_style_aosp">AOSP</string>
+
 </resources>

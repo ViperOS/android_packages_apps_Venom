@@ -434,4 +434,10 @@
     <string name="recents_clear_all_location_bottom_left">Bottom left</string>
     <string name="recents_clear_all_location_bottom_center">Bottom center</string>
 
+    <!-- Recents style -->
+    <string name="recents_style_title">Recents style</string>
+    <string name="recents_style_summary">Change recents style</string>
+    <string name="recents_style_quickstep">QuickStep</string>
+    <string name="recents_style_aosp">AOSP</string>
+
 </resources>
