@@ -412,6 +412,7 @@
   <string name="recents_settings_summary">Opções diversas para customização</string>
   <string name="recents_show_membar_title">Barra de memória</string>
   <string name="recents_show_membar_summary">Mostrar uma barra com a memória RAM disponível do dispositivo</string>
+    <string name="membar_recents_help_text">Barra de memória por hora não funciona em recentes QuickStep caso você queira usar essa função basta mudar o estilo dos recentes para versão AOSP.</string>
 
   <!-- Recents panel settings -->
   <string name="clearall_recents_category">Botão circular</string>
@@ -424,6 +425,7 @@
   <string name="recents_clear_all_location_bottom_right">Canto inferior direito</string>
   <string name="recents_clear_all_location_bottom_left">Inferior Esquerdo</string>
   <string name="recents_clear_all_location_bottom_center">Inferior central</string>
+  <string name="clearall_recents_help_text">Botão circular por hora não funciona em recentes QuickStep caso você queira usar essa função basta mudar o estilo dos recentes para versão AOSP.</string>
 
   <!-- Recents style -->
   <string name="recents_style_title">Estilo do recentes</string>
