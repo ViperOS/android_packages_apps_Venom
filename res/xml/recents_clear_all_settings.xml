@@ -40,4 +40,9 @@
 
      </PreferenceCategory>
 
+     <com.android.settingslib.widget.FooterPreference
+         android:key="clearall_recents_footer_preference"
+         android:title="@string/clearall_recents_help_text"
+         android:selectable="false" />
+
 </PreferenceScreen>

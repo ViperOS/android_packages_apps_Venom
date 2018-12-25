@@ -437,6 +437,7 @@
     <string name="recents_settings_summary">Miscellaneous options for customization</string>
     <string name="recents_show_membar_title">Memory bar</string>
     <string name="recents_show_membar_summary">Show a bar with the device\'s available memory</string>
+    <string name="membar_recents_help_text">Membar per hour does not work on recent QuickStep if you want to use this function just change the style from recent to AOSP version.</string>
 
     <!-- Recents panel settings -->
     <string name="clearall_recents_category">Clear all button</string>
@@ -449,6 +450,7 @@
     <string name="recents_clear_all_location_bottom_right">Bottom right</string>
     <string name="recents_clear_all_location_bottom_left">Bottom left</string>
     <string name="recents_clear_all_location_bottom_center">Bottom center</string>
+    <string name="clearall_recents_help_text">Clear all button per hour does not work on recent QuickStep if you want to use this function just change the style from recent to AOSP version.</string>
 
     <!-- Recents style -->
     <string name="recents_style_title">Recents style</string>

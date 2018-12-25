@@ -29,5 +29,10 @@
             android:defaultValue="false" />
     </PreferenceCategory>
 
+     <com.android.settingslib.widget.FooterPreference
+         android:key="membar_recents_footer_preference"
+         android:title="@string/membar_recents_help_text"
+         android:selectable="false" />
+
 </PreferenceScreen>
 
