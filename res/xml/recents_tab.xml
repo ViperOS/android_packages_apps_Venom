@@ -19,6 +19,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <com.viper.venom.support.preferences.CategoryVenomPreference
+        android:key="recents_style"
+        android:fragment="com.viper.venom.fragments.RecentsStyle"
+        android:icon="@drawable/recents_style"
+        android:title="@string/recents_style_title"
+        android:summary="@string/recents_style_summary" />
+
+    <com.viper.venom.support.preferences.CategoryVenomPreference
         android:key="recents_clear_all"
         android:fragment="com.viper.venom.fragments.RecentsClearAllSettings"
         android:icon="@drawable/recents_clear_all_icon"
