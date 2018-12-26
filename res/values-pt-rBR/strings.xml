@@ -436,5 +436,8 @@
   <!-- Roaming signal -->
   <string name="roaming_indicator_icon_title">Ícone indicador de roaming</string>
   <string name="roaming_indicator_icon_summary">Mostrar ícone indicador de roaming</string>
+  <!-- LTE/4G signal -->
+  <string name="show_fourg_icon_title">4G/LTE</string>
+  <string name="show_fourg_icon_summary">Mostrar ícone 4G ao invés de LTE</string>
 
 </resources>
