@@ -433,4 +433,8 @@
   <string name="recents_style_quickstep">QuickStep</string>
   <string name="recents_style_aosp">AOSP</string>
 
+  <!-- Roaming signal -->
+  <string name="roaming_indicator_icon_title">Ícone indicador de roaming</string>
+  <string name="roaming_indicator_icon_summary">Mostrar ícone indicador de roaming</string>
+
 </resources>
