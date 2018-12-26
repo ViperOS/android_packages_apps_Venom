@@ -39,6 +39,13 @@
         android:summary="@string/status_bar_double_tap_to_sleep_summary"
         android:defaultValue="true" />
 
+    <!-- Roaming signal -->
+    <com.viper.venom.support.preferences.SystemSettingSwitchPreference
+        android:key="roaming_indicator_icon"
+        android:title="@string/roaming_indicator_icon_title"
+        android:summary="@string/roaming_indicator_icon_summary"
+        android:defaultValue="true"/>
+
     <PreferenceCategory 
         android:title="@string/corners_category" />
 

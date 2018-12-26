@@ -458,4 +458,8 @@
     <string name="recents_style_quickstep">QuickStep</string>
     <string name="recents_style_aosp">AOSP</string>
 
+    <!-- Roaming signal -->
+    <string name="roaming_indicator_icon_title">Roaming indicator icon</string>
+    <string name="roaming_indicator_icon_summary">Show roaming indicator icon</string>
+
 </resources>
