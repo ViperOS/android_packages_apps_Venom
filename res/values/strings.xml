@@ -246,6 +246,7 @@
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
 
     <!-- Status bar -->
+    <string name="misc_set_category">Misc</string>
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
@@ -443,6 +444,7 @@
     <string name="recents_style_aosp">AOSP</string>
 
     <!-- Roaming signal -->
+    <string name="signal_category">Signal</string>
     <string name="roaming_indicator_icon_title">Roaming indicator icon</string>
     <string name="roaming_indicator_icon_summary">Show roaming indicator icon</string>
     <!-- LTE/4G signal -->
