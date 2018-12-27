@@ -19,6 +19,9 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/misc_settings_title">
 
+    <PreferenceCategory
+        android:title="@string/misc_set_category" />
+
         <PreferenceScreen
             android:key="status_bar_icons"
             android:title="@string/status_bar_system_icons_title"
@@ -38,6 +41,9 @@
         android:title="@string/status_bar_double_tap_to_sleep_title"
         android:summary="@string/status_bar_double_tap_to_sleep_summary"
         android:defaultValue="true" />
+
+    <PreferenceCategory
+        android:title="@string/signal_category" />
 
     <!-- Roaming signal -->
     <com.viper.venom.support.preferences.SystemSettingSwitchPreference

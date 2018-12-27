@@ -246,6 +246,7 @@
   <string name="advanced_reboot_summary">Quando desbloqueado, incluir opções no menu liga/desliga para reiniciar o dispositivo em modo de recuperação ou bootloader</string>
 
   <!-- Status bar -->
+  <string name="misc_set_category">Diversos</string>
   <string name="status_bar_title">Barra de status</string>
   <string name="status_bar_quick_qs_pulldown_title">Deslizar rápido para baixo</string>
   <string name="status_bar_quick_qs_pulldown_summary">borda %1$s da barra de status puxa as Configurações Rápidas</string>
@@ -434,6 +435,7 @@
   <string name="recents_style_aosp">AOSP</string>
 
   <!-- Roaming signal -->
+  <string name="signal_category">Sinal</string>
   <string name="roaming_indicator_icon_title">Ícone indicador de roaming</string>
   <string name="roaming_indicator_icon_summary">Mostrar ícone indicador de roaming</string>
   <!-- LTE/4G signal -->
