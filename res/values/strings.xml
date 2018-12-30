@@ -88,6 +88,13 @@
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 
+    <!-- QS Columns and Rows -->
+    <string name="qs_columns_rows_title">QS Columns and Rows</string>
+    <string name="qs_rows_portrait_title">Rows portrait</string>
+    <string name="qs_rows_landscape_title">Rows landscape</string>
+    <string name="qs_columns_portrait_title">Columns portrait</string>
+    <string name="qs_columns_landscape_title">Columns landscape</string>
+
     <!-- QS Brightness Slider position -->
     <string name="qs_brightness_slider_hide">Hide</string>
     <string name="qs_brightness_slider_top">Top</string>

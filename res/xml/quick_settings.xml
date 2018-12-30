@@ -20,6 +20,11 @@
         xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
         android:title="@string/quicksettings_title">
 
+    <Preference
+        android:key="qs_rows_columns"
+        android:fragment="com.viper.venom.fragments.QsRowsColumns"
+        android:title="@string/qs_columns_rows_title"/>
+
     <lineageos.preference.LineageSystemSettingListPreference
         android:key="qs_quick_pulldown"
         android:title="@string/status_bar_quick_qs_pulldown_title"

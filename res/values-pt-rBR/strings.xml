@@ -94,6 +94,13 @@
   <string name="status_bar_toggle_brightness">Controle de brilho</string>
   <string name="status_bar_toggle_brightness_summary">Permite ajustar o brilho deslizando através da barra de status</string>
 
+  <!-- QS Columns and Rows -->
+  <string name="qs_columns_rows_title">Colunas e linhas da QS</string>
+  <string name="qs_rows_portrait_title">Linhas em retrato</string>
+  <string name="qs_rows_landscape_title">Linhas em landscape</string>
+  <string name="qs_columns_portrait_title">Colunas em retrato</string>
+  <string name="qs_columns_landscape_title">Colunas em landscape</string>
+
   <!-- QS Brightness Slider position -->
   <string name="qs_brightness_slider_hide">Ocultar</string>
   <string name="qs_brightness_slider_top">Cima</string>
