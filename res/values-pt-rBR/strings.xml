@@ -94,6 +94,11 @@
   <string name="status_bar_toggle_brightness">Controle de brilho</string>
   <string name="status_bar_toggle_brightness_summary">Permite ajustar o brilho deslizando através da barra de status</string>
 
+  <!-- Hide On Lockscreen -->
+  <string name="qs_settings_first_title">Configurações da statusbar</string>
+  <string name="hide_lockscreen_status_bar_title">Ocultar statusbar</string>
+  <string name="hide_lockscreen_status_bar_summary">Oculta a statusbar na tela de bloqueio</string>
+
   <!-- QS Columns and Rows -->
   <string name="qs_columns_rows_title">Colunas e linhas da QS</string>
   <string name="qs_rows_portrait_title">Linhas em retrato</string>
