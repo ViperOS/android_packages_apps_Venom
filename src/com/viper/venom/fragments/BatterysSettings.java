@@ -41,14 +41,14 @@ public class BatterysSettings extends SettingsPreferenceFragment implements
         final ContentResolver resolver = getActivity().getContentResolver();
 
         int batteryStyle = Settings.Secure.getIntForUser(resolver,
-                Settings.Secure.STATUS_BAR_BATTERY_STYLE, 0/*portrait*/,
+                Settings.Secure.STATUS_BAR_BATTERY_STYLE, 7/*big dotted circle*/,
                 UserHandle.USER_CURRENT);
         mBatteryIconStyle = (ListPreference) findPreference("status_bar_battery_style");
         mBatteryIconStyle.setValue(Integer.toString(batteryStyle));
         mBatteryIconStyle.setOnPreferenceChangeListener(this);
 
         int percentage = Settings.System.getIntForUser(resolver,
-                Settings.System.SHOW_BATTERY_PERCENT, 1,
+                Settings.System.SHOW_BATTERY_PERCENT, 2/*inside*/,
                 UserHandle.USER_CURRENT);
         mBatteryPercentage = (ListPreference) findPreference("status_bar_show_battery_percent");
         mBatteryPercentage.setValue(Integer.toString(percentage));
