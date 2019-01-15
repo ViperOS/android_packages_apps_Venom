@@ -253,6 +253,10 @@
   <string name="status_bar_double_tap_to_sleep_title">Toque duplo para suspender</string>
   <string name="status_bar_double_tap_to_sleep_summary">Toque duas vezes na barra de status para desligar a tela</string>
 
+  <!-- 4G icon -->
+  <string name="show_fourg_icon_title">Ícone 4G/LTE</string>
+  <string name="show_fourg_icon_summary">Ícone de sinal mostra 4G ao invés de LTE</string>
+
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Ícones da barra de status</string>
   <string name="status_bar_notif_count_title">Mostrar contador de notificações</string>

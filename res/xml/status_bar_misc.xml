@@ -41,4 +41,11 @@
         android:summary="@string/status_bar_double_tap_to_sleep_summary"
         android:defaultValue="true" />
 
+    <!-- 4G/LTE icon -->
+    <com.viper.venom.preference.SystemSettingSwitchPreference
+        android:key="show_fourg_icon"
+        android:title="@string/show_fourg_icon_title"
+        android:summary="@string/show_fourg_icon_summary"
+        android:defaultValue="false"/>
+
 </PreferenceScreen>
