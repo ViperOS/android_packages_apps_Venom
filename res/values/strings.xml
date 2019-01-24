@@ -36,4 +36,24 @@
     <string name="buttonsettings_title">Buttons</string>
     <string name="buttonsettings_summary">Perform custom button actions</string>
 
+    <!-- About Categorie -->
+    <string name="about_viper">ViperOS</string>
+    <string name="about_viper_discription">Who we are?\nWe are the ViperOS team, an organized and Brazilian team that aims to jointly develop a clean and useful Android operational system.\nWe value pure android, but it always looks more beautiful with more details, does not it?\nWe offer a simple and easy menu for customization of your device, we value a clean and direct interface, try in your device possibilities of customizations and a good experience.\nWe offer useful resources for your day-to-day life. Updated every month with security patch according to Google.\nOur ROM offers a theme engine for you to customize to your liking, our philosophy is to deliver a stable ROM with useful features and we cherish a lightweight interface prioritizing performance and battery for your device.</string>
+    <string name="birdman_name">BIRDManJ</string>
+    <string name="birdman_discription">Founder | Lead Developer | Maintainer</string>
+    <string name="jbcdroid_name">JBCDroid</string>
+    <string name="jbcdroid_discription">Co-Founder | Lead Developer | Maintainer</string>
+    <string name="esrom_name">EsromTech</string>
+    <string name="esrom_discription">Co-Lead Developer | Maintainer</string>
+    <string name="rkschunk_name">RKSchunk</string>
+    <string name="rkschunk_discription">Maintainer</string>
+    <string name="matheeusaf_name">Matheeusaf</string>
+    <string name="matheeusaf_discription">Website Creator | Website Manager</string>
+    <string name="kley_name">Kley76</string>
+    <string name="kley_discription">Designer | Maintainer</string>
+    <string name="joshua_name">Joshua M.</string>
+    <string name="joshua_discription">Designer | Maintainer</string>
+    <string name="zjrdroid_name">ZJRDroid</string>
+    <string name="zjrdroid_discription">Developer | Maintainer</string>
+
 </resources>

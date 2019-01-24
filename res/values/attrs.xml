@@ -18,6 +18,62 @@
 
 <resources>
 
+    <!-- Provide Diagonal cut on view with awesome customization -->
+    <attr name="src" format="reference" />
+    <attr name="angle" format="integer" />
+    <attr name="scaleType">
+        <enum name="centerCrop" value="0" />
+        <enum name="fitXY" value="1" />
+    </attr>
+    <attr name="gravity">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+        <enum name="top" value="2" />
+        <enum name="bottom" value="3" />
+    </attr>
 
+    <attr name="diagonalDirection">
+        <enum name="left_to_right" value="0" />
+        <enum name="right_to_left" value="1" />
+        <enum name="top_to_bottom" value="2" />
+        <enum name="bottom_to_top" value="3" />
+    </attr>
+
+    <attr name="tint" format="color" />
+    <attr name="solidColor" format="color" />
+    <attr name="fillColor" format="color" />
+
+    <declare-styleable name="DiagonalView">
+        <attr name="angle" />
+        <attr name="gravity" />
+        <attr name="tint" />
+        <attr name="solidColor" />
+        <attr name="fillColor" />
+        <attr name="diagonalDirection" />
+    </declare-styleable>
+
+    <!-- Create circular ImageView in Android in the simplest way possible. -->
+    <declare-styleable name="CircularImageView">
+        <attr name="civ_border" format="boolean" />
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_background_color" format="color" />
+        <attr name="civ_shadow" format="boolean" />
+        <attr name="civ_shadow_color" format="color" />
+        <attr name="civ_shadow_radius" format="float" />
+        <attr name="civ_shadow_gravity">
+            <flag name="center" value="1" />
+            <flag name="top" value="2" />
+            <flag name="bottom" value="3" />
+            <flag name="start" value="4" />
+            <flag name="end" value="5" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ColorSelectPreference">
+        <attr name="ledPreview" format="boolean" />
+        <attr name="multiColor" format="boolean" />
+        <attr name="withAlpha" format="boolean" />
+    </declare-styleable>
 
 </resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018 ViperOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="?android:attr/colorControlNormal"
+        android:pathData="M12.314453 2.0058594C9.5888025 1.936355 6.8320599 2.9745093 4.921875 4.9550781 2.0886039 7.6987004 1.2171063 12.185825 2.75 15.808594c1.3305104 3.343727 4.5855801 5.776842 8.15625 6.160156 0.126462 0.01645 0.253553 0.02508 0.380859 0.03125l0 -6.951172 -1.2988278 0 0 -1.966797c0.023386 -0.324 -0.1495865 -0.845347 0.3632808 -0.679687 0.28447 -0.06068 0.812887 0.127991 0.929688 -0.103516 0.04854 -1.245589 -0.16484 -2.6962856 0.888672 -3.6074218 1.110932 -0.9873514 2.67453 -0.6450098 4.035156 -0.6855468 0.485336 -0.1245509 0.213589 0.5003722 0.283203 0.7871094 -0.1493 0.4552776 0.269882 1.5409212 -0.28125 1.6328122 -0.597429 0.0695 -1.347401 -0.157785 -1.792969 0.333985 -0.19777 0.514009 -0.0825 1.097664 -0.128906 1.642578 0.690864 0.0022 1.381556 -0.006 2.072266 0.01172 0.103147 0.703986 -0.264359 1.761509 -0.31836 2.59375 -0.578629 0.06967 -1.165519 0.03036 -1.748046 0.04102l0 6.09961c-0.124866 0.610024 0.133049 0.729033 0.695312 0.421874C19.059716 20.347178 22.090468 16.292955 22 12.023438 22.07384 8.0956182 19.546706 4.3085988 15.929688 2.8027344 14.786398 2.2976705 13.553385 2.0374523 12.314453 2.0058594Z" />
+</vector>
