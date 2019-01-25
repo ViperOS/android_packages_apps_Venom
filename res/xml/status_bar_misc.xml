@@ -62,22 +62,37 @@
     <PreferenceCategory 
         android:title="@string/corners_category" />
 
-          <com.viper.venom.support.preferences.CustomSeekBarPreference
-            android:key="sysui_rounded_size"
-            android:title="@string/corner_radius"
-            android:max="60"
-            android:min="1"
-            settings:units=""
-            android:defaultValue="1"
-            android:persistent="false" />
-			
-        <com.viper.venom.support.preferences.CustomSeekBarPreference
-            android:key="sysui_rounded_content_padding"
-            android:title="@string/content_padding"
-            android:max="20"
-            android:min="0"
-            settings:units=""
-            android:defaultValue="0"
-            android:persistent="false" />
+            <com.viper.venom.support.preferences.SecureSettingSwitchPreference
+                android:key="sysui_rounded_fwvals"
+                android:title="@string/corner_fwvals"
+                android:defaultValue="true"
+                android:disableDependentsState="true" />
+
+            <com.viper.venom.support.preferences.CustomSeekBarPreference
+                 android:key="sysui_rounded_size"
+                 android:title="@string/corner_radius"
+                 android:max="60"
+                 settings:min="0"
+                 settings:units="dp"
+                 android:persistent="false"
+                 android:dependency="sysui_rounded_fwvals" />
+
+            <com.viper.venom.support.preferences.CustomSeekBarPreference
+                 android:key="sysui_rounded_content_padding"
+                 android:title="@string/content_padding"
+                 android:max="10"
+                 settings:min="0"
+                 settings:units="dp"
+                 android:persistent="false"
+                 android:dependency="sysui_rounded_fwvals" />
+
+            <com.viper.venom.support.preferences.CustomSeekBarPreference
+                 android:key="sysui_status_bar_padding"
+                 android:title="@string/status_bar_padding"
+                 android:max="10"
+                 settings:min="0"
+                 settings:units="dp"
+                 android:persistent="false"
+                 android:dependency="sysui_rounded_fwvals" />
 
 </PreferenceScreen>
