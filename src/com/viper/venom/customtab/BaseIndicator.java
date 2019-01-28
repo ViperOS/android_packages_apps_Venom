@@ -45,7 +45,7 @@ public abstract class BaseIndicator extends HorizontalScrollView implements Indi
     private boolean isAllInScreen = true;//是否所有item在一个屏幕均分，也就是不会左右滑动
     private int mItemPadding, mItemPaddingLeft, mItemPaddingTop, mItemPaddingRight, mItemPaddingBottom;//item padding
     private float mItemUnderHeight = 0;
-    private float mTabUnderHeight = 15;
+    private float mTabUnderHeight = 10;
     private float mDividerWidth = 0;
     private float mDividerPadding = 10;
     private boolean isScrollFollow = true;//指示器是否跟随滑动

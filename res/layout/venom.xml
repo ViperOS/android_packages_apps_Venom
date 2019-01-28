@@ -20,10 +20,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:id="@+id/logotext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingTop="10dp"
+            android:background="@*android:color/venom_cat_background"
+            android:src="@drawable/viper_logo"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:background="@drawable/logobuttonshape"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="#Viper"
+            android:textColor="@*android:color/about_text_color_primary"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/logotext"
         android:layout_above="@+id/tabs"/>
 
     <com.viper.venom.customtab.IconTitleIndicator
@@ -31,7 +66,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:translationY="10dp"
+        android:translationY="5dp"
         android:background="@color/BottomBarBackgroundColor" />
 
 </RelativeLayout>

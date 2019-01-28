@@ -16,11 +16,7 @@
 
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <corners
-        android:topLeftRadius="20dp"
-        android:topRightRadius="20dp"
-        android:bottomLeftRadius="15dp"
-        android:bottomRightRadius="15dp" />
-    <stroke
-        android:width="3dp"
-        android:color="@*android:color/accent_device_default_light" />
+        android:radius="100dp" />
+    <solid
+        android:color="@*android:color/venom_cat_fab_background" />
 </shape>

@@ -24,6 +24,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -54,12 +56,17 @@ public class VenomSettings extends SettingsPreferenceFragment {
         mViewpager = (ViewPager) view.findViewById(R.id.viewpager);
         mViewpager.setAdapter(new MyAdapter(getFragmentManager()));
         init1();
-		
+
+        setHasOptionsMenu(true);
 		return view;
     }
 
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+    }
+
     private void init1() {
-        mIndicator.setTextSize(12);
+        mIndicator.setTextSize(11);
         mIndicator.setTextColorResId(R.color.selector_tab);
         mIndicator.setIconWidthHeight(50);
         mIndicator.setItemPaddingTop(15);
