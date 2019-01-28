@@ -21,6 +21,15 @@
     <!-- Main Venom -->
     <string name="venom_title">Venom</string>
 
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="add">Add</string>
+    <string name="advanced">Advanced</string>
+    <string name="cancel">Cancel</string>
+    <string name="choose_app">Choose app</string>
+    <string name="save">Save</string>
+
     <!-- Venom Tab -->
     <string name="recents_tab">Recents</string>
     <string name="status_bar_tab">Statusbar</string>

@@ -16,14 +16,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-  <!-- General app strings -->
+  <!-- General strings -->
+  <string name="ok">OK</string>
+  <string name="reset">Resetar</string>
   <string name="add">Adicionar</string>
+  <string name="advanced">Avançado</string>
+  <string name="cancel">Cancelar</string>
+  <string name="choose_app">Escolha o aplicativo</string>
+  <string name="save">Salvar</string>
 
   <!--Venom Tab -->
   <string name="recents_tab">Recentes</string>
   <string name="status_bar_tab">Barra de status</string>
   <string name="system_tab">Sistema</string>
-  <string name="lockscreen_tab">Tela bloqueio</string>
+  <string name="lockscreen_tab">Tela de bloqueio</string>
   <string name="about_tab">Sobre</string>
 
   <!-- Venom Settings -->
