@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2017 ABC ROM
+     Copyright (C) 2018 ViperOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Main Venom -->
+    <string name="venom_title">Venom</string>
+
+    <!-- Venom Tab -->
+    <string name="recents_tab">Recents</string>
+    <string name="status_bar_tab">Statusbar</string>
+    <string name="system_tab">System</string>
+    <string name="lockscreen_tab">Lockscreen</string>
+    <string name="about_tab">About</string>
+
+    <!-- Venom Settings -->
+    <string name="quicksettings_title">Quick Settings</string>
+    <string name="quicksettings_summary">Change more quick settings</string>
+    <string name="themesettings_title">Color manager</string>
+    <string name="themesettings_summary">Change system colors with various theme combinations</string>
+    <string name="buttonsettings_title">Buttons</string>
+    <string name="buttonsettings_summary">Perform custom button actions</string>
+
+</resources>
