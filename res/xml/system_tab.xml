@@ -26,6 +26,12 @@
         android:title="@string/themesettings_title"
         android:summary="@string/themesettings_summary" />
 
+    <!-- Custom Font -->
+    <com.viper.venom.fragments.FontDialogPreference
+        android:key="custom_font"
+        android:layout="@layout/fontpicker_venom_preference"
+        android:persistent="false" />
+
     <!-- Button Settings -->
     <com.viper.venom.support.preferences.CategoryVenomPreference
         android:key="button_settings"

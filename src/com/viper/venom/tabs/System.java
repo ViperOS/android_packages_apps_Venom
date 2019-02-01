@@ -18,24 +18,55 @@ package com.viper.venom.tabs;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
+import android.content.FontInfo;
+import android.content.IFontService;
 import android.os.Bundle;
+import android.os.RemoteException;
+import android.os.ServiceManager;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.provider.Settings;
 
 import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.util.viper.Utils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.viper.venom.fragments.FontDialogPreference;
+
 public class System extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private static final String KEY_FONT_PICKER_FRAGMENT_PREF = "custom_font";
+    private static final String SUBS_PACKAGE = "projekt.substratum";
+
+    private FontDialogPreference mFontPreference;
+    private IFontService mFontService;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.system_tab);
+
+        mFontPreference =  (FontDialogPreference) findPreference(KEY_FONT_PICKER_FRAGMENT_PREF);
+        mFontService = IFontService.Stub.asInterface(
+                 ServiceManager.getService("fontservice"));
+         if (!Utils.isPackageInstalled(getActivity(), SUBS_PACKAGE)) {
+             mFontPreference.setSummary(getCurrentFontInfo().fontName.replace("_", " "));
+         } else {
+             mFontPreference.setSummary(getActivity().getString(
+                     R.string.disable_fonts_installed_title));
+         }
+    }
+
+    private FontInfo getCurrentFontInfo() {
+        try {
+            return mFontService.getFontInfo();
+        } catch (RemoteException e) {
+            return FontInfo.getDefaultFontInfo();
+        }
     }
 
     @Override

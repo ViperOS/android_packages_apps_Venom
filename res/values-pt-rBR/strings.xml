@@ -445,4 +445,10 @@
   <string name="show_fourg_icon_title">4G/LTE</string>
   <string name="show_fourg_icon_summary">Mostrar ícone 4G ao invés de LTE</string>
 
+  <!-- Font picker -->
+  <string name="font_picker_title">Seletor de fontes</string>
+  <string name="font_picker_summary">Altere o estilo de fonte da rom</string>
+  <string name="font_picker_progress">Aplicando nova fonte\u2026</string>
+  <string name="disable_fonts_installed_title">Personalização de fontes desativado</string>
+
 </resources>
