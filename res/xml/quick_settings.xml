@@ -24,12 +24,6 @@
         android:key="quick_settings_first_category"
         android:title="@string/qs_settings_first_title">
 
-    <com.viper.venom.support.preferences.SystemSettingSwitchPreference
-        android:key="hide_lockscreen_status_bar"
-        android:title="@string/hide_lockscreen_status_bar_title"
-        android:summary="@string/hide_lockscreen_status_bar_summary"
-        android:defaultValue="false" />
-
     <Preference
         android:key="qs_rows_columns"
         android:fragment="com.viper.venom.fragments.QsRowsColumns"

@@ -34,6 +34,16 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="category_hidestatubar_key"
+        android:title="@string/hide_statusbar_category">
+    <com.viper.venom.support.preferences.SystemSettingSwitchPreference
+        android:key="hide_lockscreen_status_bar"
+        android:title="@string/hide_lockscreen_status_bar_title"
+        android:summary="@string/hide_lockscreen_status_bar_summary"
+        android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="charging_lockscreen_key"
         android:title="@string/charging_title">
         <com.viper.venom.support.preferences.SystemSettingSwitchPreference
