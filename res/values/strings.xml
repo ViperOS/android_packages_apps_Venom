@@ -470,6 +470,9 @@
     <string name="signal_category">Signal</string>
     <string name="roaming_indicator_icon_title">Roaming indicator icon</string>
     <string name="roaming_indicator_icon_summary">Show roaming indicator icon</string>
+    <!-- VoLTE signal -->
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="volte_icon_summary">Display VoLTE icon</string>
     <!-- LTE/4G signal -->
     <string name="show_fourg_icon_title">4G/LTE</string>
     <string name="show_fourg_icon_summary">Show 4G icon instead LTE</string>
