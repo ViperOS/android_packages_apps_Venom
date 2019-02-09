@@ -389,12 +389,16 @@
   <string name="charging_title">Informação de carregamento</string>
 
   <!-- Face auto unlock -->
-  <string name="face_unlock_title">Desbloqueio facial</string>
+  <string name="security_unlock_title">Segurança de desbloqueio</string>
   <string name="face_auto_unlock_title">Desbloqueio facial automático</string>
   <string name="face_auto_unlock_summary">Ignorar tela de bloqueio após o desbloqueio facial</string>
   <string name="security_title">Segurança</string>
   <string name="lockscreen_security_title">Segurança na tela de bloqueio</string>
   <string name="lockscreen_security_summary">Configurações de segurança na tela de bloqueio</string>
+
+  <!-- Fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">Vibração de autenticação</string>
+  <string name="fprint_sucess_vib_summary">Vibrar quando o sensor tem autenticação com sucesso</string>
 
   <!-- Custom carrier label and position -->
   <string name="carrier_category">Nome da operadora</string>
@@ -417,7 +421,7 @@
   <string name="recents_settings_summary">Opções diversas para customização</string>
   <string name="recents_show_membar_title">Barra de memória</string>
   <string name="recents_show_membar_summary">Mostrar uma barra com a memória RAM disponível do dispositivo</string>
-    <string name="membar_recents_help_text">Barra de memória por hora não funciona em recentes QuickStep caso você queira usar essa função basta mudar o estilo dos recentes para versão AOSP.</string>
+  <string name="membar_recents_help_text">Barra de memória por hora não funciona em recentes QuickStep caso você queira usar essa função basta mudar o estilo dos recentes para versão AOSP.</string>
 
   <!-- Recents panel settings -->
   <string name="clearall_recents_category">Botão circular</string>
@@ -442,9 +446,9 @@
   <string name="signal_category">Sinal</string>
   <string name="roaming_indicator_icon_title">Ícone indicador de roaming</string>
   <string name="roaming_indicator_icon_summary">Mostrar ícone indicador de roaming</string>
-    <!-- VoLTE signal -->
-    <string name="volte_icon_title">Ícone de VoLTE</string>
-    <string name="volte_icon_summary">Mostrar ícone de VoLTE</string>
+  <!-- VoLTE signal -->
+  <string name="volte_icon_title">Ícone de VoLTE</string>
+  <string name="volte_icon_summary">Mostrar ícone de VoLTE</string>
   <!-- LTE/4G signal -->
   <string name="show_fourg_icon_title">4G/LTE</string>
   <string name="show_fourg_icon_summary">Mostrar ícone 4G ao invés de LTE</string>
