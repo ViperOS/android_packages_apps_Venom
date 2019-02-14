@@ -26,7 +26,7 @@
 
     <Preference
         android:key="blacklist_fragment"
-        android:fragment="com.abc.settings.PulseBlacklist"
+        android:fragment="com.viper.venom.fragments.PulseBlacklist"
         android:title="@string/pulse_blacklist_title"
         android:summary="@string/pulse_blacklist_summary"
         android:dependency="eos_fling_show_pulse"
