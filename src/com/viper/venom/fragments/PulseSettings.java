@@ -87,7 +87,7 @@ public class PulseSettings extends SettingsPreferenceFragment implements
 
         mAutoColor = (SwitchPreference) findPreference("pulse_auto_color");
         mAutoColor.setChecked(Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.PULSE_AUTO_COLOR, 0, UserHandle.USER_CURRENT) == 1);
+                Settings.System.PULSE_AUTO_COLOR, 1, UserHandle.USER_CURRENT) == 1);
         mAutoColor.setOnPreferenceChangeListener(this);
 
         PreferenceCategory fadingBarsCat = (PreferenceCategory)findPreference("pulse_fading_bars_category");
@@ -138,7 +138,7 @@ public class PulseSettings extends SettingsPreferenceFragment implements
         mFudge.setOnPreferenceChangeListener(this);
 
         int solidfudge = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.PULSE_SOLID_FUDGE_FACTOR, 5,
+                Settings.System.PULSE_SOLID_FUDGE_FACTOR, 3,
                 UserHandle.USER_CURRENT);
         mSolidFudge = (CustomSeekBarPreference) findPreference(SOLID_FUDGE);
         mSolidFudge.setValue(solidfudge);
@@ -159,7 +159,7 @@ public class PulseSettings extends SettingsPreferenceFragment implements
         mFadingSpeed.setOnPreferenceChangeListener(this);
 
         int count = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.PULSE_SOLID_UNITS_COUNT, 64, UserHandle.USER_CURRENT);
+                Settings.System.PULSE_SOLID_UNITS_COUNT, 96, UserHandle.USER_CURRENT);
         mSolidCount =
                 (CustomSeekBarPreference) findPreference(PULSE_SOLID_UNITS_COUNT);
         mSolidCount.setValue(count);
