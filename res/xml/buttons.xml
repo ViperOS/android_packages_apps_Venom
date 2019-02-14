@@ -100,6 +100,12 @@
             android:entryValues="@array/hardware_keys_action_values"
             android:persistent="false" />
 
+        <Preference
+            android:key="pulse_settings"
+            android:title="@string/pulse_settings"
+            android:summary="@string/pulse_settings_summary"
+            android:fragment="com.viper.venom.fragments.PulseSettings" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
