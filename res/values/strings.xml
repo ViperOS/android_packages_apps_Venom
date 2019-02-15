@@ -487,7 +487,7 @@
     <string name="font_picker_summary">Change the rom font style</string>
     <string name="font_picker_progress">Applying new font\u2026</string>
     <string name="disable_fonts_installed_title">Custom fonts disabled</string>
-    <string name="font_picker_pangram" translatable="false">The quick brown fox jumps over the lazy dog</string>
+    <string name="font_picker_pangram" translatable="false">Feel the venom in your vein</string>
 
     <!-- Pulse navigation bar music visualizer -->
     <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>

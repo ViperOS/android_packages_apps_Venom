@@ -458,5 +458,61 @@
   <string name="font_picker_summary">Altere o estilo de fonte da rom</string>
   <string name="font_picker_progress">Aplicando nova fonte\u2026</string>
   <string name="disable_fonts_installed_title">Personalização de fontes desativado</string>
+  <string name="font_picker_pangram" translatable="false">Sinta o veneno em sua veia</string>
+
+  <!-- Pulse navigation bar music visualizer -->
+  <string name="pulse_help_policy_notice_summary">O Pulse não funciona com algumas fontes de áudio ao ouvir no alto-falante do dispositivo</string>
+  <string name="pulse_settings">Pulse</string>
+  <string name="pulse_settings_summary">Barra de navegação equalizador gráfico de áudio</string>
+  <string name="fling_show_pulse_title">Permitir o Pulse</string>
+  <string name="fling_show_pulse_summary">Equalizador gráfico de áudio na barra de navegação</string>
+  <string name="pulse_render_mode_title">Modo de renderização</string>
+  <string name="pulse_render_mode_fading_bars">Blocos de desvanecimento</string>
+  <string name="pulse_render_mode_solid_lines">Linhas sólidas</string>
+  <string name="fling_pulse_color">Cores do Pulse</string>
+  <string name="fling_pulse_color_summary">Usado também como fallback para cor automática</string>
+  <string name="eos_fling_lavalamp_title">Acenda a Lâmpada de Lava</string>
+  <string name="eos_fling_lavalamp_summary">Pulse anima uma mistura de cores suave no estilo da lâmpada de lava</string>
+  <string name="pulse_advanced_category">Avançado</string>
+  <string name="pulse_legacy_mode_advanced_category">Configurações do modo blocos de desvanecimento</string>
+  <string name="pulse_custom_fudge_factor">Nível de sanidade</string>
+  <string name="lavamp_solid_speed_title">Velocidade da lâmpada de lava</string>
+  <string name="pulse_solid_units_count">Contagem de linhas sólidas</string>
+  <string name="pulse_solid_lines_count">Contagem de linhas sólidas</string>
+  <string name="pulse_solid_units_opacity">Opacidade de linhas sólidas</string>
+  <string name="pulse_solid_dimen_category">Configurações do modo de linhas sólidas</string>
+  <string name="pulse_custom_buttons_opacity_title">Smartbar opacidade nos botões Pulse</string>
+  <string name="pulse_auto_color_title">Cores automáticas no Pulse</string>
+  <string name="pulse_auto_color_summary">Sincronize a cor com as artes do álbum. Substitui a Lâmpada de Lava e a opacidade das linhas.</string>
+
+  <!-- Pulse config -->
+  <string name="pulse_custom_dimen">Largura da barra</string>
+  <string name="pulse_custom_div">Espaçamento barra</string>
+  <string name="pulse_filled_block_size">Tamanho do bloco</string>
+  <string name="pulse_empty_block_size">Espaçamento do bloco</string>
+  <string name="pulse_blacklist_title">Lista negra de apps</string>
+  <string name="pulse_blacklist_summary">Aplicativos a serem ignorados pelo Pulse</string>
+  <string name="pulse_blacklist_apps_cat_title">Lista negra</string>
+  <string name="pulse_blacklist_apps_title">Lista negra de apps</string>
+  <string name="pulse_blacklist_apps_summary">Aplicativos para não mostrar no painel</string>
+  <string name="pulse_blacklist_add_apps_title">Adicionar app</string>
+  <string name="pulse_blacklist_add_apps_summary">Toque aqui para adicionar, toque no aplicativo adicionado para removê-lo</string>
+
+  <!-- Ambient music ticker -->
+  <string name="category_ambient_music">Música ambiente</string>
+  <string name="force_ambient_for_media_pref_title">Marcador de música ambiente</string>
+  <string name="force_ambient_for_media_pref_summary">Configurar o marcador de música ambiente</string>
+  <string name="ambient_ticker_footer">Marcador de música ambiente mostra a reprodução de informações de faixa de música na tela de exibição Ambiente.\n\nAcionado também se a Tela de Ambiente for desativada quando uma nova trilha for iniciada, forçando uma tela ambiente limpa com informações de faixa no meio da tela.\n\nVocê também pode tocar duas vezes na informação da faixa para pular a faixa.\n\nSe você tiver um Pixel e ativar o recurso Now Playing e sua notificação nas configurações do sistema de áudio, o Marcador de música ambiente também funcionará nele.</string>
+  <string name="force_ambient_for_media_title">Habilitar</string>
+
+  <!-- Color Picker -->
+  <string name="dialog_color_picker">Seletor de cores</string>
+  <string name="press_color_to_apply">Pressione na cor abaixo para aplicar</string>
+  <string name="arrow_right">→</string>
+  <string name="arrow_down">↓</string>
+  <string name="hex">Hex:</string>
+  <string name="hex_hint">#ff000000</string>
+  <string name="set">Set</string>
+  <string name="color_default">Padrão</string>
 
 </resources>
