@@ -34,6 +34,16 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="category_ambient_music_key"
+        android:title="@string/category_ambient_music"
+        <Preference
+            android:key="force_ambient_for_media_pref"
+            android:fragment="com.viper.venom.fragments.AmbientTicker"
+            android:title="@string/force_ambient_for_media_pref_title"
+            android:summary="@string/force_ambient_for_media_pref_summary"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="category_hidestatubar_key"
         android:title="@string/hide_statusbar_category">
     <com.viper.venom.support.preferences.SystemSettingSwitchPreference

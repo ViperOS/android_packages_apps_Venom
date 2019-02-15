@@ -28,7 +28,7 @@
     <com.viper.venom.support.preferences.CategoryVenomPreference
         android:key="misc_lockscreen"
         android:fragment="com.viper.venom.fragments.LockscreenMisc"
-        android:icon="@drawable/ic_settings_lockscreen_miscs"
+        android:icon="@drawable/ic_settings_miscs"
         android:title="@string/lockscreensettings_title"
         android:summary="@string/lockscreensettings_summary" />
 

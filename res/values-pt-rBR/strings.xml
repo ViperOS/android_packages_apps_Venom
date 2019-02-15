@@ -55,8 +55,8 @@
   <string name="lockscreen_misc_selection_summary">Configurações de desbloqueio de tela</string>
   <string name="network_traffic_title">Trafego da internet</string>
   <string name="network_traffic_summary">Me mostra o estado do trafego da internet</string>
-  <string name="status_bar_clock_date_settings_title">Relógio &amp; data</string>
-  <string name="status_bar_clock_date_settings_summary">Escolha como exibir o relógio &amp; data na barra de status</string>
+  <string name="status_bar_clock_date_settings_title">Relógio</string>
+  <string name="status_bar_clock_date_settings_summary">Escolha como exibir o relógio na barra de status</string>
   <string name="powermenu_title">Menu de energia</string>
   <string name="powermenu_title_summary">Alterar opções para o menu de energia</string>
   <string name="notifications_title">Notificação</string>
