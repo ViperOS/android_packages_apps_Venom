@@ -30,6 +30,7 @@ import java.util.List;
 import com.android.settings.display.AccentPickerPreferenceController;
 import com.android.settings.display.SystemThemePreferenceController;
 import com.android.settings.display.QsTileStylesPreferenceController;
+import com.android.settings.display.SwitchStylesPreferenceController;
 
 public class ThemesSettings extends DashboardFragment {
     private static final String TAG = "ThemesSettings";
@@ -57,6 +58,7 @@ public class ThemesSettings extends DashboardFragment {
     private static List<AbstractPreferenceController> buildPreferenceControllers(
             Context context, Lifecycle lifecycle, Fragment fragment) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new SwitchStylesPreferenceController(context, lifecycle, fragment));
         controllers.add(new QsTileStylesPreferenceController(context, lifecycle, fragment));
         controllers.add(new AccentPickerPreferenceController(context, lifecycle, fragment));
         controllers.add(new SystemThemePreferenceController(context, lifecycle, fragment));

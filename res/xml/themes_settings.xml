@@ -35,6 +35,10 @@
             android:key="qs_tile_style"
             android:title="@string/qs_tile_style_title" />
 
+        <Preference
+            android:key="switch_style"
+            android:title="@string/switch_style_title" />
+
      </PreferenceCategory>
 
 </PreferenceScreen>
