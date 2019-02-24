@@ -39,6 +39,10 @@
             android:key="switch_style"
             android:title="@string/switch_style_title" />
 
+        <Preference
+            android:key="ls_clock_style"
+            android:title="@string/clock_ls_style_title" />
+
      </PreferenceCategory>
 
 </PreferenceScreen>
