@@ -35,10 +35,10 @@ import com.viper.venom.about.DiagonalView;
 import com.android.settings.R;
 
 public class FancyAboutPage extends RelativeLayout {
-    private TextView l1,l2,birname,jbcname,esromname,rkschunkname,matheeusafname,kleyname,joshuaname,zjrdroidname,birdescription,jbcdescription,esromdescription,rkschunkdescription,matheeusafdescription,kleydescription,joshuadescription,zjrdroiddescription;
+    private TextView l1,l2,birname,jbcname,esromname,rkschunkname,matheeusafname,kleyname,joshuaname,birdescription,jbcdescription,esromdescription,rkschunkdescription,matheeusafdescription,kleydescription,joshuadescription;
     DiagonalView diagonalView;
-    ImageView bir,jbc,esrom,rk,matheeusaf,kley,joshua,zjrdroid,gg,tl,fb,git;
-    String facebookurl,ggurl,tlurl,githuburl;
+    ImageView bir,jbc,esrom,rk,matheeusaf,kley,joshua,tl,git;
+    String tlurl,githuburl;
     private void init(Context context) {
         //do stuff that was in your original constructor...
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(
@@ -53,7 +53,6 @@ public class FancyAboutPage extends RelativeLayout {
         matheeusafname=(TextView) findViewById(R.id.matheeusafname);
         kleyname=(TextView) findViewById(R.id.kleyname);
         joshuaname=(TextView) findViewById(R.id.joshuaname);
-        zjrdroidname=(TextView) findViewById(R.id.zjrdroidname);
         birdescription=(TextView) findViewById(R.id.birdescription);
         jbcdescription=(TextView) findViewById(R.id.jbcdescription);
         esromdescription=(TextView) findViewById(R.id.esromdescription);
@@ -61,7 +60,6 @@ public class FancyAboutPage extends RelativeLayout {
         matheeusafdescription=(TextView) findViewById(R.id.matheeusafdescription);
         kleydescription=(TextView) findViewById(R.id.kleydescription);
         joshuadescription=(TextView) findViewById(R.id.joshuadescription);
-        zjrdroiddescription=(TextView) findViewById(R.id.zjrdroiddescription);
         bir=(ImageView) findViewById(R.id.bir);
         jbc=(ImageView) findViewById(R.id.jbc);
         esrom=(ImageView) findViewById(R.id.esrom);
@@ -69,9 +67,6 @@ public class FancyAboutPage extends RelativeLayout {
         matheeusaf=(ImageView) findViewById(R.id.matheeusaf);
         kley=(ImageView) findViewById(R.id.kley);
         joshua=(ImageView) findViewById(R.id.joshua);
-        zjrdroid=(ImageView) findViewById(R.id.zjrdroid);
-        fb=(ImageView) findViewById(R.id.facebook);
-        gg=(ImageView) findViewById(R.id.google);
         tl=(ImageView) findViewById(R.id.telegram);
         git=(ImageView) findViewById(R.id.github);
         diagonalView = (DiagonalView) findViewById(R.id.background);
@@ -101,34 +96,6 @@ public class FancyAboutPage extends RelativeLayout {
         diagonalView.setImageResource(drawable);
     }
 
-    public void addFacebookLink(String facebookAddress){
-        fb.setVisibility(VISIBLE);
-        facebookurl=facebookAddress;
-        fb.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!facebookurl.startsWith("http://") && !facebookurl.startsWith("https://"))
-                    facebookurl = "http://" + facebookurl;
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(facebookurl));
-                getContext().startActivity(browserIntent);
-            }
-        });
-    }
-    public void addGoogleLink(String googleAddress){
-        gg.setVisibility(VISIBLE);
-        ggurl=googleAddress;
-        gg.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!ggurl.startsWith("http://") && !ggurl.startsWith("https://")) {
-                    ggurl = "http://" + ggurl;
-                }
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(ggurl));
-                getContext().startActivity(browserIntent);
-            }
-        });
-
-    }
     public void addTelegramLink(String telegramAddress){
         tl.setVisibility(VISIBLE);
         tlurl=telegramAddress;
@@ -166,7 +133,6 @@ public class FancyAboutPage extends RelativeLayout {
        matheeusaf.setImageResource(Icon);
        kley.setImageResource(Icon);
        joshua.setImageResource(Icon);
-       zjrdroid.setImageResource(Icon);
     }
     public void setAppName(String AppName){
        birname.setText(AppName);
@@ -176,7 +142,6 @@ public class FancyAboutPage extends RelativeLayout {
        matheeusafname.setText(AppName);
        kleyname.setText(AppName);
        joshuaname.setText(AppName);
-       zjrdroidname.setText(AppName);
     }
     public void setAppDescription(String AppDescription){
         birdescription.setText(AppDescription);
@@ -186,7 +151,6 @@ public class FancyAboutPage extends RelativeLayout {
         matheeusafdescription.setText(AppDescription);
         kleydescription.setText(AppDescription);
         joshuadescription.setText(AppDescription);
-        zjrdroiddescription.setText(AppDescription);
     }
 
 }
