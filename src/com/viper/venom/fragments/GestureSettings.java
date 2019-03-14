@@ -23,6 +23,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.provider.Settings;
@@ -32,6 +33,7 @@ import android.util.DisplayMetrics;
 import android.util.TypedValue;
 
 import com.viper.venom.support.preferences.CustomSeekBarPreference;
+import com.viper.venom.support.preferences.SystemSettingSwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -40,14 +42,18 @@ import com.android.settings.search.Indexable;
 import java.util.List;
 import java.util.Arrays;
 
+import lineageos.providers.LineageSettings;
+
 public class GestureSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "GestureSettings";
+    private static final String KEY_GESTURE_NAVIGATION = "use_bottom_gesture_navigation";
     private static final String KEY_SWIPE_LENGTH = "gesture_swipe_length";
     private static final String KEY_SWIPE_TIMEOUT = "gesture_swipe_timeout";
 
     private CustomSeekBarPreference mSwipeTriggerLength;
     private CustomSeekBarPreference mSwipeTriggerTimeout;
+    private SystemSettingSwitchPreference mGestureNavigation;
 
     @Override
     public int getMetricsCategory() {
@@ -75,6 +81,9 @@ public class GestureSettings extends SettingsPreferenceFragment implements
                 getResources().getInteger(com.android.internal.R.integer.nav_gesture_swipe_timout));
         mSwipeTriggerTimeout.setValue(value);
         mSwipeTriggerTimeout.setOnPreferenceChangeListener(this);
+
+        mGestureNavigation = (SystemSettingSwitchPreference) findPreference(KEY_GESTURE_NAVIGATION);
+        mGestureNavigation.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -94,6 +103,9 @@ public class GestureSettings extends SettingsPreferenceFragment implements
             int value = (Integer) objValue;
             Settings.System.putInt(getContentResolver(),
                     Settings.System.OMNI_BOTTOM_GESTURE_TRIGGER_TIMEOUT, value);
+        } else if (preference == mGestureNavigation) {
+            LineageSettings.System.putIntForUser(getContext().getContentResolver(),
+                    LineageSettings.System.FORCE_SHOW_NAVBAR, (boolean) objValue ? 0 : 1, UserHandle.USER_CURRENT);
         } else {
             return false;
         }
