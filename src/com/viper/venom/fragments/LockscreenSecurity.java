@@ -53,7 +53,7 @@ public class LockscreenSecurity extends SettingsPreferenceFragment implements Pr
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
-        if (!mFingerprintManager.isHardwareDetected()){
+        if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()) {
             prefScreen.removePreference(mFingerprintVib);
         } else {
         mFingerprintVib.setChecked((Settings.System.getInt(getContentResolver(),
