@@ -514,4 +514,15 @@
   <string name="set">Set</string>
   <string name="color_default">Padrão</string>
 
+  <!-- OP Gestures -->
+  <string name="gesture_settings_title">Gestos na navbar</string>
+  <string name="gesture_settings_title_summary">Gestos estilo OnePlus</string>
+  <string name="gesture_settings_info">A barra de navegação deve estar desativada!\n\nGestos disponíveis:\n\nVoltar\n- Deslize para cima no lado esquerdo ou direito\n\nHome\n- Deslizar para cima no centro\n\nApps recentes\n- Deslize o dedo para cima e segure\n\nPressionar home\n- Deslize para cima e segure no centro</string>
+  <string name="use_bottom_gesture_title">Gestos de navegação</string>
+  <string name="use_bottom_gesture_summary">Use os gestos de deslizar para cima na navbar</string>
+  <string name="gesture_swipe_length_title">Deslize a altura do acionador</string>
+  <string name="gesture_swipe_length_summary">Altura da parte inferior para deslizar</string>
+  <string name="gesture_action_timeout_title">Tempo limite do acionador ao deslizar</string>
+  <string name="gesture_action_timeout_summary">Tempo limite antes da ação do gesto ser iniciada</string>
+
 </resources>

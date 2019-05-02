@@ -39,6 +39,14 @@
         android:title="@string/button_settings_title"
         android:summary="@string/button_settings_title_summary"
         android:fragment="com.viper.venom.fragments.ButtonSettings" />
+
+    <!-- Gesture Settings -->
+    <com.viper.venom.support.preferences.CategoryVenomPreference
+        android:key="gesture_settings"
+        android:icon="@drawable/ic_settings_gestures"
+        android:title="@string/gesture_settings_title"
+        android:summary="@string/gesture_settings_title_summary"
+        android:fragment="com.viper.venom.fragments.GestureSettings" />
  
      <!-- Battery light -->
      <com.viper.venom.support.preferences.CategoryVenomPreference
