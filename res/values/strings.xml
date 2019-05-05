@@ -79,13 +79,13 @@
     <string name="esrom_name">EsromTech</string>
     <string name="esrom_discription">Co-Lead Developer | Maintainer</string>
     <string name="rkschunk_name">RKSchunk</string>
-    <string name="rkschunk_discription">Maintainer</string>
+    <string name="rkschunk_discription">Maintainer Co-Lead | Investor</string>
     <string name="matheeusaf_name">Matheeusaf</string>
     <string name="matheeusaf_discription">Website Creator | Website Manager</string>
     <string name="kley_name">Kley76</string>
     <string name="kley_discription">Designer</string>
     <string name="joshua_name">Joshua M.</string>
-    <string name="joshua_discription">Designer | Maintainer</string>
+    <string name="joshua_discription">Maintainers Manager | Designer</string>
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_title">Brightness slider</string>
@@ -404,7 +404,7 @@
     <string name="battery_percent_inside">Inside</string>
 
     <!-- Rounded corners -->
-    <string name="corners_category">Corners</string> 
+    <string name="corners_category">Corners</string>
     <string name="corner_radius">Rounded Corner Radius</string>
     <string name="content_padding">Corner Content Padding</string>
     <string name="status_bar_padding">Statusbar extra padding</string>
