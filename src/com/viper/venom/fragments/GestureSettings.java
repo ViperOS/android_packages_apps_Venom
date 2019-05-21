@@ -23,6 +23,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
@@ -104,8 +105,15 @@ public class GestureSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.OMNI_BOTTOM_GESTURE_TRIGGER_TIMEOUT, value);
         } else if (preference == mGestureNavigation) {
+            boolean needsNavbar = false;
+            String navBarOverride = SystemProperties.get("qemu.hw.mainkeys");
+            if ("1".equals(navBarOverride)) {
+                needsNavbar = false;
+            } else {
+                needsNavbar = true;
+            }
             LineageSettings.System.putIntForUser(getContext().getContentResolver(),
-                    LineageSettings.System.FORCE_SHOW_NAVBAR, (boolean) objValue ? 0 : 1, UserHandle.USER_CURRENT);
+                    LineageSettings.System.FORCE_SHOW_NAVBAR, (boolean) objValue ? 0 : needsNavbar ? 1 : 0, UserHandle.USER_CURRENT);
         } else {
             return false;
         }
